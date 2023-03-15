@@ -40,19 +40,6 @@
         },
         {
             "bbox": [
-                32.8,
-                -25.0708,
-                120.3292,
-                -11.1125
-            ],
-            "id": "SH112023",
-            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH112023_losses_adm.json",
-            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH112023_JTWC_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-            "storm_name": "FREDDY"
-        },
-        {
-            "bbox": [
                 120.3458,
                 -21.5625,
                 130.2458,
