@@ -164,6 +164,23 @@ This code implements the pseudo-code document from KAC, aimed at calculating the
 * __prefix__: the type of field to look for (by default, 'swath')
 * __csv_file__: temporary csv file for the loss calculation
 
+## Note on mapping
 
+KAC's pseudo algorithm requires to map exposure_id (pixel) to a unique triplet (ADM0, ADM1, ADM2). Given the file size constraints on GitHub, it was necessary to build a system of mappings.
 
+### 1. generateMapping.py
 
+For each country, it generates a json file, e.g. `mapping_1.json` whith the following structure:
+* `<exp_id> : {<ADM0_CODE>, <ADM1_CODE>, <ADM2_CODE>}`
+
+### 2. mappings2mapping.py
+
+It combines all the mappings into one mapping.json
+
+### 3. mappingPopulation.py
+
+From arc_consolidated_expo.csv, it creates mappingPopulation.json
+
+### 4. mappingPopulation2parquet.py
+
+It takes mapping.json and mappingPopulation.json and combines them into a parquet file mapping.gzip, which stands within the GitHub file limit and is usable as a unique mapping file.
