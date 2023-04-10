@@ -6,8 +6,8 @@
         ],
         "storms_shp": [
             "SH182023",
-            "WP902023",
-            null
+            null,
+            "WP902023"
         ],
         "windwater_shp": [
             "SH182023",
