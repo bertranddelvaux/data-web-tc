@@ -210,5 +210,18 @@
             "storm_name": "BATSIRAI"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                68.325,
+                -14.9417,
+                92.7917,
+                -0.5917
+            ],
+            "id": "SH192023",
+            "jtwc": "tc_realtime/taostc_SH192023_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH192023_losses_adm.json",
+            "storm_name": "FABIEN"
+        }
+    ]
 }
