@@ -207,10 +207,10 @@
     "tc_realtime": [
         {
             "bbox": [
-                70.7917,
-                -12.175,
-                89.8917,
-                -1.4583
+                70.525,
+                -11.6083,
+                89.6,
+                -1.475
             ],
             "id": "SH192023",
             "jtwc": "tc_realtime/taostc_SH192023_JTWC_SLOSH.geojson",
