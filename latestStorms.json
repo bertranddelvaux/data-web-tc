@@ -7,17 +7,17 @@
             "EP052023"
         ],
         "storms_shp": [
+            "WP072023",
             "WP062023",
             null,
             "EP062023",
-            "EP052023",
-            "WP072023"
+            "EP052023"
         ],
         "windwater_shp": [
             "EP062023",
-            "WP062023",
             "EP052023",
-            null
+            null,
+            "WP062023"
         ]
     },
     "mpres_data": [
