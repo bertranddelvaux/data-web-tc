@@ -2,22 +2,22 @@
     "current_storms": {
         "current_storms": [
             "EP072023",
-            null,
             "EP082023",
+            null,
             "EP052023",
             "WP072023"
         ],
         "storms_shp": [
             "EP072023",
-            null,
             "EP082023",
+            null,
             "EP052023",
             "WP072023"
         ],
         "windwater_shp": [
             "EP072023",
-            null,
             "EP082023",
+            null,
             "EP052023",
             "WP072023"
         ]
