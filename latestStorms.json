@@ -8,13 +8,13 @@
         "storms_shp": [
             "AL172023",
             "AL182023",
-            "WP142023",
-            null
+            null,
+            "WP142023"
         ],
         "windwater_shp": [
-            null,
+            "AL172023",
             "AL182023",
-            "AL172023"
+            null
         ]
     },
     "mpres_data": [
