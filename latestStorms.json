@@ -202,5 +202,18 @@
             "storm_name": "EMNATI"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                32.4417,
+                -22.875,
+                40.9417,
+                -15.8417
+            ],
+            "id": "SH952024",
+            "jtwc": "tc_realtime/taostc_SH952024_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH952024_losses_adm.json",
+            "storm_name": "INVEST"
+        }
+    ]
 }
