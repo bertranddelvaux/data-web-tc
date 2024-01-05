@@ -5805,6 +5805,24 @@
                 "time": "18:00",
                 "year": "2023"
             }
+        ],
+        "2024": [
+            {
+                "bbox": [
+                    34.0458,
+                    -29.2875,
+                    57.5458,
+                    -16.1458
+                ],
+                "date": "2023-12-30",
+                "id": "SH042024",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH042024_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH042024_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH042024.geojson",
+                "storm_name": "ALVARO",
+                "time": "00:00",
+                "year": "2024"
+            }
         ]
     }
 }
