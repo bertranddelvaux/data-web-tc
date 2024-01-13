@@ -220,15 +220,15 @@
     "tc_realtime": [
         {
             "bbox": [
-                52.6083,
-                -24.825,
-                63.6417,
-                -8.1917
+                51.2583,
+                -24.475,
+                64.6417,
+                -8.2417
             ],
             "id": "SH052024",
             "jtwc": "tc_realtime/taostc_SH052024_JTWC_SLOSH.geojson",
             "losses": "tc_realtime/SH052024_losses_adm.json",
-            "storm_name": "FIVE"
+            "storm_name": "BELAL"
         }
     ]
 }
