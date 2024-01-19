@@ -217,18 +217,5 @@
             "storm_name": "EMNATI"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                50.1583,
-                -29.3917,
-                70.875,
-                -9.7
-            ],
-            "id": "SH052024",
-            "jtwc": "tc_realtime/taostc_SH052024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH052024_losses_adm.json",
-            "storm_name": "BELAL"
-        }
-    ]
+    "tc_realtime": []
 }
