@@ -5,13 +5,12 @@
             null
         ],
         "storms_shp": [
-            "SH902024",
             "SH062024",
             null
         ],
         "windwater_shp": [
-            null,
-            "SH062024"
+            "SH062024",
+            null
         ]
     },
     "mpres_data": [
