@@ -11,9 +11,9 @@
             null
         ],
         "windwater_shp": [
-            "SH072024",
+            null,
             "SH062024",
-            null
+            "SH072024"
         ]
     },
     "mpres_data": [
@@ -93,6 +93,19 @@
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH142023_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH142023.geojson",
             "storm_name": "ENALA"
+        },
+        {
+            "bbox": [
+                50.2375,
+                -28.9708,
+                70.4542,
+                -9.7
+            ],
+            "id": "SH052024",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH052024_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH052024_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+            "storm_name": "BELAL"
         },
         {
             "bbox": [

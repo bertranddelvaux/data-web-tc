@@ -5809,6 +5809,22 @@
         "2024": [
             {
                 "bbox": [
+                    50.2375,
+                    -28.9708,
+                    70.4542,
+                    -9.7
+                ],
+                "date": "2024-01-10",
+                "id": "SH052024",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH052024_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH052024_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                "storm_name": "BELAL",
+                "time": "06:00",
+                "year": "2024"
+            },
+            {
+                "bbox": [
                     34.0458,
                     -29.2875,
                     57.5458,
