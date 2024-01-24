@@ -7,7 +7,10 @@
             "SH922024"
         ],
         "windwater_shp": [
-            "SH922024"
+            "SH922024",
+            "SH072024",
+            "SH062024",
+            null
         ]
     },
     "mpres_data": [
