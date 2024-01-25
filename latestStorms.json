@@ -7,10 +7,10 @@
             "SH922024"
         ],
         "windwater_shp": [
-            "SH922024",
-            "SH062024",
             "SH072024",
-            null
+            "SH922024",
+            null,
+            "SH062024"
         ]
     },
     "mpres_data": [
@@ -233,5 +233,18 @@
             "storm_name": "EMNATI"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                54.5917,
+                -22.9083,
+                63.3917,
+                -12.625
+            ],
+            "id": "SH922024",
+            "jtwc": "tc_realtime/taostc_SH922024_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH922024_losses_adm.json",
+            "storm_name": "INVEST"
+        }
+    ]
 }
