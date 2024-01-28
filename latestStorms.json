@@ -245,18 +245,6 @@
             "jtwc": "tc_realtime/taostc_SH062024_JTWC_SLOSH.geojson",
             "losses": "tc_realtime/SH062024_losses_adm.json",
             "storm_name": "ANGGREK"
-        },
-        {
-            "bbox": [
-                52.7583,
-                -37.1583,
-                69.1583,
-                -11.0917
-            ],
-            "id": "SH082024",
-            "jtwc": "tc_realtime/taostc_SH082024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH082024_losses_adm.json",
-            "storm_name": "CANDICE"
         }
     ]
 }
