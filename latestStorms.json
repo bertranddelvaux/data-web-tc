@@ -233,18 +233,6 @@
     "tc_realtime": [
         {
             "bbox": [
-                67.5083,
-                -39.3083,
-                96.9083,
-                -5.9
-            ],
-            "id": "SH062024",
-            "jtwc": "tc_realtime/taostc_SH062024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH062024_losses_adm.json",
-            "storm_name": "ANGGREK"
-        },
-        {
-            "bbox": [
                 58.7417,
                 -36.0417,
                 83.1583,
