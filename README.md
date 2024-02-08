@@ -156,9 +156,9 @@ The geojson contains the geometries of the (multi-)polygon per field and contain
 This code implements the pseudo-code document from KAC, aimed at calculating the losses and exposed population. It takes the following arguments:
 
 * __storm_file__: relative path to the NetCDF hazard file (.nc) of the storm
-* __exp_file__: relative path to gzip (parquet) exposure file
-* __adm_file__: relative path to the JSON admin file
-* __mapping_file__: relative path to gzip (parquet) mapping file
+* __exp_file__: (= _arc_exposure.gzip_) relative path to gzip (parquet) exposure file.
+* __adm_file__: (= _adm2_full_precision.json_) relative path to the JSON admin file
+* __mapping_file__: (= _mapping.gzip_) relative path to gzip (parquet) mapping file
 * __split__: boolean flag to split into admin losses or keep it in one file
 * __geojson__: relative path to the JSON losses file (output)
 * __prefix__: the type of field to look for (by default, 'swath')
