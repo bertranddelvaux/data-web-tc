@@ -230,5 +230,18 @@
             "storm_name": "FOUR"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                62.3083,
+                -29.9583,
+                98.5417,
+                -11.2417
+            ],
+            "id": "SH132024",
+            "jtwc": "tc_realtime/taostc_SH132024_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH132024_losses_adm.json",
+            "storm_name": "DJOUNGOU"
+        }
+    ]
 }
