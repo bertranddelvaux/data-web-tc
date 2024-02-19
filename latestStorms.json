@@ -7,9 +7,9 @@
             "SH132024"
         ],
         "windwater_shp": [
-            null,
+            "SH132024",
             "SH142024",
-            "SH132024"
+            null
         ]
     },
     "mpres_data": [
@@ -232,18 +232,5 @@
             "storm_name": "FOUR"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                62.8583,
-                -32.3083,
-                104.5083,
-                -12.0417
-            ],
-            "id": "SH132024",
-            "jtwc": "tc_realtime/taostc_SH132024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH132024_losses_adm.json",
-            "storm_name": "DJOUNGOU"
-        }
-    ]
+    "tc_realtime": []
 }
