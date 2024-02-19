@@ -271,10 +271,10 @@
                 -8.1208
             ],
             "id": "SH022023",
-            "losses": "tc_realtime/SH022022_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH022022_JTWC_SLOSH.geojson",
-            "shp": "tc_realtime/taos_swio30s_ofcl_windwater_shp_SH022022.geojson",
-            "storm_name": "TERATAI"
+            "losses": "tc_realtime/SH022023_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH022023_JTWC_SLOSH.geojson",
+            "shp": "tc_realtime/taos_swio30s_ofcl_windwater_shp_SH022023.geojson",
+            "storm_name": "ASHLEY"
         }
     ]
 }
