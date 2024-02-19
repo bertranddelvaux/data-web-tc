@@ -4,8 +4,8 @@
             "SH132024"
         ],
         "storms_shp": [
-            "SH132024",
-            "SH952024"
+            "SH952024",
+            "SH132024"
         ],
         "windwater_shp": [
             "SH132024"
@@ -243,18 +243,6 @@
             "jtwc": "tc_realtime/taostc_SH132024_JTWC_SLOSH.geojson",
             "losses": "tc_realtime/SH132024_losses_adm.json",
             "storm_name": "DJOUNGOU"
-        },
-        {
-            "bbox": [
-                48.0083,
-                -22.0917,
-                55.1917,
-                -13.8917
-            ],
-            "id": "SH952024",
-            "jtwc": "tc_realtime/taostc_SH952024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH952024_losses_adm.json",
-            "storm_name": "INVEST"
         }
     ]
 }
