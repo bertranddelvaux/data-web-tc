@@ -239,9 +239,21 @@
     "tc_realtime": [
         {
             "bbox": [
+                48.0083,
+                -24.5583,
+                64.425,
+                -11.3583
+            ],
+            "id": "SH162024",
+            "jtwc": "tc_realtime/taostc_SH162024_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH162024_losses_adm.json",
+            "storm_name": "SIXTEEN"
+        },
+        {
+            "bbox": [
                 62.5417,
-                -31.4583,
-                105.9917,
+                -33.9083,
+                108.6583,
                 -11.825
             ],
             "id": "SH132024",
