@@ -1,18 +1,18 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH142024",
             "SH132024",
+            "SH142024",
             null
         ],
         "storms_shp": [
-            "SH142024",
             "SH132024",
+            "SH142024",
             null
         ],
         "windwater_shp": [
-            "SH142024",
             "SH132024",
+            "SH142024",
             null
         ]
     },
@@ -236,5 +236,18 @@
             "storm_name": "FOUR"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                62.5417,
+                -31.4583,
+                105.9917,
+                -11.825
+            ],
+            "id": "SH132024",
+            "jtwc": "tc_realtime/taostc_SH132024_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH132024_losses_adm.json",
+            "storm_name": "DJOUNGOU"
+        }
+    ]
 }
