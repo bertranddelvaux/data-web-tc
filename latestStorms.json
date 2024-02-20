@@ -234,14 +234,14 @@
         {
             "bbox": [
                 48.0083,
-                -26.0917,
-                63.225,
-                -10.425
+                -24.325,
+                63.3917,
+                -10.625
             ],
             "id": "SH162024",
             "jtwc": "tc_realtime/taostc_SH162024_JTWC_SLOSH.geojson",
             "losses": "tc_realtime/SH162024_losses_adm.json",
-            "storm_name": "SIXTEEN"
+            "storm_name": "ELEANOR"
         }
     ]
 }
