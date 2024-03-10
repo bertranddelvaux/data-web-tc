@@ -230,5 +230,18 @@
             "storm_name": "GOMBE"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                36.425,
+                -25.8583,
+                45.875,
+                -14.025
+            ],
+            "id": "SH902024",
+            "jtwc": "tc_realtime/taostc_SH902024_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH902024_losses_adm.json",
+            "storm_name": "INVEST"
+        }
+    ]
 }
