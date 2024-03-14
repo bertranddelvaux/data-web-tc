@@ -93,6 +93,19 @@
         },
         {
             "bbox": [
+                29.9875,
+                -34.0,
+                45.8875,
+                -15.1708
+            ],
+            "id": "SH172024",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH172024_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH172024_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
+            "storm_name": "FILIPO"
+        },
+        {
+            "bbox": [
                 62.9125,
                 -32.6875,
                 92.3708,
