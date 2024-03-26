@@ -246,15 +246,15 @@
     "tc_realtime": [
         {
             "bbox": [
-                49.425,
-                -15.9083,
-                55.575,
-                -9.3417
+                47.875,
+                -21.2917,
+                58.4917,
+                -9.6417
             ],
-            "id": "SH952024",
-            "jtwc": "tc_realtime/taostc_SH952024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH952024_losses_adm.json",
-            "storm_name": "INVEST"
+            "id": "SH202024",
+            "jtwc": "tc_realtime/taostc_SH202024_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH202024_losses_adm.json",
+            "storm_name": "TWENTY"
         }
     ]
 }

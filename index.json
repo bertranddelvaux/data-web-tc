@@ -246,7 +246,8 @@
     ],
     "tc_realtime": [
         "tc_realtime/SH952024_losses_adm.json",
-        "tc_realtime/taostc_SH952024_JTWC_SLOSH.geojson",
-        "tc_realtime/README.md"
+        "tc_realtime/taostc_SH202024_JTWC_SLOSH.geojson",
+        "tc_realtime/README.md",
+        "tc_realtime/SH202024_losses_adm.json"
     ]
 }
