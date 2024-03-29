@@ -243,18 +243,5 @@
             "storm_name": "EMNATI"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                45.6583,
-                -17.6083,
-                54.0583,
-                -10.025
-            ],
-            "id": "SH202024",
-            "jtwc": "tc_realtime/taostc_SH202024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH202024_losses_adm.json",
-            "storm_name": "GAMANE"
-        }
-    ]
+    "tc_realtime": []
 }
