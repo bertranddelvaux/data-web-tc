@@ -5809,6 +5809,22 @@
         "2024": [
             {
                 "bbox": [
+                    35.6792,
+                    -11.7875,
+                    49.2208,
+                    -4.7292
+                ],
+                "date": "2024-04-28",
+                "id": "SH232024",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH232024_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH232024_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH232024.geojson",
+                "storm_name": "HIDAYA",
+                "time": "12:00",
+                "year": "2024"
+            },
+            {
+                "bbox": [
                     49.2958,
                     -27.8458,
                     63.5125,
