@@ -4,8 +4,8 @@
             "SH242024"
         ],
         "storms_shp": [
-            "SH242024",
-            "SH932024"
+            "SH932024",
+            "SH242024"
         ],
         "windwater_shp": [
             "SH242024"
@@ -299,10 +299,21 @@
     "tc_realtime": [
         {
             "bbox": [
-                43.175,
+                69.4583,
+                -5.225,
+                76.9583,
+                1.475
+            ],
+            "id": "SH932024",
+            "jtwc": "tc_realtime/taostc_SH932024_JTWC_SLOSH.geojson",
+            "storm_name": "INVEST"
+        },
+        {
+            "bbox": [
+                40.175,
                 -12.3083,
                 56.2417,
-                -3.075
+                -1.2917
             ],
             "id": "SH242024",
             "jtwc": "tc_realtime/taostc_SH242024_JTWC_SLOSH.geojson",
