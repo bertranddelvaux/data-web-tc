@@ -1,16 +1,16 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH242024",
-            "SH252024"
+            "SH252024",
+            "SH242024"
         ],
         "storms_shp": [
-            "SH242024",
-            "SH252024"
+            "SH252024",
+            "SH242024"
         ],
         "windwater_shp": [
-            "SH242024",
-            "SH252024"
+            "SH252024",
+            "SH242024"
         ]
     },
     "mpres_data": [
@@ -301,14 +301,14 @@
     "tc_realtime": [
         {
             "bbox": [
-                69.4583,
-                -5.225,
-                76.9583,
+                69.3917,
+                -4.8917,
+                80.7583,
                 1.475
             ],
-            "id": "SH932024",
-            "jtwc": "tc_realtime/taostc_SH932024_JTWC_SLOSH.geojson",
-            "storm_name": "INVEST"
+            "id": "SH252024",
+            "jtwc": "tc_realtime/taostc_SH252024_JTWC_SLOSH.geojson",
+            "storm_name": "TWENTY-FI"
         },
         {
             "bbox": [
