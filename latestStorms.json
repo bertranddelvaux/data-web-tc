@@ -308,6 +308,7 @@
             ],
             "id": "SH252024",
             "jtwc": "tc_realtime/taostc_SH252024_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH252024_losses_adm.json",
             "storm_name": "TWENTY-FI"
         },
         {

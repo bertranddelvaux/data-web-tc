@@ -264,6 +264,7 @@
     "tc_realtime": [
         "tc_realtime/README.md",
         "tc_realtime/SH242024_losses_adm.json",
+        "tc_realtime/SH252024_losses_adm.json",
         "tc_realtime/taostc_SH252024_JTWC_SLOSH.geojson",
         "tc_realtime/taostc_SH242024_JTWC_SLOSH.geojson"
     ]
