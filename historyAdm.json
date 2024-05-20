@@ -8375,7 +8375,7 @@
                                 "2018": 3,
                                 "2020": 1,
                                 "2021": 1,
-                                "2024": 5
+                                "2024": 4
                             },
                             "counter_year": {
                                 "1980": 4,
@@ -8429,7 +8429,6 @@
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
@@ -8499,7 +8498,7 @@
                         "2018": 3,
                         "2020": 2,
                         "2021": 2,
-                        "2024": 7
+                        "2024": 6
                     },
                     "counter_year": {
                         "1980": 4,
@@ -8565,7 +8564,6 @@
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                         "jtwc_history/2021/SH072021_shp.geojson",
                         "jtwc_history/2021/SH122021_shp.geojson",
@@ -10052,7 +10050,7 @@
                                 "2017": 1,
                                 "2018": 1,
                                 "2021": 1,
-                                "2024": 3
+                                "2024": 2
                             },
                             "counter_year": {
                                 "1981": 3,
@@ -10072,7 +10070,7 @@
                                 "2017": 1,
                                 "2018": 7,
                                 "2021": 4,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1981": 3190,
@@ -10092,12 +10090,11 @@
                                 "2017": 366919,
                                 "2018": 18035,
                                 "2021": 0,
-                                "2024": 3808
+                                "2024": 3805
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2018/SH142018_shp.geojson",
                                 "jtwc_history/2017/SH092017_shp.geojson",
@@ -10146,7 +10143,7 @@
                                 "2017": 1,
                                 "2018": 3,
                                 "2021": 1,
-                                "2024": 3
+                                "2024": 2
                             },
                             "counter_year": {
                                 "1980": 4,
@@ -10167,7 +10164,7 @@
                                 "2017": 1,
                                 "2018": 7,
                                 "2021": 4,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1980": 0,
@@ -10188,12 +10185,11 @@
                                 "2017": 1204982,
                                 "2018": 88122,
                                 "2021": 0,
-                                "2024": 207
+                                "2024": 206
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2018/SH032018_shp.geojson",
                                 "jtwc_history/2018/SH112018_shp.geojson",
@@ -10251,7 +10247,7 @@
                                 "2018": 3,
                                 "2020": 1,
                                 "2021": 1,
-                                "2024": 3
+                                "2024": 2
                             },
                             "counter_year": {
                                 "1980": 4,
@@ -10276,7 +10272,7 @@
                                 "2018": 7,
                                 "2020": 6,
                                 "2021": 4,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1980": 115,
@@ -10301,12 +10297,11 @@
                                 "2018": 627755,
                                 "2020": 35,
                                 "2021": 371,
-                                "2024": 393082
+                                "2024": 367788
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
                                 "jtwc_history/2018/SH032018_shp.geojson",
@@ -10370,7 +10365,7 @@
                                 "2018": 3,
                                 "2020": 1,
                                 "2021": 1,
-                                "2024": 4
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 4,
@@ -10420,12 +10415,11 @@
                                 "2018": 1924086,
                                 "2020": 426,
                                 "2021": 13595,
-                                "2024": 171438
+                                "2024": 171027
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
@@ -10717,7 +10711,7 @@
                         "2018": 3,
                         "2020": 1,
                         "2021": 1,
-                        "2024": 5
+                        "2024": 4
                     },
                     "counter_year": {
                         "1980": 4,
@@ -10769,13 +10763,12 @@
                         "2018": 6624217,
                         "2020": 462,
                         "2021": 50627,
-                        "2024": 570789
+                        "2024": 545080
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122022.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                         "jtwc_history/2021/SH122021_shp.geojson",
                         "jtwc_history/2020/SH222020_shp.geojson",
@@ -14260,7 +14253,7 @@
                                 "2018": 3,
                                 "2020": 1,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1980": 4,
@@ -14284,7 +14277,7 @@
                                 "2018": 7,
                                 "2020": 6,
                                 "2021": 4,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1980": 18,
@@ -14308,11 +14301,10 @@
                                 "2018": 196277,
                                 "2020": 534,
                                 "2021": 341,
-                                "2024": 1014527
+                                "2024": 1007911
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
                                 "jtwc_history/2018/SH032018_shp.geojson",
@@ -14371,7 +14363,7 @@
                                 "2018": 3,
                                 "2020": 1,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1980": 4,
@@ -14392,7 +14384,7 @@
                                 "2018": 7,
                                 "2020": 6,
                                 "2021": 4,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1980": 0,
@@ -14413,11 +14405,10 @@
                                 "2018": 93362,
                                 "2020": 1305,
                                 "2021": 13,
-                                "2024": 1160320
+                                "2024": 1141350
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
                                 "jtwc_history/2018/SH032018_shp.geojson",
@@ -14470,7 +14461,7 @@
                                 "2018": 1,
                                 "2019": 1,
                                 "2020": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1981": 3,
@@ -14489,7 +14480,7 @@
                                 "2018": 7,
                                 "2019": 5,
                                 "2020": 6,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1981": 8288,
@@ -14508,11 +14499,10 @@
                                 "2018": 11687,
                                 "2019": 0,
                                 "2020": 0,
-                                "2024": 18376031
+                                "2024": 501309
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
                                 "jtwc_history/2019/SH242019_shp.geojson",
                                 "jtwc_history/2018/SH142018_shp.geojson",
@@ -14566,7 +14556,7 @@
                         "2019": 1,
                         "2020": 1,
                         "2021": 1,
-                        "2024": 4
+                        "2024": 3
                     },
                     "counter_year": {
                         "1980": 4,
@@ -14593,7 +14583,7 @@
                         "2019": 5,
                         "2020": 6,
                         "2021": 4,
-                        "2024": 15
+                        "2024": 14
                     },
                     "loss": {
                         "1980": 15723,
@@ -14620,13 +14610,12 @@
                         "2019": 0,
                         "2020": 260211,
                         "2021": 53723,
-                        "2024": 21403931
+                        "2024": 3503623
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                         "jtwc_history/2021/SH122021_shp.geojson",
                         "jtwc_history/2020/SH222020_shp.geojson",
                         "jtwc_history/2019/SH242019_shp.geojson",
@@ -14705,7 +14694,7 @@
                                 "2019": 1,
                                 "2020": 1,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1980": 4,
@@ -14730,7 +14719,7 @@
                                 "2019": 5,
                                 "2020": 6,
                                 "2021": 4,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1980": 0,
@@ -14755,11 +14744,10 @@
                                 "2019": 0,
                                 "2020": 0,
                                 "2021": 0,
-                                "2024": 16214
+                                "2024": 7010
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
                                 "jtwc_history/2019/SH242019_shp.geojson",
@@ -14818,7 +14806,7 @@
                                 "2019": 1,
                                 "2020": 1,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1980": 4,
@@ -14842,7 +14830,7 @@
                                 "2019": 5,
                                 "2020": 6,
                                 "2021": 4,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1980": 0,
@@ -14866,11 +14854,10 @@
                                 "2019": 0,
                                 "2020": 0,
                                 "2021": 0,
-                                "2024": 1087494
+                                "2024": 98833
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2021/SH122021_shp.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
                                 "jtwc_history/2019/SH242019_shp.geojson",
@@ -14920,7 +14907,7 @@
                                 "2017": 1,
                                 "2018": 1,
                                 "2019": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1981": 3,
@@ -14936,7 +14923,7 @@
                                 "2017": 1,
                                 "2018": 7,
                                 "2019": 5,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1981": 47,
@@ -14952,11 +14939,10 @@
                                 "2017": 2346,
                                 "2018": 0,
                                 "2019": 73,
-                                "2024": 277
+                                "2024": 0
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2019/SH242019_shp.geojson",
                                 "jtwc_history/2018/SH142018_shp.geojson",
                                 "jtwc_history/2017/SH092017_shp.geojson",
@@ -14995,7 +14981,7 @@
                                 "2017": 1,
                                 "2018": 1,
                                 "2019": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1981": 3,
@@ -15014,7 +15000,7 @@
                                 "2017": 1,
                                 "2018": 7,
                                 "2019": 5,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1981": 1274,
@@ -15033,11 +15019,10 @@
                                 "2017": 47817,
                                 "2018": 22,
                                 "2019": 682,
-                                "2024": 311394
+                                "2024": 971
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2019/SH242019_shp.geojson",
                                 "jtwc_history/2018/SH142018_shp.geojson",
                                 "jtwc_history/2017/SH092017_shp.geojson",
@@ -15079,7 +15064,7 @@
                                 "2017": 1,
                                 "2018": 1,
                                 "2019": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1981": 3,
@@ -15097,7 +15082,7 @@
                                 "2017": 1,
                                 "2018": 7,
                                 "2019": 5,
-                                "2024": 15
+                                "2024": 14
                             },
                             "loss": {
                                 "1981": 16521,
@@ -15115,11 +15100,10 @@
                                 "2017": 34319,
                                 "2018": 202,
                                 "2019": 1,
-                                "2024": 115
+                                "2024": 38
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                                 "jtwc_history/2019/SH242019_shp.geojson",
                                 "jtwc_history/2018/SH142018_shp.geojson",
                                 "jtwc_history/2017/SH092017_shp.geojson",
@@ -15168,7 +15152,7 @@
                         "2019": 1,
                         "2020": 1,
                         "2021": 1,
-                        "2024": 2
+                        "2024": 1
                     },
                     "counter_year": {
                         "1980": 4,
@@ -15195,7 +15179,7 @@
                         "2019": 5,
                         "2020": 6,
                         "2021": 4,
-                        "2024": 15
+                        "2024": 14
                     },
                     "loss": {
                         "1980": 0,
@@ -15222,11 +15206,10 @@
                         "2019": 757,
                         "2020": 0,
                         "2021": 0,
-                        "2024": 1415492
+                        "2024": 106851
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
                         "jtwc_history/2021/SH122021_shp.geojson",
                         "jtwc_history/2020/SH222020_shp.geojson",
                         "jtwc_history/2019/SH242019_shp.geojson",
@@ -15260,6 +15243,124 @@
                         "jtwc_history/1988/SH081988_shp.geojson",
                         "jtwc_history/1981/SH171981_shp.geojson",
                         "jtwc_history/1980/SH081980_shp.geojson"
+                    ]
+                },
+                {
+                    "adm1_code": "MDG.2_1",
+                    "adm1_name": "Antsiranana",
+                    "adm2": [
+                        {
+                            "adm2_code": "MDG.2.1_1",
+                            "adm2_name": "Diana",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 15
+                            },
+                            "loss": {
+                                "2024": 2058830
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "MDG.2.2_1",
+                            "adm2_name": "Sava",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 15
+                            },
+                            "loss": {
+                                "2024": 17036696
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 1
+                    },
+                    "counter_year": {
+                        "2024": 15
+                    },
+                    "loss": {
+                        "2024": 19095526
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson"
+                    ]
+                },
+                {
+                    "adm1_code": "MDG.4_1",
+                    "adm1_name": "Mahajanga",
+                    "adm2": [
+                        {
+                            "adm2_code": "MDG.4.4_1",
+                            "adm2_name": "Sofia",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 15
+                            },
+                            "loss": {
+                                "2024": 22638
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 1
+                    },
+                    "counter_year": {
+                        "2024": 15
+                    },
+                    "loss": {
+                        "2024": 22638
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson"
+                    ]
+                },
+                {
+                    "adm1_code": "MDG.5_1",
+                    "adm1_name": "Toamasina",
+                    "adm2": [
+                        {
+                            "adm2_code": "MDG.5.2_1",
+                            "adm2_name": "Analanjirofo",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 15
+                            },
+                            "loss": {
+                                "2024": 1
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 1
+                    },
+                    "counter_year": {
+                        "2024": 15
+                    },
+                    "loss": {
+                        "2024": 1
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson"
                     ]
                 }
             ],
@@ -15381,7 +15482,7 @@
                 "2019": 719860,
                 "2020": 9284874,
                 "2021": 279015,
-                "2024": 2606122664
+                "2024": 2606006171
             },
             "storms": [
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH242022.geojson",
@@ -16491,7 +16592,7 @@
                                 "2012": 724,
                                 "2017": 667922,
                                 "2021": 18,
-                                "2024": 387
+                                "2024": 392
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -16561,7 +16662,7 @@
                                 "2007": 3421,
                                 "2017": 285664,
                                 "2021": 0,
-                                "2024": 2532
+                                "2024": 2531
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -16585,7 +16686,7 @@
                                 "2012": 1,
                                 "2017": 1,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1991": 6,
@@ -16595,7 +16696,7 @@
                                 "2012": 1,
                                 "2017": 4,
                                 "2021": 7,
-                                "2024": 13
+                                "2024": 5
                             },
                             "loss": {
                                 "1991": 0,
@@ -16609,7 +16710,6 @@
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                                 "jtwc_history/2021/SH212021_shp.geojson",
                                 "jtwc_history/2017/SH052017_shp.geojson",
                                 "jtwc_history/2012/SH142012_shp.geojson",
@@ -16682,7 +16782,7 @@
                                 "2012": 6668,
                                 "2017": 578018,
                                 "2021": 919,
-                                "2024": 706
+                                "2024": 708
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -16765,7 +16865,7 @@
                                 "2012": 5541,
                                 "2017": 22570,
                                 "2021": 30,
-                                "2024": 39
+                                "2024": 41
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -16780,7 +16880,7 @@
                             ]
                         },
                         {
-                            "adm2_code": 21849,
+                            "adm2_code": "MOZ.2.1_1",
                             "adm2_name": "Bilene",
                             "counter_adm2": {
                                 "1991": 1,
@@ -16816,6 +16916,38 @@
                             ]
                         },
                         {
+                            "adm2_code": "MOZ.2.5_1",
+                            "adm2_name": "Ch\u00f3kw\u00e8",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 13
+                            },
+                            "loss": {
+                                "2024": 0
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "MOZ.2.6_1",
+                            "adm2_name": "Guij\u00e1",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 13
+                            },
+                            "loss": {
+                                "2024": 0
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson"
+                            ]
+                        },
+                        {
                             "adm2_code": 21853,
                             "adm2_name": "Chokwe",
                             "counter_adm2": {
@@ -16823,27 +16955,23 @@
                                 "2001": 1,
                                 "2012": 1,
                                 "2017": 1,
-                                "2021": 1,
-                                "2024": 1
+                                "2021": 1
                             },
                             "counter_year": {
                                 "1991": 6,
                                 "2001": 2,
                                 "2012": 1,
                                 "2017": 4,
-                                "2021": 7,
-                                "2024": 13
+                                "2021": 7
                             },
                             "loss": {
                                 "1991": 19,
                                 "2001": 261,
                                 "2012": 189,
                                 "2017": 24519,
-                                "2021": 0,
-                                "2024": 0
+                                "2021": 0
                             },
                             "storms": [
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                                 "jtwc_history/2021/SH212021_shp.geojson",
                                 "jtwc_history/2017/SH052017_shp.geojson",
                                 "jtwc_history/2012/SH142012_shp.geojson",
@@ -16860,8 +16988,7 @@
                                 "2001": 1,
                                 "2012": 1,
                                 "2017": 1,
-                                "2021": 1,
-                                "2024": 1
+                                "2021": 1
                             },
                             "counter_year": {
                                 "1991": 6,
@@ -16869,8 +16996,7 @@
                                 "2001": 2,
                                 "2012": 1,
                                 "2017": 4,
-                                "2021": 7,
-                                "2024": 13
+                                "2021": 7
                             },
                             "loss": {
                                 "1991": 213,
@@ -16878,11 +17004,9 @@
                                 "2001": 1682,
                                 "2012": 858,
                                 "2017": 2582,
-                                "2021": 2,
-                                "2024": 2
+                                "2021": 2
                             },
                             "storms": [
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                                 "jtwc_history/2021/SH212021_shp.geojson",
                                 "jtwc_history/2017/SH052017_shp.geojson",
                                 "jtwc_history/2012/SH142012_shp.geojson",
@@ -16942,7 +17066,7 @@
                         "2017": 1742804,
                         "2019": 0,
                         "2021": 969,
-                        "2024": 3732
+                        "2024": 3738
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -16977,7 +17101,7 @@
                                 "2017": 1,
                                 "2019": 1,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1988": 1,
@@ -16990,7 +17114,7 @@
                                 "2017": 4,
                                 "2019": 6,
                                 "2021": 7,
-                                "2024": 13
+                                "2024": 5
                             },
                             "loss": {
                                 "1988": 0,
@@ -17003,11 +17127,10 @@
                                 "2017": 2848400,
                                 "2019": 12,
                                 "2021": 25552,
-                                "2024": 18575
+                                "2024": 18537
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                                 "jtwc_history/2021/SH212021_shp.geojson",
                                 "jtwc_history/2019/SH102019_shp.geojson",
                                 "jtwc_history/2017/SH052017_shp.geojson",
@@ -17058,7 +17181,7 @@
                                 "2017": 1947473,
                                 "2019": 0,
                                 "2021": 712,
-                                "2024": 202081
+                                "2024": 201175
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17122,7 +17245,7 @@
                                 "2017": 0,
                                 "2019": 39849,
                                 "2021": 0,
-                                "2024": 30319
+                                "2024": 30647
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17181,7 +17304,7 @@
                                 "2017": 17254423,
                                 "2019": 11,
                                 "2021": 63650,
-                                "2024": 234791
+                                "2024": 235007
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17238,7 +17361,7 @@
                                 "2017": 1018995,
                                 "2019": 0,
                                 "2021": 17984,
-                                "2024": 1785
+                                "2024": 1791
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17293,7 +17416,7 @@
                                 "2017": 181,
                                 "2019": 5574,
                                 "2021": 0,
-                                "2024": 125570
+                                "2024": 127582
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17350,7 +17473,7 @@
                                 "2017": 5685011,
                                 "2019": 18,
                                 "2021": 70362,
-                                "2024": 25000
+                                "2024": 25037
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17396,7 +17519,7 @@
                                 "2017": 12789,
                                 "2019": 215,
                                 "2021": 0,
-                                "2024": 27927
+                                "2024": 27869
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17449,7 +17572,7 @@
                                 "2017": 7832748,
                                 "2019": 39,
                                 "2021": 26633,
-                                "2024": 1852302
+                                "2024": 1853429
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17480,7 +17603,7 @@
                                 "2017": 1,
                                 "2019": 1,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1991": 6,
@@ -17492,7 +17615,7 @@
                                 "2017": 4,
                                 "2019": 6,
                                 "2021": 7,
-                                "2024": 13
+                                "2024": 5
                             },
                             "loss": {
                                 "1991": 5613,
@@ -17504,11 +17627,10 @@
                                 "2017": 4696968,
                                 "2019": 2,
                                 "2021": 11838,
-                                "2024": 38626
+                                "2024": 38401
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                                 "jtwc_history/2021/SH212021_shp.geojson",
                                 "jtwc_history/2019/SH102019_shp.geojson",
                                 "jtwc_history/2017/SH052017_shp.geojson",
@@ -17555,7 +17677,7 @@
                                 "2017": 12093851,
                                 "2019": 17,
                                 "2021": 37005,
-                                "2024": 680701
+                                "2024": 681210
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17608,7 +17730,7 @@
                                 "2017": 2379768,
                                 "2019": 0,
                                 "2021": 3125,
-                                "2024": 13989
+                                "2024": 14053
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17637,7 +17759,7 @@
                                 "2017": 1,
                                 "2019": 2,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1988": 6,
@@ -17649,7 +17771,7 @@
                                 "2017": 4,
                                 "2019": 6,
                                 "2021": 7,
-                                "2024": 13
+                                "2024": 5
                             },
                             "loss": {
                                 "1988": 2,
@@ -17661,11 +17783,10 @@
                                 "2017": 183755,
                                 "2019": 1228,
                                 "2021": 814,
-                                "2024": 419382
+                                "2024": 202243
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                                 "jtwc_history/2021/SH212021_shp.geojson",
                                 "jtwc_history/2019/SH182019_shp.geojson",
                                 "jtwc_history/2019/SH102019_shp.geojson",
@@ -17715,7 +17836,7 @@
                                 "2017": 507200,
                                 "2019": 0,
                                 "2021": 17779,
-                                "2024": 446
+                                "2024": 445
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -17730,6 +17851,22 @@
                                 "jtwc_history/2001/SH212001_shp.geojson",
                                 "jtwc_history/1997/SH201997_shp.geojson",
                                 "jtwc_history/1991/SH121991_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "MOZ.3.11_1",
+                            "adm2_name": "Vilanculos",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 13
+                            },
+                            "loss": {
+                                "2024": 214257
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson"
                             ]
                         }
                     ],
@@ -17782,7 +17919,7 @@
                         "2017": 56461564,
                         "2019": 46964,
                         "2021": 275454,
-                        "2024": 3671492
+                        "2024": 3671683
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -18102,7 +18239,7 @@
                             ]
                         },
                         {
-                            "adm2_code": 21875,
+                            "adm2_code": "MOZ.4.4_1",
                             "adm2_name": "Machaze",
                             "counter_adm2": {
                                 "1997": 1,
@@ -18126,7 +18263,7 @@
                                 "2007": 1053118,
                                 "2017": 0,
                                 "2019": 2495,
-                                "2024": 492
+                                "2024": 489
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
@@ -18138,7 +18275,7 @@
                             ]
                         },
                         {
-                            "adm2_code": 21878,
+                            "adm2_code": "MOZ.4.7_1",
                             "adm2_name": "Mossurize",
                             "counter_adm2": {
                                 "1997": 1,
@@ -18201,7 +18338,7 @@
                         "2017": 0,
                         "2019": 381935,
                         "2021": 97,
-                        "2024": 618
+                        "2024": 615
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -18470,7 +18607,7 @@
                                 "2012": 242,
                                 "2019": 42166739,
                                 "2021": 63174,
-                                "2024": 1159
+                                "2024": 1160
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -18622,7 +18759,7 @@
                                 "2012": 1,
                                 "2019": 2,
                                 "2021": 1,
-                                "2024": 2
+                                "2024": 1
                             },
                             "counter_year": {
                                 "1986": 4,
@@ -18635,7 +18772,7 @@
                                 "2012": 6,
                                 "2019": 6,
                                 "2021": 1,
-                                "2024": 13
+                                "2024": 5
                             },
                             "loss": {
                                 "1986": 204783,
@@ -18648,11 +18785,10 @@
                                 "2012": 49140,
                                 "2019": 202546901,
                                 "2021": 831739,
-                                "2024": 71805
+                                "2024": 71051
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                                 "jtwc_history/2021/SH072021_shp.geojson",
                                 "jtwc_history/2019/SH182019_shp.geojson",
                                 "jtwc_history/2019/SH102019_shp.geojson",
@@ -18706,7 +18842,7 @@
                                 "2012": 0,
                                 "2019": 59203924,
                                 "2021": 281366,
-                                "2024": 191
+                                "2024": 931
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -18806,7 +18942,7 @@
                                 "2012": 10,
                                 "2019": 300445,
                                 "2021": 130,
-                                "2024": 38025
+                                "2024": 37836
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -19012,7 +19148,7 @@
                             ]
                         },
                         {
-                            "adm2_code": 21926,
+                            "adm2_code": "MOZ.9.5_1",
                             "adm2_name": "Chibabava",
                             "counter_adm2": {
                                 "1988": 1,
@@ -19039,7 +19175,7 @@
                                 "2007": 4513831,
                                 "2019": 357260,
                                 "2021": 19,
-                                "2024": 1056
+                                "2024": 1064
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
@@ -19089,7 +19225,7 @@
                         "2012": 68215,
                         "2019": 327118775,
                         "2021": 1229144,
-                        "2024": 832080
+                        "2024": 831886
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -20566,11 +20702,11 @@
                     ]
                 },
                 {
-                    "adm1_code": 2116,
+                    "adm1_code": "MOZ.6_1",
                     "adm1_name": "Maputo",
                     "adm2": [
                         {
-                            "adm2_code": 21883,
+                            "adm2_code": "MOZ.6.2_1",
                             "adm2_name": "Magude",
                             "counter_adm2": {
                                 "1991": 1,
@@ -20602,39 +20738,23 @@
                             ]
                         },
                         {
-                            "adm2_code": 21884,
-                            "adm2_name": "Manhica",
+                            "adm2_code": "MOZ.6.3_1",
+                            "adm2_name": "Manhi\u00e7a",
                             "counter_adm2": {
-                                "1991": 1,
-                                "2001": 1,
-                                "2012": 1,
-                                "2017": 1,
                                 "2024": 1
                             },
                             "counter_year": {
-                                "1991": 6,
-                                "2001": 2,
-                                "2012": 1,
-                                "2017": 4,
                                 "2024": 13
                             },
                             "loss": {
-                                "1991": 9,
-                                "2001": 3657,
-                                "2012": 3458,
-                                "2017": 422,
                                 "2024": 7
                             },
                             "storms": [
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
-                                "jtwc_history/2017/SH052017_shp.geojson",
-                                "jtwc_history/2012/SH142012_shp.geojson",
-                                "jtwc_history/2001/SH212001_shp.geojson",
-                                "jtwc_history/1991/SH121991_shp.geojson"
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson"
                             ]
                         },
                         {
-                            "adm2_code": 21885,
+                            "adm2_code": "MOZ.6.4_1",
                             "adm2_name": "Marracuene",
                             "counter_adm2": {
                                 "1991": 1,
@@ -20666,39 +20786,23 @@
                             ]
                         },
                         {
-                            "adm2_code": 21886,
-                            "adm2_name": "Matutuine",
+                            "adm2_code": "MOZ.6.5_1",
+                            "adm2_name": "Matutu\u00edne",
                             "counter_adm2": {
-                                "1991": 1,
-                                "2001": 1,
-                                "2012": 1,
-                                "2017": 1,
                                 "2024": 1
                             },
                             "counter_year": {
-                                "1991": 6,
-                                "2001": 2,
-                                "2012": 1,
-                                "2017": 4,
                                 "2024": 13
                             },
                             "loss": {
-                                "1991": 0,
-                                "2001": 11793,
-                                "2012": 3559,
-                                "2017": 0,
                                 "2024": 0
                             },
                             "storms": [
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
-                                "jtwc_history/2017/SH052017_shp.geojson",
-                                "jtwc_history/2012/SH142012_shp.geojson",
-                                "jtwc_history/2001/SH212001_shp.geojson",
-                                "jtwc_history/1991/SH121991_shp.geojson"
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson"
                             ]
                         },
                         {
-                            "adm2_code": 21887,
+                            "adm2_code": "MOZ.6.6_1",
                             "adm2_name": "Moamba",
                             "counter_adm2": {
                                 "2001": 1,
@@ -20723,6 +20827,62 @@
                                 "jtwc_history/2017/SH052017_shp.geojson",
                                 "jtwc_history/2012/SH142012_shp.geojson",
                                 "jtwc_history/2001/SH212001_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": 21884,
+                            "adm2_name": "Manhica",
+                            "counter_adm2": {
+                                "1991": 1,
+                                "2001": 1,
+                                "2012": 1,
+                                "2017": 1
+                            },
+                            "counter_year": {
+                                "1991": 6,
+                                "2001": 2,
+                                "2012": 1,
+                                "2017": 4
+                            },
+                            "loss": {
+                                "1991": 9,
+                                "2001": 3657,
+                                "2012": 3458,
+                                "2017": 422
+                            },
+                            "storms": [
+                                "jtwc_history/2017/SH052017_shp.geojson",
+                                "jtwc_history/2012/SH142012_shp.geojson",
+                                "jtwc_history/2001/SH212001_shp.geojson",
+                                "jtwc_history/1991/SH121991_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": 21886,
+                            "adm2_name": "Matutuine",
+                            "counter_adm2": {
+                                "1991": 1,
+                                "2001": 1,
+                                "2012": 1,
+                                "2017": 1
+                            },
+                            "counter_year": {
+                                "1991": 6,
+                                "2001": 2,
+                                "2012": 1,
+                                "2017": 4
+                            },
+                            "loss": {
+                                "1991": 0,
+                                "2001": 11793,
+                                "2012": 3559,
+                                "2017": 0
+                            },
+                            "storms": [
+                                "jtwc_history/2017/SH052017_shp.geojson",
+                                "jtwc_history/2012/SH142012_shp.geojson",
+                                "jtwc_history/2001/SH212001_shp.geojson",
+                                "jtwc_history/1991/SH121991_shp.geojson"
                             ]
                         },
                         {
@@ -20816,6 +20976,40 @@
                     ]
                 },
                 {
+                    "adm1_code": "MOZ.5_1",
+                    "adm1_name": "Maputo City",
+                    "adm2": [
+                        {
+                            "adm2_code": "MOZ.5.2_1",
+                            "adm2_name": "Maputo",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 13
+                            },
+                            "loss": {
+                                "2024": 1
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 1
+                    },
+                    "counter_year": {
+                        "2024": 13
+                    },
+                    "loss": {
+                        "2024": 1
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson"
+                    ]
+                },
+                {
                     "adm1_code": 2117,
                     "adm1_name": "Maputo (city)",
                     "adm2": [
@@ -20826,57 +21020,21 @@
                                 "1991": 1,
                                 "2001": 1,
                                 "2012": 1,
-                                "2017": 1,
-                                "2024": 1
+                                "2017": 1
                             },
                             "counter_year": {
                                 "1991": 6,
                                 "2001": 2,
                                 "2012": 1,
-                                "2017": 4,
-                                "2024": 13
+                                "2017": 4
                             },
                             "loss": {
                                 "1991": 1,
                                 "2001": 3639,
                                 "2012": 2441,
-                                "2017": 626,
-                                "2024": 1
+                                "2017": 626
                             },
                             "storms": [
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
-                                "jtwc_history/2017/SH052017_shp.geojson",
-                                "jtwc_history/2012/SH142012_shp.geojson",
-                                "jtwc_history/2001/SH212001_shp.geojson",
-                                "jtwc_history/1991/SH121991_shp.geojson"
-                            ]
-                        },
-                        {
-                            "adm2_code": 65257,
-                            "adm2_name": "Distrito Municipal 4",
-                            "counter_adm2": {
-                                "1991": 1,
-                                "2001": 1,
-                                "2012": 1,
-                                "2017": 1,
-                                "2024": 1
-                            },
-                            "counter_year": {
-                                "1991": 6,
-                                "2001": 2,
-                                "2012": 1,
-                                "2017": 4,
-                                "2024": 13
-                            },
-                            "loss": {
-                                "1991": 0,
-                                "2001": 336,
-                                "2012": 484,
-                                "2017": 52,
-                                "2024": 0
-                            },
-                            "storms": [
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                                 "jtwc_history/2017/SH052017_shp.geojson",
                                 "jtwc_history/2012/SH142012_shp.geojson",
                                 "jtwc_history/2001/SH212001_shp.geojson",
@@ -20936,6 +21094,34 @@
                             ]
                         },
                         {
+                            "adm2_code": 65257,
+                            "adm2_name": "Distrito Municipal 4",
+                            "counter_adm2": {
+                                "1991": 1,
+                                "2001": 1,
+                                "2012": 1,
+                                "2017": 1
+                            },
+                            "counter_year": {
+                                "1991": 6,
+                                "2001": 2,
+                                "2012": 1,
+                                "2017": 4
+                            },
+                            "loss": {
+                                "1991": 0,
+                                "2001": 336,
+                                "2012": 484,
+                                "2017": 52
+                            },
+                            "storms": [
+                                "jtwc_history/2017/SH052017_shp.geojson",
+                                "jtwc_history/2012/SH142012_shp.geojson",
+                                "jtwc_history/2001/SH212001_shp.geojson",
+                                "jtwc_history/1991/SH121991_shp.geojson"
+                            ]
+                        },
+                        {
                             "adm2_code": 65258,
                             "adm2_name": "Distrito Municipal 5",
                             "counter_adm2": {
@@ -20984,25 +21170,21 @@
                         "1991": 1,
                         "2001": 1,
                         "2012": 1,
-                        "2017": 1,
-                        "2024": 1
+                        "2017": 1
                     },
                     "counter_year": {
                         "1991": 6,
                         "2001": 2,
                         "2012": 1,
-                        "2017": 4,
-                        "2024": 13
+                        "2017": 4
                     },
                     "loss": {
                         "1991": 1,
                         "2001": 5787,
                         "2012": 4314,
-                        "2017": 856,
-                        "2024": 1
+                        "2017": 856
                     },
                     "storms": [
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
                         "jtwc_history/2017/SH052017_shp.geojson",
                         "jtwc_history/2012/SH142012_shp.geojson",
                         "jtwc_history/2001/SH212001_shp.geojson",
@@ -21173,7 +21355,7 @@
                                 "2018": 2,
                                 "2019": 3,
                                 "2020": 2,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -21247,14 +21429,11 @@
                                 "2018": 8845732,
                                 "2019": 758622630,
                                 "2020": 44404048,
-                                "2024": 316231
+                                "2024": 279795
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2020/SH102020_shp.geojson",
                                 "jtwc_history/2020/SH222020_shp.geojson",
@@ -21372,7 +21551,7 @@
                         "2018": 2,
                         "2019": 3,
                         "2020": 2,
-                        "2024": 6
+                        "2024": 3
                     },
                     "counter_year": {
                         "1980": 9,
@@ -21446,14 +21625,11 @@
                         "2018": 8845732,
                         "2019": 758622630,
                         "2020": 44404048,
-                        "2024": 316231
+                        "2024": 279795
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                         "jtwc_history/2020/SH102020_shp.geojson",
                         "jtwc_history/2020/SH222020_shp.geojson",
@@ -21569,7 +21745,7 @@
                                 "2015": 1,
                                 "2017": 1,
                                 "2018": 3,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -21627,14 +21803,11 @@
                                 "2015": 229,
                                 "2017": 699237,
                                 "2018": 7826951,
-                                "2024": 10719639
+                                "2024": 8735589
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -21681,6 +21854,24 @@
                                 "jtwc_history/1980/SH121980_shp.geojson",
                                 "jtwc_history/1980/SH021980_shp.geojson",
                                 "jtwc_history/1980/SH191980_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 2046453
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                             ]
                         }
                     ],
@@ -21769,7 +21960,7 @@
                         "2015": 229,
                         "2017": 699237,
                         "2018": 7826951,
-                        "2024": 10719639
+                        "2024": 10782042
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -21858,7 +22049,7 @@
                                 "2015": 1,
                                 "2017": 1,
                                 "2018": 2,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -21914,14 +22105,11 @@
                                 "2015": 5350,
                                 "2017": 110,
                                 "2018": 6296605,
-                                "2024": 36809543
+                                "2024": 36115072
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -21966,6 +22154,24 @@
                                 "jtwc_history/1980/SH121980_shp.geojson",
                                 "jtwc_history/1980/SH021980_shp.geojson",
                                 "jtwc_history/1980/SH191980_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 635118
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                             ]
                         }
                     ],
@@ -22051,7 +22257,7 @@
                         "2015": 5350,
                         "2017": 110,
                         "2018": 6296605,
-                        "2024": 36809543
+                        "2024": 36750190
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -22138,7 +22344,7 @@
                                 "2015": 1,
                                 "2017": 1,
                                 "2018": 3,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -22194,14 +22400,11 @@
                                 "2015": 1473,
                                 "2017": 10,
                                 "2018": 10306382,
-                                "2024": 22657386
+                                "2024": 21486432
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -22248,6 +22451,24 @@
                                 "jtwc_history/1980/SH121980_shp.geojson",
                                 "jtwc_history/1980/SH021980_shp.geojson",
                                 "jtwc_history/1980/SH191980_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 1130690
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                             ]
                         }
                     ],
@@ -22333,7 +22554,7 @@
                         "2015": 1473,
                         "2017": 10,
                         "2018": 10306382,
-                        "2024": 22657386
+                        "2024": 22617122
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -22422,7 +22643,7 @@
                                 "2015": 1,
                                 "2017": 1,
                                 "2018": 2,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -22478,14 +22699,11 @@
                                 "2015": 1670,
                                 "2017": 44,
                                 "2018": 2647805,
-                                "2024": 16368676
+                                "2024": 15329856
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -22529,6 +22747,24 @@
                                 "jtwc_history/1980/SH121980_shp.geojson",
                                 "jtwc_history/1980/SH021980_shp.geojson",
                                 "jtwc_history/1980/SH191980_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 903307
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                             ]
                         }
                     ],
@@ -22614,7 +22850,7 @@
                         "2015": 1670,
                         "2017": 44,
                         "2018": 2647805,
-                        "2024": 16368676
+                        "2024": 16233163
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -22701,7 +22937,7 @@
                                 "2015": 1,
                                 "2017": 1,
                                 "2018": 2,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -22759,14 +22995,11 @@
                                 "2015": 1958,
                                 "2017": 154,
                                 "2018": 5507913,
-                                "2024": 34797369
+                                "2024": 32819278
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -22811,6 +23044,24 @@
                                 "jtwc_history/1980/SH121980_shp.geojson",
                                 "jtwc_history/1980/SH021980_shp.geojson",
                                 "jtwc_history/1980/SH191980_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 1401615
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                             ]
                         }
                     ],
@@ -22899,7 +23150,7 @@
                         "2015": 1958,
                         "2017": 154,
                         "2018": 5507913,
-                        "2024": 34797369
+                        "2024": 34220893
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -22987,7 +23238,7 @@
                                 "2015": 1,
                                 "2017": 1,
                                 "2018": 3,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -23045,14 +23296,11 @@
                                 "2015": 72,
                                 "2017": 929,
                                 "2018": 1688228,
-                                "2024": 11251390
+                                "2024": 10173823
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -23099,6 +23347,24 @@
                                 "jtwc_history/1980/SH121980_shp.geojson",
                                 "jtwc_history/1980/SH021980_shp.geojson",
                                 "jtwc_history/1980/SH191980_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 1094156
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                             ]
                         }
                     ],
@@ -23187,7 +23453,7 @@
                         "2015": 72,
                         "2017": 929,
                         "2018": 1688228,
-                        "2024": 11251390
+                        "2024": 11267979
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -23277,7 +23543,7 @@
                                 "2015": 1,
                                 "2017": 1,
                                 "2018": 2,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -23335,14 +23601,11 @@
                                 "2015": 22,
                                 "2017": 7,
                                 "2018": 668456,
-                                "2024": 3095440
+                                "2024": 2842166
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -23386,6 +23649,24 @@
                                 "jtwc_history/1980/SH121980_shp.geojson",
                                 "jtwc_history/1980/SH021980_shp.geojson",
                                 "jtwc_history/1980/SH191980_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 849612
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                             ]
                         }
                     ],
@@ -23474,7 +23755,7 @@
                         "2015": 22,
                         "2017": 7,
                         "2018": 668456,
-                        "2024": 3095440
+                        "2024": 3691778
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -23563,7 +23844,7 @@
                                 "2018": 2,
                                 "2019": 1,
                                 "2020": 1,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -23625,14 +23906,11 @@
                                 "2018": 2701759,
                                 "2019": 1,
                                 "2020": 0,
-                                "2024": 62926115
+                                "2024": 62356047
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2020/SH102020_shp.geojson",
                                 "jtwc_history/2019/SH072019_shp.geojson",
@@ -23713,7 +23991,7 @@
                         "2018": 2,
                         "2019": 1,
                         "2020": 1,
-                        "2024": 6
+                        "2024": 3
                     },
                     "counter_year": {
                         "1980": 9,
@@ -23775,14 +24053,11 @@
                         "2018": 2701759,
                         "2019": 1,
                         "2020": 0,
-                        "2024": 62926115
+                        "2024": 62356047
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                         "jtwc_history/2020/SH102020_shp.geojson",
                         "jtwc_history/2019/SH072019_shp.geojson",
@@ -23866,7 +24141,7 @@
                                 "2015": 1,
                                 "2017": 1,
                                 "2018": 3,
-                                "2024": 6
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -23922,14 +24197,11 @@
                                 "2015": 709,
                                 "2017": 21247,
                                 "2018": 8232480,
-                                "2024": 8794309
+                                "2024": 7177499
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -23975,6 +24247,24 @@
                                 "jtwc_history/1980/SH121980_shp.geojson",
                                 "jtwc_history/1980/SH021980_shp.geojson",
                                 "jtwc_history/1980/SH191980_shp.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 1670666
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                             ]
                         }
                     ],
@@ -24060,7 +24350,7 @@
                         "2015": 709,
                         "2017": 21247,
                         "2018": 8232480,
-                        "2024": 8794309
+                        "2024": 8848165
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -24113,6 +24403,80 @@
                         "jtwc_history/1980/SH121980_shp.geojson",
                         "jtwc_history/1980/SH021980_shp.geojson",
                         "jtwc_history/1980/SH191980_shp.geojson"
+                    ]
+                },
+                {
+                    "adm1_code": "MUS.9_1",
+                    "adm1_name": "Rivi\u00e8re du Rempart",
+                    "adm2": [
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 3
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 458676
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 3
+                    },
+                    "counter_year": {
+                        "2024": 16
+                    },
+                    "loss": {
+                        "2024": 458676
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                    ]
+                },
+                {
+                    "adm1_code": "MUS.10_1",
+                    "adm1_name": "Rodriguez",
+                    "adm2": [
+                        {
+                            "adm2_code": "No Adm2",
+                            "adm2_name": "",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 32919
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 2
+                    },
+                    "counter_year": {
+                        "2024": 16
+                    },
+                    "loss": {
+                        "2024": 32919
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
                     ]
                 }
             ],
@@ -24228,7 +24592,7 @@
                 "2018": 54722310,
                 "2019": 758622630,
                 "2020": 44404048,
-                "2024": 207736097
+                "2024": 207538768
             },
             "storms": [
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
@@ -24356,7 +24720,7 @@
                                 "2015": 2,
                                 "2017": 1,
                                 "2018": 4,
-                                "2024": 5
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -24410,13 +24774,11 @@
                                 "2015": 1513,
                                 "2017": 47848,
                                 "2018": 10938584,
-                                "2024": 249073175
+                                "2024": 14973602
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -24490,7 +24852,7 @@
                         "2015": 2,
                         "2017": 1,
                         "2018": 4,
-                        "2024": 5
+                        "2024": 3
                     },
                     "counter_year": {
                         "1980": 9,
@@ -24544,13 +24906,11 @@
                         "2015": 1513,
                         "2017": 47848,
                         "2018": 10938584,
-                        "2024": 249073175
+                        "2024": 14973602
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                         "jtwc_history/2018/SH202018_shp.geojson",
                         "jtwc_history/2018/SH062018_shp.geojson",
@@ -24630,7 +24990,7 @@
                                 "2015": 2,
                                 "2017": 1,
                                 "2018": 4,
-                                "2024": 5
+                                "2024": 3
                             },
                             "counter_year": {
                                 "1980": 9,
@@ -24684,13 +25044,11 @@
                                 "2015": 107783,
                                 "2017": 55735,
                                 "2018": 31137144,
-                                "2024": 331082383
+                                "2024": 7937927
                             },
                             "storms": [
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                                 "jtwc_history/2018/SH202018_shp.geojson",
                                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -24768,7 +25126,7 @@
                         "2015": 2,
                         "2017": 1,
                         "2018": 4,
-                        "2024": 5
+                        "2024": 3
                     },
                     "counter_year": {
                         "1980": 9,
@@ -24822,13 +25180,11 @@
                         "2015": 107783,
                         "2017": 55735,
                         "2018": 31137144,
-                        "2024": 331082383
+                        "2024": 7937927
                     },
                     "storms": [
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                         "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                         "jtwc_history/2018/SH202018_shp.geojson",
                         "jtwc_history/2018/SH062018_shp.geojson",
@@ -24906,7 +25262,7 @@
                 "2015": 2,
                 "2017": 1,
                 "2018": 4,
-                "2024": 5
+                "2024": 3
             },
             "counter_year": {
                 "1980": 9,
@@ -24960,13 +25316,11 @@
                 "2015": 109296,
                 "2017": 103583,
                 "2018": 42075727,
-                "2024": 580155559
+                "2024": 22911530
             },
             "storms": [
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
-                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
-                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
                 "jtwc_history/2018/SH202018_shp.geojson",
                 "jtwc_history/2018/SH062018_shp.geojson",
@@ -25016,6 +25370,504 @@
                 "jtwc_history/1980/SH121980_shp.geojson",
                 "jtwc_history/1980/SH021980_shp.geojson",
                 "jtwc_history/1980/SH191980_shp.geojson"
+            ]
+        },
+        {
+            "adm0_code": "REU",
+            "adm0_name": "Reunion",
+            "adm1": [
+                {
+                    "adm1_code": "REU.1_1",
+                    "adm1_name": "Saint-Beno\u00eet",
+                    "adm2": [
+                        {
+                            "adm2_code": "REU.1.1_1",
+                            "adm2_name": "Bras-Panon",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 53779208
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.1.2_1",
+                            "adm2_name": "La Plaine-des-Palmistes",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 2444972
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.1.3_1",
+                            "adm2_name": "Saint-Andr\u00e9",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 7
+                            },
+                            "loss": {
+                                "2024": 46760459
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.1.4_1",
+                            "adm2_name": "Saint-Beno\u00eet",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 12738510
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.1.5_1",
+                            "adm2_name": "Sainte-Rose",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 7
+                            },
+                            "loss": {
+                                "2024": 1819690
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.1.6_1",
+                            "adm2_name": "Salazie",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 7
+                            },
+                            "loss": {
+                                "2024": 2720368
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 2
+                    },
+                    "counter_year": {
+                        "2024": 16
+                    },
+                    "loss": {
+                        "2024": 120263205
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                    ]
+                },
+                {
+                    "adm1_code": "REU.2_1",
+                    "adm1_name": "Saint-Denis",
+                    "adm2": [
+                        {
+                            "adm2_code": "REU.2.1_1",
+                            "adm2_name": "La Possession",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 7
+                            },
+                            "loss": {
+                                "2024": 6116061
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.2.2_1",
+                            "adm2_name": "Le Port",
+                            "counter_adm2": {
+                                "2024": 1
+                            },
+                            "counter_year": {
+                                "2024": 7
+                            },
+                            "loss": {
+                                "2024": 33867682
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.2.3_1",
+                            "adm2_name": "Saint-Denis",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 86157543
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.2.4_1",
+                            "adm2_name": "Sainte-Marie",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 15219461
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.2.5_1",
+                            "adm2_name": "Sainte-Suzanne",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 19559229
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 2
+                    },
+                    "counter_year": {
+                        "2024": 16
+                    },
+                    "loss": {
+                        "2024": 160919976
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                    ]
+                },
+                {
+                    "adm1_code": "REU.3_1",
+                    "adm1_name": "Saint-Paul",
+                    "adm2": [
+                        {
+                            "adm2_code": "REU.3.1_1",
+                            "adm2_name": "L'\u00c9tang-Sal\u00e9",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 4086509
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.3.2_1",
+                            "adm2_name": "Les Avirons",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 2934495
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.3.3_1",
+                            "adm2_name": "Les Trois-Bassins",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 2501653
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.3.4_1",
+                            "adm2_name": "Saint-Leu",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 35724358
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.3.5_1",
+                            "adm2_name": "Saint-Paul",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 31510349
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 2
+                    },
+                    "counter_year": {
+                        "2024": 16
+                    },
+                    "loss": {
+                        "2024": 76757364
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                    ]
+                },
+                {
+                    "adm1_code": "REU.4_1",
+                    "adm1_name": "Saint-Pierre",
+                    "adm2": [
+                        {
+                            "adm2_code": "REU.4.1_1",
+                            "adm2_name": "Cilaos",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 2924305
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.4.2_1",
+                            "adm2_name": "L'Entre-Deux",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 1032742
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.4.3_1",
+                            "adm2_name": "Le Tampon",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 58337578
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.4.4_1",
+                            "adm2_name": "Petite-\u00cele",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 5983797
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.4.5_1",
+                            "adm2_name": "Saint-Joseph",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 51185447
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.4.6_1",
+                            "adm2_name": "Saint-Louis",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 19990389
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.4.7_1",
+                            "adm2_name": "Saint-Philippe",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 1632656
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        },
+                        {
+                            "adm2_code": "REU.4.8_1",
+                            "adm2_name": "Saint-Pierre",
+                            "counter_adm2": {
+                                "2024": 2
+                            },
+                            "counter_year": {
+                                "2024": 16
+                            },
+                            "loss": {
+                                "2024": 57906756
+                            },
+                            "storms": [
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                            ]
+                        }
+                    ],
+                    "counter_adm1": {
+                        "2024": 2
+                    },
+                    "counter_year": {
+                        "2024": 16
+                    },
+                    "loss": {
+                        "2024": 198993670
+                    },
+                    "storms": [
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                        "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
+                    ]
+                }
+            ],
+            "counter_adm0": {
+                "2024": 2
+            },
+            "counter_year": {
+                "2024": 16
+            },
+            "loss": {
+                "2024": 556934217
+            },
+            "storms": [
+                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson"
             ]
         },
         {
