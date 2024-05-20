@@ -1,1 +1,1 @@
-{"records": [{"adm0_name": "Seychelles", "adm0_code": 220, "population": 14, "loss": 0.1385276198, "wind_cat": {"0": 14}, "adm1": [{"adm1_name": "Aldabra", "adm1_code": 61135, "population": 14, "loss": 0.1385276198, "wind_cat": {"0": 14}, "adm2": [{"adm2_name": "Administrative unit not available", "adm2_code": 61211, "population": 14, "loss": 0.1385276198, "wind_cat": {"0": 14}}]}]}], "utc_timestamp": "2024-05-20 00:56:33 UTC"}
+{"records": [], "utc_timestamp": "2024-05-20 03:41:45 UTC"}
