@@ -9,8 +9,8 @@
             "SH252024"
         ],
         "windwater_shp": [
-            "SH252024",
-            "SH242024"
+            "SH242024",
+            "SH252024"
         ]
     },
     "mpres_data": [
@@ -299,18 +299,6 @@
         }
     ],
     "tc_realtime": [
-        {
-            "bbox": [
-                69.4083,
-                -4.8917,
-                80.125,
-                1.475
-            ],
-            "id": "SH252024",
-            "jtwc": "tc_realtime/taostc_SH252024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH252024_losses_adm.json",
-            "storm_name": "TWENTY-FI"
-        },
         {
             "bbox": [
                 40.4083,
