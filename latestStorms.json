@@ -295,18 +295,5 @@
             "storm_name": "ELLIE"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                39.0583,
-                -12.3083,
-                56.0083,
-                -0.4583
-            ],
-            "id": "SH242024",
-            "jtwc": "tc_realtime/taostc_SH242024_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH242024_losses_adm.json",
-            "storm_name": "IALY"
-        }
-    ]
+    "tc_realtime": []
 }
