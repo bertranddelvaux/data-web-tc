@@ -1,5 +1,5 @@
 {
-    "counter_total": 527,
+    "counter_total": 528,
     "records": [
         {
             "storms": [
@@ -389,6 +389,7 @@
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_AL092023.geojson",
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_WP102023.geojson",
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_WP072022.geojson",
+                "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_WP022024.geojson",
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_WP112023.geojson",
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_AL112023.geojson",
                 "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_WP122022.geojson",
