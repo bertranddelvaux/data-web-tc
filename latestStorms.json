@@ -6,12 +6,12 @@
         ],
         "storms_shp": [
             "EP032024",
-            null,
-            "AL042024"
+            "AL042024",
+            null
         ],
         "windwater_shp": [
-            null,
-            "EP032024"
+            "EP032024",
+            null
         ]
     },
     "mpres_data": [
