@@ -6,14 +6,14 @@
             null
         ],
         "storms_shp": [
-            "WP922024",
             "CP012024",
+            "WP922024",
             "IO022024",
             null
         ],
         "windwater_shp": [
-            "IO022024",
             "CP012024",
+            "IO022024",
             null
         ]
     },
