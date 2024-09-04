@@ -6,12 +6,12 @@
         ],
         "storms_shp": [
             null,
-            "WP132024",
-            "WP122024"
+            "WP122024",
+            "WP132024"
         ],
         "windwater_shp": [
-            null,
-            "WP122024"
+            "WP122024",
+            null
         ]
     },
     "mpres_data": [
