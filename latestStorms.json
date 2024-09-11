@@ -3,17 +3,20 @@
         "current_storms": [
             "WP142024",
             "AL062024",
-            null
+            null,
+            "AL072024"
         ],
         "storms_shp": [
             "WP142024",
             "AL062024",
-            null
+            null,
+            "AL072024"
         ],
         "windwater_shp": [
-            null,
+            "WP142024",
             "AL062024",
-            "WP142024"
+            null,
+            "AL072024"
         ]
     },
     "mpres_data": [
