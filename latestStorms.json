@@ -1,15 +1,15 @@
 {
     "current_storms": {
         "current_storms": [
-            "AL062024",
             null,
+            "AL062024",
             "WP142024",
             "EP092024",
             "AL072024"
         ],
         "storms_shp": [
-            "AL062024",
             null,
+            "AL062024",
             "WP142024",
             "EP092024",
             "AL072024"
