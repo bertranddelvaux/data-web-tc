@@ -2,17 +2,17 @@
     "current_storms": {
         "current_storms": [
             "WP152024",
-            null,
-            "WP162024"
+            "WP162024",
+            null
         ],
         "storms_shp": [
             "WP152024",
-            null,
-            "WP162024"
+            "WP162024",
+            null
         ],
         "windwater_shp": [
-            "WP152024",
             null,
+            "WP152024",
             "WP162024"
         ]
     },
