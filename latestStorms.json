@@ -295,18 +295,5 @@
             "storm_name": "GAMANE"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                66.6917,
-                -16.075,
-                83.475,
-                -6.3083
-            ],
-            "id": "SH012025",
-            "jtwc": "tc_realtime/taostc_SH012025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH012025_losses_adm.json",
-            "storm_name": "ANCHA"
-        }
-    ]
+    "tc_realtime": []
 }
