@@ -7,6 +7,7 @@ import shapely.geometry as geom
 import nczip2geojson as nc
 from urllib.parse import urlparse
 from ncgzip2losses import calculateLosses
+from ncgzip2losses_15as import calculateLosses_15as
 from utils import listFilesUrl, fetchUrl
 
 import xarray as xr
@@ -22,13 +23,13 @@ with open('index.json', 'r') as f:
 # files_tc_realtime_url = [os.path.splitext(os.path.split(url)[1])[0] for url in data[data.columns[-1]].values]
 # files_to_remove = [file for file in files_tc_realtime if file not in files_tc_realtime_url]
 
-list_subfolder = ['taos_swio30s_ofcl_windwater_nc', 'taos_swio30s_ofcl_windwater_shp']
+list_subfolder = ['taos_swio30s_ofcl_windwater_nc', 'taos_swio30s_ofcl_windwater_shp', 'taos_swio15s_ofcl_windwater_nc', 'taos_swio15s_ofcl_windwater_shp']
 
 root_root = os.path.abspath(os.getcwd())
 os.chdir('mpres_data/postevent')
 dir_root = os.path.abspath(os.getcwd())
 
-for subfolder, ext in zip(list_subfolder, ['.nc', '.zip']):
+for subfolder, ext in zip(list_subfolder, ['.nc', '.zip', '.nc', '.zip']):
 
     os.chdir(dir_root)
 
@@ -70,9 +71,27 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.zip']):
                         geojson=False,
                         gadm_file=os.path.join(root_root, 'gadm_adm2.json')
                     )
-                    #os.remove(filename)
 
-                elif subfolder == 'taos_swio30s_ofcl_windwater_shp':
+                if subfolder == 'taos_swio15s_ofcl_windwater_nc':
+                    try:
+                        nc.nc2geojson(filename)
+                        # running loss generation
+                        calculateLosses_15as(
+                            storm_file=filename,
+                            exp_file=os.path.join(root_root, 'arc_consolidated_expo_15as.gzip'),
+                            adm_file=os.path.join(root_root, 'adm2_full_precision.json'),
+                            mapping_file=os.path.join(root_root, 'mapping_15as.gzip'),
+                            split=False,
+                            geojson=False,
+                            gadm_file=os.path.join(root_root, 'gadm_adm2.json')
+                        )
+                    except:
+                        print('\033[91m' + 'There was an error in trying to handle a 15as case' + '\033[0m')
+
+                if subfolder == 'taos_swio15s_ofcl_windwater_shp':
+                    print('\033[91m' + 'Subfolder 15as case not implemented' + '\033[0m')
+
+                if subfolder == 'taos_swio30s_ofcl_windwater_shp':
                     filename_shp = f'shp_{filename}'
                     with ZipFile(filename, 'r') as zipObject:
                         zippedFiles = zipObject.namelist()
