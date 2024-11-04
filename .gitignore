@@ -1,7 +1,16 @@
 __pycache__/
-jtwc_history/
-mpres_data/
-tc_realtime/
-test/
-rain/
-public/
+
+# Ignore everything by default
+*
+
+# Exclude the scripts folder
+!/scripts/
+
+# Exclude everything inside scripts by default
+/scripts/*
+
+# Allow files in the root directory
+!/*
+
+# Allow specific files in the scripts folder if needed (uncomment and modify as necessary)
+# !/scripts/some_file
