@@ -36,7 +36,7 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.zip', '.nc', '.zip']):
     # check if directory exists
     exists = os.path.isdir(subfolder)
     if not exists:
-        print(f"\033[35mA new folder will be created: {subfolder}\033[0m")
+        print(f'\033[35mA new folder will be created: {subfolder}\033[0m')
         os.makedirs(subfolder)
 
     os.chdir(subfolder)
@@ -74,6 +74,7 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.zip', '.nc', '.zip']):
                     )
 
                 if subfolder == 'taos_swio15s_ofcl_windwater_nc':
+                    print(f'\033[35mDealing with {subfolder}\033[0m')
                     try:
                         nc.nc2geojson(filename)
                         # running loss generation
