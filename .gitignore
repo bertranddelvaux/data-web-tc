@@ -1,13 +1,11 @@
-__pycache__/
-
 # Ignore everything by default
 *
 
 # Exclude the scripts folder
 !/scripts/
 
-# Exclude everything inside scripts by default
-/scripts/*
+# Ignore the __pycache__ folder inside the scripts directory
+/scripts/__pycache__/
 
 # Allow files in the root directory
 !/*
