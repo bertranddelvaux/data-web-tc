@@ -36,6 +36,7 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.zip', '.nc', '.zip']):
     # check if directory exists
     exists = os.path.isdir(subfolder)
     if not exists:
+        print(f"\033[35mA new folder will be created: {subfolder}\033[0m")
         os.makedirs(subfolder)
 
     os.chdir(subfolder)
