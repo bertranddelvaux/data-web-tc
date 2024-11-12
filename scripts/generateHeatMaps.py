@@ -54,7 +54,7 @@ def getListFiles(
 ):
     '''Get list of eligible files'''
 
-    def filter_files_by_year(list_files, start, end):
+    def sort_filter_files_by_year(list_files, start, end):
 
         # Regular expression to extract the year from the file name
         year_pattern = re.compile(r'_SH(\d{6})_')
@@ -65,7 +65,9 @@ def getListFiles(
             if (match := year_pattern.search(file)) and start <= int(match.group(1)[-4:]) <= end
         ]
 
-        return filtered_files
+        sorted_filtered_files = sorted(filtered_files, key=extract_year_from_url)
+
+        return sorted_filtered_files
 
     def extract_year_from_url(url):
         # Define a function to extract the year from the URL
@@ -92,7 +94,7 @@ def getListFiles(
     list_files = list_files_1980_2021 + list_files_2022 + list_files_2023_now
 
     # Sort the list of files by the year extracted from the URL
-    list_files_sorted = sorted(filter_files_by_year(list_files, start, end), key=extract_year_from_url)
+    list_files_sorted = sort_filter_files_by_year(list_files, start, end)
 
     return list_files_sorted
 
