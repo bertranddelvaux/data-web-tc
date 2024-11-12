@@ -28,6 +28,7 @@
 
 
 import os
+import re
 import argparse
 import datetime
 
@@ -36,7 +37,11 @@ from utils import listFilesUrl, fetchUrl
 
 # a few constants
 YEAR_HISTORICAL_START = 1980 # latest year with historical data
-URL_HISTORICAL_DATA = 'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/historical_data/' # URL to fetch data from
+YEAR_2022 = 2022 # year which is in the old KAC project arc_proj22 but not anymore in the historical data
+YEAR_2023_NOW = 2023 # year which is in the latest KAC project
+URL_1980_2021 = 'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/historical_data/' # URL to fetch data from 1980 to 2021
+URL_2022 = 'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2022_JTWC/' # URL to fetch data from 2022
+URL_2023_NOW = 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/' # URL to fetch data from 2023 until now
 # KAC portal login credentials
 USERNAME = os.environ['KAC_USERNAME']
 PASSWORD = os.environ['KAC_PASSWORD']
@@ -50,32 +55,58 @@ def getListFiles(
     '''Get list of eligible files'''
 
     def filter_files_by_year(list_files, start, end):
-        filtered_files = []
 
-        for file in list_files:
-            # Split the string at '_OFCL' and take the part before it
-            base_name = file.split('_OFCL')[0]
+        # Regular expression to extract the year from the file name
+        year_pattern = re.compile(r'_SH(\d{6})_')
 
-            # Extract the year, which is the last 4 digits before '_OFCL'
-            year_str = base_name[-4:]
-
-            # Check if the extracted year is within the range
-            if start <= int(year_str) <= end:
-                filtered_files.append(file)
+        # Filter files that are between the start_year and end_year
+        filtered_files = [
+            file for file in list_files
+            if (match := year_pattern.search(file)) and start <= int(match.group(1)[-4:]) <= end
+        ]
 
         return filtered_files
 
-    url = f'{URL_HISTORICAL_DATA}jtwc_{res}_resolution_hazard'
+    def extract_year_from_url(url):
+        # Define a function to extract the year from the URL
+        match = re.search(r'_SH(\d{6})_', url)
+        if match:
+            year = match.group(1)[-4:]  # Extract the last four digits as the year
+            return int(year)
+        else:
+            return None
 
-    list_files_historical = filter_files_by_year(
-        listFilesUrl(url, USERNAME, PASSWORD, ext='.nc'),
+    # data from 1980 to 2021
+    url_1980_2021 = f'{URL_1980_2021}jtwc_{res}_resolution_hazard'
+    list_files_1980_2021 = filter_files_by_year(
+        listFilesUrl(url_1980_2021, USERNAME, PASSWORD, ext='.nc'),
         start=start,
         end=end
     )
 
-    #TODO: implement list_files_recent
+    # data from 2022
+    url_2022 = f'{URL_2022}{"30as" if res == "low" else "15as"}'
+    list_files_2022 = filter_files_by_year(
+        listFilesUrl(url_2022, USERNAME, PASSWORD, ext='.nc'),
+        start=start,
+        end=end
+    )
 
-    return None
+    # data from 2023 to now
+    url_2023_now = f'{URL_2023_NOW}taos_swio{"30" if res == "low" else "15"}s_ofcl_windwater_nc'
+    list_files_2023_now = filter_files_by_year(
+        listFilesUrl(url_2023_now, USERNAME, PASSWORD, ext='.nc'),
+        start=start,
+        end=end
+    )
+
+    # Combine all lists into one
+    list_files = list_files_1980_2021 + list_files_2022 + list_files_2023_now
+
+    # Sort the list of files by the year extracted from the URL
+    list_files_sorted = sorted(list_files, key=extract_year_from_url)
+
+    return list_files_sorted
 
 def generateHeatMap(
         start,
