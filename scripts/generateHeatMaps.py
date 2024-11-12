@@ -78,33 +78,21 @@ def getListFiles(
 
     # data from 1980 to 2021
     url_1980_2021 = f'{URL_1980_2021}jtwc_{res}_resolution_hazard'
-    list_files_1980_2021 = filter_files_by_year(
-        listFilesUrl(url_1980_2021, USERNAME, PASSWORD, ext='.nc'),
-        start=start,
-        end=end
-    )
+    list_files_1980_2021 = listFilesUrl(url_1980_2021, USERNAME, PASSWORD, ext='.nc')
 
     # data from 2022
     url_2022 = f'{URL_2022}{"30as" if res == "low" else "15as"}'
-    list_files_2022 = filter_files_by_year(
-        listFilesUrl(url_2022, USERNAME, PASSWORD, ext='.nc'),
-        start=start,
-        end=end
-    )
+    list_files_2022 = listFilesUrl(url_2022, USERNAME, PASSWORD, ext='.nc')
 
     # data from 2023 to now
     url_2023_now = f'{URL_2023_NOW}taos_swio{"30" if res == "low" else "15"}s_ofcl_windwater_nc'
-    list_files_2023_now = filter_files_by_year(
-        listFilesUrl(url_2023_now, USERNAME, PASSWORD, ext='.nc'),
-        start=start,
-        end=end
-    )
+    list_files_2023_now = listFilesUrl(url_2023_now, USERNAME, PASSWORD, ext='.nc')
 
     # Combine all lists into one
     list_files = list_files_1980_2021 + list_files_2022 + list_files_2023_now
 
     # Sort the list of files by the year extracted from the URL
-    list_files_sorted = sorted(list_files, key=extract_year_from_url)
+    list_files_sorted = sorted(filter_files_by_year(list_files, start, end), key=extract_year_from_url)
 
     return list_files_sorted
 
