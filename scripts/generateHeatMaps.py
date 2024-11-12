@@ -33,14 +33,18 @@ import datetime
 
 
 # a few constants
-HISTORICAL_START_YEAR = 1980
+YEAR_HISTORICAL_START = 1980 # latest year with historical data
+URL_HISTORICAL_DATA = 'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/historical_data/' # URL to fetch data from
+# KAC portal login credentials
+USERNAME = os.environ['KAC_USERNAME']
+PASSWORD = os.environ['KAC_PASSWORD']
 
 
 def generateHeatMap(
         start,
         end,
         alg,
-        res = 'high',
+        res,
 ):
 
     exit()
@@ -52,15 +56,15 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Arguments to be passed to the script')
     parser.add_argument('-res', '--resolution', type=str, default='high', dest='res', help="Set the resolution of the data: 'low' or 'high'.")
-    parser.add_argument('-start', type=int, default=HISTORICAL_START_YEAR, dest='start', help="Starting year to be processed.")
+    parser.add_argument('-start', type=int, default=YEAR_HISTORICAL_START, dest='start', help="Starting year to be processed.")
     parser.add_argument('-end', type=int, default=current_year, dest='end', help="Ending year to be processed.")
     parser.add_argument('-alg', type=str, required=True, dest='alg', help="Algorithm to process the data")
     args = parser.parse_args()
 
     def year_out_of_range(year):
-        current_year = datetime.datetime.now().year
-        if year < HISTORICAL_START_YEAR or year > current_year:
-            raise argparse.ArgumentTypeError(f'Year {year} is out of the allowed range {HISTORICAL_START_YEAR}-{current_year}')
+        year_current = datetime.datetime.now().year
+        if year < YEAR_HISTORICAL_START or year > year_current:
+            raise argparse.ArgumentTypeError(f'Year {year} is out of the allowed range {YEAR_HISTORICAL_START}-{year_current}')
 
     # handling res arg exception
     if args.res not in ['low', 'high']:
@@ -71,7 +75,7 @@ if __name__ == '__main__':
     year_out_of_range(args.end)
     if args.end < args.start:
         raise argparse.ArgumentTypeError(
-            f'Ending year {args.end} must be later than {args.start}  is out of the allowed range {HISTORICAL_START_YEAR}-{current_year}')
+            f'Ending year {args.end} must be later than {args.start}  is out of the allowed range {YEAR_HISTORICAL_START}-{current_year}')
 
     # handling algorithm choice exception
     if args.alg not in ['max_wind_speed', 'number_of_hits', 'median_wind_speed', 'degree_of_severity']:
