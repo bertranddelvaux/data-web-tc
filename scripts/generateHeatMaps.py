@@ -59,13 +59,7 @@ def getListFiles(
         # Regular expression to extract the year from the file name
         year_pattern = re.compile(r'_SH(\d{6})_')
 
-        # Filter files that are between the start_year and end_year
-        filtered_files = [
-            file for file in list_files
-            if (match := year_pattern.search(file)) and start <= int(match.group(1)[-4:]) <= end
-        ]
-
-        sorted_filtered_files = sorted(filtered_files, key=extract_year_from_url)
+        sorted_filtered_files = sorted([file for file in list_files if start <= extract_year_from_url(file) <= end], key=extract_year_from_url)
 
         return sorted_filtered_files
 
