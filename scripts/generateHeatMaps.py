@@ -31,6 +31,8 @@ import os
 import argparse
 import datetime
 
+from utils import listFilesUrl, fetchUrl
+
 
 # a few constants
 YEAR_HISTORICAL_START = 1980 # latest year with historical data
@@ -40,12 +42,49 @@ USERNAME = os.environ['KAC_USERNAME']
 PASSWORD = os.environ['KAC_PASSWORD']
 
 
+def getListFiles(
+        start,
+        end,
+        res
+):
+    '''Get list of eligible files'''
+
+    def filter_files_by_year(list_files, start, end):
+        filtered_files = []
+
+        for file in list_files:
+            # Split the string at '_OFCL' and take the part before it
+            base_name = file.split('_OFCL')[0]
+
+            # Extract the year, which is the last 4 digits before '_OFCL'
+            year_str = base_name[-4:]
+
+            # Check if the extracted year is within the range
+            if start <= int(year_str) <= end:
+                filtered_files.append(file)
+
+        return filtered_files
+
+    url = f'{URL_HISTORICAL_DATA}jtwc_{res}_resolution_hazard'
+
+    list_files_historical = filter_files_by_year(
+        listFilesUrl(url, USERNAME, PASSWORD, ext='.nc'),
+        start=start,
+        end=end
+    )
+
+    #TODO: implement list_files_recent
+
+    return None
+
 def generateHeatMap(
         start,
         end,
         alg,
         res,
 ):
+
+    list_files = getListFiles(start, end, res)
 
     exit()
 
