@@ -32,6 +32,10 @@ import re
 import argparse
 import datetime
 
+import xarray as xr
+
+from urllib.parse import urlparse
+
 from utils import listFilesUrl, fetchUrl
 
 
@@ -52,8 +56,10 @@ RED = '\033[91m'
 PURPLE = '\033[95m'
 RESET = '\033[0m'
 
+#######################
+# Decorator functions #
+#######################
 
-# Define the decorator function
 def wrap_get_list_urls(func):
     def wrapper(start, end, res):
         # Print the message before calling the function
@@ -66,6 +72,21 @@ def wrap_get_list_urls(func):
         print(f'{GREEN}found {len(list_urls)}{RESET}')
         return list_urls
     return wrapper
+
+def wrap_get_hazard_dataset(func):
+    def wrapper(hazard_nc_file):
+        # Call the original function
+        hazard_df, dx, dy, res = func(hazard_nc_file)
+
+        # Print the message after the function completes
+        print(f'\t\t{PURPLE}res: {res} arcseconds{RESET} dx {dx:.6f} dy {dy:.6f}')
+        return hazard_df, dx, dy, res
+    return wrapper
+
+
+######################
+# Get URLs functions #
+######################
 
 @wrap_get_list_urls
 def getListURLs(
@@ -113,6 +134,31 @@ def getListURLs(
 
     return list_files_sorted
 
+############################
+# Hazard Dataset functions #
+############################
+
+@wrap_get_hazard_dataset
+def getHazardDataset(hazard_nc_file):
+    hazard_df = xr.open_dataset(hazard_nc_file, engine='netcdf4', decode_times=False)
+
+    # Select only the variables you need
+    vars_to_keep = ['swath_peak_wind', 'latitude', 'longitude']
+    hazard_df = hazard_df[vars_to_keep]
+
+    # Resolution
+    lats = hazard_df.variables['latitude'][:].values
+    lons = hazard_df.variables['longitude'][:].values
+    dy = (lats[-1] - lats[0]) / (len(lats) - 1)
+    dx = (lons[-1] - lons[0]) / (len(lons) - 1)
+
+    return hazard_df, dx, dy, round(3600.0 * dx)
+
+
+###############################
+# Generate Heat Map functions #
+###############################
+
 def generateHeatMap(
         start,
         end,
@@ -132,9 +178,13 @@ def generateHeatMap(
         # 2. Open the wind part
         # 3. Update the
 
-        downloaded = fetchUrl(url, USERNAME, PASSWORD)
+        # hazard file
+        hazard_nc_file = os.path.basename(urlparse(url).path)
+
+        downloaded = fetchUrl(url, USERNAME, PASSWORD, filename=hazard_nc_file)
 
         if downloaded:
+            hazard_df, dx, dy, res = getHazardDataset(hazard_nc_file)
             print()
         else:
             print()
