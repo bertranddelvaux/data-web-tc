@@ -76,11 +76,13 @@ def wrap_get_list_urls(func):
 def wrap_get_hazard_dataset(func):
     def wrapper(hazard_nc_file):
         # Call the original function
-        hazard_df, dx, dy, res = func(hazard_nc_file)
+        hazard_df, lats, lons, dx, dy, res = func(hazard_nc_file)
 
         # Print the message after the function completes
-        print(f'\t\t{PURPLE}res: {res} arcseconds{RESET} dx {dx:.6f} dy {dy:.6f}')
-        return hazard_df, dx, dy, res
+        print(f'\t\tres: {PURPLE}{res} arcseconds{RESET} (dx {dx:.6f} dy {dy:.6f})')
+        print(f'\t\tlat: {PURPLE}{lats[0]} {lats[-1]}{RESET}')
+        print(f'\t\tlon: {PURPLE}{lons[0]} {lons[-1]}{RESET}')
+        return hazard_df, lats, lons, dx, dy, res
     return wrapper
 
 
@@ -152,7 +154,7 @@ def getHazardDataset(hazard_nc_file):
     dy = (lats[-1] - lats[0]) / (len(lats) - 1)
     dx = (lons[-1] - lons[0]) / (len(lons) - 1)
 
-    return hazard_df, dx, dy, round(3600.0 * dx)
+    return hazard_df, lats, lons, dx, dy, round(3600.0 * dx)
 
 
 ###############################
@@ -185,7 +187,7 @@ def generateHeatMap(
         downloaded = fetchUrl(url, USERNAME, PASSWORD, filename=hazard_nc_file)
 
         if downloaded:
-            hazard_df, dx, dy, res = getHazardDataset(hazard_nc_file)
+            hazard_df, lats, lons, dx, dy, res = getHazardDataset(hazard_nc_file)
             print()
         else:
             print()
