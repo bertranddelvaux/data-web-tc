@@ -1,3 +1,6 @@
+# Ignore everything by default
+*
+
 # Exclude the scripts folder
 !/scripts/
 
@@ -6,6 +9,3 @@
 
 # Allow files in the root directory
 !/*
-
-# Allow specific files in the scripts folder if needed (uncomment and modify as necessary)
-# !/scripts/some_file
