@@ -106,12 +106,12 @@ def generateHeatMap(
 
 if __name__ == '__main__':
 
-    current_year = datetime.datetime.now().year
+    year_current = datetime.datetime.now().year
 
     parser = argparse.ArgumentParser(description='Arguments to be passed to the script')
     parser.add_argument('-res', '--resolution', type=str, default='high', dest='res', help="Set the resolution of the data: 'low' or 'high'.")
     parser.add_argument('-start', type=int, default=YEAR_HISTORICAL_START, dest='start', help="Starting year to be processed.")
-    parser.add_argument('-end', type=int, default=current_year, dest='end', help="Ending year to be processed.")
+    parser.add_argument('-end', type=int, default=year_current, dest='end', help="Ending year to be processed.")
     parser.add_argument('-alg', type=str, required=True, dest='alg', help="Algorithm to process the data")
     args = parser.parse_args()
 
@@ -129,7 +129,7 @@ if __name__ == '__main__':
     year_out_of_range(args.end)
     if args.end < args.start:
         raise argparse.ArgumentTypeError(
-            f'Ending year {args.end} must be later than {args.start}  is out of the allowed range {YEAR_HISTORICAL_START}-{current_year}')
+            f'Ending year {args.end} must be later than {args.start}  is out of the allowed range {YEAR_HISTORICAL_START}-{year_current}')
 
     # handling algorithm choice exception
     if args.alg not in ['max_wind_speed', 'number_of_hits', 'median_wind_speed', 'degree_of_severity']:
