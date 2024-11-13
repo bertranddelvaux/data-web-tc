@@ -176,7 +176,8 @@ def generateHeatMap(
         # 1. Download
         #   a. Get the resolution, save it, print when different
         # 2. Open the wind part
-        # 3. Update the
+        # 3. Update the datset
+        # 4. Remove the file
 
         # hazard file
         hazard_nc_file = os.path.basename(urlparse(url).path)
@@ -188,6 +189,9 @@ def generateHeatMap(
             print()
         else:
             print()
+
+        # removing hazard file
+        os.remove(hazard_nc_file)
 
     exit()
 
