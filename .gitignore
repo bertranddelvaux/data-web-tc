@@ -1,6 +1,3 @@
-# Ignore everything by default
-*
-
 # Exclude the scripts folder
 !/scripts/
 
@@ -12,18 +9,3 @@
 
 # Allow specific files in the scripts folder if needed (uncomment and modify as necessary)
 # !/scripts/some_file
-
-# Ignore all content in the 'rain' directory
-rain/*
-
-# Ignore all content in the 'mpres_data' directory
-mpres_data/*
-
-# Ignore all JSON files
-*.json
-
-# Ignore all .geojson files
-*.geojson
-
-# Ignore all .zip.sha256 files
-*.zip.sha256
