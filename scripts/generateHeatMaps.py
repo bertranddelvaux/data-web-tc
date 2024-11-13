@@ -45,9 +45,30 @@ URL_2023_NOW = 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/
 # KAC portal login credentials
 USERNAME = os.environ['KAC_USERNAME']
 PASSWORD = os.environ['KAC_PASSWORD']
+# Color codes
+BLUE = '\033[94m'
+GREEN = '\033[92m'
+RED = '\033[91m'
+PURPLE = '\033[95m'
+RESET = '\033[0m'
 
 
-def getListFiles(
+# Define the decorator function
+def wrap_get_list_urls(func):
+    def wrapper(start, end, res):
+        # Print the message before calling the function
+        print(f'{BLUE}Fetching files between {start} and {end}, {res} resolution ... {RESET}', end='')
+
+        # Call the original function
+        list_urls = func(start, end, res)
+
+        # Print the message after the function completes
+        print(f'{GREEN}found {len(list_urls)}{RESET}')
+        return list_urls
+    return wrapper
+
+@wrap_get_list_urls
+def getListURLs(
         start,
         end,
         res
@@ -99,7 +120,24 @@ def generateHeatMap(
         res,
 ):
 
-    list_files = getListFiles(start, end, res)
+    # Get the list of eligible urls
+    list_urls = getListURLs(start, end, res)
+
+    # Loop through the urls
+    for url in list_urls:
+
+        #TODO:
+        # 1. Download
+        #   a. Get the resolution, save it, print when different
+        # 2. Open the wind part
+        # 3. Update the
+
+        downloaded = fetchUrl(url, USERNAME, PASSWORD)
+
+        if downloaded:
+            print()
+        else:
+            print()
 
     exit()
 
