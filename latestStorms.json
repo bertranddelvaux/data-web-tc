@@ -2,8 +2,8 @@
     "current_storms": {
         "current_storms": [],
         "storms_shp": [
-            "WP272024",
             "WP252024",
+            "WP272024",
             "WP262024",
             null
         ],
