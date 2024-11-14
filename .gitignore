@@ -1,11 +1,6 @@
-# Ignore everything by default
-*
-
-# Exclude the scripts folder
-!/scripts/
+__pycache__/
+jtwc_history/
 
 # Ignore the __pycache__ folder inside the scripts directory
 /scripts/__pycache__/
 
-# Allow files in the root directory
-!/*
