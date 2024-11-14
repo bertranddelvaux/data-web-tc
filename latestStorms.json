@@ -295,5 +295,18 @@
             "storm_name": "FILIPO"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                70.4083,
+                -14.425,
+                80.2917,
+                -6.025
+            ],
+            "id": "SH952025",
+            "jtwc": "tc_realtime/taostc_SH952025_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH952025_losses_adm.json",
+            "storm_name": "INVEST"
+        }
+    ]
 }
