@@ -298,10 +298,10 @@
     "tc_realtime": [
         {
             "bbox": [
-                62.125,
-                -19.5417,
-                80.375,
-                -6.3917
+                60.6583,
+                -20.4917,
+                80.075,
+                -7.475
             ],
             "id": "SH022025",
             "jtwc": "tc_realtime/taostc_SH022025_JTWC_SLOSH.geojson",
