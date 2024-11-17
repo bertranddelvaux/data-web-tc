@@ -1,1 +1,1 @@
-{"records": []}
+{"records": [{"adm0_name": "Mauritius", "adm0_code": "MUS", "population": 1808, "loss": 14.2297115472, "wind_cat": {"0": 1808}, "adm1": [{"adm1_name": "Rivi\u00e8re du Rempart", "adm1_code": "MUS.9_1", "population": 1808, "loss": 14.2297115472, "wind_cat": {"0": 1808}, "adm2": [{"adm2_name": "", "adm2_code": "No Adm2", "population": 1808, "loss": 14.2297115472, "wind_cat": {"0": 1808}}]}]}]}
