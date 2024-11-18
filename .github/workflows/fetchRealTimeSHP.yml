@@ -61,6 +61,16 @@ jobs:
       # execute python script getHistory.py
       - name: execute python script getHistory.py
         run: python scripts/getHistory.py
+
+      # check whether files have changed
+      - name: check repository changes
+        run: |
+          if [ -n "$(git diff --name-only)" ]; then
+            echo "Files with changes:"
+            git diff --name-only
+          else
+            echo "No changes detected."
+          fi
       
       # commit files
       - name: commit files
