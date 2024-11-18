@@ -61,16 +61,6 @@ jobs:
       # execute python script getHistory.py
       - name: execute python script getHistory.py
         run: python scripts/getHistory.py
-
-      # check whether files have changed
-      - name: check repository changes
-        run: |
-          if [ -n "$(git diff --name-only)" ]; then
-            echo "Files with changes:"
-            git diff --name-only
-          else
-            echo "No changes detected."
-          fi
       
       # commit files
       - name: commit files
@@ -79,7 +69,11 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m "update data" -a
+          if ! git diff --quiet; then
+            git commit -m "update data"
+          else
+            echo "No changes to commit"
+          fi
           
       # push changes
       - name: push changes
