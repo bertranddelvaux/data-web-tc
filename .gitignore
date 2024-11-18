@@ -1,6 +1,1 @@
 __pycache__/
-jtwc_history/
-
-# Ignore the __pycache__ folder inside the scripts directory
-/scripts/__pycache__/
-
