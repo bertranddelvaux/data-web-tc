@@ -63,8 +63,10 @@ jobs:
           git config --global http.version HTTP/1.1
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          # Stage all changes (modified, new, and deleted files)
           git add -A
-          if ! git diff --quiet; then
+          # Check if there are any staged changes and commit if necessary
+          if ! git diff --cached --quiet; then
             git commit -m "update data"
           else
             echo "No changes to commit"
