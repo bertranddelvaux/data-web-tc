@@ -295,18 +295,5 @@
             "storm_name": "FILIPO"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                49.3083,
-                -27.1083,
-                78.875,
-                -8.5583
-            ],
-            "id": "SH022025",
-            "jtwc": "tc_realtime/taostc_SH022025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH022025_losses_adm.json",
-            "storm_name": "BHEKI"
-        }
-    ]
+    "tc_realtime": []
 }
