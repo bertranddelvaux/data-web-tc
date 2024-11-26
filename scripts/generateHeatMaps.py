@@ -285,14 +285,14 @@ def generateHeatMap(
         os.remove(hazard_nc_file)
 
     # Now save the heatmap as a GeoTIFF
-    output_filename = "heatmap.tif"
+    output_filename = f'heatmap_{alg}_{start}_{end}.tif'
     transform = from_origin(lon_min, lat_max, dxdy, dxdy)  # top-left corner and pixel size
 
     with rasterio.open(output_filename, 'w', driver='GTiff', height=heatmap.shape[0], width=heatmap.shape[1],
                        count=1, dtype=heatmap.values.dtype, crs='EPSG:4326', transform=transform) as dst:
         dst.write(heatmap.values, 1)
 
-    print(f"GeoTIFF saved as {output_filename}")
+    print(f'GeoTIFF saved as {output_filename}')
 
 
 if __name__ == '__main__':
