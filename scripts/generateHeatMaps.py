@@ -32,29 +32,58 @@ import re
 import argparse
 import datetime
 
+import numpy as np
 import xarray as xr
+
+import rasterio
+from rasterio.transform import from_origin
 
 from urllib.parse import urlparse
 
 from utils import listFilesUrl, fetchUrl
 
 
-# a few constants
+
+###################
+# a few constants #
+###################
+
 YEAR_HISTORICAL_START = 1980 # latest year with historical data
 YEAR_2022 = 2022 # year which is in the old KAC project arc_proj22 but not anymore in the historical data
 YEAR_2023_NOW = 2023 # year which is in the latest KAC project
 URL_1980_2021 = 'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/historical_data/' # URL to fetch data from 1980 to 2021
 URL_2022 = 'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2022_JTWC/' # URL to fetch data from 2022
 URL_2023_NOW = 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/' # URL to fetch data from 2023 until now
+
 # KAC portal login credentials
 USERNAME = os.environ['KAC_USERNAME']
 PASSWORD = os.environ['KAC_PASSWORD']
+
 # Color codes
 BLUE = '\033[94m'
 GREEN = '\033[92m'
 RED = '\033[91m'
 PURPLE = '\033[95m'
 RESET = '\033[0m'
+
+#TODO: suggestion for coverage area:
+COVERAGE_AREA = {
+        'lat': [-51, 3],
+        'lon': [20, 150]
+}
+
+# resolutions
+RESOLUTION = {
+    'low': 120,
+    'high': 60 #TODO: correct that number!
+}
+
+# Wind variable
+WIND_VARIABLE = 'swath_peak_wind'
+
+# Tolerance when reindexing
+TOL = 1e-5
+
 
 #######################
 # Decorator functions #
@@ -69,22 +98,40 @@ def wrap_get_list_urls(func):
         list_urls = func(start, end, res)
 
         # Print the message after the function completes
-        print(f'{GREEN}found {len(list_urls)}{RESET}')
+        print(f'{GREEN}found {len(list_urls)} files{RESET}')
         return list_urls
     return wrapper
 
-def wrap_get_hazard_dataset(func):
+def wrap_get_hazard_dataarray(func):
     def wrapper(hazard_nc_file):
         # Call the original function
-        hazard_df, lats, lons, dx, dy, res = func(hazard_nc_file)
+        hazard_da, lats, lons, dx, dy, res = func(hazard_nc_file)
 
         # Print the message after the function completes
-        print(f'\t\tres: {PURPLE}{res} arcseconds{RESET} (dx {dx:.6f} dy {dy:.6f})')
-        print(f'\t\tlat: {PURPLE}{lats[0]} {lats[-1]}{RESET}')
-        print(f'\t\tlon: {PURPLE}{lons[0]} {lons[-1]}{RESET}')
-        return hazard_df, lats, lons, dx, dy, res
+        print(f'\t\t\tres: {PURPLE}{res} arcseconds{RESET} (dx {dx:.6f} dy {dy:.6f})')
+        print(f'\t\t\tlat: {PURPLE}{lats[0]} {lats[-1]}{RESET}')
+        print(f'\t\t\tlon: {PURPLE}{lons[0]} {lons[-1]}{RESET}')
+        return hazard_da, lats, lons, dx, dy, res
     return wrapper
 
+
+#################
+# Class HeatMap #
+#################
+
+class HeatMap(xr.DataArray):
+    __slots__ = ()  # No additional attributes, so use an empty tuple to prevent creation of __dict__
+
+    def __init__(self, *args, **kwargs):
+        # Call the parent class constructor, which initializes the xarray.DataArray
+        super().__init__(*args, **kwargs)
+
+    def max_wind_speed(self, other):
+        if isinstance(other, xr.DataArray):
+            self.data = np.maximum(self, other.reindex_like(self, fill_value=0., method='nearest', tolerance=TOL))
+            return self
+        else:
+            raise TypeError(f'{other} not of {xr.DataArray.__name__} type')
 
 ######################
 # Get URLs functions #
@@ -140,21 +187,20 @@ def getListURLs(
 # Hazard Dataset functions #
 ############################
 
-@wrap_get_hazard_dataset
-def getHazardDataset(hazard_nc_file):
-    hazard_df = xr.open_dataset(hazard_nc_file, engine='netcdf4', decode_times=False)
+@wrap_get_hazard_dataarray
+def getHazardDataArray(hazard_nc_file):
+    hazard_ds = xr.open_dataset(hazard_nc_file, engine='netcdf4', decode_times=False)
 
     # Select only the variables you need
-    vars_to_keep = ['swath_peak_wind', 'latitude', 'longitude']
-    hazard_df = hazard_df[vars_to_keep]
+    hazard_da = hazard_ds[WIND_VARIABLE]
 
     # Resolution
-    lats = hazard_df.variables['latitude'][:].values
-    lons = hazard_df.variables['longitude'][:].values
+    lats = hazard_da['latitude'].values # hazard_ds.variables['latitude'][:].values
+    lons = hazard_da['longitude'].values # hazard_ds.variables['longitude'][:].values
     dy = (lats[-1] - lats[0]) / (len(lats) - 1)
     dx = (lons[-1] - lons[0]) / (len(lons) - 1)
 
-    return hazard_df, lats, lons, dx, dy, round(3600.0 * dx)
+    return hazard_da, lats, lons, dx, dy, round(3600.0 * dx)
 
 
 ###############################
@@ -167,12 +213,40 @@ def generateHeatMap(
         alg,
         res,
 ):
+    """
+    Generates a heatmap from hazard data, saving the result as a GeoTIFF.
+
+    Arguments:
+    start: start date
+    end: end date
+    alg: algorithm to process the data
+    res: resolution in degrees
+    """
 
     # Get the list of eligible urls
     list_urls = getListURLs(start, end, res)
 
+    # Define the latitude and longitude ranges from COVERAGE_AREA
+    lat_min, lat_max = COVERAGE_AREA['lat']
+    lon_min, lon_max = COVERAGE_AREA['lon']
+
+    # Create the grid for the xarray with the specified resolution
+    dxdy = RESOLUTION[res] / 3600.
+    latitudes = np.arange(lat_min - dxdy / 2., lat_max + dxdy / 2., dxdy)
+    longitudes = np.arange(lon_min - dxdy / 2., lon_max + dxdy / 2., dxdy)
+
+    # Initialize an empty xarray with NaN values
+    heatmap = HeatMap(
+        xr.DataArray(
+            np.full((len(latitudes), len(longitudes)), 0.),
+            dims=['latitude', 'longitude'],
+            coords={'latitude': latitudes, 'longitude': longitudes},
+            name='heatmap'
+        )
+    )
+
     # Loop through the urls
-    for url in list_urls:
+    for i, url in enumerate(list_urls):
 
         #TODO:
         # 1. Download
@@ -184,18 +258,41 @@ def generateHeatMap(
         # hazard file
         hazard_nc_file = os.path.basename(urlparse(url).path)
 
+        # Calculate the width based on the length of the list
+        width = len(str(len(list_urls)))
+
+        # Print with leading zeros and proper alignment
+        print(f'{GREEN}{i + 1:0{width}d}/{len(list_urls)}{RESET}', end='')
+
+        # Download file
         downloaded = fetchUrl(url, USERNAME, PASSWORD, filename=hazard_nc_file)
 
         if downloaded:
-            hazard_df, lats, lons, dx, dy, res = getHazardDataset(hazard_nc_file)
-            print()
+            hazard_da, lats, lons, dx, dy, resolution = getHazardDataArray(hazard_nc_file)
+
+            if resolution != RESOLUTION[res]:
+                raise RuntimeError(f'res: {resolution} != resolution {RESOLUTION[res]}')
+
+            if alg == 'max_wind_speed':
+                heatmap = heatmap.max_wind_speed(hazard_da)
+            else:
+                raise NotImplemented(f'algorithm {alg} not implemented')
+
         else:
-            print()
+            print(f"Failed to download {hazard_nc_file}")
 
         # removing hazard file
         os.remove(hazard_nc_file)
 
-    exit()
+    # Now save the heatmap as a GeoTIFF
+    output_filename = "heatmap.tif"
+    transform = from_origin(lon_min, lat_max, dxdy, dxdy)  # top-left corner and pixel size
+
+    with rasterio.open(output_filename, 'w', driver='GTiff', height=heatmap.shape[0], width=heatmap.shape[1],
+                       count=1, dtype=heatmap.values.dtype, crs='EPSG:4326', transform=transform) as dst:
+        dst.write(heatmap.values, 1)
+
+    print(f"GeoTIFF saved as {output_filename}")
 
 
 if __name__ == '__main__':
@@ -206,7 +303,7 @@ if __name__ == '__main__':
     parser.add_argument('-res', '--resolution', type=str, default='high', dest='res', help="Set the resolution of the data: 'low' or 'high'.")
     parser.add_argument('-start', type=int, default=YEAR_HISTORICAL_START, dest='start', help="Starting year to be processed.")
     parser.add_argument('-end', type=int, default=year_current, dest='end', help="Ending year to be processed.")
-    parser.add_argument('-alg', type=str, required=True, dest='alg', help="Algorithm to process the data")
+    parser.add_argument('-alg', type=str, default='max_wind_speed', dest='alg', help="Algorithm to process the data")
     args = parser.parse_args()
 
     def year_out_of_range(year):
