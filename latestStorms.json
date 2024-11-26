@@ -1,13 +1,14 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH022025"
+            null
         ],
         "storms_shp": [
-            "SH022025"
+            "WP992024",
+            null
         ],
         "windwater_shp": [
-            "SH022025"
+            null
         ]
     },
     "mpres_data": [
@@ -295,18 +296,5 @@
             "storm_name": "FILIPO"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                52.5083,
-                -25.6917,
-                78.775,
-                -8.6583
-            ],
-            "id": "SH022025",
-            "jtwc": "tc_realtime/taostc_SH022025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH022025_losses_adm.json",
-            "storm_name": "BHEKI"
-        }
-    ]
+    "tc_realtime": []
 }
