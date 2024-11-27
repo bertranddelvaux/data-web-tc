@@ -66,7 +66,6 @@ RED = '\033[91m'
 PURPLE = '\033[95m'
 RESET = '\033[0m'
 
-#TODO: suggestion for coverage area:
 COVERAGE_AREA = {
         'lat': [-51, 3],
         'lon': [20, 150]
@@ -147,8 +146,7 @@ class HeatMap(xr.DataArray):
 
     def mean_wind_speed_when_hit(self, other, n, threshold=WIND_SPEED_THRESHOLD):
         other_reindexed = self._reindex_like(other)
-        other_reindexed[other_reindexed < threshold] = 0  # Set values below threshold to zero
-        self.data = (n * self.data + other_reindexed.astype(float)) / (n + 1)
+        self.data[other_reindexed >= threshold] = (n * self.data[other_reindexed >= threshold] + other_reindexed[other_reindexed >= threshold]) / (n + 1)
         return self
 
 
@@ -215,8 +213,8 @@ def getHazardDataArray(hazard_nc_file):
     hazard_da = hazard_ds[WIND_VARIABLE]
 
     # Resolution
-    lats = hazard_da['latitude'].values # hazard_ds.variables['latitude'][:].values
-    lons = hazard_da['longitude'].values # hazard_ds.variables['longitude'][:].values
+    lats = hazard_da['latitude'].values
+    lons = hazard_da['longitude'].values
     dy = (lats[-1] - lats[0]) / (len(lats) - 1)
     dx = (lons[-1] - lons[0]) / (len(lons) - 1)
 
