@@ -84,6 +84,9 @@ WIND_VARIABLE = 'swath_peak_wind'
 # Tolerance when reindexing
 TOL = 1e-5
 
+# Wind speed to consider for Cyclone hit
+WIND_SPEED_THRESHOLD = 17.5 # 17.5 m/s = 63 km/h
+
 
 #######################
 # Decorator functions #
@@ -132,6 +135,14 @@ class HeatMap(xr.DataArray):
             return self
         else:
             raise TypeError(f'{other} not of {xr.DataArray.__name__} type')
+
+    def number_of_hits(self, other):
+        if isinstance(other, xr.DataArray):
+            self.data = self.data + (other.reindex_like(self, fill_value=0., method='nearest', tolerance=TOL) >= WIND_SPEED_THRESHOLD).astype(float)
+            return self
+        else:
+            raise TypeError(f'{other} not of {xr.DataArray.__name__} type')
+
 
 ######################
 # Get URLs functions #
@@ -275,6 +286,8 @@ def generateHeatMap(
 
             if alg == 'max_wind_speed':
                 heatmap = heatmap.max_wind_speed(hazard_da)
+            elif alg == 'number_of_hits':
+                heatmap = heatmap.number_of_hits(hazard_da)
             else:
                 raise NotImplemented(f'algorithm {alg} not implemented')
 
