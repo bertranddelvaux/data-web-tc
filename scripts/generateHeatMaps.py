@@ -284,12 +284,20 @@ def generateHeatMap(
             if resolution != RESOLUTION[res]:
                 raise RuntimeError(f'res: {resolution} != resolution {RESOLUTION[res]}')
 
+            #TODO: REMOVE
+            print(f'max BEFORE : {np.max(heatmap.to_numpy())}')
+            #TODO: REMOVE
+
             if alg == 'max_wind_speed':
                 heatmap = heatmap.max_wind_speed(hazard_da)
             elif alg == 'number_of_hits':
                 heatmap = heatmap.number_of_hits(hazard_da)
             else:
                 raise NotImplemented(f'algorithm {alg} not implemented')
+
+            #TODO: REMOVE
+            print(f'max AFTER : {np.max(heatmap.to_numpy())}')
+            #TODO: REMOVE
 
         else:
             print(f"Failed to download {hazard_nc_file}")
@@ -299,11 +307,21 @@ def generateHeatMap(
 
     # Now save the heatmap as a GeoTIFF
     output_filename = f'heatmap_{alg}_{start}_{end}.tif'
-    transform = from_origin(lon_min, lat_max, dxdy, dxdy)  # top-left corner and pixel size
+    transform = from_origin(lon_min - dxdy / 2., lat_max + dxdy / 2., dxdy, dxdy)  # top-left corner and pixel size
 
-    with rasterio.open(output_filename, 'w', driver='GTiff', height=heatmap.shape[0], width=heatmap.shape[1],
-                       count=1, dtype=heatmap.values.dtype, crs='EPSG:4326', transform=transform) as dst:
-        dst.write(heatmap.values, 1)
+    # Define metadata for the GeoTIFF
+    metadata = {
+        'driver': 'GTiff',
+        'count': 1,  # One band of data
+        'dtype': 'float64',  # Data type of the array
+        'crs': 'EPSG:4326',  # Coordinate reference system (WGS 84)
+        'width': heatmap.values.shape[1],
+        'height': heatmap.values.shape[0],
+        'transform': transform
+    }
+
+    with rasterio.open(output_filename, 'w', **metadata) as dst:
+        dst.write(heatmap.values, 1)  # Write the data to band 1
 
     print(f'GeoTIFF saved as {output_filename}')
 
