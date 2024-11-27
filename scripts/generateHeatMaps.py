@@ -129,19 +129,28 @@ class HeatMap(xr.DataArray):
         # Call the parent class constructor, which initializes the xarray.DataArray
         super().__init__(*args, **kwargs)
 
-    def max_wind_speed(self, other):
-        if isinstance(other, xr.DataArray):
-            self.data = np.maximum(self, other.reindex_like(self, fill_value=0., method='nearest', tolerance=TOL))
-            return self
-        else:
+    def _reindex_like(self, other):
+        """Helper function to reindex 'other' to align with self."""
+        if not isinstance(other, xr.DataArray):
             raise TypeError(f'{other} not of {xr.DataArray.__name__} type')
+        return other.reindex_like(self, fill_value=0., method='nearest', tolerance=TOL).to_numpy()
 
-    def number_of_hits(self, other):
-        if isinstance(other, xr.DataArray):
-            self.data = self.data + (other.reindex_like(self, fill_value=0., method='nearest', tolerance=TOL) >= WIND_SPEED_THRESHOLD).astype(float)
-            return self
-        else:
-            raise TypeError(f'{other} not of {xr.DataArray.__name__} type')
+    def max_wind_speed(self, other):
+        other_reindexed = self._reindex_like(other)
+        self.data = np.maximum(self.data, other_reindexed)
+        return self
+
+    def number_of_hits(self, other, threshold=WIND_SPEED_THRESHOLD):
+        other_reindexed = self._reindex_like(other)
+        self.data = self.data + (other_reindexed >= threshold).astype(float)
+        return self
+
+    def mean_wind_speed_when_hit(self, other, n, threshold=WIND_SPEED_THRESHOLD):
+        other_reindexed = self._reindex_like(other)
+        other_reindexed[other_reindexed < threshold] = 0  # Set values below threshold to zero
+        self.data = (n * self.data + other_reindexed.astype(float)) / (n + 1)
+        return self
+
 
 
 ######################
@@ -292,12 +301,16 @@ def generateHeatMap(
                 heatmap = heatmap.max_wind_speed(hazard_da)
             elif alg == 'number_of_hits':
                 heatmap = heatmap.number_of_hits(hazard_da)
+            elif alg == 'mean_wind_speed_when_hit':
+                heatmap = heatmap.mean_wind_speed_when_hit(hazard_da, i)
             else:
                 raise NotImplemented(f'algorithm {alg} not implemented')
 
             #TODO: REMOVE
             print(f'max AFTER : {np.max(heatmap.to_numpy())}')
             #TODO: REMOVE
+
+            #TODO: generate intermediate heatmaps?
 
         else:
             print(f"Failed to download {hazard_nc_file}")
@@ -354,8 +367,8 @@ if __name__ == '__main__':
             f'Ending year {args.end} must be later than {args.start}  is out of the allowed range {YEAR_HISTORICAL_START}-{year_current}')
 
     # handling algorithm choice exception
-    if args.alg not in ['max_wind_speed', 'number_of_hits', 'median_wind_speed', 'degree_of_severity']:
-        raise argparse.ArgumentTypeError('Algorithm must be either "max_wind_speed", "number_of_hits", "median_wind_speed" or "degree_of_severity"')
+    if args.alg not in ['max_wind_speed', 'number_of_hits', 'mean_wind_speed_when_hit', 'degree_of_severity']:
+        raise argparse.ArgumentTypeError('Algorithm must be either "max_wind_speed", "number_of_hits", "mean_wind_speed_when_hit" or "degree_of_severity"')
 
     generateHeatMap(
         start=args.start,
