@@ -5919,6 +5919,24 @@
                 "time": "18:00",
                 "year": "2024"
             }
+        ],
+        "2025": [
+            {
+                "bbox": [
+                    51.3542,
+                    -25.5458,
+                    78.8875,
+                    -8.5458
+                ],
+                "date": "2024-11-13",
+                "id": "SH022025",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH022025_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH022025_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH022025.geojson",
+                "storm_name": "BHEKI",
+                "time": "00:00",
+                "year": "2025"
+            }
         ]
     }
 }
