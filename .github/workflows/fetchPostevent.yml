@@ -61,11 +61,11 @@ jobs:
         run: python scripts/pastStorms.py
 
       # Show git log
-      - name: Show git log
+      - name: show git log
         run: git log --oneline
 
       # Show git diff
-      - name: Show git diff
+      - name: show git diff
         run: git diff
 
       # commit files
@@ -74,10 +74,13 @@ jobs:
           git config --global http.version HTTP/1.1
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+      
+          # Add all files (new, modified, deleted)
           git add -A
-          git status
-          if ! git diff --quiet; then
-            git commit -m "update data"
+      
+          # Check if there are staged changes (committed vs. staged differences)
+          if ! git diff --cached --quiet; then
+            git commit -m "Update data"
           else
             echo "No changes to commit"
           fi
