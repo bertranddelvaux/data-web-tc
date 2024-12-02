@@ -44,6 +44,9 @@ jobs:
           KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/fetchPostevent.py
+
+      - name: List files in mpres_data directory
+        run: ls -l mpres_data
         
       # execute python script createIndex.py
       - name: execute python script createIndex.py
@@ -56,7 +59,15 @@ jobs:
       # execute python script pastStorms.py
       - name: execute python script pastStorms.py
         run: python scripts/pastStorms.py
-    
+
+      # Show git log
+      - name: Show git log
+        run: git log --oneline
+
+      # Show git diff
+      - name: Show git diff
+        run: git diff
+
       # commit files
       - name: commit files
         run: |
@@ -64,6 +75,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
+          git status
           if ! git diff --quiet; then
             git commit -m "update data"
           else
