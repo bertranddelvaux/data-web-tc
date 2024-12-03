@@ -30,6 +30,9 @@ for dir in dirs:
                             loss_file_15as = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
                             if file_15as in dict_files[dir]:
                                 dict_storms[dir][i]['nc_15as'] = file_15as
+                                with open(file_15as, 'r') as f_15as:
+                                    data_15as = json.load(f_15as)
+                                dict_storms[dir][i]['bbox_15as'] = data_15as['bbox']
                             if loss_file_15as in dict_files[dir]:
                                 dict_storms[dir][i]['losses_15as'] = loss_file_15as
 
