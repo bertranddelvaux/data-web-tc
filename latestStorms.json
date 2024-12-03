@@ -1,15 +1,12 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH032025",
             null
         ],
         "storms_shp": [
-            "SH032025",
             null
         ],
         "windwater_shp": [
-            "SH032025",
             null
         ]
     },
@@ -168,6 +165,19 @@
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH242022_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH242022.geojson",
             "storm_name": "JASMINE"
+        },
+        {
+            "bbox": [
+                51.3542,
+                -25.5458,
+                78.8875,
+                -8.5458
+            ],
+            "id": "SH022025",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH022025_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH022025_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH022025.geojson",
+            "storm_name": "BHEKI"
         },
         {
             "bbox": [

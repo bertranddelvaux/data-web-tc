@@ -44,6 +44,10 @@ jobs:
           KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/fetchPostevent.py
+
+      # list files in mpres_data directory
+      - name: List files in mpres_data directory
+        run: ls -l mpres_data
         
       # execute python script createIndex.py
       - name: execute python script createIndex.py
@@ -56,16 +60,28 @@ jobs:
       # execute python script pastStorms.py
       - name: execute python script pastStorms.py
         run: python scripts/pastStorms.py
-    
+
+      # Show git log
+      - name: show git log
+        run: git log --oneline
+
+      # Show git diff
+      - name: show git diff
+        run: git diff
+
       # commit files
       - name: commit files
         run: |
           git config --global http.version HTTP/1.1
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+      
+          # Add all files (new, modified, deleted)
           git add -A
-          if ! git diff --quiet; then
-            git commit -m "update data"
+      
+          # Check if there are staged changes (committed vs. staged differences)
+          if ! git diff --cached --quiet; then
+            git commit -m "Update data"
           else
             echo "No changes to commit"
           fi
