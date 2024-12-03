@@ -23,13 +23,13 @@ with open('index.json', 'r') as f:
 # files_tc_realtime_url = [os.path.splitext(os.path.split(url)[1])[0] for url in data[data.columns[-1]].values]
 # files_to_remove = [file for file in files_tc_realtime if file not in files_tc_realtime_url]
 
-list_subfolder = ['taos_swio30s_ofcl_windwater_nc', 'taos_swio30s_ofcl_windwater_shp', 'taos_swio15s_ofcl_windwater_nc', 'taos_swio15s_ofcl_windwater_shp']
+list_subfolder = ['ofcl_15as_nc', 'taos_swio30s_ofcl_windwater_nc', 'taos_swio30s_ofcl_windwater_shp']
 
 root_root = os.path.abspath(os.getcwd())
 os.chdir('mpres_data/postevent')
 dir_root = os.path.abspath(os.getcwd())
 
-for subfolder, ext in zip(list_subfolder, ['.nc', '.zip', '.nc', '.zip']):
+for subfolder, ext in zip(list_subfolder, ['.nc', '.nc', '.zip']):
 
     os.chdir(dir_root)
 
@@ -73,7 +73,7 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.zip', '.nc', '.zip']):
                         gadm_file=os.path.join(root_root, 'gadm_adm2.json')
                     )
 
-                if subfolder == 'taos_swio15s_ofcl_windwater_nc':
+                if subfolder == 'ofcl_15as_nc':
                     print(f'\033[35mDealing with {subfolder}\033[0m')
                     try:
                         nc.nc2geojson(filename)
@@ -89,9 +89,6 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.zip', '.nc', '.zip']):
                         )
                     except:
                         print('\033[91m' + 'There was an error in trying to handle a 15as case' + '\033[0m')
-
-                if subfolder == 'taos_swio15s_ofcl_windwater_shp':
-                    print('\033[91m' + 'Subfolder 15as case not implemented' + '\033[0m')
 
                 if subfolder == 'taos_swio30s_ofcl_windwater_shp':
                     filename_shp = f'shp_{filename}'
