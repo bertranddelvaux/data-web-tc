@@ -45,6 +45,7 @@ jobs:
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/fetchPostevent.py
 
+      # list files in mpres_data directory
       - name: List files in mpres_data directory
         run: ls -l mpres_data
         
