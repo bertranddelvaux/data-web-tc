@@ -24,6 +24,15 @@ for dir in dirs:
                             dict_storms[dir][i]['nc'] = file
                             loss_file = f'mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/{storm_id}_losses_adm.json'
                             shp_file = f'mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_{storm_id}.geojson'
+
+                            # check if the equivalent 15as file exists
+                            file_15as = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_JTWC_SLOSH.geojson'
+                            loss_file_15as = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
+                            if file_15as in dict_files[dir]:
+                                dict_storms[dir][i]['nc_15as'] = file_15as
+                            if loss_file_15as in dict_files[dir]:
+                                dict_storms[dir][i]['losses_15as'] = loss_file_15as
+
                             if loss_file in dict_files[dir]:
                                 dict_storms[dir][i]['losses'] = loss_file
                             if shp_file in dict_files[dir]:
