@@ -1,0 +1,34 @@
+import json
+
+dict_storms = {}
+mapping_storms = {}
+dirs = ['mpres_data']
+
+with open('index.json', 'r') as f:
+    dict_files = json.load(f)
+
+for dir in dirs:
+    for file in dict_files[dir]:
+        if dir == 'mpres_data':
+            dict_storms.setdefault(dir, [])
+            if 'ofcl_15as_nc' in file and not(file.endswith('.json')):
+                storm_id = f'SH{file.split("/SH")[1].split("_")[0].split(".")[0]}'
+                loss_file = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
+                shp_file = f'mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_{storm_id}.geojson'
+
+                if loss_file in dict_files[dir]:
+                    if shp_file in dict_files[dir]:
+                        if storm_id not in [s['id'] for s in dict_storms[dir]]:
+                            rec = {'id': storm_id}
+                            dict_storms[dir].append(rec)
+                        i = [i for i, s in enumerate(dict_storms[dir]) if s['id'] == storm_id][0]
+                        dict_storms[dir][i]['nc'] = file
+                        dict_storms[dir][i]['losses'] = loss_file
+                        dict_storms[dir][i]['shp'] = shp_file
+                        with open(file, 'r') as f:
+                            data = json.load(f)
+                        dict_storms[dir][i]['storm_name'] = data['storm']['name']
+                        dict_storms[dir][i]['bbox'] = data['bbox']
+
+with open('latestStorms_15as.json', 'w') as f:
+    json.dump(dict_storms, f, sort_keys=True, indent=4)
