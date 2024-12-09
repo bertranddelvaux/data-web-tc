@@ -1,13 +1,14 @@
 {
     "current_storms": {
         "current_storms": [
-            null
+            "SH922025"
         ],
         "storms_shp": [
+            "SH922025",
             null
         ],
         "windwater_shp": [
-            null
+            "SH922025"
         ]
     },
     "mpres_data": [
@@ -173,9 +174,17 @@
                 78.8875,
                 -8.5458
             ],
+            "bbox_15as": [
+                48.1688,
+                -27.0729,
+                78.9437,
+                -8.5063
+            ],
             "id": "SH022025",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH022025_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH022025_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH022025_JTWC_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH022025_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH022025.geojson",
             "storm_name": "BHEKI"
         },
@@ -308,5 +317,18 @@
             "storm_name": "FILIPO"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                62.6917,
+                -15.1917,
+                88.975,
+                -9.0583
+            ],
+            "id": "SH922025",
+            "jtwc": "tc_realtime/taostc_SH922025_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH922025_losses_adm.json",
+            "storm_name": "INVEST"
+        }
+    ]
 }

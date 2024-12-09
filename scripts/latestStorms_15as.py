@@ -32,5 +32,3 @@ for dir in dirs:
 
 with open('latestStorms_15as.json', 'w') as f:
     json.dump(dict_storms, f, sort_keys=True, indent=4)
-
-
