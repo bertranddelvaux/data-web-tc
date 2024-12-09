@@ -81,7 +81,7 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.nc', '.zip']):
                         # running loss generation
                         calculateLosses_15as(
                             storm_file=filename,
-                            exp_file=os.path.join(root_root, 'arc_consolidated_expo_15as_gdp.gzip'),
+                            exp_file=os.path.join(root_root, 'arc_consolidated_expo_15as_gdp_updatedPPP.gzip'),
                             adm_file=os.path.join(root_root, 'adm2_full_precision.json'),
                             mapping_file=os.path.join(root_root, 'mapping_15as.gzip'),
                             split=False,
