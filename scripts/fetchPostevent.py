@@ -46,7 +46,8 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.nc', '.zip']):
     file_list = listFilesUrl(url_subfolder, username, password, ext=ext)
 
     try:
-        local_storm_files = [f'SH{re.search("SH(.+?)_", os.path.splitext(os.path.split(file)[1])[0]).group(1)}' for file in index['mpres_data'] if f'postevent/{subfolder}' in file and file.endswith('geojson')]
+        #local_storm_files = [f'SH{re.search("SH(.+?)_", os.path.splitext(os.path.split(file)[1])[0]).group(1)}' for file in index['mpres_data'] if f'postevent/{subfolder}' in file and file.endswith('geojson')]
+        local_storm_files = [os.path.splitext(os.path.basename(file))[0] for file in index['mpres_data'] if f'postevent/{subfolder}' in file and file.endswith('geojson')]
     except:
         local_storm_files = []  # in the case of shp files
 
