@@ -1,17 +1,3 @@
 {
-    "mpres_data": [
-        {
-            "bbox": [
-                48.1688,
-                -27.0729,
-                78.9437,
-                -8.5063
-            ],
-            "id": "SH022025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH022025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH022025_JTWC_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH022025.geojson",
-            "storm_name": "BHEKI"
-        }
-    ]
+    "mpres_data": []
 }

@@ -335,7 +335,8 @@
     ],
     "tc_realtime": [
         "tc_realtime/SH922025_losses_adm.json",
-        "tc_realtime/taostc_SH922025_JTWC_SLOSH.geojson",
-        "tc_realtime/README.md"
+        "tc_realtime/SH042025_losses_adm.json",
+        "tc_realtime/README.md",
+        "tc_realtime/taostc_SH042025_JTWC_SLOSH.geojson"
     ]
 }
