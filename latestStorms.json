@@ -316,18 +316,5 @@
             "storm_name": "FILIPO"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                33.1,
-                -17.6417,
-                85.7,
-                -8.725
-            ],
-            "id": "SH042025",
-            "jtwc": "tc_realtime/taostc_SH042025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH042025_losses_adm.json",
-            "storm_name": "CHIDO"
-        }
-    ]
+    "tc_realtime": []
 }
