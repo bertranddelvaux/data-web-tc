@@ -297,9 +297,17 @@
                 85.7,
                 -8.6625
             ],
+            "bbox_15as": [
+                33.1,
+                -16.4813,
+                85.7,
+                -8.6562
+            ],
             "id": "SH042025",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH042025_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH042025_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH042025_JTWC_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH042025_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH042025.geojson",
             "storm_name": "CHIDO"
         },
