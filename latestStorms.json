@@ -1,14 +1,13 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH942025"
+            "SH072025"
         ],
         "storms_shp": [
-            "SH942025",
-            null
+            "SH072025"
         ],
         "windwater_shp": [
-            "SH942025"
+            "SH072025"
         ]
     },
     "mpres_data": [
@@ -338,5 +337,18 @@
             "storm_name": "FILIPO"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                37.9583,
+                -21.1417,
+                116.1417,
+                -10.3583
+            ],
+            "id": "SH072025",
+            "jtwc": "tc_realtime/taostc_SH072025_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH072025_losses_adm.json",
+            "storm_name": "DIKELEDI"
+        }
+    ]
 }
