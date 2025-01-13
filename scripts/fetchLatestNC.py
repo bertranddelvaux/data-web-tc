@@ -28,6 +28,38 @@ print(f'\033[32mTIMESTAMP: {utc_timestamp}\n\033[0m')
 csv = requests.get(url, auth=(username, password))
 data = pd.read_csv(StringIO(csv.text), header=None)
 
+#TODO: Add-on as a workaround for the intermittent data bug on KAC's portal
+# data will be the list of .nc files (JTWC) found at 'https://www.kacportal.com/portal/kacs3/arc/tc_realtime/'
+# rather than the csv file found at the same address
+
+# URL of the directory to scrape
+url_realtime = 'https://www.kacportal.com/portal/kacs3/arc/tc_realtime/'
+
+# Send a GET request to fetch the content
+response = requests.get(url_realtime, auth=(username, password))
+
+# Parse the page content using BeautifulSoup
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(response.text, 'html.parser')
+
+# Find all links (assuming files are linked in <a> tags)
+links = soup.find_all('a')
+
+# Create an empty list to store the matching files
+matching_files = []
+
+# Loop through all links and check if they contain 'JTWC' and end with '.nc'
+for link in links:
+    file_url = link.get('href')
+    if file_url and 'JTWC' in file_url and file_url.endswith('.nc'):
+        matching_files.append(os.path.join(url_realtime, os.path.split(file_url)[1]))
+
+# Create a pandas DataFrame without a column name
+data_bis = pd.DataFrame(matching_files)
+
+#TODO: Add-on as a workaround for the intermittent data bug on KAC's portal
+
+
 # read in the index file that lists the existing files on disk
 with open('index.json', 'r') as f:
     index = json.load(f)
