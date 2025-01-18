@@ -337,18 +337,5 @@
             "storm_name": "ELLIE"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                37.775,
-                -38.1083,
-                113.2,
-                -9.525
-            ],
-            "id": "SH072025",
-            "jtwc": "tc_realtime/taostc_SH072025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH072025_losses_adm.json",
-            "storm_name": "DIKELEDI"
-        }
-    ]
+    "tc_realtime": []
 }
