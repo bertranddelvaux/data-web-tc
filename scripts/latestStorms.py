@@ -26,13 +26,25 @@ for dir in dirs:
                             shp_file = f'mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_{storm_id}.geojson'
 
                             # check if the equivalent 15as file exists
-                            file_15as = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_JTWC_SLOSH.geojson'
-                            loss_file_15as = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
-                            if file_15as in dict_files[dir]:
+
+                            # TODO: Workaround for the new file format of KAC f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_OFCL_SLOSH.geojson'
+                            file_15as_JTWC = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_JTWC_SLOSH.geojson'
+                            file_15as_OFCL = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_OFCL_SLOSH.geojson'
+
+                            file_15as = None
+                            if file_15as_JTWC in dict_files[dir]:
+                                file_15as = file_15as_JTWC
+                            elif file_15as_OFCL in dict_files[dir]:
+                                file_15as = file_15as_OFCL
+
+                            if file_15as is not None:
                                 dict_storms[dir][i]['nc_15as'] = file_15as
                                 with open(file_15as, 'r') as f_15as:
                                     data_15as = json.load(f_15as)
                                 dict_storms[dir][i]['bbox_15as'] = data_15as['bbox']
+                            # TODO: Workaround for the new file format of KAC f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_OFCL_SLOSH.geojson'
+
+                            loss_file_15as = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
                             if loss_file_15as in dict_files[dir]:
                                 dict_storms[dir][i]['losses_15as'] = loss_file_15as
 
