@@ -86,13 +86,20 @@
                 113.2,
                 -9.9458
             ],
+            "bbox_15as": [
+                37.8271,
+                -36.4354,
+                113.2,
+                -10.0771
+            ],
             "id": "SH072025",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH072025_losses_adm.json",
             "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH072025_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH072025_JTWC_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH072025_OFCL_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH072025.geojson",
             "storm_name": "DIKELEDI"
-        },
+        },        
         {
             "bbox": [
                 33.6,
