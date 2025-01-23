@@ -68,7 +68,7 @@ def sem_dprob(wfrac, sfrac):
 def wind_damage(expclass, vms):
     wstdam = 0.0
 
-    vkts = vms * 1.94 # 1.94384
+    vkts = vms * 1.94384
     vmin = sem[expclass]['vmin']
     vmax = sem[expclass]['vmax']
 
