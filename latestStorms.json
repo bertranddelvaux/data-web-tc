@@ -1,11 +1,16 @@
 {
     "current_storms": {
-        "current_storms": [],
+        "current_storms": [
+            "SH122025",
+            "SH112025"
+        ],
         "storms_shp": [
-            null
+            "SH122025",
+            "SH112025"
         ],
         "windwater_shp": [
-            "SH922025"
+            "SH122025",
+            "SH112025"
         ]
     },
     "mpres_data": [
@@ -356,5 +361,30 @@
             "storm_name": "EMNATI"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                37.425,
+                -33.375,
+                52.4583,
+                -18.4417
+            ],
+            "id": "SH122025",
+            "jtwc": "tc_realtime/taostc_SH122025_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH122025_losses_adm.json",
+            "storm_name": "ELVIS"
+        },
+        {
+            "bbox": [
+                53.1417,
+                -24.1583,
+                83.525,
+                -7.625
+            ],
+            "id": "SH112025",
+            "jtwc": "tc_realtime/taostc_SH112025_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH112025_losses_adm.json",
+            "storm_name": "ELEVEN"
+        }
+    ]
 }
