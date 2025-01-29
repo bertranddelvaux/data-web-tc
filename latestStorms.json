@@ -358,18 +358,5 @@
             "storm_name": "EMNATI"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                55.2583,
-                -26.325,
-                83.525,
-                -7.625
-            ],
-            "id": "SH112025",
-            "jtwc": "tc_realtime/taostc_SH112025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH112025_losses_adm.json",
-            "storm_name": "ELEVEN"
-        }
-    ]
+    "tc_realtime": []
 }
