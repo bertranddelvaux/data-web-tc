@@ -1,1 +1,1 @@
-{"records": [{"adm0_name": "Madagascar", "adm0_code": "MDG", "population": 3466, "loss": 0.7722851248, "wind_cat": {"0": 3466}, "adm1": [{"adm1_name": "Toliary", "adm1_code": "MDG.6_1", "population": 3466, "loss": 0.7722851248, "wind_cat": {"0": 3466}, "adm2": [{"adm2_name": "Androy", "adm2_code": "MDG.6.1_1", "population": 2925, "loss": 0.71123098, "wind_cat": {"0": 2925}}, {"adm2_name": "Atsimo-Andrefana", "adm2_code": "MDG.6.3_1", "population": 541, "loss": 0.0610541449, "wind_cat": {"0": 541}}]}]}]}
+{"records": []}
