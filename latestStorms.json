@@ -364,18 +364,6 @@
     "tc_realtime": [
         {
             "bbox": [
-                36.725,
-                -43.0583,
-                60.475,
-                -18.175
-            ],
-            "id": "SH122025",
-            "jtwc": "tc_realtime/taostc_SH122025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH122025_losses_adm.json",
-            "storm_name": "ELVIS"
-        },
-        {
-            "bbox": [
                 40.9917,
                 -21.225,
                 83.525,
