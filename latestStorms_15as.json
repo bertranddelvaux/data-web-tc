@@ -38,6 +38,19 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/SH022025_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH022025.geojson",
             "storm_name": "BHEKI"
+        },
+        {
+            "bbox": [
+                37.2854,
+                -40.0146,
+                57.0062,
+                -18.4104
+            ],
+            "id": "SH122025",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH122025_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122025.geojson",
+            "storm_name": "ELVIS"
         }
     ]
 }
