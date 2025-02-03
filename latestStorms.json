@@ -120,6 +120,27 @@
         },
         {
             "bbox": [
+                36.6792,
+                -38.4,
+                55.8625,
+                -18.1875
+            ],
+            "bbox_15as": [
+                37.2854,
+                -40.0146,
+                57.0062,
+                -18.4104
+            ],
+            "id": "SH122025",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH122025_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH122025_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH122025_JTWC_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122025.geojson",
+            "storm_name": "ELVIS"
+        },
+        {
+            "bbox": [
                 120.3458,
                 -21.5625,
                 130.2458,

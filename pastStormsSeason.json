@@ -5955,6 +5955,22 @@
             },
             {
                 "bbox": [
+                    36.6792,
+                    -38.4,
+                    55.8625,
+                    -18.1875
+                ],
+                "date": "2025-01-27",
+                "id": "SH122025",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH122025_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH122025_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122025.geojson",
+                "storm_name": "ELVIS",
+                "time": "00:00",
+                "year": "2025"
+            },
+            {
+                "bbox": [
                     33.1,
                     -17.3042,
                     85.7,
