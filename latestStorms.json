@@ -392,6 +392,18 @@
             "jtwc": "tc_realtime/taostc_SH112025_JTWC_SLOSH.geojson",
             "losses": "tc_realtime/SH112025_losses_adm.json",
             "storm_name": "FAIDA"
+        },
+        {
+            "bbox": [
+                66.975,
+                -25.9917,
+                107.6583,
+                -13.375
+            ],
+            "id": "SH132025",
+            "jtwc": "tc_realtime/taostc_SH132025_JTWC_SLOSH.geojson",
+            "losses": "tc_realtime/SH132025_losses_adm.json",
+            "storm_name": "VINCE"
         }
     ]
 }
