@@ -12,8 +12,8 @@
         ],
         "windwater_shp": [
             "SH142025",
-            "SH132025",
-            null
+            null,
+            "SH132025"
         ]
     },
     "mpres_data": [
@@ -388,10 +388,10 @@
     "tc_realtime": [
         {
             "bbox": [
-                66.4083,
-                -31.2417,
-                107.5083,
-                -13.375
+                67.4583,
+                -30.6583,
+                107.3,
+                -13.3917
             ],
             "id": "SH132025",
             "jtwc": "tc_realtime/taostc_SH132025_JTWC_SLOSH.geojson",
