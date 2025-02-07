@@ -5984,6 +5984,22 @@
                 "storm_name": "CHIDO",
                 "time": "06:00",
                 "year": "2025"
+            },
+            {
+                "bbox": [
+                    45.6458,
+                    -23.3792,
+                    83.5875,
+                    -7.9958
+                ],
+                "date": "2025-01-23",
+                "id": "SH112025",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH112025_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH112025_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112025.geojson",
+                "storm_name": "FAIDA",
+                "time": "06:00",
+                "year": "2025"
             }
         ]
     }

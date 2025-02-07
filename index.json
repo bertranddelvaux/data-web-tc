@@ -46,10 +46,12 @@
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH162024_JTWC_SLOSH.geojson",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH112023_JTWC_SLOSH.geojson",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH042024_losses_adm.json",
+        "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH112025_JTWC_SLOSH.geojson",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH032023_JTWC_SLOSH.geojson",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH132023_JTWC_SLOSH.geojson",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH042023_JTWC_SLOSH.geojson",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH082023_losses_adm.json",
+        "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH112025_losses_adm.json",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH072022_JTWC_30_SLOSH.geojson",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH142023_losses_adm.json",
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH052023_JTWC_SLOSH.geojson",
@@ -353,7 +355,9 @@
         "mpres_data/postevent/ofcl_15as_nc/SH122025_losses_adm.json",
         "mpres_data/postevent/ofcl_15as_nc/SH042025_JTWC_SLOSH.geojson",
         "mpres_data/postevent/ofcl_15as_nc/SH022025_JTWC_SLOSH.geojson",
-        "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson"
+        "mpres_data/postevent/ofcl_15as_nc/SH112025_losses_adm.json",
+        "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson",
+        "mpres_data/postevent/ofcl_15as_nc/SH112025_JTWC_SLOSH.geojson"
     ],
     "tc_realtime": [
         "tc_realtime/SH932025_losses_adm.json",
