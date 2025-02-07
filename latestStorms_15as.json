@@ -51,6 +51,19 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122025.geojson",
             "storm_name": "ELVIS"
+        },
+        {
+            "bbox": [
+                44.1146,
+                -25.1229,
+                83.9479,
+                -8.0021
+            ],
+            "id": "SH112025",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH112025_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/SH112025_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112025.geojson",
+            "storm_name": "FAIDA"
         }
     ]
 }
