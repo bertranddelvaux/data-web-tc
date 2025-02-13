@@ -53,8 +53,8 @@ from utils import listFilesUrl, fetchUrl
 class EligibleAlgorithms(Enum):
     MAX_WIND_SPEED = 'max_wind_speed'
     NUMBER_OF_HITS = 'number_of_hits'
-    MEAN_WIND_SPEED_WHEN_HIT = 'mean_wind_speed_when_hit'
-    MEDIAN_WIND_SPEED_WHEN_HIT = 'median_wind_speed_when_hit'
+    MEAN_WIND_SPEED = 'mean_wind_speed'
+    MEDIAN_WIND_SPEED = 'median_wind_speed'
     DEGREE_OF_SEVERITY_MEDIAN = 'degree_of_severity_median'
     DEGREE_OF_SEVERITY_MEAN = 'degree_of_severity_mean'
 
@@ -335,9 +335,9 @@ def generateHeatMap(
             data = heatmap.maximum_speed
         elif alg == EligibleAlgorithms.NUMBER_OF_HITS:
             data = heatmap.number_of_hits
-        elif alg == EligibleAlgorithms.MEAN_WIND_SPEED_WHEN_HIT:
+        elif alg == EligibleAlgorithms.MEAN_WIND_SPEED:
             data = heatmap.mean_speed
-        elif alg == EligibleAlgorithms.MEDIAN_WIND_SPEED_WHEN_HIT:
+        elif alg == EligibleAlgorithms.MEDIAN_WIND_SPEED:
             data = heatmap.median_speed
         elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEDIAN:
             data = heatmap.severity_median
