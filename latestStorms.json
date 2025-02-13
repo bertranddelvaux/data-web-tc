@@ -403,18 +403,6 @@
     "tc_realtime": [
         {
             "bbox": [
-                64.0417,
-                -35.8417,
-                107.3,
-                -13.3917
-            ],
-            "id": "SH132025",
-            "jtwc": "tc_realtime/taostc_SH132025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH132025_losses_adm.json",
-            "storm_name": "VINCE"
-        },
-        {
-            "bbox": [
                 73.9583,
                 -36.025,
                 124.0083,
