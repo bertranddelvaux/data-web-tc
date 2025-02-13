@@ -48,6 +48,9 @@ from utils import listFilesUrl, fetchUrl
 # a few constants #
 ###################
 
+# eligible algorithms
+ELIGIBLE_ALGORITHMS = ['max_wind_speed', 'number_of_hits', 'mean_wind_speed_when_hit', 'median_wind_speed_when_hit', 'degree_of_severity_median', 'degree_of_severity_mean']
+
 YEAR_HISTORICAL_START = 1980 # latest year with historical data
 YEAR_2022 = 2022 # year which is in the old KAC project arc_proj22 but not anymore in the historical data
 YEAR_2023_NOW = 2023 # year which is in the latest KAC project
@@ -66,11 +69,6 @@ RED = '\033[91m'
 PURPLE = '\033[95m'
 RESET = '\033[0m'
 
-COVERAGE_AREA = {
-        'lat': [-51, 3],
-        'lon': [20, 150]
-}
-
 # resolutions
 RESOLUTION = {
     'low': 120,
@@ -80,11 +78,15 @@ RESOLUTION = {
 # Wind variable
 WIND_VARIABLE = 'swath_peak_wind'
 
-# Tolerance when reindexing
-TOL = 1e-5
+# m/s to km/h
+MS2KMH = 3.6
 
-# Wind speed to consider for Cyclone hit
-WIND_SPEED_THRESHOLD = 17.5 # 17.5 m/s = 63 km/h
+# Constants to reach a 100 on the severity scale (10 hits at 100 km/h)
+N = 10 # number of hits per year
+S = 100 / MS2KMH # 100 km/h in m/s
+
+# Threshold to have damages
+T = 63 / MS2KMH # 63 km/h in m/s
 
 
 #######################
@@ -121,35 +123,51 @@ def wrap_get_hazard_dataarray(func):
 # Class HeatMap #
 #################
 
-class HeatMap(xr.DataArray):
-    __slots__ = ()  # No additional attributes, so use an empty tuple to prevent creation of __dict__
+class HeatMap():
 
-    def __init__(self, *args, **kwargs):
-        # Call the parent class constructor, which initializes the xarray.DataArray
-        super().__init__(*args, **kwargs)
+    def __init__(self):
+        self.list_data_arrays = []
 
-    def _reindex_like(self, other):
-        """Helper function to reindex 'other' to align with self."""
-        if not isinstance(other, xr.DataArray):
-            raise TypeError(f'{other} not of {xr.DataArray.__name__} type')
-        return other.reindex_like(self, fill_value=0., method='nearest', tolerance=TOL).to_numpy()
+    def add_data_array(self, da):
+        self.list_data_arrays.append(da)
 
-    def max_wind_speed(self, other):
-        other_reindexed = self._reindex_like(other)
-        self.data = np.maximum(self.data, other_reindexed)
-        return self
+    def process_heatmap(self, T=T):
+        self.list_data_arrays_aligned = xr.align(*self.list_data_arrays, join='outer', fill_value=0.0)
+        self.list_data_arrays_aligned_boolean = [da >= T for da in self.list_data_arrays_aligned]
+        self.number_of_hits = np.add.reduce(self.list_data_arrays_aligned_boolean)  # number of hits per pixel
+        self.maximum_speed = np.maximum.reduce(self.list_data_arrays_aligned)  # maximum speed per pixel
+        self.mean_speed = np.mean(self.list_data_arrays_aligned, axis=0)
+        self.median_speed = np.median(self.list_data_arrays_aligned, axis=0)
+        self.hits_median_speed = self.number_of_hits * self.median_speed
+        self.severity_median = vectorized_severity(self.number_of_hits * self.median_speed)
+        self.severity_mean = vectorized_severity(self.number_of_hits * self.mean_speed)
+        self.latitudes = self.list_data_arrays_aligned[0].latitude.data
+        self.longitudes = self.list_data_arrays_aligned[0].longitude.data
 
-    def number_of_hits(self, other, threshold=WIND_SPEED_THRESHOLD):
-        other_reindexed = self._reindex_like(other)
-        self.data = self.data + (other_reindexed >= threshold).astype(float)
-        return self
+#####################
+# Severity function #
+#####################
 
-    def mean_wind_speed_when_hit(self, other, n, threshold=WIND_SPEED_THRESHOLD):
-        other_reindexed = self._reindex_like(other)
-        self.data[other_reindexed >= threshold] = (n * self.data[other_reindexed >= threshold] + other_reindexed[other_reindexed >= threshold]) / (n + 1)
-        return self
+def severity(hit_speed, N=N, S=S, T=T):
+    # f(x) = 1 / a * ln(b * x + c)
+    # a = ln (b * T)
+    # b = [NS / T^100] ^ 1/99
+    # c = 0
 
+    # function parameters
+    c = 0
+    b = np.power((N * S) / (T**100), 1/99)
+    a = np.log(b * T)
 
+    # dependent variable
+    x = hit_speed # formerly two variables: x = hits * speed
+
+    # severity function
+    f = 1 / a * np.log(b * x + c)
+
+    return max(f, 0.0) #np.round(max(f, 0.0), decimals=0)
+
+vectorized_severity = np.vectorize(severity)
 
 ######################
 # Get URLs functions #
@@ -244,34 +262,11 @@ def generateHeatMap(
     # Get the list of eligible urls
     list_urls = getListURLs(start, end, res)
 
-    # Define the latitude and longitude ranges from COVERAGE_AREA
-    lat_min, lat_max = COVERAGE_AREA['lat']
-    lon_min, lon_max = COVERAGE_AREA['lon']
-
-    # Create the grid for the xarray with the specified resolution
-    dxdy = RESOLUTION[res] / 3600.
-    latitudes = np.arange(lat_min - dxdy / 2., lat_max + dxdy / 2., dxdy)
-    longitudes = np.arange(lon_min - dxdy / 2., lon_max + dxdy / 2., dxdy)
-
-    # Initialize an empty xarray with NaN values
-    heatmap = HeatMap(
-        xr.DataArray(
-            np.full((len(latitudes), len(longitudes)), 0.),
-            dims=['latitude', 'longitude'],
-            coords={'latitude': latitudes, 'longitude': longitudes},
-            name='heatmap'
-        )
-    )
+    # Initializing heatmap
+    heatmap = HeatMap()
 
     # Loop through the urls
     for i, url in enumerate(list_urls):
-
-        #TODO:
-        # 1. Download
-        #   a. Get the resolution, save it, print when different
-        # 2. Open the wind part
-        # 3. Update the datset
-        # 4. Remove the file
 
         # hazard file
         hazard_nc_file = os.path.basename(urlparse(url).path)
@@ -286,29 +281,12 @@ def generateHeatMap(
         downloaded = fetchUrl(url, USERNAME, PASSWORD, filename=hazard_nc_file)
 
         if downloaded:
-            hazard_da, lats, lons, dx, dy, resolution = getHazardDataArray(hazard_nc_file)
+            hazard_da, lats, lons, dxdy, dy, resolution = getHazardDataArray(hazard_nc_file)
 
             if resolution != RESOLUTION[res]:
                 raise RuntimeError(f'res: {resolution} != resolution {RESOLUTION[res]}')
 
-            #TODO: REMOVE
-            print(f'max BEFORE : {np.max(heatmap.to_numpy())}')
-            #TODO: REMOVE
-
-            if alg == 'max_wind_speed':
-                heatmap = heatmap.max_wind_speed(hazard_da)
-            elif alg == 'number_of_hits':
-                heatmap = heatmap.number_of_hits(hazard_da)
-            elif alg == 'mean_wind_speed_when_hit':
-                heatmap = heatmap.mean_wind_speed_when_hit(hazard_da, i)
-            else:
-                raise NotImplemented(f'algorithm {alg} not implemented')
-
-            #TODO: REMOVE
-            print(f'max AFTER : {np.max(heatmap.to_numpy())}')
-            #TODO: REMOVE
-
-            #TODO: generate intermediate heatmaps?
+            heatmap.add_data_array(hazard_da)
 
         else:
             print(f"Failed to download {hazard_nc_file}")
@@ -316,8 +294,20 @@ def generateHeatMap(
         # removing hazard file
         os.remove(hazard_nc_file)
 
+    # process heatmap
+    heatmap.process_heatmap(T=T)
+
+    # Assuming latitudes and longitudes are lists or arrays
+    longitudes = heatmap.longitudes
+    latitudes = heatmap.latitudes
+    lon_min, lon_max = min(longitudes), max(longitudes)
+    lat_min, lat_max = min(latitudes), max(latitudes)
+
+    # Calculate the pixel size based on the data resolution (in degrees or your desired unit)
+    # For simplicity, let's assume your heatmap is square (same resolution in both lat and lon)
+    dxdy = (lon_max - lon_min) / len(longitudes)  # or use any resolution for both axes
+
     # Now save the heatmap as a GeoTIFF
-    output_filename = f'heatmap_{alg}_{start}_{end}.tif'
     transform = from_origin(lon_min - dxdy / 2., lat_max + dxdy / 2., dxdy, dxdy)  # top-left corner and pixel size
 
     # Define metadata for the GeoTIFF
@@ -325,16 +315,33 @@ def generateHeatMap(
         'driver': 'GTiff',
         'count': 1,  # One band of data
         'dtype': 'float64',  # Data type of the array
-        'crs': 'EPSG:4326',  # Coordinate reference system (WGS 84)
-        'width': heatmap.values.shape[1],
-        'height': heatmap.values.shape[0],
+        'crs': 'EPSG:4326',  # Coordinate reference system (WGS 84) #'crs': '+proj=latlong'
+        'width': len(longitudes),
+        'height': len(latitudes),
         'transform': transform
     }
 
-    with rasterio.open(output_filename, 'w', **metadata) as dst:
-        dst.write(heatmap.values, 1)  # Write the data to band 1
+    for alg in ELIGIBLE_ALGORITHMS:
+        proj = 'epsg4326'
+        output_filename = f'heatmap_{alg}_{proj}_{start}_{end}.tif'
 
-    print(f'GeoTIFF saved as {output_filename}')
+        if alg == 'max_wind_speed':
+            data = heatmap.maximum_speed
+        elif alg == 'number_of_hits':
+            data = heatmap.number_of_hits
+        elif alg == 'mean_wind_speed_when_hit':
+            data = heatmap.mean_speed
+        elif alg == 'median_wind_speed_when_hit':
+            data == heatmap.median_speed
+        elif alg == 'degree_of_severity_median':
+            data = heatmap.severity_median
+        elif alg == 'degree_of_severity_mean':
+            data = heatmap.severity_mean
+
+        with rasterio.open(output_filename, 'w', **metadata) as dst:
+            dst.write(data, 1)  # Write the data to band 1
+
+        print(f'GeoTIFF saved as {output_filename}')
 
 
 if __name__ == '__main__':
@@ -365,7 +372,7 @@ if __name__ == '__main__':
             f'Ending year {args.end} must be later than {args.start}  is out of the allowed range {YEAR_HISTORICAL_START}-{year_current}')
 
     # handling algorithm choice exception
-    if args.alg not in ['max_wind_speed', 'number_of_hits', 'mean_wind_speed_when_hit', 'degree_of_severity']:
+    if args.alg not in ELIGIBLE_ALGORITHMS:
         raise argparse.ArgumentTypeError('Algorithm must be either "max_wind_speed", "number_of_hits", "mean_wind_speed_when_hit" or "degree_of_severity"')
 
     generateHeatMap(
