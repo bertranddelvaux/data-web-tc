@@ -39,6 +39,7 @@ import rasterio
 from rasterio.transform import from_origin
 
 from urllib.parse import urlparse
+from enum import Enum
 
 from utils import listFilesUrl, fetchUrl
 
@@ -49,7 +50,13 @@ from utils import listFilesUrl, fetchUrl
 ###################
 
 # eligible algorithms
-ELIGIBLE_ALGORITHMS = ['max_wind_speed', 'number_of_hits', 'mean_wind_speed_when_hit', 'median_wind_speed_when_hit', 'degree_of_severity_median', 'degree_of_severity_mean']
+class EligibleAlgorithms(Enum):
+    MAX_WIND_SPEED = 'max_wind_speed'
+    NUMBER_OF_HITS = 'number_of_hits'
+    MEAN_WIND_SPEED_WHEN_HIT = 'mean_wind_speed_when_hit'
+    MEDIAN_WIND_SPEED_WHEN_HIT = 'median_wind_speed_when_hit'
+    DEGREE_OF_SEVERITY_MEDIAN = 'degree_of_severity_median'
+    DEGREE_OF_SEVERITY_MEAN = 'degree_of_severity_mean'
 
 YEAR_HISTORICAL_START = 1980 # latest year with historical data
 YEAR_2022 = 2022 # year which is in the old KAC project arc_proj22 but not anymore in the historical data
@@ -321,21 +328,20 @@ def generateHeatMap(
         'transform': transform
     }
 
-    for alg in ELIGIBLE_ALGORITHMS:
-        proj = 'epsg4326'
-        output_filename = f'heatmap_{alg}_{proj}_{start}_{end}.tif'
+    for alg in EligibleAlgorithms:
+        output_filename = f'heatmap_{alg}_{start}_{end}.tif'
 
-        if alg == 'max_wind_speed':
+        if alg == EligibleAlgorithms.MAX_WIND_SPEED:
             data = heatmap.maximum_speed
-        elif alg == 'number_of_hits':
+        elif alg == EligibleAlgorithms.NUMBER_OF_HITS:
             data = heatmap.number_of_hits
-        elif alg == 'mean_wind_speed_when_hit':
+        elif alg == EligibleAlgorithms.MEAN_WIND_SPEED_WHEN_HIT:
             data = heatmap.mean_speed
-        elif alg == 'median_wind_speed_when_hit':
-            data == heatmap.median_speed
-        elif alg == 'degree_of_severity_median':
+        elif alg == EligibleAlgorithms.MEDIAN_WIND_SPEED_WHEN_HIT:
+            data = heatmap.median_speed
+        elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEDIAN:
             data = heatmap.severity_median
-        elif alg == 'degree_of_severity_mean':
+        elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEAN:
             data = heatmap.severity_mean
 
         with rasterio.open(output_filename, 'w', **metadata) as dst:
@@ -352,7 +358,7 @@ if __name__ == '__main__':
     parser.add_argument('-res', '--resolution', type=str, default='high', dest='res', help="Set the resolution of the data: 'low' or 'high'.")
     parser.add_argument('-start', type=int, default=YEAR_HISTORICAL_START, dest='start', help="Starting year to be processed.")
     parser.add_argument('-end', type=int, default=year_current, dest='end', help="Ending year to be processed.")
-    parser.add_argument('-alg', type=str, default='max_wind_speed', dest='alg', help="Algorithm to process the data")
+    parser.add_argument('-alg', type=str, default=None, dest='alg', help="Algorithm to process the data")
     args = parser.parse_args()
 
     def year_out_of_range(year):
@@ -371,10 +377,16 @@ if __name__ == '__main__':
         raise argparse.ArgumentTypeError(
             f'Ending year {args.end} must be later than {args.start}  is out of the allowed range {YEAR_HISTORICAL_START}-{year_current}')
 
-    # handling algorithm choice exception
-    if args.alg not in ELIGIBLE_ALGORITHMS:
-        raise argparse.ArgumentTypeError('Algorithm must be either "max_wind_speed", "number_of_hits", "mean_wind_speed_when_hit" or "degree_of_severity"')
+    # Handling algorithm choice exception using the Enum
+    try:
+        if args.alg is not None and not any(args.alg == alg.value for alg in EligibleAlgorithms):
+            raise argparse.ArgumentTypeError(
+                f'{RED}Algorithm must be one of: ' + ', '.join([alg.value for alg in EligibleAlgorithms]) + RESET
+            )
+    except argparse.ArgumentTypeError as e:
+        print(e)
 
+    # Generate HeatMap
     generateHeatMap(
         start=args.start,
         end=args.end,
