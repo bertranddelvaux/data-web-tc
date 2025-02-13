@@ -172,7 +172,7 @@ def severity(hit_speed, N=N, S=S, T=T):
     # severity function
     f = 1 / a * np.log(b * x + c)
 
-    return max(f, 0.0) #np.round(max(f, 0.0), decimals=0)
+    return np.round(max(f, 0.0), decimals=0)
 
 vectorized_severity = np.vectorize(severity)
 
