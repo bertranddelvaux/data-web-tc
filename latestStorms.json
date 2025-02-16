@@ -1,16 +1,13 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH142025",
-            null
+            "SH142025"
         ],
         "storms_shp": [
-            "SH142025",
-            null
+            "SH142025"
         ],
         "windwater_shp": [
-            "SH142025",
-            null
+            "SH142025"
         ]
     },
     "mpres_data": [
@@ -406,8 +403,8 @@
     "tc_realtime": [
         {
             "bbox": [
-                63.675,
-                -42.6417,
+                66.6083,
+                -39.2917,
                 124.0083,
                 -9.0917
             ],
