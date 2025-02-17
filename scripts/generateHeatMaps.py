@@ -40,6 +40,7 @@ from rasterio.transform import from_origin
 
 from urllib.parse import urlparse
 from enum import Enum
+from collections import OrderedDict
 
 from utils import listFilesUrl, fetchUrl
 
@@ -109,7 +110,7 @@ def wrap_get_list_urls(func):
         list_urls = func(start, end, res)
 
         # Print the message after the function completes
-        print(f'{GREEN}found {len(list_urls)} files{RESET}')
+        print(f'{GREEN}found {sum(len(year) for year in list_urls.values())} files{RESET}')
         return list_urls
     return wrapper
 
@@ -119,9 +120,9 @@ def wrap_get_hazard_dataarray(func):
         hazard_da, lats, lons, dx, dy, res = func(hazard_nc_file)
 
         # Print the message after the function completes
-        print(f'\t\t\tres: {PURPLE}{res} arcseconds{RESET} (dx {dx:.6f} dy {dy:.6f})')
-        print(f'\t\t\tlat: {PURPLE}{lats[0]} {lats[-1]}{RESET}')
-        print(f'\t\t\tlon: {PURPLE}{lons[0]} {lons[-1]}{RESET}')
+        print(f'\t\t\t\tres: {PURPLE}{res} arcseconds{RESET} (dx {dx:.6f} dy {dy:.6f})')
+        print(f'\t\t\t\tlat: {PURPLE}{lats[0]} {lats[-1]}{RESET}')
+        print(f'\t\t\t\tlon: {PURPLE}{lons[0]} {lons[-1]}{RESET}')
         return hazard_da, lats, lons, dx, dy, res
     return wrapper
 
@@ -189,13 +190,31 @@ def getListURLs(
     '''Get list of eligible files'''
 
     def sort_filter_files_by_year(list_files, start, end):
-
         # Regular expression to extract the year from the file name
         year_pattern = re.compile(r'_SH(\d{6})_')
 
-        sorted_filtered_files = sorted([file for file in list_files if start <= extract_year_from_url(file) <= end], key=extract_year_from_url)
+        # Create an ordered dictionary to store files by year
+        files_by_year = {}
 
-        return sorted_filtered_files
+        # Iterate over the files and group them by year
+        for file in list_files:
+            year = extract_year_from_url(file)
+            if year and start <= year <= end:
+                if year not in files_by_year:
+                    files_by_year[year] = []
+                files_by_year[year].append(file)
+
+        # Sort the years in ascending order and create an OrderedDict
+        sorted_years = sorted(files_by_year.keys())
+        ordered_files_by_year = OrderedDict()
+
+        # Insert files in sorted year order
+        for year in sorted_years:
+            # Sort the files within each year
+            files_by_year[year].sort(key=extract_year_from_url)
+            ordered_files_by_year[year] = files_by_year[year]
+
+        return ordered_files_by_year
 
     def extract_year_from_url(url):
         # Define a function to extract the year from the URL
@@ -221,10 +240,11 @@ def getListURLs(
     # Combine all lists into one
     list_files = list_files_1980_2021 + list_files_2022 + list_files_2023_now
 
-    # Sort the list of files by the year extracted from the URL
-    list_files_sorted = sort_filter_files_by_year(list_files, start, end)
+    # Group the files by year and filter them by the specified range
+    files_by_year = sort_filter_files_by_year(list_files, start, end)
 
-    return list_files_sorted
+    return files_by_year
+
 
 ############################
 # Hazard Dataset functions #
@@ -267,87 +287,92 @@ def generateHeatMap(
     """
 
     # Get the list of eligible urls
-    list_urls = getListURLs(start, end, res)
+    ordered_urls_by_year = getListURLs(start, end, res)
 
     # Initializing heatmap
     heatmap = HeatMap()
 
     # Loop through the urls
-    for i, url in enumerate(list_urls):
+    for year in ordered_urls_by_year.keys(): #for i, url in enumerate(ordered_urls_by_year):
 
-        # hazard file
-        hazard_nc_file = os.path.basename(urlparse(url).path)
+        # Print processing year message
+        print(f'\n{BLUE}Processing year {year}{RESET}\n')
 
-        # Calculate the width based on the length of the list
-        width = len(str(len(list_urls)))
+        for i, url in enumerate(ordered_urls_by_year[year]):
 
-        # Print with leading zeros and proper alignment
-        print(f'{GREEN}{i + 1:0{width}d}/{len(list_urls)}{RESET}', end='')
+            # hazard file
+            hazard_nc_file = os.path.basename(urlparse(url).path)
 
-        # Download file
-        downloaded = fetchUrl(url, USERNAME, PASSWORD, filename=hazard_nc_file)
+            # Calculate the width based on the length of the list
+            width = len(str(len(ordered_urls_by_year)))
 
-        if downloaded:
-            hazard_da, lats, lons, dxdy, dy, resolution = getHazardDataArray(hazard_nc_file)
+            # Print with leading zeros and proper alignment
+            print(f'\t{GREEN}{i + 1:0{width}d}/{len(ordered_urls_by_year[year])}{RESET}', end='')
 
-            if resolution != RESOLUTION[res]:
-                raise RuntimeError(f'res: {resolution} != resolution {RESOLUTION[res]}')
+            # Download file
+            downloaded = fetchUrl(url, USERNAME, PASSWORD, filename=hazard_nc_file)
 
-            heatmap.add_data_array(hazard_da)
+            if downloaded:
+                hazard_da, lats, lons, dxdy, dy, resolution = getHazardDataArray(hazard_nc_file)
 
-        else:
-            print(f"Failed to download {hazard_nc_file}")
+                if resolution != RESOLUTION[res]:
+                    raise RuntimeError(f'res: {resolution} != resolution {RESOLUTION[res]}')
 
-        # removing hazard file
-        os.remove(hazard_nc_file)
+                heatmap.add_data_array(hazard_da)
 
-    # process heatmap
-    heatmap.process_heatmap(T=T)
+            else:
+                print(f"Failed to download {hazard_nc_file}")
 
-    # Assuming latitudes and longitudes are lists or arrays
-    longitudes = heatmap.longitudes
-    latitudes = heatmap.latitudes
-    lon_min, lon_max = min(longitudes), max(longitudes)
-    lat_min, lat_max = min(latitudes), max(latitudes)
+            # removing hazard file
+            os.remove(hazard_nc_file)
 
-    # Calculate the pixel size based on the data resolution (in degrees or your desired unit)
-    # For simplicity, let's assume your heatmap is square (same resolution in both lat and lon)
-    dxdy = (lon_max - lon_min) / len(longitudes)  # or use any resolution for both axes
+        # process heatmap
+        heatmap.process_heatmap(T=T)
 
-    # Now save the heatmap as a GeoTIFF
-    transform = from_origin(lon_min - dxdy / 2., lat_max + dxdy / 2., dxdy, dxdy)  # top-left corner and pixel size
+        # Assuming latitudes and longitudes are lists or arrays
+        longitudes = heatmap.longitudes
+        latitudes = heatmap.latitudes
+        lon_min, lon_max = min(longitudes), max(longitudes)
+        lat_min, lat_max = min(latitudes), max(latitudes)
 
-    # Define metadata for the GeoTIFF
-    metadata = {
-        'driver': 'GTiff',
-        'count': 1,  # One band of data
-        'dtype': 'float64',  # Data type of the array
-        'crs': 'EPSG:4326',  # Coordinate reference system (WGS 84) #'crs': '+proj=latlong'
-        'width': len(longitudes),
-        'height': len(latitudes),
-        'transform': transform
-    }
+        # Calculate the pixel size based on the data resolution (in degrees or your desired unit)
+        # For simplicity, let's assume your heatmap is square (same resolution in both lat and lon)
+        dxdy = (lon_max - lon_min) / len(longitudes)  # or use any resolution for both axes
 
-    for alg in EligibleAlgorithms:
-        output_filename = f'heatmap_{alg}_{start}_{end}.tif'
+        # Now save the heatmap as a GeoTIFF
+        transform = from_origin(lon_min - dxdy / 2., lat_max + dxdy / 2., dxdy, dxdy)  # top-left corner and pixel size
 
-        if alg == EligibleAlgorithms.MAX_WIND_SPEED:
-            data = heatmap.maximum_speed
-        elif alg == EligibleAlgorithms.NUMBER_OF_HITS:
-            data = heatmap.number_of_hits
-        elif alg == EligibleAlgorithms.MEAN_WIND_SPEED:
-            data = heatmap.mean_speed
-        elif alg == EligibleAlgorithms.MEDIAN_WIND_SPEED:
-            data = heatmap.median_speed
-        elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEDIAN:
-            data = heatmap.severity_median
-        elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEAN:
-            data = heatmap.severity_mean
+        # Define metadata for the GeoTIFF
+        metadata = {
+            'driver': 'GTiff',
+            'count': 1,  # One band of data
+            'dtype': 'float64',  # Data type of the array
+            'crs': 'EPSG:4326',  # Coordinate reference system (WGS 84) #'crs': '+proj=latlong'
+            'width': len(longitudes),
+            'height': len(latitudes),
+            'transform': transform
+        }
 
-        with rasterio.open(output_filename, 'w', **metadata) as dst:
-            dst.write(data, 1)  # Write the data to band 1
+        for alg in EligibleAlgorithms:
+            output_filename = f'heatmap_{alg}_{year}.tif'
 
-        print(f'GeoTIFF saved as {output_filename}')
+            if alg == EligibleAlgorithms.MAX_WIND_SPEED:
+                data = heatmap.maximum_speed
+            elif alg == EligibleAlgorithms.NUMBER_OF_HITS:
+                data = heatmap.number_of_hits
+            elif alg == EligibleAlgorithms.MEAN_WIND_SPEED:
+                data = heatmap.mean_speed
+            elif alg == EligibleAlgorithms.MEDIAN_WIND_SPEED:
+                data = heatmap.median_speed
+            elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEDIAN:
+                data = heatmap.severity_median
+            elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEAN:
+                data = heatmap.severity_mean
+
+            with rasterio.open(output_filename, 'w', **metadata) as dst:
+                dst.write(data, 1)  # Write the data to band 1
+
+            print(f'GeoTIFF saved as {output_filename} | range: {np.min(data):.2f} - {np.max(data):.2f}')
 
 
 if __name__ == '__main__':
