@@ -27,6 +27,13 @@ import xarray as xr
 from shapely.geometry import Polygon, Point
 from compactGeoJSON import densify
 
+#############
+# CONSTANTS #
+#############
+
+# impact
+IMPACT_DIR = 'impact'
+
 
 # TAOS Version 24 Enki 15as Parameter table
 sem = {'EXP_AGC': {'nstory': 1, 'vmin': 26, 'vmax': 135},
@@ -116,6 +123,7 @@ def loss_calculation(expclass, vms, surge, numexp, value, res_sec):
 def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, geojson, prefix='swath', csv_file='losses.csv', gadm_file=None):
 
     filters = None
+    #filters = [('COUNTRY', 'in', ['Mauritius', 'Reunion'])] #TODO: uncomment for debugging purpose only
     #filters = [('COUNTRY','==','Seychelles')] #TODO: uncomment for debugging purpose only
     # reading files: storm (nc), exposure (dbf), adm (json), mapping (json)
     exp_df = pd.read_parquet(exp_file, filters=filters)
@@ -279,6 +287,10 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
             df_final = df_merge.drop(columns='geometry')
 
 
+    # saving as csv
+    # Check if the directory exists, if not, create it
+    if not os.path.exists(IMPACT_DIR):
+        os.makedirs(IMPACT_DIR)
 
     jsonFileBase = f'{stormId}_losses_adm'
 
@@ -286,6 +298,7 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
     adm_group_list = []
     for i in range(3):
         jsonFile = f'{jsonFileBase}{i}.{"geo" if geojson else ""}json'
+        csvFile = f'impact_{stormId[-4:]}_{jsonFileBase}{i}.csv'
         adm_group_list = [f'adm{j}_{k}' for j in range(i + 1) for k in ['name', 'code']]
 
         df_final_adm = df_final.copy(deep=True)
@@ -312,6 +325,12 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
             jsonString = df_final_groupby.to_json(orient='records').replace('[','{"records":[').replace(']', ']}')
             with open(jsonFile, 'w') as f:
                 f.write(jsonString)
+            # csv losses
+            # Add 'atcf_id', 'dtg', and 'tech' as new columns at the beginning of df_final_groupby
+            df_final_groupby.insert(0, 'atcf_id', stormId)  # Insert 'atcf_id' at position 0 (beginning)
+            df_final_groupby.insert(1, 'dtg', storm_df.fcst_time)  # Insert 'dtg' at position 1
+            df_final_groupby.insert(2, 'tech', storm_df.fcst_tech)  # Insert 'tech' at position 2
+            df_final_groupby.to_csv(f'{IMPACT_DIR}/{csvFile}', index=False)
 
     i = 0
     with open(f'{jsonFileBase}{i}.json', 'r') as f:
