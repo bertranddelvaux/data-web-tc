@@ -41,6 +41,7 @@ from rasterio.transform import from_origin
 from urllib.parse import urlparse
 from enum import Enum
 from collections import OrderedDict
+import datetime
 
 from utils import listFilesUrl, fetchUrl
 
@@ -270,6 +271,55 @@ def getHazardDataArray(hazard_nc_file):
 # Generate Heat Map functions #
 ###############################
 
+def heatMapToGeoTiffs(heatmap, T, year):
+    # Process heatmap
+    heatmap.process_heatmap(T=T)
+
+    # Assuming latitudes and longitudes are lists or arrays
+    longitudes = heatmap.longitudes
+    latitudes = heatmap.latitudes
+    lon_min, lon_max = min(longitudes), max(longitudes)
+    lat_min, lat_max = min(latitudes), max(latitudes)
+
+    # Calculate the pixel size based on the data resolution (in degrees or your desired unit)
+    dxdy = (lon_max - lon_min) / len(longitudes)  # or use any resolution for both axes
+
+    # Now save the heatmap as a GeoTIFF
+    transform = from_origin(lon_min - dxdy / 2., lat_max + dxdy / 2., dxdy, dxdy)  # top-left corner and pixel size
+
+    # Define metadata for the GeoTIFF
+    metadata = {
+        'driver': 'GTiff',
+        'count': 1,  # One band of data
+        'dtype': 'float64',  # Data type of the array
+        'crs': 'EPSG:4326',  # Coordinate reference system (WGS 84)
+        'width': len(longitudes),
+        'height': len(latitudes),
+        'transform': transform
+    }
+
+    # Loop through the algorithms and save the respective data
+    for alg in EligibleAlgorithms:
+        output_filename = f'heatmap_{alg}_{year}.tif'
+
+        if alg == EligibleAlgorithms.MAX_WIND_SPEED:
+            data = heatmap.maximum_speed
+        elif alg == EligibleAlgorithms.NUMBER_OF_HITS:
+            data = heatmap.number_of_hits
+        elif alg == EligibleAlgorithms.MEAN_WIND_SPEED:
+            data = heatmap.mean_speed
+        elif alg == EligibleAlgorithms.MEDIAN_WIND_SPEED:
+            data = heatmap.median_speed
+        elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEDIAN:
+            data = heatmap.severity_median
+        elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEAN:
+            data = heatmap.severity_mean
+
+        with rasterio.open(output_filename, 'w', **metadata) as dst:
+            dst.write(data, 1)  # Write the data to band 1
+
+        print(f'GeoTIFF saved as {output_filename} | range: {np.min(data):.2f} - {np.max(data):.2f}')
+
 def generateHeatMap(
         start,
         end,
@@ -290,13 +340,19 @@ def generateHeatMap(
     ordered_urls_by_year = getListURLs(start, end, res)
 
     # Initializing heatmap
-    heatmap = HeatMap()
+    heatmap_aggregated = HeatMap()
+
+    # Get the current year
+    current_year = datetime.datetime.now().year
 
     # Loop through the urls
     for year in ordered_urls_by_year.keys(): #for i, url in enumerate(ordered_urls_by_year):
 
         # Print processing year message
         print(f'\n{BLUE}Processing year {year}{RESET}\n')
+
+        # Initializing heatmap
+        heatmap = HeatMap()
 
         for i, url in enumerate(ordered_urls_by_year[year]):
 
@@ -318,7 +374,12 @@ def generateHeatMap(
                 if resolution != RESOLUTION[res]:
                     raise RuntimeError(f'res: {resolution} != resolution {RESOLUTION[res]}')
 
+                # Adding the hazard to the yearly heatmap
                 heatmap.add_data_array(hazard_da)
+
+                if year != current_year: # only aggregate on years that are complete
+                    # Adding the hazard to the accumulated heatmap
+                    heatmap_aggregated.add_data_array(hazard_da)
 
             else:
                 print(f"Failed to download {hazard_nc_file}")
@@ -326,53 +387,12 @@ def generateHeatMap(
             # removing hazard file
             os.remove(hazard_nc_file)
 
-        # process heatmap
-        heatmap.process_heatmap(T=T)
+        # Generating yearly heatmaps
+        heatMapToGeoTiffs(heatmap, T, year)
 
-        # Assuming latitudes and longitudes are lists or arrays
-        longitudes = heatmap.longitudes
-        latitudes = heatmap.latitudes
-        lon_min, lon_max = min(longitudes), max(longitudes)
-        lat_min, lat_max = min(latitudes), max(latitudes)
-
-        # Calculate the pixel size based on the data resolution (in degrees or your desired unit)
-        # For simplicity, let's assume your heatmap is square (same resolution in both lat and lon)
-        dxdy = (lon_max - lon_min) / len(longitudes)  # or use any resolution for both axes
-
-        # Now save the heatmap as a GeoTIFF
-        transform = from_origin(lon_min - dxdy / 2., lat_max + dxdy / 2., dxdy, dxdy)  # top-left corner and pixel size
-
-        # Define metadata for the GeoTIFF
-        metadata = {
-            'driver': 'GTiff',
-            'count': 1,  # One band of data
-            'dtype': 'float64',  # Data type of the array
-            'crs': 'EPSG:4326',  # Coordinate reference system (WGS 84) #'crs': '+proj=latlong'
-            'width': len(longitudes),
-            'height': len(latitudes),
-            'transform': transform
-        }
-
-        for alg in EligibleAlgorithms:
-            output_filename = f'heatmap_{alg}_{year}.tif'
-
-            if alg == EligibleAlgorithms.MAX_WIND_SPEED:
-                data = heatmap.maximum_speed
-            elif alg == EligibleAlgorithms.NUMBER_OF_HITS:
-                data = heatmap.number_of_hits
-            elif alg == EligibleAlgorithms.MEAN_WIND_SPEED:
-                data = heatmap.mean_speed
-            elif alg == EligibleAlgorithms.MEDIAN_WIND_SPEED:
-                data = heatmap.median_speed
-            elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEDIAN:
-                data = heatmap.severity_median
-            elif alg == EligibleAlgorithms.DEGREE_OF_SEVERITY_MEAN:
-                data = heatmap.severity_mean
-
-            with rasterio.open(output_filename, 'w', **metadata) as dst:
-                dst.write(data, 1)  # Write the data to band 1
-
-            print(f'GeoTIFF saved as {output_filename} | range: {np.min(data):.2f} - {np.max(data):.2f}')
+    # Generating accumulated heatmaps
+    year = f'{start}_{min(end, year_current-1)}'
+    heatMapToGeoTiffs(heatmap_aggregated, T, year)
 
 
 if __name__ == '__main__':
