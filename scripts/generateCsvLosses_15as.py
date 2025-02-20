@@ -2,8 +2,8 @@ import os
 
 from urllib.parse import urlparse
 
-from scripts.ncgzip2losses_15as import calculateLosses_15as
-from scripts.utils import listFilesUrl, fetchUrl
+from ncgzip2losses_15as import calculateLosses_15as
+from utils import listFilesUrl, fetchUrl
 
 #############
 # Constants #
@@ -16,6 +16,7 @@ password = os.environ['KAC_PASSWORD']
 
 # Online dir
 url_subfolder_list = [
+    #'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/historical_data/jtwc_high_resolution_hazard/', # < 2021, historical
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2022_JTWC/15as/', # 2022
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2023_JTWC/15as/', # 2023
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2024_provisional/15as/', # 2024
