@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 ###################################################################
-# Simplified python3 based economic impact estimation program
+# Simplified python3 based economic impact_15as estimation program
 # Version 1.0
 # Copyright (c) 2022, Bertrand Delvaux
 #
@@ -30,9 +30,6 @@ from compactGeoJSON import densify
 #############
 # CONSTANTS #
 #############
-
-# impact
-IMPACT_DIR = 'impact'
 
 
 # TAOS Version 24 Enki 15as Parameter table
@@ -120,7 +117,18 @@ def loss_calculation(expclass, vms, surge, numexp, value, res_sec):
     return loss
 
 
-def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, geojson, prefix='swath', csv_file='losses.csv', gadm_file=None):
+def calculateLosses_15as(
+        storm_file,
+        exp_file,
+        adm_file,
+        mapping_file,
+        split,
+        geojson,
+        prefix='swath',
+        csv_file='losses.csv',
+        gadm_file=None,
+        impact_dir=None
+):
 
     filters = None
     #filters = [('COUNTRY', 'in', ['Mauritius', 'Reunion'])] #TODO: uncomment for debugging purpose only
@@ -287,11 +295,6 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
             df_final = df_merge.drop(columns='geometry')
 
 
-    # saving as csv
-    # Check if the directory exists, if not, create it
-    if not os.path.exists(IMPACT_DIR):
-        os.makedirs(IMPACT_DIR)
-
     jsonFileBase = f'{stormId}_losses_adm'
 
     wind_cat_dict_by_adm = {}
@@ -353,7 +356,7 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
             df_final_groupby.insert(3, 'jtwc_start_time', storm_df.julian_day.sqltext) # Insert 'jtwc_end_time' at position 3
             df_final_groupby.insert(4, 'jtwc_end_time', storm_df.fcst_time)  # Insert 'jtwc_end_time' at position 4
             df_final_groupby.insert(5, 'tech', storm_df.fcst_tech)  # Insert 'tech' at position 5
-            df_final_groupby.to_csv(f'{IMPACT_DIR}/{csvFile}', index=False)
+            df_final_groupby.to_csv(f'{impact_dir}/{csvFile}', index=False)
 
     i = 0
     with open(f'{jsonFileBase}{i}.json', 'r') as f:
