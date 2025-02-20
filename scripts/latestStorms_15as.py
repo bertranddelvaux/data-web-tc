@@ -11,7 +11,7 @@ for dir in dirs:
     for file in dict_files[dir]:
         if dir == 'mpres_data':
             dict_storms.setdefault(dir, [])
-            if 'ofcl_15as_nc' in file and not(file.endswith('.json')):
+            if 'ofcl_15as_nc' in file and not(file.endswith('.json')) and not(file.endswith('.csv')):
                 storm_id = f'SH{file.split("/SH")[1].split("_")[0].split(".")[0]}'
                 loss_file = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
                 shp_file = f'mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_{storm_id}.geojson'
