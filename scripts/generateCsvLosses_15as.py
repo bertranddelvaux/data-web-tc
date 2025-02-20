@@ -98,22 +98,26 @@ for url_file in updated_files_list[:N]:
 # Save Total Impact CSV #
 #########################
 
-# List to store the dataframes
-dfs = []
-
-# total impact csv
-impact_total_csv = 'impact_total_15as.csv'
+# List to store the dataframes for each 'adm'
+dfs = {0: [], 1: [], 2: []}
 
 # Loop through all the files in the directory
 for file_name in os.listdir(impact_dir):
-    if file_name.endswith('.csv') and impact_total_csv not in file_name:
-        file_path = os.path.join(impact_dir, file_name)
-        # Read the CSV file into a DataFrame and append to the list
-        df = pd.read_csv(file_path)
-        dfs.append(df)
+    if file_name.endswith('.csv') and any(f'adm{i}' in file_name for i in range(3)):
+        # Determine the 'adm' level (0, 1, or 2) from the file name
+        for i in range(3):
+            if f'adm{i}' in file_name:
+                file_path = os.path.join(impact_dir, file_name)
+                # Read the CSV file into a DataFrame and append to the corresponding list
+                df = pd.read_csv(file_path)
+                dfs[i].append(df)
+                break
 
-# Concatenate all DataFrames into one
-impact_total = pd.concat(dfs, ignore_index=True)
+# Loop through each 'adm' level and create a merged file for each
+for i in range(3):
+    # Concatenate all DataFrames for this 'adm' level
+    impact_total_adm = pd.concat(dfs[i], ignore_index=True)
 
-# Save the merged dataframe to a new CSV file
-impact_total.to_csv(impact_total_csv, index=False)
+    # Save the merged dataframe to a new CSV file
+    impact_total_csv = f'impact_total_adm{i}_15as.csv'
+    impact_total_adm.to_csv(os.path.join(impact_dir, impact_total_csv), index=False)
