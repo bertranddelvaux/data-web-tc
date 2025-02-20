@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1988,SH021988,NONAME,1987-11-20 18:00,1987-11-26 06:00,OFCL,Comoros,COM,209241,5153.09,{0: 209241}
+1988,SH021988,NONAME,1987-11-20 18:00,1987-11-26 06:00,OFCL,Mozambique,MOZ,2033165,305577.94,"{0: 1355456, 1: 677709}"
+1988,SH021988,NONAME,1987-11-20 18:00,1987-11-26 06:00,OFCL,Tanzania,TZA,3754,0.58,{0: 3754}
