@@ -1,3 +1,4 @@
+import os
 import json
 import re
 
@@ -23,6 +24,27 @@ for dir in dirs:
                 storm_id = extract_id(file) #f'SH{file.split("/SH")[1].split("_")[0].split(".")[0]}'
                 loss_file = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
                 shp_file = f'mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_{storm_id}.geojson'
+
+                # Step 1: Check if the shp_file exists
+                if not os.path.exists(shp_file):
+                    print(f"{shp_file} not found. Searching in jtwc_history directory...")
+
+                    # Step 2: Search for .geojson files with {storm_id} in their name in the jtwc_history directory and subdirectories
+                    jtwc_history_dir = 'jtwc_history'
+                    found_file = None
+                    for root, dirs, files in os.walk(jtwc_history_dir):
+                        for file in files:
+                            if f'{storm_id}' in file and file.endswith('.geojson'):
+                                found_file = os.path.join(root, file)
+                                break
+                        if found_file:
+                            break
+
+                    # Step 3: Update shp_file if a match is found
+                    if found_file:
+                        shp_file = found_file
+                    else:
+                        print(f"No file found containing {storm_id} in the name.")
 
                 if loss_file in dict_files[dir]:
                     if shp_file in dict_files[dir]:
