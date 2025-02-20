@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2005,SH022005,NONAME,2004-10-24 18:00,2004-10-29 00:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,28,0.31,{0: 28}
+2005,SH022005,NONAME,2004-10-24 18:00,2004-10-29 00:00,OFCL,Seychelles,SYC,Outer Islands,SYC.20_1,116,92.44,{0: 116}
+2005,SH022005,NONAME,2004-10-24 18:00,2004-10-29 00:00,OFCL,Tanzania,TZA,Lindi,TZA.10_1,1967,36139.75,{0: 1967}
+2005,SH022005,NONAME,2004-10-24 18:00,2004-10-29 00:00,OFCL,Tanzania,TZA,Pwani,TZA.20_1,556,8040.2,{0: 556}
