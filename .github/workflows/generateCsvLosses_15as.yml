@@ -42,9 +42,33 @@ jobs:
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/generateCsvLosses_15as.py
         
+ # list files in mpres_data directory
+      - name: List files in mpres_data directory
+        run: ls -l mpres_data
+
+      # list files in tc_realtime directory
+      - name: List files in tc_realtime directory
+        run: ls -l tc_realtime
+        
       # execute python script createIndex.py
       - name: execute python script createIndex.py
         run: python scripts/createIndex.py
+        
+      # execute python script latestStorms.py
+      - name: execute python script latestStorms.py
+        run: python scripts/latestStorms.py
+
+      # execute python script latestStorms_15as.py
+      - name: execute python script latestStorms_15as.py
+        run: python scripts/latestStorms_15as.py
+        
+      # execute python script pastStorms.py
+      - name: execute python script pastStorms.py
+        run: python scripts/pastStorms.py
+        
+      # execute python script getHistory.py
+      - name: execute python script getHistory.py
+        run: python scripts/getHistory.py
       
       # Show git log
       - name: show git log
@@ -66,7 +90,7 @@ jobs:
       
           # Check if there are staged changes (committed vs. staged differences)
           if ! git diff --cached --quiet; then
-            git commit -m "Update data"
+            git commit -m "Generated 15as csv"
           else
             echo "No changes to commit"
           fi
