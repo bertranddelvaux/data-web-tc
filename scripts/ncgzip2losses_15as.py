@@ -327,10 +327,11 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
                 f.write(jsonString)
             # csv losses
             # Add 'atcf_id', 'storm_name', 'dtg', and 'tech' as new columns at the beginning of df_final_groupby
-            df_final_groupby.insert(0, 'atcf_id', stormId)  # Insert 'atcf_id' at position 0 (beginning)
-            df_final_groupby.insert(1, 'storm_name', storm_df.storm_name)  # Insert 'dtg' at position 1
-            df_final_groupby.insert(2, 'dtg', storm_df.fcst_time)  # Insert 'dtg' at position 2
-            df_final_groupby.insert(3, 'tech', storm_df.fcst_tech)  # Insert 'tech' at position 3
+            df_final_groupby.insert(0, 'tc_season', stormId[-4:]) # Insert 'tc_season' at position 0 (beginning)
+            df_final_groupby.insert(1, 'atcf_id', stormId)  # Insert 'atcf_id' at position 1
+            df_final_groupby.insert(2, 'storm_name', storm_df.storm_name)  # Insert 'dtg' at position 2
+            df_final_groupby.insert(3, 'dtg', storm_df.fcst_time)  # Insert 'dtg' at position 3
+            df_final_groupby.insert(4, 'tech', storm_df.fcst_tech)  # Insert 'tech' at position 4
             df_final_groupby.to_csv(f'{IMPACT_DIR}/{csvFile}', index=False)
 
     i = 0
