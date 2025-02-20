@@ -110,13 +110,23 @@ for file_name in os.listdir(impact_dir):
                 file_path = os.path.join(impact_dir, file_name)
                 # Read the CSV file into a DataFrame and append to the corresponding list
                 df = pd.read_csv(file_path)
+                df['loss'] = df['loss'].apply(lambda x: round(x, 2)) # rounding loss column to 2 decimals
                 dfs[i].append(df)
                 break
 
 # Loop through each 'adm' level and create a merged file for each
 for i in range(3):
+
+    # Sort columns for each level as specified
+    if i == 0:
+        columns_order = ['tc_season', 'atcf_id', 'adm0_code']
+    elif i == 1:
+        columns_order = ['tc_season', 'atcf_id', 'adm0_code', 'adm1_code']
+    elif i == 2:
+        columns_order = ['tc_season', 'atcf_id', 'adm0_code', 'adm1_code', 'adm2_code']
+
     # Concatenate all DataFrames for this 'adm' level
-    impact_total_adm = pd.concat(dfs[i], ignore_index=True)
+    impact_total_adm = pd.concat(dfs[i], ignore_index=True).sort_values(by=columns_order).drop_duplicates()
 
     # Save the merged dataframe to a new CSV file
     impact_total_csv = f'impact_total_adm{i}_15as.csv'
