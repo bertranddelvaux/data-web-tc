@@ -5,6 +5,8 @@ import pandas as pd
 
 from urllib.parse import urlparse
 
+import nczip2geojson as nc
+
 from ncgzip2losses_15as import calculateLosses_15as
 from utils import listFilesUrl, fetchUrl
 
@@ -78,7 +80,7 @@ for url_file in updated_files_list[:N]:
     downloaded = fetchUrl(url_file, username, password)
 
     if downloaded:
-
+        nc.nc2geojson(filename)
         # running loss generation
         calculateLosses_15as(
             storm_file=filename,
