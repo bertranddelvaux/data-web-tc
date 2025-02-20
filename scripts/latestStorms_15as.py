@@ -1,8 +1,16 @@
 import json
+import re
 
 dict_storms = {}
 mapping_storms = {}
 dirs = ['mpres_data']
+
+def extract_id(file_path):
+    # Regular expression to match 'SH' followed by 6 digits
+    match = re.search(r"SH\d{6}", file_path)
+    if match:
+        return match.group(0)  # Extract and return the matched string
+    return None
 
 with open('index.json', 'r') as f:
     dict_files = json.load(f)
@@ -12,7 +20,7 @@ for dir in dirs:
         if dir == 'mpres_data':
             dict_storms.setdefault(dir, [])
             if 'ofcl_15as_nc' in file and not(file.endswith('.json')) and not(file.endswith('.csv')):
-                storm_id = f'SH{file.split("/SH")[1].split("_")[0].split(".")[0]}'
+                storm_id = extract_id(file) #f'SH{file.split("/SH")[1].split("_")[0].split(".")[0]}'
                 loss_file = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
                 shp_file = f'mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_{storm_id}.geojson'
 
