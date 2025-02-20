@@ -208,7 +208,7 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
             vms = swath_peak_wind[y][x] / windqual
             surge = swath_peak_water[y][x]
 
-            loss = loss_calculation(expclass, vms, surge, numexp, value, res_sec)
+            loss = np.round(loss_calculation(expclass, vms, surge, numexp, value, res_sec), decimals=2)
 
             # data to be written
             expid = row['EXPOSURE_I']
@@ -294,6 +294,11 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
 
     jsonFileBase = f'{stormId}_losses_adm'
 
+    wind_cat_dict_by_adm = {}
+
+    no_adm1 = False
+    no_adm2 = False
+
     # saving to adm levels
     adm_group_list = []
     for i in range(3):
@@ -312,6 +317,17 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
                 wind_cat_dict[adm_code].update(
                     {wind_cat: df_final_cat_adm[df_final_cat_adm['wind_cat'] == wind_cat]['population'].values[0]})
 
+        wind_cat_dict_by_adm[f'adm{i}_code'] = wind_cat_dict
+
+        list_adm_codes = df_final_cat[f'adm{i}_code'].unique()
+
+        if len(list_adm_codes) == 1 and list_adm_codes[0] == 'No Adm1':
+            wind_cat_dict = wind_cat_dict_by_adm['adm0_code']
+            no_adm1 = True
+        elif len(list_adm_codes) == 1 and list_adm_codes[0] == 'No Adm2':
+            wind_cat_dict = wind_cat_dict_by_adm['adm1_code']
+            no_adm2 = True
+
         df_final_adm.drop(columns=['wind_cat'], inplace=True)
 
         if geojson:
@@ -321,7 +337,11 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
             densify(jsonFile)
         else:
             df_final_groupby = df_final_adm.groupby(adm_group_list, as_index=False)['population','loss'].sum()
-            df_final_groupby['wind_cat'] = df_final_groupby[f'adm{i}_code'].apply(lambda row: wind_cat_dict[row])
+
+            if no_adm1 or no_adm2:
+                df_final_groupby['wind_cat'] = wind_cat_dict.values()
+            else:
+                df_final_groupby['wind_cat'] = df_final_groupby[f'adm{i}_code'].apply(lambda row: wind_cat_dict[row])
             jsonString = df_final_groupby.to_json(orient='records').replace('[','{"records":[').replace(']', ']}')
             with open(jsonFile, 'w') as f:
                 f.write(jsonString)
