@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2010,SH022010,BONGANI,2009-11-21 12:00,2009-11-25 18:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,Diana,MDG.2.1_1,138943,528.87,{0: 138943}
+2010,SH022010,BONGANI,2009-11-21 12:00,2009-11-25 18:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,Sava,MDG.2.2_1,2223,9.2,{0: 2223}
