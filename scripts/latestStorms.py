@@ -13,7 +13,7 @@ for dir in dirs:
         if dir == 'mpres_data':
             dict_storms.setdefault(dir, [])
             if 'postevent' in file:
-                if not(file.endswith('.json')):
+                if not(file.endswith('.json')) and not(file.endswith('.csv')):
                     try:
                         if 'taos_swio30s_ofcl_windwater_nc' in file:
                             storm_id = f'SH{file.split("_SH")[1].split("_")[0].split(".")[0]}'
