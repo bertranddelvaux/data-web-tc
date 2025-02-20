@@ -1,2 +1,0 @@
-tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2016,SH012016,ABELA,2016-07-14 12:00,2016-07-20 12:00,OFCL,Madagascar,MDG,49266,2625.5899999999997,"{0: 47052, 1: 2214}"

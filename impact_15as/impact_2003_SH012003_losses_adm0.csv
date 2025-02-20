@@ -1,2 +1,0 @@
-tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2003,SH012003,NONAME,2002-09-05 12:00,2002-09-09 00:00,OFCL,Seychelles,SYC,66222,68130.52,"{0: 66213, 1: 9}"
