@@ -1,13 +1,13 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH142025"
+            null
         ],
         "storms_shp": [
-            "SH142025"
+            null
         ],
         "windwater_shp": [
-            "SH142025"
+            null
         ]
     },
     "mpres_data": [
@@ -400,18 +400,5 @@
             "storm_name": "JASMINE"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                68.5917,
-                -38.1417,
-                124.3417,
-                -9.0917
-            ],
-            "id": "SH142025",
-            "jtwc": "tc_realtime/taostc_SH142025_JTWC_SLOSH.geojson",
-            "losses": "tc_realtime/SH142025_losses_adm.json",
-            "storm_name": "TALIAH"
-        }
-    ]
+    "tc_realtime": []
 }
