@@ -6,7 +6,8 @@ name: generateCsvLosses_15as
 on:
   # Runs the workflow every 15 minutes
   schedule:
-    - cron: '*/15 * * * *'# Controls when the workflow will run
+    - cron: '*/30 1-23 * * *'  # Runs every 30 minutes between 01:00 AM and 11:30 PM
+    # - cron: '*/15 * * * *'# Controls when the workflow will run
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
