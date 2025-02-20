@@ -330,8 +330,9 @@ def calculateLosses_15as(storm_file, exp_file, adm_file, mapping_file, split, ge
             df_final_groupby.insert(0, 'tc_season', stormId[-4:]) # Insert 'tc_season' at position 0 (beginning)
             df_final_groupby.insert(1, 'atcf_id', stormId)  # Insert 'atcf_id' at position 1
             df_final_groupby.insert(2, 'storm_name', storm_df.storm_name)  # Insert 'dtg' at position 2
-            df_final_groupby.insert(3, 'dtg', storm_df.fcst_time)  # Insert 'dtg' at position 3
-            df_final_groupby.insert(4, 'tech', storm_df.fcst_tech)  # Insert 'tech' at position 4
+            df_final_groupby.insert(3, 'jtwc_start_time', storm_df.julian_day.sqltext) # Insert 'jtwc_end_time' at position 3
+            df_final_groupby.insert(4, 'jtwc_end_time', storm_df.fcst_time)  # Insert 'jtwc_end_time' at position 4
+            df_final_groupby.insert(5, 'tech', storm_df.fcst_tech)  # Insert 'tech' at position 5
             df_final_groupby.to_csv(f'{IMPACT_DIR}/{csvFile}', index=False)
 
     i = 0
