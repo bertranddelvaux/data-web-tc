@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2004,SH062004,NONAME,2003-12-23 18:00,2004-01-04 12:00,OFCL,Mauritius,MUS,1246279,5025698.11,{1: 1246279}
