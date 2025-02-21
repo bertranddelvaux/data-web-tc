@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2017,SH052017,DINEO,2017-02-11 18:00,2017-02-16 18:00,OFCL,Mozambique,MOZ,4172496,140395958.60999998,"{0: 1094933, 1: 1534841, 2: 641309, 3: 855322, 4: 46091}"
