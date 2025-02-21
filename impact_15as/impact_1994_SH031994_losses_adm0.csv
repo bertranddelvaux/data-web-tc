@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1994,SH031994,NONAME,1993-12-11 00:00,1993-12-21 12:00,OFCL,Mauritius,MUS,197263,136753.64,{0: 197263}
+1994,SH031994,NONAME,1993-12-11 00:00,1993-12-21 12:00,OFCL,Reunion,REU,71173,5120.58,"{0: 70893, 1: 280}"
