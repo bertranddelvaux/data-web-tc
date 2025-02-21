@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2019,SH072019,CILIDA,2018-12-17 00:00,2018-12-25 18:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,30775,7663.3,{0: 30775}
