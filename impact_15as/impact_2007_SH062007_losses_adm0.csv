@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2007,SH062007,CLOVIS,2006-12-29 12:00,2007-01-04 18:00,OFCL,Madagascar,MDG,7339264,19393359.259999998,"{0: 3464365, 1: 3015291, 2: 772749, 3: 86859}"
