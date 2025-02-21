@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2015,SH052015,BANSI,2015-01-09 06:00,2015-01-18 12:00,OFCL,Mauritius,MUS,402321,4616184.22,"{0: 354197, 1: 3472, 2: 44652}"
