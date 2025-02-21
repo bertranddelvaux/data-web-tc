@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2007,SH032007,ANITA,2006-11-27 06:00,2006-12-04 00:00,OFCL,Comoros,COM,Njazídja,COM.2_1,,No Adm2,328978,21778.14,"{0: 328890, 1: 88}"
+2007,SH032007,ANITA,2006-11-27 06:00,2006-12-04 00:00,OFCL,Comoros,COM,Nzwani,COM.3_1,,No Adm2,24270,86.13,"{0: 328890, 1: 88}"
+2007,SH032007,ANITA,2006-11-27 06:00,2006-12-04 00:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,Melaky,MDG.4.3_1,259,0.44000000000000006,{0: 259}
