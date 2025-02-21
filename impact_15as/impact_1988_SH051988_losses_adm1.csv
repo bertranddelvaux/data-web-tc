@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1988,SH051988,NONAME,1987-12-24 06:00,1988-01-01 12:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,6753,28.65,{0: 6753}
+1988,SH051988,NONAME,1987-12-24 06:00,1988-01-01 12:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,1085,0.47000000000000003,{0: 1085}
+1988,SH051988,NONAME,1987-12-24 06:00,1988-01-01 12:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,49715,23863.91,{0: 49715}
