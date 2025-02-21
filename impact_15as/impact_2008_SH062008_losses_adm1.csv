@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2008,SH062008,CELINA,2007-12-12 12:00,2007-12-22 18:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,21549,108.32,{0: 21549}
