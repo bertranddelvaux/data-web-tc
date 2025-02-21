@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2014,SH062014,BEJISA,2013-12-27 12:00,2014-01-06 18:00,OFCL,Mauritius,MUS,63025,10520.39,{0: 63025}
+2014,SH062014,BEJISA,2013-12-27 12:00,2014-01-06 18:00,OFCL,Reunion,REU,963140,2186132437.31,"{2: 37334, 3: 796664, 4: 129142}"
