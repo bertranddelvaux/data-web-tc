@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1993,SH041993,NONAME,1992-11-26 00:00,1992-12-11 00:00,OFCL,Seychelles,SYC,Outer Islands,SYC.20_1,111,93.5,{0: 111}
