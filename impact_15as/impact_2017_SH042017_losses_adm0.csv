@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2017,SH042017,CARLOS,2017-02-02 06:00,2017-02-13 00:00,OFCL,Mauritius,MUS,49133,992.22,{0: 49133}
+2017,SH042017,CARLOS,2017-02-02 06:00,2017-02-13 00:00,OFCL,Reunion,REU,403909,1522680.41,"{0: 271069, 1: 132840}"
