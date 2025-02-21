@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,13260,8.27,{0: 13260}
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,49052,253.49,{0: 49052}
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,239721,11099.77,"{0: 234777, 1: 4944}"
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,934858,420355.73,"{0: 554366, 1: 380492}"
