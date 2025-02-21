@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,2102096,4402713.43,"{0: 313455, 1: 1596124, 2: 192517}"
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,581085,184756.12,"{0: 413003, 1: 168067, 2: 15}"
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,99183,6452.04,"{0: 99172, 1: 11}"
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,75733,185.4,{0: 75733}
