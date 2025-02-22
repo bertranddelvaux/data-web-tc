@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2017,SH092017,ENAWO,2017-03-02 06:00,2017-03-10 12:00,OFCL,Madagascar,MDG,26741390,902346460.52,"{0: 3638953, 1: 9395694, 2: 9432511, 3: 3097441, 4: 953033, 5: 223758}"
