@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2012,SH082012,FUNSO,2012-01-18 06:00,2012-01-29 00:00,OFCL,Madagascar,MDG,2867551,651335.22,"{0: 2022226, 1: 845325}"
+2012,SH082012,FUNSO,2012-01-18 06:00,2012-01-29 00:00,OFCL,Mozambique,MOZ,13959425,280087241.92,"{0: 4886675, 1: 6328819, 2: 1254412, 3: 1133712, 4: 355590, 5: 217}"
