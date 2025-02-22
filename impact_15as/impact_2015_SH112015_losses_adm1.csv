@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,1209079,319827.14,"{0: 751410, 1: 457669}"
