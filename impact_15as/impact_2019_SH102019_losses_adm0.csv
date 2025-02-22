@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2019,SH102019,DESMOND,2019-01-19 06:00,2019-01-22 00:00,OFCL,Mozambique,MOZ,327366,123066.92,"{0: 321620, 1: 5746}"
