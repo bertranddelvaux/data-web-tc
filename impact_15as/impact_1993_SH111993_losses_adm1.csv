@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,79475,89.92,{0: 79475}
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,389489,6339.93,"{0: 388422, 1: 1067}"
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,14984,24719.260000000002,{0: 14984}
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,860348,953319.14,"{0: 548214, 1: 312134}"
