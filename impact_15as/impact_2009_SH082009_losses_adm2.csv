@@ -1,0 +1,6 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,Sava,MDG.2.2_1,5279,77.78,{0: 5279}
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,Sofia,MDG.4.4_1,4335,4.05,{0: 4335}
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,Alaotra-Mangoro,MDG.5.1_1,494562,11836.44,"{0: 494368, 1: 194}"
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,Analanjirofo,MDG.5.2_1,747304,80112.38,"{0: 681512, 1: 65792}"
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,Atsinanana,MDG.5.3_1,695750,178033.12,"{0: 358283, 1: 337467}"
