@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2014,SH092014,DELIWE,2014-01-14 12:00,2014-01-21 00:00,OFCL,Madagascar,MDG,2439577,603667.0700000001,"{0: 1883995, 1: 537271, 2: 18311}"
