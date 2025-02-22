@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1992,SH101992,NONAME,1991-12-30 18:00,1992-01-02 18:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,221594,29751.83,"{0: 190240, 1: 31354}"
+1992,SH101992,NONAME,1991-12-30 18:00,1992-01-02 18:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,642068,63477.42999999999,"{0: 529649, 1: 112419}"
+1992,SH101992,NONAME,1991-12-30 18:00,1992-01-02 18:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,882507,236360.08000000002,"{0: 662191, 1: 220316}"
