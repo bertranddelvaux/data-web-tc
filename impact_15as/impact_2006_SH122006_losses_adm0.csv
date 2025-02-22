@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2006,SH122006,NONAME,2006-02-18 00:00,2006-02-23 18:00,OFCL,Madagascar,MDG,1001,550.36,{0: 1001}
+2006,SH122006,NONAME,2006-02-18 00:00,2006-02-23 18:00,OFCL,Mauritius,MUS,1207453,945268.8700000001,"{0: 394345, 1: 813108}"
