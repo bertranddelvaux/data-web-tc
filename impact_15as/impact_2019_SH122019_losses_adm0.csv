@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2019,SH122019,FUNANI,2019-02-04 06:00,2019-02-10 06:00,OFCL,Mauritius,MUS,20922,153.4,{0: 20922}
