@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1990,SH081990,NONAME,1989-12-14 18:00,1990-01-05 18:00,OFCL,Madagascar,MDG,19352463,180653416.21,"{0: 3970834, 1: 9419990, 2: 3936161, 3: 2025478}"
+1990,SH081990,NONAME,1989-12-14 18:00,1990-01-05 18:00,OFCL,Mauritius,MUS,262,148280.76,{3: 262}
