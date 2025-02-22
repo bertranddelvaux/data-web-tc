@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+1995,SH091995,NONAME,1995-01-19 12:00,1995-01-27 06:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,Atsimo-Andrefana,MDG.6.3_1,68507,40974.24,{0: 68507}
+1995,SH091995,NONAME,1995-01-19 12:00,1995-01-27 06:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,Angoche,MOZ.7.1_1,69,2550.93,{0: 69}
