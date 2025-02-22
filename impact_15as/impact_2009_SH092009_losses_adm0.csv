@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2009,SH092009,FANELE,2009-01-17 18:00,2009-01-23 18:00,OFCL,Madagascar,MDG,8770654,99929036.16,"{0: 4781639, 1: 3048544, 2: 474338, 3: 293358, 4: 168314, 5: 4461}"
