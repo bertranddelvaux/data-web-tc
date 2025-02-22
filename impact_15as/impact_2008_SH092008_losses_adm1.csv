@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2008,SH092008,ELNUS,2007-12-29 12:00,2008-01-04 18:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,228329,6007.64,{0: 228329}

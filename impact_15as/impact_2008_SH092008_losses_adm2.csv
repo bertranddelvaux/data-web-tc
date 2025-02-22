@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2008,SH092008,ELNUS,2007-12-29 12:00,2008-01-04 18:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,Atsimo-Andrefana,MDG.6.3_1,228307,5989.1,{0: 228307}
+2008,SH092008,ELNUS,2007-12-29 12:00,2008-01-04 18:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,Menabe,MDG.6.4_1,22,18.54,{0: 22}
