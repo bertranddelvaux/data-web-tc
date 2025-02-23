@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2013,SH132013,FELLENG,2013-01-25 12:00,2013-02-04 12:00,OFCL,Madagascar,MDG,4062626,400505.9,"{0: 3777503, 1: 285123}"
