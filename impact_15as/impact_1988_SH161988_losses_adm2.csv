@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+1988,SH161988,NONAME,1988-03-12 00:00,1988-03-24 00:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,,No Adm2,4599,5555.9400000000005,{0: 4599}
