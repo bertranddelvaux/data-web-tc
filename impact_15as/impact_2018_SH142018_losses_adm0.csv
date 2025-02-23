@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2018,SH142018,ELIAKIM,2018-03-13 18:00,2018-03-21 06:00,OFCL,Madagascar,MDG,23284192,116523955.71,"{0: 2506428, 1: 13074517, 2: 7140648, 3: 562599}"
+2018,SH142018,ELIAKIM,2018-03-13 18:00,2018-03-21 06:00,OFCL,Reunion,REU,30780,13729103.47,{0: 30780}
