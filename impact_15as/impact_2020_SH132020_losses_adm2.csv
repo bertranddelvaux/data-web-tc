@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2020,SH132020,FRANCISCO,2020-02-03 06:00,2020-02-15 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Amoron'i mania,MDG.3.1_1,114,0.05,{0: 114}
+2020,SH132020,FRANCISCO,2020-02-03 06:00,2020-02-15 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Vatovavy Fitovinany,MDG.3.5_1,50367,468.13,"{0: 50310, 1: 57}"
+2020,SH132020,FRANCISCO,2020-02-03 06:00,2020-02-15 18:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,Analanjirofo,MDG.5.2_1,8383,3.9,{0: 8383}
+2020,SH132020,FRANCISCO,2020-02-03 06:00,2020-02-15 18:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,Atsinanana,MDG.5.3_1,169439,1916.56,{0: 169439}

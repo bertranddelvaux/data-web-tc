@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2020,SH132020,FRANCISCO,2020-02-03 06:00,2020-02-15 18:00,OFCL,Madagascar,MDG,228303,2388.64,"{0: 228246, 1: 57}"
