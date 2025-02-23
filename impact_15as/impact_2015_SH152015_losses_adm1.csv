@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2015,SH152015,FIFTEEN,2015-03-04 06:00,2015-03-09 00:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,284889,8407.48,"{0: 284384, 1: 505}"
+2015,SH152015,FIFTEEN,2015-03-04 06:00,2015-03-09 00:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,81361,629.21,{0: 81361}
+2015,SH152015,FIFTEEN,2015-03-04 06:00,2015-03-09 00:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,32577,355.63,{0: 32577}
+2015,SH152015,FIFTEEN,2015-03-04 06:00,2015-03-09 00:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,163039,437.79,{0: 163039}
