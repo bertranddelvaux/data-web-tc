@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1986,SH131986,NONAME,1986-01-30 00:00,1986-02-11 00:00,OFCL,Reunion,REU,963140,19169947.95,"{0: 29829, 1: 916692, 2: 16619}"
