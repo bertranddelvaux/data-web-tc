@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2002,SH152002,NONAME,2002-02-14 12:00,2002-02-22 18:00,OFCL,Madagascar,MDG,55016,543.25,{0: 55016}
+2002,SH152002,NONAME,2002-02-14 12:00,2002-02-22 18:00,OFCL,Mauritius,MUS,1140277,1335942.57,"{0: 363431, 1: 776846}"
+2002,SH152002,NONAME,2002-02-14 12:00,2002-02-22 18:00,OFCL,Reunion,REU,23,4642.83,{0: 23}
