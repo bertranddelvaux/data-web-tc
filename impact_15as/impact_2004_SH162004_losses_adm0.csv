@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2004,SH162004,NONAME,2004-03-01 06:00,2004-03-11 12:00,OFCL,Madagascar,MDG,26322829,2052615038.35,"{0: 3886767, 1: 6530698, 2: 9277074, 3: 3912281, 4: 1638554, 5: 1077455}"
+2004,SH162004,NONAME,2004-03-01 06:00,2004-03-11 12:00,OFCL,Mozambique,MOZ,30,111.33,{0: 30}
