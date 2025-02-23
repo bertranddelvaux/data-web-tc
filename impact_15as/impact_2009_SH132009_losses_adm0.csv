@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2009,SH132009,GAEL,2009-01-31 18:00,2009-02-11 00:00,OFCL,Madagascar,MDG,363099,4053.27,{0: 363099}
+2009,SH132009,GAEL,2009-01-31 18:00,2009-02-11 00:00,OFCL,Mauritius,MUS,217,254792.05000000002,{0: 217}
+2009,SH132009,GAEL,2009-01-31 18:00,2009-02-11 00:00,OFCL,Reunion,REU,963140,30197409.32,"{0: 56945, 1: 905688, 2: 507}"
