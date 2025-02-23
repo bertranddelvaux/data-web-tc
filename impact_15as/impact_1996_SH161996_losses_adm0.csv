@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1996,SH161996,NONAME,1996-02-18 00:00,1996-02-29 18:00,OFCL,Madagascar,MDG,17925308,645313086.28,"{0: 2712075, 1: 3837538, 2: 6855552, 3: 3517406, 4: 1002737}"
+1996,SH161996,NONAME,1996-02-18 00:00,1996-02-29 18:00,OFCL,Reunion,REU,596,12793.520000000002,{0: 596}
