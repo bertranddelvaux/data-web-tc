@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2006,SH162006,DIWA,2006-03-01 06:00,2006-03-09 06:00,OFCL,Reunion,REU,Saint-Denis,REU.2_1,1540,619442.16,{0: 1540}
+2006,SH162006,DIWA,2006-03-01 06:00,2006-03-09 06:00,OFCL,Reunion,REU,Saint-Paul,REU.3_1,2385,1731541.23,{0: 2385}

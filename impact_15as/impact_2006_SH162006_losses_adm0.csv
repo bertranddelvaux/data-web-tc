@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2006,SH162006,DIWA,2006-03-01 06:00,2006-03-09 06:00,OFCL,Reunion,REU,3925,2350983.3899999997,{0: 3925}
