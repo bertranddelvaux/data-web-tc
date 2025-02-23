@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2007,SH142007,FAVIO,2007-02-11 18:00,2007-02-23 12:00,OFCL,Madagascar,MDG,1264999,744789.28,"{0: 819887, 1: 409135, 2: 35977}"
+2007,SH142007,FAVIO,2007-02-11 18:00,2007-02-23 12:00,OFCL,Mozambique,MOZ,5639823,172206895.37,"{0: 1008550, 1: 2293853, 2: 1561239, 3: 573142, 4: 197079, 5: 5960}"
