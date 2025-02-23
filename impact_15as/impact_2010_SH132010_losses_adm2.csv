@@ -1,0 +1,9 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,Vakinankaratra,MDG.1.4_1,374906,10192.130000000001,"{0: 367936, 1: 6970}"
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Amoron'i mania,MDG.3.1_1,550905,128722.73999999999,"{0: 318433, 1: 232472}"
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Haute matsiatra,MDG.3.3_1,23587,507.65,"{0: 23194, 1: 393}"
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Ihorombe,MDG.3.4_1,18475,81.16,{0: 18475}
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Vatovavy Fitovinany,MDG.3.5_1,1308,2.71,{0: 1308}
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,Atsinanana,MDG.5.3_1,10235,24.43,{0: 10235}
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,Atsimo-Andrefana,MDG.6.3_1,213957,47358.91,"{0: 153781, 1: 60056, 2: 120}"
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,Menabe,MDG.6.4_1,555272,658348.19,"{0: 187470, 1: 349608, 2: 18194}"

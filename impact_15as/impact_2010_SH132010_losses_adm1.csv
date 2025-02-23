@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,374906,10192.130000000001,"{0: 367936, 1: 6970}"
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,594275,129314.26,"{0: 361410, 1: 232865}"
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,10235,24.43,{0: 10235}
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,769229,705707.1000000001,"{0: 341251, 1: 409664, 2: 18314}"
