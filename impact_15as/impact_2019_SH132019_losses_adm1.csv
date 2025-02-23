@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2019,SH132019,GELENA,2019-02-05 00:00,2019-02-15 18:00,OFCL,Mauritius,MUS,Flacq,MUS.3_1,2,65.92,{0: 2}
+2019,SH132019,GELENA,2019-02-05 00:00,2019-02-15 18:00,OFCL,Mauritius,MUS,Grand Port,MUS.4_1,4497,94218.35,{0: 4497}
+2019,SH132019,GELENA,2019-02-05 00:00,2019-02-15 18:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,44652,50417883.660000004,"{3: 44050, 4: 602}"
