@@ -1,0 +1,8 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,Vakinankaratra,MDG.1.4_1,66735,384.3,{0: 66735}
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Amoron'i mania,MDG.3.1_1,357167,49050.18,"{0: 271182, 1: 85985}"
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Atsimo-Atsinana,MDG.3.2_1,165,0.11,{0: 165}
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Haute matsiatra,MDG.3.3_1,854421,220857.47,"{0: 423478, 1: 430943}"
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Ihorombe,MDG.3.4_1,1358,6.140000000000001,{0: 1358}
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,Vatovavy Fitovinany,MDG.3.5_1,1556080,1347038.42,"{0: 875195, 1: 610347, 2: 70538}"
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,Atsinanana,MDG.5.3_1,29943,175.44,{0: 29943}

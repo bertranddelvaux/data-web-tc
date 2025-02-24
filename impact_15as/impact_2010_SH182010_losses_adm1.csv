@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,66735,384.3,{0: 66735}
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,2769191,1616952.3199999998,"{0: 1571378, 1: 1127275, 2: 70538}"
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,29943,175.44,{0: 29943}
