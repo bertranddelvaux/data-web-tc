@@ -574,6 +574,19 @@
         },
         {
             "bbox": [
+                45.7104,
+                -24.6,
+                98.6,
+                -12.3938
+            ],
+            "id": "SH201994",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH201994_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH201994_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1994/SH201994_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 57.6604,
                 -30.5354,
                 70.4979,
