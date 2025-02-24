@@ -1406,6 +1406,19 @@
         },
         {
             "bbox": [
+                51.7521,
+                -13.0896,
+                67.7354,
+                -5.4812
+            ],
+            "id": "SH202012",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH202012_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH202012_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2012/taostc_SH202012_BEST_SLOSH.geojson",
+            "storm_name": "KUENA"
+        },
+        {
+            "bbox": [
                 34.5312,
                 -34.4354,
                 49.2396,

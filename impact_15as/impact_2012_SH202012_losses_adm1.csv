@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2012,SH202012,KUENA,2012-06-03 12:00,2012-06-08 12:00,OFCL,Mauritius,MUS,Agalega Islands,MUS.1_1,262,15505.56,{2: 262}
