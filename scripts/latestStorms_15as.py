@@ -25,29 +25,31 @@ for dir in dirs:
                 loss_file = f'mpres_data/postevent/ofcl_15as_nc/{storm_id}_losses_adm.json'
                 shp_file = f'mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_{storm_id}.geojson'
 
-                # Step 1: Check if the shp_file exists
-                if not os.path.exists(shp_file):
-                    print(f"{shp_file} not found. Searching in jtwc_history directory...")
+                if loss_file in dict_files[dir]:
 
-                    # Step 2: Search for .geojson files with {storm_id} in their name in the jtwc_history directory and subdirectories
-                    jtwc_history_dir = 'jtwc_history'
-                    found_file = None
-                    for root, dirs, files in os.walk(jtwc_history_dir):
-                        for file in files:
-                            if f'{storm_id}' in file and file.endswith('.geojson'):
-                                found_file = os.path.join(root, file)
+                    # Step 1: Check if the shp_file exists
+                    if not os.path.exists(shp_file):
+                        print(f"{shp_file} not found. Searching in jtwc_history directory...")
+
+                        # Step 2: Search for .geojson files with {storm_id} in their name in the jtwc_history directory and subdirectories
+                        jtwc_history_dir = 'jtwc_history'
+                        found_file = None
+                        for root, dirs, files in os.walk(jtwc_history_dir):
+                            for f in files:
+                                if f'{storm_id}' in f and f.endswith('.geojson'):
+                                    found_file = os.path.join(root, f)
+                                    break
+                            if found_file:
                                 break
+
+                        # Step 3: Update shp_file if a match is found
                         if found_file:
+                            shp_file = found_file
+                        else:
+                            print(f"No file found containing {storm_id} in the name.")
                             break
 
-                    # Step 3: Update shp_file if a match is found
-                    if found_file:
-                        shp_file = found_file
-                    else:
-                        print(f"No file found containing {storm_id} in the name.")
-
-                if loss_file in dict_files[dir]:
-                    if shp_file in dict_files[dir]:
+                    if shp_file in dict_files[dir] or os.path.exists(shp_file):
                         if storm_id not in [s['id'] for s in dict_storms[dir]]:
                             rec = {'id': storm_id}
                             dict_storms[dir].append(rec)
