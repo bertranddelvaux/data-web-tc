@@ -38,16 +38,12 @@ for dir in dirs:
                             for f in files:
                                 if f'{storm_id}' in f and f.endswith('.geojson'):
                                     found_file = os.path.join(root, f)
-                                    break
-                            if found_file:
-                                break
 
                         # Step 3: Update shp_file if a match is found
                         if found_file:
                             shp_file = found_file
                         else:
                             print(f"No file found containing {storm_id} in the name.")
-                            break
 
                     if shp_file in dict_files[dir] or os.path.exists(shp_file):
                         if storm_id not in [s['id'] for s in dict_storms[dir]]:
