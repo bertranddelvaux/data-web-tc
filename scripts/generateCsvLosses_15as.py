@@ -107,6 +107,11 @@ for url_file in updated_files_list[:N]:
 # List to store the dataframes for each 'adm'
 dfs = {0: [], 1: [], 2: []}
 
+# Function to unfold the wind_cat column into separate columns
+def unfold_wind_cat(wind_dict):
+    # Create a list with wind categories from 0 to 5, defaulting to 0 if the category is missing
+    return [wind_dict.get(i, 0) for i in range(6)]
+
 # Loop through all the files in the directory
 for file_name in os.listdir(impact_dir):
     if file_name.endswith('.csv') and any(f'adm{i}' in file_name for i in range(3)):
@@ -117,6 +122,11 @@ for file_name in os.listdir(impact_dir):
                 # Read the CSV file into a DataFrame and append to the corresponding list
                 df = pd.read_csv(file_path)
                 df['loss'] = df['loss'].apply(lambda x: round(x, 2)) # rounding loss column to 2 decimals
+                # Apply the function to the 'wind_cat' column and convert the result into separate columns
+                df_wind = pd.DataFrame(df['wind_cat'].apply(unfold_wind_cat).tolist(),
+                                       columns=[f'wind_cat_{i}' for i in range(6)])
+                # Concatenate the original DataFrame with the unfolded columns
+                df = pd.concat([df, df_wind], axis=1)
                 dfs[i].append(df)
                 break
 
