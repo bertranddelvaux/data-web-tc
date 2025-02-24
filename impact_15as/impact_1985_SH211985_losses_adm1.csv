@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1985,SH211985,NONAME,1985-02-13 00:00,1985-02-26 00:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,1641258,56998.6,"{0: 1598373, 1: 42885}"
+1985,SH211985,NONAME,1985-02-13 00:00,1985-02-26 00:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,2172799,227845.28,"{0: 1801119, 1: 371680}"
+1985,SH211985,NONAME,1985-02-13 00:00,1985-02-26 00:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,1344622,99901.25,"{0: 1197494, 1: 147128}"
+1985,SH211985,NONAME,1985-02-13 00:00,1985-02-26 00:00,OFCL,Reunion,REU,Saint-Paul,REU.3_1,94,7835.49,{0: 94}
