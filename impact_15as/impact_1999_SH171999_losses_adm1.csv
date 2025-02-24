@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1999,SH171999,NONAME,1999-01-29 06:00,1999-02-05 06:00,OFCL,Mauritius,MUS,Flacq,MUS.3_1,208,2610.9,{0: 208}
+1999,SH171999,NONAME,1999-01-29 06:00,1999-02-05 06:00,OFCL,Mauritius,MUS,Grand Port,MUS.4_1,9025,186350.71,{0: 9025}
+1999,SH171999,NONAME,1999-01-29 06:00,1999-02-05 06:00,OFCL,Mauritius,MUS,Rivière du Rempart,MUS.9_1,1520,9380.369999999999,{0: 1520}
+1999,SH171999,NONAME,1999-01-29 06:00,1999-02-05 06:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,44652,11927.14,{0: 44652}
