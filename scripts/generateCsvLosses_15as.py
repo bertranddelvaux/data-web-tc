@@ -105,6 +105,9 @@ for url_file in updated_files_list[:N]:
 # Save Total Impact CSV #
 #########################
 
+# aggregated files
+aggregated_files_list = [f'impact_total_adm{i}_15as.csv' for i in range(3)]
+
 # List to store the dataframes for each 'adm'
 dfs = {0: [], 1: [], 2: []}
 
@@ -122,7 +125,7 @@ def unfold_wind_cat(wind_dict):
 
 # Loop through all the files in the directory
 for file_name in os.listdir(impact_dir):
-    if file_name.endswith('.csv') and any(f'adm{i}' in file_name for i in range(3)):
+    if file_name.endswith('.csv') and any(f'adm{i}' in file_name for i in range(3)) and file_name not in aggregated_files_list:
         # Determine the 'adm' level (0, 1, or 2) from the file name
         for i in range(3):
             if f'adm{i}' in file_name:
@@ -161,5 +164,4 @@ for i in range(3):
     impact_total_adm = pd.concat(dfs[i], ignore_index=True).sort_values(by=columns_order).drop_duplicates()
 
     # Save the merged dataframe to a new CSV file
-    impact_total_csv = f'impact_total_adm{i}_15as.csv'
-    impact_total_adm.to_csv(os.path.join(impact_dir, impact_total_csv), index=False)
+    impact_total_adm.to_csv(os.path.join(impact_dir, aggregated_files_list[i]), index=False)
