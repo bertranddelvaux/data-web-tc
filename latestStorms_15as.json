@@ -1523,6 +1523,19 @@
         },
         {
             "bbox": [
+                49.8312,
+                -29.5688,
+                64.8104,
+                -7.3771
+            ],
+            "id": "SH202018",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH202018_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH202018_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2018/taostc_SH202018_BEST_SLOSH.geojson",
+            "storm_name": "FAKIR"
+        },
+        {
+            "bbox": [
                 39.3104,
                 -22.8854,
                 49.3979,
