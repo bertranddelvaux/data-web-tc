@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+1988,SH171988,NONAME,1988-03-17 00:00,1988-03-20 18:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,Diana,MDG.2.1_1,15029,8.28,{0: 15029}
+1988,SH171988,NONAME,1988-03-17 00:00,1988-03-20 18:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,Sava,MDG.2.2_1,173,0.16,{0: 173}
+1988,SH171988,NONAME,1988-03-17 00:00,1988-03-20 18:00,OFCL,Seychelles,SYC,Outer Islands,SYC.20_1,,No Adm2,43,234.36,"{0: 35, 1: 8}"
