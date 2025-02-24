@@ -548,6 +548,19 @@
         },
         {
             "bbox": [
+                46.2729,
+                -19.8937,
+                66.4,
+                -10.5938
+            ],
+            "id": "SH192007",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH192007_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH192007_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2007/taostc_SH192007_BEST_SLOSH.geojson",
+            "storm_name": "INDLALA"
+        },
+        {
+            "bbox": [
                 60.0,
                 -25.4021,
                 83.4104,

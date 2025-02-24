@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2007,SH192007,INDLALA,2007-03-07 00:00,2007-03-17 06:00,OFCL,Madagascar,MDG,11241539,407842107.18,"{0: 4087441, 1: 3128385, 2: 1800388, 3: 1665166, 4: 512666, 5: 47493}"
