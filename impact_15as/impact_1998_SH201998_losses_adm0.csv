@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1998,SH201998,NONAME,1998-02-05 00:00,1998-02-13 18:00,OFCL,Mauritius,MUS,1246279,5851180.38,"{0: 2782, 1: 1241914, 2: 1583}"
+1998,SH201998,NONAME,1998-02-05 00:00,1998-02-13 18:00,OFCL,Reunion,REU,23,21000.36,{0: 23}
