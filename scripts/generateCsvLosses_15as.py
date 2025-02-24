@@ -74,6 +74,10 @@ for url_subfolder in url_subfolder_list:
 # Filter out URLs that contain any of the files in files_to_exclude
 updated_files_list = [file for file in files_list if not any(exclude in file for exclude in set(files_to_exclude))]
 
+# Print the values to capture in the GitHub Actions workflow
+print(f"files_to_process={len(files_list)}")
+print(f"files_processed={len(files_list)-len(updated_files_list)}")
+
 for url_file in updated_files_list[:N]:
     filename = os.path.basename(urlparse(url_file).path)
 
