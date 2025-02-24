@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1994,SH191994,NONAME,1994-03-05 18:00,1994-03-10 18:00,OFCL,Madagascar,MDG,22272,73.23,{0: 22272}
+1994,SH191994,NONAME,1994-03-05 18:00,1994-03-10 18:00,OFCL,Reunion,REU,3104,134.04,{0: 3104}
