@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+1982,SH201982,NONAME,1982-02-22 12:00,1982-02-25 12:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,Androy,MDG.6.1_1,63565,208.6,{0: 63565}
+1982,SH201982,NONAME,1982-02-22 12:00,1982-02-25 12:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,Atsimo-Andrefana,MDG.6.3_1,264949,31339.47,{0: 264949}
