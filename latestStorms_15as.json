@@ -2,68 +2,315 @@
     "mpres_data": [
         {
             "bbox": [
-                37.2854,
-                -40.0146,
-                57.0062,
-                -18.4104
+                58.2271,
+                -25.9688,
+                77.6354,
+                -4.2604
             ],
-            "id": "SH122025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH122025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122025.geojson",
-            "storm_name": "ELVIS"
+            "id": "SH021995",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH021995_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH021995_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1995/SH021995_shp.geojson",
+            "storm_name": "NONAME"
         },
         {
             "bbox": [
-                48.1688,
-                -27.0729,
-                78.9437,
-                -8.5063
+                32.6271,
+                -26.1271,
+                42.1854,
+                -15.6729
             ],
-            "id": "SH022025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH022025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH022025_JTWC_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH022025.geojson",
-            "storm_name": "BHEKI"
+            "id": "SH102019",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH102019_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH102019_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2019/SH102019_shp.geojson",
+            "storm_name": "DESMOND"
         },
         {
             "bbox": [
-                37.8271,
-                -36.4354,
-                113.2,
-                -10.0771
+                38.5438,
+                -24.7521,
+                48.2729,
+                -13.9563
             ],
-            "id": "SH072025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH072025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH072025_OFCL_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH072025.geojson",
-            "storm_name": "DIKELEDI"
+            "id": "SH101991",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH101991_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH101991_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1991/SH101991_shp.geojson",
+            "storm_name": "NONAME"
         },
         {
             "bbox": [
-                33.1,
-                -16.4813,
-                85.7,
-                -8.6562
+                56.9437,
+                -27.4062,
+                66.9646,
+                -7.2063
             ],
-            "id": "SH042025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH042025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH042025_JTWC_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH042025.geojson",
-            "storm_name": "CHIDO"
+            "id": "SH182001",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH182001_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH182001_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2001/taostc_SH182001_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
         },
         {
             "bbox": [
-                44.1146,
-                -25.1229,
-                83.9479,
-                -8.0021
+                49.3521,
+                -36.5479,
+                64.1271,
+                -11.5604
             ],
-            "id": "SH112025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH112025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH112025_JTWC_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112025.geojson",
-            "storm_name": "FAIDA"
+            "id": "SH162006",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH162006_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162006_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2006/SH162006_shp.geojson",
+            "storm_name": "DIWA"
+        },
+        {
+            "bbox": [
+                46.1229,
+                -14.1687,
+                61.3187,
+                -6.6521
+            ],
+            "id": "SH022010",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH022010_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH022010_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2010/SH022010_shp.geojson",
+            "storm_name": "BONGANI"
+        },
+        {
+            "bbox": [
+                52.8729,
+                -33.5729,
+                63.6354,
+                -9.8021
+            ],
+            "id": "SH081981",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH081981_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081981_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1981/taostc_SH081981_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                51.3438,
+                -44.7146,
+                86.6438,
+                -9.7521
+            ],
+            "id": "SH052020",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH052020_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052020_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2020/SH052020_shp.geojson",
+            "storm_name": "CALVINIA"
+        },
+        {
+            "bbox": [
+                29.7896,
+                -34.9521,
+                53.3563,
+                -11.7604
+            ],
+            "id": "SH142012",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH142012_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH142012_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2012/taostc_SH142012_BEST_SLOSH.geojson",
+            "storm_name": "IRINA"
+        },
+        {
+            "bbox": [
+                38.6104,
+                -24.2854,
+                48.4437,
+                -14.0854
+            ],
+            "id": "SH111993",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH111993_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH111993_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1993/taostc_SH111993_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                39.1979,
+                -18.7687,
+                50.2521,
+                -10.0604
+            ],
+            "id": "SH161995",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH161995_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH161995_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1995/SH161995_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                34.9146,
+                -28.6938,
+                46.9854,
+                -13.3062
+            ],
+            "id": "SH092014",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH092014_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092014_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2014/SH092014_shp.geojson",
+            "storm_name": "DELIWE"
+        },
+        {
+            "bbox": [
+                52.7729,
+                -27.5646,
+                72.1188,
+                -6.2688
+            ],
+            "id": "SH091984",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH091984_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH091984_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1984/taostc_SH091984_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                37.5896,
+                -39.6146,
+                46.8771,
+                -19.1063
+            ],
+            "id": "SH112015",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH112015_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH112015_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2015/SH112015_shp.geojson",
+            "storm_name": "FUNDI"
+        },
+        {
+            "bbox": [
+                52.4229,
+                -28.8729,
+                82.8271,
+                -13.7979
+            ],
+            "id": "SH052015",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH052015_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052015_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2015/taostc_SH052015_BEST_SLOSH.geojson",
+            "storm_name": "BANSI"
+        },
+        {
+            "bbox": [
+                39.1896,
+                -29.0979,
+                69.7,
+                -13.0396
+            ],
+            "id": "SH122012",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH122012_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH122012_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2012/SH122012_shp.geojson",
+            "storm_name": "GIOVANNA"
+        },
+        {
+            "bbox": [
+                31.5729,
+                -24.1938,
+                44.1979,
+                -15.2063
+            ],
+            "id": "SH041986",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH041986_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH041986_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1986/taostc_SH041986_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                52.0521,
+                -25.9771,
+                71.4646,
+                -7.6729
+            ],
+            "id": "SH061986",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH061986_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH061986_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1986/taostc_SH061986_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                45.2229,
+                -23.1771,
+                53.1729,
+                -17.0104
+            ],
+            "id": "SH182010",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH182010_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH182010_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2010/taostc_SH182010_BEST_SLOSH.geojson",
+            "storm_name": "HUBERT"
+        },
+        {
+            "bbox": [
+                32.6937,
+                -29.1979,
+                45.2938,
+                -12.3438
+            ],
+            "id": "SH082003",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH082003_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082003_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2003/SH082003_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                36.1146,
+                -34.8896,
+                49.1271,
+                -15.6479
+            ],
+            "id": "SH091995",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH091995_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH091995_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1995/SH091995_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                50.8063,
+                -29.7396,
+                61.6729,
+                -11.2854
+            ],
+            "id": "SH171995",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH171995_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH171995_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1995/taostc_SH171995_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                40.1562,
+                -30.4479,
+                59.5312,
+                -10.2104
+            ],
+            "id": "SH171981",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH171981_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH171981_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1981/taostc_SH171981_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                37.2271,
+                -29.3937,
+                45.9396,
+                -16.0521
+            ],
+            "id": "SH092008",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH092008_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092008_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2008/SH092008_shp.geojson",
+            "storm_name": "ELNUS"
         }
     ]
 }
