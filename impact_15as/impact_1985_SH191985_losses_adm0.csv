@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1985,SH191985,NONAME,1985-02-05 06:00,1985-02-11 06:00,OFCL,Madagascar,MDG,10441250,4539591.58,"{0: 3345649, 1: 7089615, 2: 5986}"
