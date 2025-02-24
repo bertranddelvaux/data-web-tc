@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2008,SH182008,IVAN,2008-02-05 12:00,2008-02-20 06:00,OFCL,Madagascar,MDG,16590456,740480454.58,"{0: 3355488, 1: 3268390, 2: 4434699, 3: 4372357, 4: 1077372, 5: 82150}"
