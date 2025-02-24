@@ -138,6 +138,9 @@ for file_name in os.listdir(impact_dir):
                 df_wind = pd.DataFrame(df['wind_cat'].apply(unfold_wind_cat).tolist(),
                                        columns=[f'wind_cat_{i}' for i in range(6)])
 
+                # Turn 'wind_cat' into string, so that it is hashable for drop_duplicates()
+                df['wind_cat'] = df['wind_cat'].apply(lambda x: str(x) if isinstance(x, dict) else x)
+
                 # Concatenate the original DataFrame with the unfolded columns
                 df = pd.concat([df, df_wind], axis=1)
                 dfs[i].append(df)
