@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,19313,24095.36,{0: 19313}
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Mauritius,MUS,Agalega Islands,MUS.1_1,262,18.59,{0: 262}
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Seychelles,SYC,Outer Islands,SYC.20_1,90,1357250.55,"{0: 47, 4: 8, 5: 35}"

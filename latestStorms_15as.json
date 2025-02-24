@@ -1653,6 +1653,19 @@
         },
         {
             "bbox": [
+                47.4938,
+                -16.5438,
+                73.5,
+                -7.0021
+            ],
+            "id": "SH192016",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH192016_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH192016_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2016/taostc_SH192016_BEST_SLOSH.geojson",
+            "storm_name": "FANTALA"
+        },
+        {
+            "bbox": [
                 51.4896,
                 -36.6688,
                 66.7146,
