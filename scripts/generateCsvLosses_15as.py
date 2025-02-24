@@ -1,5 +1,6 @@
 import os
 import re
+import ast
 
 import pandas as pd
 
@@ -107,6 +108,13 @@ for url_file in updated_files_list[:N]:
 # List to store the dataframes for each 'adm'
 dfs = {0: [], 1: [], 2: []}
 
+# Function to safely evaluate the string or handle the dictionary
+def parse_wind_cat(value):
+    if isinstance(value, str):
+        # If the value is a string, safely evaluate it as a dictionary
+        value = ast.literal_eval(value)
+    return value
+
 # Function to unfold the wind_cat column into separate columns
 def unfold_wind_cat(wind_dict):
     # Create a list with wind categories from 0 to 5, defaulting to 0 if the category is missing
@@ -122,9 +130,14 @@ for file_name in os.listdir(impact_dir):
                 # Read the CSV file into a DataFrame and append to the corresponding list
                 df = pd.read_csv(file_path)
                 df['loss'] = df['loss'].apply(lambda x: round(x, 2)) # rounding loss column to 2 decimals
-                # Apply the function to the 'wind_cat' column and convert the result into separate columns
+
+                # Apply parsing to handle both string and dictionary cases
+                df['wind_cat'] = df['wind_cat'].apply(parse_wind_cat)
+
+                # Apply the unfold function to the 'wind_cat' column and convert the result into separate columns
                 df_wind = pd.DataFrame(df['wind_cat'].apply(unfold_wind_cat).tolist(),
                                        columns=[f'wind_cat_{i}' for i in range(6)])
+
                 # Concatenate the original DataFrame with the unfolded columns
                 df = pd.concat([df, df_wind], axis=1)
                 dfs[i].append(df)
