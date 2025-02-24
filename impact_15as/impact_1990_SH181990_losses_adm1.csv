@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1990,SH181990,NONAME,1990-02-26 18:00,1990-03-08 06:00,OFCL,Mauritius,MUS,Grand Port,MUS.4_1,174,43183.18,{0: 174}
+1990,SH181990,NONAME,1990-02-26 18:00,1990-03-08 06:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,44652,384697.31,{1: 44652}
