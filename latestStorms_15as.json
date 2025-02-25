@@ -1108,6 +1108,20 @@
         },
         {
             "bbox": [
+                36.5687,
+                -27.9188,
+                46.9062,
+                -14.6396
+            ],
+            "date": "1998-02-12",
+            "id": "SH231998",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH231998_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH231998_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1998/SH231998_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 26.0438,
                 -22.0104,
                 65.3938,

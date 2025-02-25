@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1998,SH231998,NONAME,1998-02-12 18:00,1998-02-18 18:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,80793,830.65,{0: 80793}
+1998,SH231998,NONAME,1998-02-12 18:00,1998-02-18 18:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,2266822,1472470.35,"{0: 1010178, 1: 1249592, 2: 7052}"
