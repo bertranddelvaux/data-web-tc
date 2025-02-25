@@ -2102,6 +2102,20 @@
         },
         {
             "bbox": [
+                61.9188,
+                -30.4,
+                78.9812,
+                -9.8771
+            ],
+            "date": "2003-03-03",
+            "id": "SH232003",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH232003_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH232003_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2003/SH232003_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 55.6146,
                 -29.9979,
                 70.6354,

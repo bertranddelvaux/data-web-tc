@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2003,SH232003,NONAME,2003-03-03 18:00,2003-03-16 00:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,,No Adm2,44652,56409694.58,"{3: 39178, 4: 5474}"
