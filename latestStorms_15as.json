@@ -613,6 +613,19 @@
         },
         {
             "bbox": [
+                50.4,
+                -24.7,
+                79.3063,
+                -7.1312
+            ],
+            "id": "SH212013",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH212013_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH212013_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2013/taostc_SH212013_BEST_SLOSH.geojson",
+            "storm_name": "IMELDA"
+        },
+        {
+            "bbox": [
                 57.6604,
                 -30.5354,
                 70.4979,

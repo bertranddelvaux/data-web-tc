@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2013,SH212013,IMELDA,2013-04-03 06:00,2013-04-19 06:00,OFCL,Mauritius,MUS,44914,617077.5,"{0: 262, 1: 44652}"
