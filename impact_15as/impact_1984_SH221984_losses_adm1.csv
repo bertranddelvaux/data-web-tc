@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1984,SH221984,NONAME,1984-02-12 06:00,1984-02-15 06:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,15606,27.79,{0: 15606}
