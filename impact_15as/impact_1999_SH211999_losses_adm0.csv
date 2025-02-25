@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+1999,SH211999,NONAME,1999-02-12 12:00,1999-02-16 18:00,OFCL,Mozambique,MOZ,125912,33984.79,{0: 125912}

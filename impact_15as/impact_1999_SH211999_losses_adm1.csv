@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1999,SH211999,NONAME,1999-02-12 12:00,1999-02-16 18:00,OFCL,Mozambique,MOZ,Inhambane,MOZ.3_1,124152,222.81,{0: 124152}
+1999,SH211999,NONAME,1999-02-12 12:00,1999-02-16 18:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,69,2490.89,{0: 69}
+1999,SH211999,NONAME,1999-02-12 12:00,1999-02-16 18:00,OFCL,Mozambique,MOZ,Sofala,MOZ.9_1,301,7346.5199999999995,{0: 301}
+1999,SH211999,NONAME,1999-02-12 12:00,1999-02-16 18:00,OFCL,Mozambique,MOZ,Zambezia,MOZ.11_1,1390,23924.57,{0: 1390}
