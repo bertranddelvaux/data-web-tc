@@ -1640,6 +1640,20 @@
         },
         {
             "bbox": [
+                38.2729,
+                -35.8521,
+                59.7479,
+                -24.1896
+            ],
+            "date": "1987-04-22",
+            "id": "SH241987",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH241987_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH241987_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1987/SH241987_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 33.6021,
                 -26.0354,
                 46.8312,
