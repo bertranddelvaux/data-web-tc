@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,244955,46062.130000000005,"{0: 190980, 1: 53975}"
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,324418,13545.8,"{0: 311573, 1: 12845}"
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,586704,126729.17,"{0: 488153, 1: 98551}"
