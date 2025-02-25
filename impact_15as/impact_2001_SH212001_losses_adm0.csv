@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2001,SH212001,NONAME,2001-06-20 12:00,2001-06-23 06:00,OFCL,Mozambique,MOZ,5825509,3988205.43,"{0: 803573, 1: 5012587, 2: 9349}"
