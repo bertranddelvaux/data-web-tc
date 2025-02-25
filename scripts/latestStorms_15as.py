@@ -57,6 +57,13 @@ for dir in dirs:
                             data = json.load(f)
                         dict_storms[dir][i]['storm_name'] = data['storm']['name']
                         dict_storms[dir][i]['bbox'] = data['bbox']
+                        with open(shp_file, 'r') as f_shp:
+                            data_shp = json.load(f_shp)
+                        try:
+                            date = re.search(r'\d{4}-\d{2}-\d{2}', data_shp['features'][0]['properties']['DTG']).group()
+                        except:
+                            date = None
+                        dict_storms[dir][i]['date'] = date
 
 with open('latestStorms_15as.json', 'w') as f:
     json.dump(dict_storms, f, sort_keys=True, indent=4)
