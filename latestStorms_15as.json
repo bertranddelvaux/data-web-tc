@@ -996,6 +996,20 @@
         },
         {
             "bbox": [
+                58.2396,
+                -30.9562,
+                74.6854,
+                -12.7021
+            ],
+            "date": "2019-03-22",
+            "id": "SH222019",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH222019_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH222019_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2019/SH222019_shp.geojson",
+            "storm_name": "JOANINHA"
+        },
+        {
+            "bbox": [
                 54.4521,
                 -32.5729,
                 71.5646,
