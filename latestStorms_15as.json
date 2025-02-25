@@ -492,6 +492,20 @@
         },
         {
             "bbox": [
+                37.2104,
+                -28.4312,
+                64.4,
+                -10.0
+            ],
+            "date": "2008-03-02",
+            "id": "SH222008",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH222008_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH222008_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2008/SH222008_shp.geojson",
+            "storm_name": "JOKWE"
+        },
+        {
+            "bbox": [
                 46.0,
                 -16.9062,
                 60.6479,
