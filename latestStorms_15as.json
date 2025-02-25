@@ -7,6 +7,7 @@
                 77.6354,
                 -4.2604
             ],
+            "date": null,
             "id": "SH021995",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH021995_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH021995_OFCL_SLOSH.geojson",
@@ -20,6 +21,7 @@
                 42.1854,
                 -15.6729
             ],
+            "date": null,
             "id": "SH102019",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH102019_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH102019_OFCL_SLOSH.geojson",
@@ -33,6 +35,7 @@
                 48.2729,
                 -13.9563
             ],
+            "date": null,
             "id": "SH101991",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH101991_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH101991_OFCL_SLOSH.geojson",
@@ -46,6 +49,7 @@
                 66.9646,
                 -7.2063
             ],
+            "date": null,
             "id": "SH182001",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH182001_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH182001_OFCL_SLOSH.geojson",
@@ -59,6 +63,7 @@
                 64.1271,
                 -11.5604
             ],
+            "date": null,
             "id": "SH162006",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH162006_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162006_OFCL_SLOSH.geojson",
@@ -72,6 +77,7 @@
                 61.3187,
                 -6.6521
             ],
+            "date": null,
             "id": "SH022010",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH022010_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH022010_OFCL_SLOSH.geojson",
@@ -85,6 +91,7 @@
                 63.6354,
                 -9.8021
             ],
+            "date": null,
             "id": "SH081981",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081981_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081981_OFCL_SLOSH.geojson",
@@ -98,6 +105,7 @@
                 86.6438,
                 -9.7521
             ],
+            "date": null,
             "id": "SH052020",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH052020_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052020_OFCL_SLOSH.geojson",
@@ -111,6 +119,7 @@
                 53.3563,
                 -11.7604
             ],
+            "date": null,
             "id": "SH142012",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH142012_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH142012_OFCL_SLOSH.geojson",
@@ -124,6 +133,7 @@
                 48.4437,
                 -14.0854
             ],
+            "date": null,
             "id": "SH111993",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH111993_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH111993_OFCL_SLOSH.geojson",
@@ -137,6 +147,7 @@
                 50.2521,
                 -10.0604
             ],
+            "date": null,
             "id": "SH161995",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH161995_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH161995_OFCL_SLOSH.geojson",
@@ -150,6 +161,7 @@
                 46.9854,
                 -13.3062
             ],
+            "date": null,
             "id": "SH092014",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH092014_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092014_OFCL_SLOSH.geojson",
@@ -163,6 +175,7 @@
                 72.1188,
                 -6.2688
             ],
+            "date": null,
             "id": "SH091984",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH091984_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH091984_OFCL_SLOSH.geojson",
@@ -176,6 +189,7 @@
                 46.8771,
                 -19.1063
             ],
+            "date": null,
             "id": "SH112015",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH112015_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH112015_OFCL_SLOSH.geojson",
@@ -189,6 +203,7 @@
                 82.8271,
                 -13.7979
             ],
+            "date": null,
             "id": "SH052015",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH052015_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052015_OFCL_SLOSH.geojson",
@@ -202,6 +217,7 @@
                 69.7,
                 -13.0396
             ],
+            "date": null,
             "id": "SH122012",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH122012_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH122012_OFCL_SLOSH.geojson",
@@ -215,6 +231,7 @@
                 44.1979,
                 -15.2063
             ],
+            "date": null,
             "id": "SH041986",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH041986_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH041986_OFCL_SLOSH.geojson",
@@ -228,6 +245,7 @@
                 71.4646,
                 -7.6729
             ],
+            "date": null,
             "id": "SH061986",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH061986_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH061986_OFCL_SLOSH.geojson",
@@ -241,6 +259,7 @@
                 53.1729,
                 -17.0104
             ],
+            "date": null,
             "id": "SH182010",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH182010_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH182010_OFCL_SLOSH.geojson",
@@ -254,6 +273,7 @@
                 73.7688,
                 -11.2521
             ],
+            "date": null,
             "id": "SH201998",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH201998_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH201998_OFCL_SLOSH.geojson",
@@ -267,6 +287,7 @@
                 45.2938,
                 -12.3438
             ],
+            "date": null,
             "id": "SH082003",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH082003_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082003_OFCL_SLOSH.geojson",
@@ -280,6 +301,7 @@
                 49.1271,
                 -15.6479
             ],
+            "date": null,
             "id": "SH091995",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH091995_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH091995_OFCL_SLOSH.geojson",
@@ -293,6 +315,7 @@
                 61.6729,
                 -11.2854
             ],
+            "date": null,
             "id": "SH171995",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH171995_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH171995_OFCL_SLOSH.geojson",
@@ -306,6 +329,7 @@
                 59.5312,
                 -10.2104
             ],
+            "date": null,
             "id": "SH171981",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH171981_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH171981_OFCL_SLOSH.geojson",
@@ -319,6 +343,7 @@
                 45.9396,
                 -16.0521
             ],
+            "date": null,
             "id": "SH092008",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH092008_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092008_OFCL_SLOSH.geojson",
@@ -332,6 +357,7 @@
                 66.2188,
                 -7.4187
             ],
+            "date": null,
             "id": "SH071984",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH071984_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH071984_OFCL_SLOSH.geojson",
@@ -345,6 +371,7 @@
                 67.8021,
                 -13.8062
             ],
+            "date": null,
             "id": "SH191989",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH191989_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH191989_OFCL_SLOSH.geojson",
@@ -358,6 +385,7 @@
                 51.2229,
                 -15.1062
             ],
+            "date": null,
             "id": "SH181989",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH181989_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH181989_OFCL_SLOSH.geojson",
@@ -371,6 +399,7 @@
                 42.6354,
                 -18.6313
             ],
+            "date": null,
             "id": "SH052017",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH052017_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052017_OFCL_SLOSH.geojson",
@@ -384,6 +413,7 @@
                 69.6813,
                 -9.4396
             ],
+            "date": null,
             "id": "SH162003",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH162003_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162003_OFCL_SLOSH.geojson",
@@ -397,6 +427,7 @@
                 83.2312,
                 -9.7521
             ],
+            "date": null,
             "id": "SH112003",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH112003_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH112003_OFCL_SLOSH.geojson",
@@ -410,6 +441,7 @@
                 59.4938,
                 -11.1
             ],
+            "date": null,
             "id": "SH201997",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH201997_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH201997_OFCL_SLOSH.geojson",
@@ -423,6 +455,7 @@
                 53.5646,
                 -4.7063
             ],
+            "date": null,
             "id": "SH022020",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH022020_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH022020_OFCL_SLOSH.geojson",
@@ -436,6 +469,7 @@
                 49.2271,
                 -13.1396
             ],
+            "date": null,
             "id": "SH061989",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH061989_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH061989_OFCL_SLOSH.geojson",
@@ -449,6 +483,7 @@
                 72.2937,
                 -10.0063
             ],
+            "date": null,
             "id": "SH191985",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH191985_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH191985_OFCL_SLOSH.geojson",
@@ -462,6 +497,7 @@
                 72.0938,
                 -4.7729
             ],
+            "date": null,
             "id": "SH062004",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH062004_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH062004_OFCL_SLOSH.geojson",
@@ -475,6 +511,7 @@
                 77.9,
                 -6.8
             ],
+            "date": null,
             "id": "SH102002",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH102002_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH102002_OFCL_SLOSH.geojson",
@@ -488,6 +525,7 @@
                 93.6646,
                 -6.3146
             ],
+            "date": null,
             "id": "SH021980",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH021980_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH021980_OFCL_SLOSH.geojson",
@@ -501,6 +539,7 @@
                 60.6479,
                 -7.4
             ],
+            "date": null,
             "id": "SH032019",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH032019_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH032019_OFCL_SLOSH.geojson",
@@ -514,6 +553,7 @@
                 73.6979,
                 -7.9229
             ],
+            "date": null,
             "id": "SH221980",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH221980_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH221980_OFCL_SLOSH.geojson",
@@ -527,6 +567,7 @@
                 70.4187,
                 -9.6396
             ],
+            "date": null,
             "id": "SH191980",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH191980_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH191980_OFCL_SLOSH.geojson",
@@ -540,6 +581,7 @@
                 49.3104,
                 -7.7688
             ],
+            "date": null,
             "id": "SH081983",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081983_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081983_OFCL_SLOSH.geojson",
@@ -553,6 +595,7 @@
                 68.9,
                 -6.5
             ],
+            "date": null,
             "id": "SH081997",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081997_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081997_OFCL_SLOSH.geojson",
@@ -566,6 +609,7 @@
                 98.4979,
                 -11.8604
             ],
+            "date": null,
             "id": "SH171999",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH171999_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH171999_OFCL_SLOSH.geojson",
@@ -579,6 +623,7 @@
                 63.2646,
                 -13.2729
             ],
+            "date": null,
             "id": "SH081994",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081994_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081994_OFCL_SLOSH.geojson",
@@ -592,6 +637,7 @@
                 66.4,
                 -10.5938
             ],
+            "date": null,
             "id": "SH192007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH192007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH192007_OFCL_SLOSH.geojson",
@@ -605,6 +651,7 @@
                 83.4104,
                 -9.7
             ],
+            "date": null,
             "id": "SH032014",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH032014_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH032014_OFCL_SLOSH.geojson",
@@ -618,6 +665,7 @@
                 98.6,
                 -12.3938
             ],
+            "date": null,
             "id": "SH201994",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH201994_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH201994_OFCL_SLOSH.geojson",
@@ -631,6 +679,7 @@
                 79.3063,
                 -7.1312
             ],
+            "date": null,
             "id": "SH212013",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH212013_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH212013_OFCL_SLOSH.geojson",
@@ -644,6 +693,7 @@
                 70.4979,
                 -11.2271
             ],
+            "date": null,
             "id": "SH161985",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH161985_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH161985_OFCL_SLOSH.geojson",
@@ -657,6 +707,7 @@
                 72.5062,
                 -11.2063
             ],
+            "date": null,
             "id": "SH062008",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH062008_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH062008_OFCL_SLOSH.geojson",
@@ -670,6 +721,7 @@
                 66.1521,
                 -14.8562
             ],
+            "date": null,
             "id": "SH162013",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH162013_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162013_OFCL_SLOSH.geojson",
@@ -683,6 +735,7 @@
                 46.0104,
                 -14.1062
             ],
+            "date": null,
             "id": "SH182019",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH182019_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH182019_OFCL_SLOSH.geojson",
@@ -696,6 +749,7 @@
                 61.0312,
                 -13.3521
             ],
+            "date": null,
             "id": "SH122006",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH122006_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH122006_OFCL_SLOSH.geojson",
@@ -709,6 +763,7 @@
                 64.6229,
                 -9.5688
             ],
+            "date": null,
             "id": "SH152000",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH152000_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH152000_OFCL_SLOSH.geojson",
@@ -722,6 +777,7 @@
                 80.6,
                 -8.0
             ],
+            "date": null,
             "id": "SH211989",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH211989_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH211989_OFCL_SLOSH.geojson",
@@ -735,6 +791,7 @@
                 102.9,
                 -9.1854
             ],
+            "date": null,
             "id": "SH081982",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081982_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081982_OFCL_SLOSH.geojson",
@@ -748,6 +805,7 @@
                 85.1521,
                 -2.0312
             ],
+            "date": null,
             "id": "SH041993",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH041993_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH041993_OFCL_SLOSH.geojson",
@@ -761,6 +819,7 @@
                 57.2687,
                 -12.1104
             ],
+            "date": null,
             "id": "SH191994",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH191994_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH191994_OFCL_SLOSH.geojson",
@@ -774,6 +833,7 @@
                 60.8,
                 -8.8
             ],
+            "date": null,
             "id": "SH122005",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH122005_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH122005_OFCL_SLOSH.geojson",
@@ -787,6 +847,7 @@
                 65.3562,
                 -10.7563
             ],
+            "date": null,
             "id": "SH112018",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH112018_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH112018_OFCL_SLOSH.geojson",
@@ -800,6 +861,7 @@
                 71.6521,
                 -10.2
             ],
+            "date": null,
             "id": "SH142007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH142007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH142007_OFCL_SLOSH.geojson",
@@ -813,6 +875,7 @@
                 88.0,
                 -7.6
             ],
+            "date": null,
             "id": "SH161988",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH161988_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH161988_OFCL_SLOSH.geojson",
@@ -826,6 +889,7 @@
                 67.1562,
                 -10.2437
             ],
+            "date": null,
             "id": "SH101985",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH101985_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH101985_OFCL_SLOSH.geojson",
@@ -839,6 +903,7 @@
                 78.0,
                 -10.8479
             ],
+            "date": null,
             "id": "SH131994",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH131994_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH131994_OFCL_SLOSH.geojson",
@@ -852,6 +917,7 @@
                 90.7688,
                 -10.6
             ],
+            "date": null,
             "id": "SH162008",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH162008_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162008_OFCL_SLOSH.geojson",
@@ -865,6 +931,7 @@
                 62.2938,
                 -13.3938
             ],
+            "date": null,
             "id": "SH211985",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH211985_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH211985_OFCL_SLOSH.geojson",
@@ -878,6 +945,7 @@
                 44.5354,
                 -22.3396
             ],
+            "date": null,
             "id": "SH212001",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH212001_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH212001_OFCL_SLOSH.geojson",
@@ -891,6 +959,7 @@
                 60.0604,
                 -10.8188
             ],
+            "date": null,
             "id": "SH142018",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH142018_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH142018_OFCL_SLOSH.geojson",
@@ -904,6 +973,7 @@
                 65.0,
                 -5.9
             ],
+            "date": null,
             "id": "SH081990",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081990_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081990_OFCL_SLOSH.geojson",
@@ -917,6 +987,7 @@
                 62.1271,
                 -13.5396
             ],
+            "date": null,
             "id": "SH082009",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH082009_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082009_OFCL_SLOSH.geojson",
@@ -930,6 +1001,7 @@
                 66.6438,
                 -10.9146
             ],
+            "date": null,
             "id": "SH032018",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH032018_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH032018_OFCL_SLOSH.geojson",
@@ -943,6 +1015,7 @@
                 87.0354,
                 -10.9062
             ],
+            "date": null,
             "id": "SH122021",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH122021_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH122021_OFCL_SLOSH.geojson",
@@ -956,6 +1029,7 @@
                 51.6312,
                 -17.2979
             ],
+            "date": null,
             "id": "SH132010",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH132010_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132010_OFCL_SLOSH.geojson",
@@ -969,6 +1043,7 @@
                 75.8979,
                 -11.7937
             ],
+            "date": null,
             "id": "SH072012",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH072012_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH072012_OFCL_SLOSH.geojson",
@@ -982,6 +1057,7 @@
                 54.8604,
                 -17.1396
             ],
+            "date": null,
             "id": "SH092009",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH092009_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092009_OFCL_SLOSH.geojson",
@@ -995,6 +1071,7 @@
                 67.6813,
                 -10.2
             ],
+            "date": null,
             "id": "SH182008",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH182008_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH182008_OFCL_SLOSH.geojson",
@@ -1008,6 +1085,7 @@
                 71.7937,
                 -10.9479
             ],
+            "date": null,
             "id": "SH221996",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH221996_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH221996_OFCL_SLOSH.geojson",
@@ -1021,6 +1099,7 @@
                 71.5646,
                 -12.2937
             ],
+            "date": null,
             "id": "SH121980",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH121980_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH121980_OFCL_SLOSH.geojson",
@@ -1034,6 +1113,7 @@
                 61.5979,
                 -11.8813
             ],
+            "date": null,
             "id": "SH101992",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH101992_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH101992_OFCL_SLOSH.geojson",
@@ -1047,6 +1127,7 @@
                 51.5646,
                 -10.0688
             ],
+            "date": null,
             "id": "SH141988",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH141988_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH141988_OFCL_SLOSH.geojson",
@@ -1060,6 +1141,7 @@
                 64.8313,
                 -12.2146
             ],
+            "date": null,
             "id": "SH152002",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH152002_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH152002_OFCL_SLOSH.geojson",
@@ -1073,6 +1155,7 @@
                 58.0,
                 -11.8562
             ],
+            "date": null,
             "id": "SH132011",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH132011_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132011_OFCL_SLOSH.geojson",
@@ -1086,6 +1169,7 @@
                 65.7937,
                 -5.9563
             ],
+            "date": null,
             "id": "SH021992",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH021992_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH021992_OFCL_SLOSH.geojson",
@@ -1099,6 +1183,7 @@
                 65.3938,
                 -10.4688
             ],
+            "date": null,
             "id": "SH072021",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH072021_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH072021_OFCL_SLOSH.geojson",
@@ -1112,6 +1197,7 @@
                 76.0,
                 -11.8562
             ],
+            "date": null,
             "id": "SH222007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH222007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH222007_OFCL_SLOSH.geojson",
@@ -1125,6 +1211,7 @@
                 81.6104,
                 -9.5
             ],
+            "date": null,
             "id": "SH081995",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081995_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081995_OFCL_SLOSH.geojson",
@@ -1138,6 +1225,7 @@
                 61.1437,
                 -11.4396
             ],
+            "date": null,
             "id": "SH082000",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH082000_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082000_OFCL_SLOSH.geojson",
@@ -1151,6 +1239,7 @@
                 77.3521,
                 -8.3146
             ],
+            "date": null,
             "id": "SH032000",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH032000_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH032000_OFCL_SLOSH.geojson",
@@ -1164,6 +1253,7 @@
                 57.0062,
                 -18.4104
             ],
+            "date": "2025-01-27",
             "id": "SH122025",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH122025_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson",
@@ -1177,6 +1267,7 @@
                 61.0312,
                 -8.8062
             ],
+            "date": null,
             "id": "SH071995",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH071995_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH071995_OFCL_SLOSH.geojson",
@@ -1190,6 +1281,7 @@
                 70.6,
                 -14.7
             ],
+            "date": null,
             "id": "SH132009",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH132009_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132009_OFCL_SLOSH.geojson",
@@ -1203,6 +1295,7 @@
                 75.0,
                 -12.9062
             ],
+            "date": null,
             "id": "SH181990",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH181990_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH181990_OFCL_SLOSH.geojson",
@@ -1216,6 +1309,7 @@
                 43.6813,
                 -17.0104
             ],
+            "date": null,
             "id": "SH221984",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH221984_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH221984_OFCL_SLOSH.geojson",
@@ -1229,6 +1323,7 @@
                 95.5,
                 -4.4
             ],
+            "date": null,
             "id": "SH081991",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081991_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081991_OFCL_SLOSH.geojson",
@@ -1242,6 +1337,7 @@
                 65.1396,
                 -8.8229
             ],
+            "date": null,
             "id": "SH142008",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH142008_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH142008_OFCL_SLOSH.geojson",
@@ -1255,6 +1351,7 @@
                 65.4938,
                 -5.8812
             ],
+            "date": null,
             "id": "SH022005",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH022005_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH022005_OFCL_SLOSH.geojson",
@@ -1268,6 +1365,7 @@
                 49.2562,
                 -12.9104
             ],
+            "date": null,
             "id": "SH131998",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH131998_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH131998_OFCL_SLOSH.geojson",
@@ -1281,6 +1379,7 @@
                 78.9437,
                 -8.5063
             ],
+            "date": "2024-11-13",
             "id": "SH022025",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH022025_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/SH022025_JTWC_SLOSH.geojson",
@@ -1294,6 +1393,7 @@
                 47.0771,
                 -15.4104
             ],
+            "date": null,
             "id": "SH052012",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH052012_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052012_OFCL_SLOSH.geojson",
@@ -1307,6 +1407,7 @@
                 73.9,
                 -8.7
             ],
+            "date": null,
             "id": "SH101993",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH101993_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH101993_OFCL_SLOSH.geojson",
@@ -1320,6 +1421,7 @@
                 75.3313,
                 -8.5562
             ],
+            "date": null,
             "id": "SH072019",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH072019_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH072019_OFCL_SLOSH.geojson",
@@ -1333,6 +1435,7 @@
                 67.9521,
                 -10.4146
             ],
+            "date": null,
             "id": "SH081989",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081989_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081989_OFCL_SLOSH.geojson",
@@ -1346,6 +1449,7 @@
                 67.3938,
                 -13.4062
             ],
+            "date": null,
             "id": "SH161982",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH161982_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH161982_OFCL_SLOSH.geojson",
@@ -1359,6 +1463,7 @@
                 72.5979,
                 -3.4896
             ],
+            "date": null,
             "id": "SH012009",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH012009_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH012009_OFCL_SLOSH.geojson",
@@ -1372,6 +1477,7 @@
                 43.0396,
                 -15.7229
             ],
+            "date": null,
             "id": "SH211999",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH211999_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH211999_OFCL_SLOSH.geojson",
@@ -1385,6 +1491,7 @@
                 66.8,
                 -9.6687
             ],
+            "date": null,
             "id": "SH131986",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH131986_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH131986_OFCL_SLOSH.geojson",
@@ -1398,6 +1505,7 @@
                 67.6021,
                 -12.8729
             ],
+            "date": null,
             "id": "SH132007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH132007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132007_OFCL_SLOSH.geojson",
@@ -1411,6 +1519,7 @@
                 74.0,
                 -11.4604
             ],
+            "date": null,
             "id": "SH171996",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH171996_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH171996_OFCL_SLOSH.geojson",
@@ -1424,6 +1533,7 @@
                 67.5979,
                 -11.9354
             ],
+            "date": null,
             "id": "SH132013",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH132013_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132013_OFCL_SLOSH.geojson",
@@ -1437,6 +1547,7 @@
                 65.9604,
                 -8.6062
             ],
+            "date": null,
             "id": "SH032004",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH032004_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH032004_OFCL_SLOSH.geojson",
@@ -1450,6 +1561,7 @@
                 61.2271,
                 -16.7146
             ],
+            "date": null,
             "id": "SH062015",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH062015_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH062015_OFCL_SLOSH.geojson",
@@ -1463,6 +1575,7 @@
                 72.6979,
                 -7.9146
             ],
+            "date": null,
             "id": "SH051988",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH051988_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH051988_OFCL_SLOSH.geojson",
@@ -1476,6 +1589,7 @@
                 90.5,
                 -6.3
             ],
+            "date": null,
             "id": "SH121993",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH121993_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH121993_OFCL_SLOSH.geojson",
@@ -1489,6 +1603,7 @@
                 68.8187,
                 -7.9313
             ],
+            "date": null,
             "id": "SH042001",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH042001_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH042001_OFCL_SLOSH.geojson",
@@ -1502,6 +1617,7 @@
                 71.7063,
                 -5.5854
             ],
+            "date": null,
             "id": "SH022003",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH022003_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH022003_OFCL_SLOSH.geojson",
@@ -1515,6 +1631,7 @@
                 95.1,
                 -8.3438
             ],
+            "date": null,
             "id": "SH161994",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH161994_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH161994_OFCL_SLOSH.geojson",
@@ -1528,6 +1645,7 @@
                 67.7354,
                 -5.4812
             ],
+            "date": null,
             "id": "SH202012",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH202012_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH202012_OFCL_SLOSH.geojson",
@@ -1541,6 +1659,7 @@
                 49.2396,
                 -14.3188
             ],
+            "date": null,
             "id": "SH082012",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH082012_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082012_OFCL_SLOSH.geojson",
@@ -1554,6 +1673,7 @@
                 53.8146,
                 -12.2063
             ],
+            "date": null,
             "id": "SH092004",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH092004_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092004_OFCL_SLOSH.geojson",
@@ -1567,6 +1687,7 @@
                 46.8312,
                 -17.1063
             ],
+            "date": null,
             "id": "SH082002",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH082002_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082002_OFCL_SLOSH.geojson",
@@ -1580,6 +1701,7 @@
                 92.7063,
                 -9.6187
             ],
+            "date": null,
             "id": "SH132019",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH132019_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132019_OFCL_SLOSH.geojson",
@@ -1593,6 +1715,7 @@
                 52.0479,
                 -20.4104
             ],
+            "date": null,
             "id": "SH201982",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH201982_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH201982_OFCL_SLOSH.geojson",
@@ -1606,6 +1729,7 @@
                 60.6,
                 -10.6062
             ],
+            "date": null,
             "id": "SH092017",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH092017_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092017_OFCL_SLOSH.geojson",
@@ -1619,6 +1743,7 @@
                 48.6896,
                 -15.9104
             ],
+            "date": null,
             "id": "SH211998",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH211998_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH211998_OFCL_SLOSH.geojson",
@@ -1632,6 +1757,7 @@
                 64.5729,
                 -5.3688
             ],
+            "date": null,
             "id": "SH061995",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH061995_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH061995_OFCL_SLOSH.geojson",
@@ -1645,6 +1771,7 @@
                 79.4,
                 -12.7854
             ],
+            "date": null,
             "id": "SH152007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH152007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH152007_OFCL_SLOSH.geojson",
@@ -1658,6 +1785,7 @@
                 64.8104,
                 -7.3771
             ],
+            "date": null,
             "id": "SH202018",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH202018_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH202018_OFCL_SLOSH.geojson",
@@ -1671,6 +1799,7 @@
                 49.3979,
                 -5.4688
             ],
+            "date": null,
             "id": "SH032007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH032007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH032007_OFCL_SLOSH.geojson",
@@ -1684,6 +1813,7 @@
                 61.3187,
                 -10.3813
             ],
+            "date": null,
             "id": "SH141997",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH141997_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH141997_OFCL_SLOSH.geojson",
@@ -1697,6 +1827,7 @@
                 74.9938,
                 -10.7063
             ],
+            "date": null,
             "id": "SH132020",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH132020_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132020_OFCL_SLOSH.geojson",
@@ -1710,6 +1841,7 @@
                 70.7979,
                 -13.0063
             ],
+            "date": null,
             "id": "SH062018",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH062018_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH062018_OFCL_SLOSH.geojson",
@@ -1723,6 +1855,7 @@
                 79.7,
                 -11.4646
             ],
+            "date": null,
             "id": "SH091988",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH091988_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH091988_OFCL_SLOSH.geojson",
@@ -1736,6 +1869,7 @@
                 60.2188,
                 -17.0729
             ],
+            "date": null,
             "id": "SH171987",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH171987_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH171987_OFCL_SLOSH.geojson",
@@ -1749,6 +1883,7 @@
                 59.9271,
                 -10.9896
             ],
+            "date": null,
             "id": "SH062007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH062007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH062007_OFCL_SLOSH.geojson",
@@ -1762,6 +1897,7 @@
                 60.8688,
                 -9.4604
             ],
+            "date": null,
             "id": "SH081988",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081988_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081988_OFCL_SLOSH.geojson",
@@ -1775,6 +1911,7 @@
                 113.2,
                 -10.0771
             ],
+            "date": "2024-12-29",
             "id": "SH072025",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH072025_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/SH072025_OFCL_SLOSH.geojson",
@@ -1788,6 +1925,7 @@
                 69.1,
                 -7.3
             ],
+            "date": null,
             "id": "SH052007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH052007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052007_OFCL_SLOSH.geojson",
@@ -1801,6 +1939,7 @@
                 58.3979,
                 -15.1062
             ],
+            "date": null,
             "id": "SH162015",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH162015_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162015_OFCL_SLOSH.geojson",
@@ -1814,6 +1953,7 @@
                 47.4437,
                 -11.9104
             ],
+            "date": null,
             "id": "SH152015",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH152015_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH152015_OFCL_SLOSH.geojson",
@@ -1827,6 +1967,7 @@
                 72.0979,
                 -9.5063
             ],
+            "date": null,
             "id": "SH131981",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH131981_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH131981_OFCL_SLOSH.geojson",
@@ -1840,6 +1981,7 @@
                 57.0812,
                 -14.6
             ],
+            "date": null,
             "id": "SH092006",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH092006_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092006_OFCL_SLOSH.geojson",
@@ -1853,6 +1995,7 @@
                 59.6813,
                 -11.5063
             ],
+            "date": null,
             "id": "SH132008",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH132008_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132008_OFCL_SLOSH.geojson",
@@ -1866,6 +2009,7 @@
                 73.5,
                 -7.0021
             ],
+            "date": null,
             "id": "SH192016",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH192016_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH192016_OFCL_SLOSH.geojson",
@@ -1879,6 +2023,7 @@
                 66.7146,
                 -8.2521
             ],
+            "date": null,
             "id": "SH072013",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH072013_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH072013_OFCL_SLOSH.geojson",
@@ -1892,6 +2037,7 @@
                 62.7646,
                 -12.6229
             ],
+            "date": null,
             "id": "SH081980",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH081980_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH081980_OFCL_SLOSH.geojson",
@@ -1905,6 +2051,7 @@
                 49.0771,
                 -10.9688
             ],
+            "date": null,
             "id": "SH212014",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH212014_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH212014_OFCL_SLOSH.geojson",
@@ -1918,6 +2065,7 @@
                 59.8771,
                 -7.1646
             ],
+            "date": null,
             "id": "SH171988",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH171988_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH171988_OFCL_SLOSH.geojson",
@@ -1931,6 +2079,7 @@
                 74.6771,
                 -9.9
             ],
+            "date": null,
             "id": "SH161996",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH161996_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH161996_OFCL_SLOSH.geojson",
@@ -1944,6 +2093,7 @@
                 85.7,
                 -8.6562
             ],
+            "date": "2024-12-05",
             "id": "SH042025",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH042025_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/SH042025_JTWC_SLOSH.geojson",
@@ -1957,6 +2107,7 @@
                 71.3229,
                 -11.9563
             ],
+            "date": null,
             "id": "SH042017",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH042017_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH042017_OFCL_SLOSH.geojson",
@@ -1970,6 +2121,7 @@
                 72.8938,
                 -7.2479
             ],
+            "date": null,
             "id": "SH102007",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH102007_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH102007_OFCL_SLOSH.geojson",
@@ -1983,6 +2135,7 @@
                 66.6,
                 -8.6729
             ],
+            "date": null,
             "id": "SH182002",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH182002_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH182002_OFCL_SLOSH.geojson",
@@ -1996,6 +2149,7 @@
                 70.6354,
                 -6.9729
             ],
+            "date": null,
             "id": "SH052003",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH052003_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052003_OFCL_SLOSH.geojson",
@@ -2009,6 +2163,7 @@
                 65.0771,
                 -8.8813
             ],
+            "date": null,
             "id": "SH162010",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH162010_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162010_OFCL_SLOSH.geojson",
@@ -2022,6 +2177,7 @@
                 53.0729,
                 -18.5312
             ],
+            "date": null,
             "id": "SH212021",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH212021_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH212021_OFCL_SLOSH.geojson",
@@ -2035,6 +2191,7 @@
                 56.2354,
                 -13.4146
             ],
+            "date": null,
             "id": "SH141984",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH141984_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH141984_OFCL_SLOSH.geojson",
@@ -2048,6 +2205,7 @@
                 70.9812,
                 -13.7
             ],
+            "date": null,
             "id": "SH131995",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH131995_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH131995_OFCL_SLOSH.geojson",
@@ -2061,6 +2219,7 @@
                 75.0,
                 -8.6
             ],
+            "date": null,
             "id": "SH151994",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH151994_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH151994_OFCL_SLOSH.geojson",
@@ -2074,6 +2233,7 @@
                 62.1979,
                 -12.4396
             ],
+            "date": null,
             "id": "SH181988",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH181988_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH181988_OFCL_SLOSH.geojson",
@@ -2087,6 +2247,7 @@
                 72.2,
                 -10.1854
             ],
+            "date": null,
             "id": "SH162004",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH162004_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162004_OFCL_SLOSH.geojson",
@@ -2100,6 +2261,7 @@
                 59.3688,
                 -8.2646
             ],
+            "date": null,
             "id": "SH062014",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH062014_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH062014_OFCL_SLOSH.geojson",
@@ -2113,6 +2275,7 @@
                 65.4896,
                 -10.0188
             ],
+            "date": null,
             "id": "SH181980",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH181980_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH181980_OFCL_SLOSH.geojson",
@@ -2126,6 +2289,7 @@
                 53.0,
                 -6.7104
             ],
+            "date": null,
             "id": "SH141996",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH141996_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH141996_OFCL_SLOSH.geojson",
@@ -2139,6 +2303,7 @@
                 44.5563,
                 -17.4771
             ],
+            "date": null,
             "id": "SH192003",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH192003_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH192003_OFCL_SLOSH.geojson",
@@ -2152,6 +2317,7 @@
                 51.7938,
                 -3.9604
             ],
+            "date": null,
             "id": "SH021988",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH021988_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH021988_OFCL_SLOSH.geojson",
@@ -2165,6 +2331,7 @@
                 74.0312,
                 -15.4979
             ],
+            "date": null,
             "id": "SH221981",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH221981_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH221981_OFCL_SLOSH.geojson",
@@ -2178,6 +2345,7 @@
                 83.1604,
                 -8.4
             ],
+            "date": null,
             "id": "SH031994",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH031994_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH031994_OFCL_SLOSH.geojson",
@@ -2191,6 +2359,7 @@
                 66.3938,
                 0.6479
             ],
+            "date": null,
             "id": "SH012003",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH012003_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH012003_OFCL_SLOSH.geojson",
@@ -2204,6 +2373,7 @@
                 83.9479,
                 -8.0021
             ],
+            "date": "2025-01-25",
             "id": "SH112025",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH112025_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/SH112025_JTWC_SLOSH.geojson",
@@ -2217,6 +2387,7 @@
                 75.1438,
                 -14.4062
             ],
+            "date": null,
             "id": "SH102020",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH102020_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH102020_OFCL_SLOSH.geojson",
@@ -2230,6 +2401,7 @@
                 67.6104,
                 -7.0979
             ],
+            "date": null,
             "id": "SH041983",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH041983_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH041983_OFCL_SLOSH.geojson",
