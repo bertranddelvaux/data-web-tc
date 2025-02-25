@@ -898,6 +898,20 @@
         },
         {
             "bbox": [
+                53.2687,
+                -25.2896,
+                74.7063,
+                -13.4979
+            ],
+            "date": "1996-04-02",
+            "id": "SH241996",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH241996_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH241996_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1996/SH241996_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 42.9396,
                 -27.7563,
                 65.0,

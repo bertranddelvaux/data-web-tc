@@ -1,0 +1,6 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1996,SH241996,NONAME,1996-04-02 00:00,1996-04-11 06:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,44652,57392211.72,"{3: 42418, 4: 2234}"
+1996,SH241996,NONAME,1996-04-02 00:00,1996-04-11 06:00,OFCL,Mauritius,MUS,Savanne,MUS.12_1,643,0.02,{0: 643}
+1996,SH241996,NONAME,1996-04-02 00:00,1996-04-11 06:00,OFCL,Reunion,REU,Saint-Benoît,REU.1_1,83,47.24,{0: 83}
+1996,SH241996,NONAME,1996-04-02 00:00,1996-04-11 06:00,OFCL,Reunion,REU,Saint-Paul,REU.3_1,99,0.72,{0: 99}
+1996,SH241996,NONAME,1996-04-02 00:00,1996-04-11 06:00,OFCL,Reunion,REU,Saint-Pierre,REU.4_1,2129,29.75,{0: 2129}
