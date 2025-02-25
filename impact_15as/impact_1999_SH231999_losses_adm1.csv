@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Madagascar,MDG,Fianarantsoa,MDG.3_1,286,0.06,{0: 286}
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,1417502,66246.26,"{0: 1350759, 1: 66743}"
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Mozambique,MOZ,Inhambane,MOZ.3_1,27451,562.21,{0: 27451}
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Mozambique,MOZ,Sofala,MOZ.9_1,58496,94.38,{0: 58496}
