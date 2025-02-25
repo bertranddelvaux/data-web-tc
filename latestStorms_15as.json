@@ -691,6 +691,19 @@
         },
         {
             "bbox": [
+                50.9938,
+                -29.7687,
+                80.6,
+                -8.0
+            ],
+            "id": "SH211989",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH211989_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH211989_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1989/taostc_SH211989_BEST_SLOSH.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 55.5979,
                 -28.0,
                 102.9,
