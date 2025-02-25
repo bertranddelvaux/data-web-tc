@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2007,SH222007,JAYA,2007-03-28 00:00,2007-04-08 06:00,OFCL,Madagascar,MDG,5090423,71294714.74000001,"{0: 1473082, 1: 1627787, 2: 1246723, 3: 735617, 4: 7214}"
+2007,SH222007,JAYA,2007-03-28 00:00,2007-04-08 06:00,OFCL,Mozambique,MOZ,9098,2.5,{0: 9098}
