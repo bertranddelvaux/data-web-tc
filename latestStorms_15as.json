@@ -1848,6 +1848,19 @@
         },
         {
             "bbox": [
+                39.7104,
+                -19.4729,
+                49.0771,
+                -10.9688
+            ],
+            "id": "SH212014",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH212014_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH212014_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2014/SH212014_shp.geojson",
+            "storm_name": "HELLEN"
+        },
+        {
+            "bbox": [
                 47.9729,
                 -17.4729,
                 59.8771,
