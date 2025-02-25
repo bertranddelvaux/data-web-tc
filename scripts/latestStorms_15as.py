@@ -36,7 +36,7 @@ for dir in dirs:
                         found_file = None
                         for root, dirs, files in os.walk(jtwc_history_dir):
                             for f in files:
-                                if f'{storm_id}' in f and f.endswith('.geojson'):
+                                if f'{storm_id}' in f and f.endswith('shp.geojson'):
                                     found_file = os.path.join(root, f)
 
                         # Step 3: Update shp_file if a match is found
@@ -57,12 +57,22 @@ for dir in dirs:
                             data = json.load(f)
                         dict_storms[dir][i]['storm_name'] = data['storm']['name']
                         dict_storms[dir][i]['bbox'] = data['bbox']
+
                         with open(shp_file, 'r') as f_shp:
                             data_shp = json.load(f_shp)
-                        try:
-                            date = re.search(r'\d{4}-\d{2}-\d{2}', data_shp['features'][0]['properties']['DTG']).group()
-                        except:
-                            date = None
+
+                        date = None  # Default value in case no valid DTG is found
+                        for feature in data_shp['features']:
+                            try:
+                                # Attempt to extract and match the DTG pattern
+                                date = re.search(r'\d{4}-\d{2}-\d{2}', feature['properties']['DTG']).group()
+                                if date:  # If a valid DTG is found, break the loop
+                                    break
+                            except KeyError:  # If there's no 'DTG' field, skip
+                                continue
+                            except AttributeError:  # If there's no match for the regex
+                                continue
+
                         dict_storms[dir][i]['date'] = date
 
 with open('latestStorms_15as.json', 'w') as f:
