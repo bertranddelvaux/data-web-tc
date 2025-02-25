@@ -1094,6 +1094,20 @@
         },
         {
             "bbox": [
+                48.4479,
+                -27.9229,
+                75.3938,
+                -12.5646
+            ],
+            "date": "2020-03-13",
+            "id": "SH222020",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH222020_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH222020_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2020/SH222020_shp.geojson",
+            "storm_name": "HEROLD"
+        },
+        {
+            "bbox": [
                 26.0438,
                 -22.0104,
                 65.3938,
