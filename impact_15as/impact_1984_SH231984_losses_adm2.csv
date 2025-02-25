@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+1984,SH231984,NONAME,1984-02-12 12:00,1984-02-15 00:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,Atsimo-Andrefana,MDG.6.3_1,8649,3.8,{0: 8649}
