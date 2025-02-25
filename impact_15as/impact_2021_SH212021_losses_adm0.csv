@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2021,SH212021,GUAMBE,2021-02-14 00:00,2021-02-22 06:00,OFCL,Mozambique,MOZ,2626447,1306788.59,"{0: 1476949, 1: 1149069, 2: 429}"
