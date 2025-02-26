@@ -1178,6 +1178,20 @@
         },
         {
             "bbox": [
+                45.2979,
+                -30.9104,
+                59.0979,
+                -4.4062
+            ],
+            "date": "1981-03-28",
+            "id": "SH261981",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH261981_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH261981_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1981/SH261981_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 36.5687,
                 -27.9188,
                 46.9062,
