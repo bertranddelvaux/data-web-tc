@@ -1206,6 +1206,20 @@
         },
         {
             "bbox": [
+                55.0062,
+                -35.8063,
+                67.0062,
+                -16.9979
+            ],
+            "date": "2024-01-22",
+            "id": "SH082024",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH082024_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082024_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082024.geojson",
+            "storm_name": "CANDICE"
+        },
+        {
+            "bbox": [
                 42.4146,
                 -22.4521,
                 58.0,
@@ -1836,6 +1850,20 @@
         },
         {
             "bbox": [
+                52.3104,
+                -27.7188,
+                63.7229,
+                -10.4854
+            ],
+            "date": "2024-02-17",
+            "id": "SH162024",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH162024_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH162024_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH162024.geojson",
+            "storm_name": "ELEANOR"
+        },
+        {
+            "bbox": [
                 46.1021,
                 -13.4521,
                 65.7937,
@@ -2337,6 +2365,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH142008_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/2008/taostc_SH142008_BEST_SLOSH.geojson",
             "storm_name": "GULA"
+        },
+        {
+            "bbox": [
+                50.8021,
+                -27.9979,
+                70.0062,
+                -11.5938
+            ],
+            "date": "2024-01-10",
+            "id": "SH052024",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH052024_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH052024_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH052024.geojson",
+            "storm_name": "BELAL"
         },
         {
             "bbox": [

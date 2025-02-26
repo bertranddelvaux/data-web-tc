@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2024,SH162024,ELEANOR,2024-02-19 00:00,2024-02-24 12:00,OFCL,Mauritius,MUS,355188,37427.6,"{0: 343614, 1: 11574}"
