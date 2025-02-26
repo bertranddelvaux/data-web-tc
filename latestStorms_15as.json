@@ -730,6 +730,20 @@
         },
         {
             "bbox": [
+                56.5229,
+                -32.3063,
+                94.0979,
+                -7.4354
+            ],
+            "date": "1994-03-26",
+            "id": "SH261994",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH261994_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH261994_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1994/SH261994_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 30.2812,
                 -23.4312,
                 46.0104,
