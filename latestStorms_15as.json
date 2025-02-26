@@ -982,6 +982,20 @@
         },
         {
             "bbox": [
+                45.5229,
+                -19.6229,
+                66.3938,
+                -9.1271
+            ],
+            "date": "2022-02-10",
+            "id": "SH122022",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH122022_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH122022_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122022.geojson",
+            "storm_name": "DUMAKO"
+        },
+        {
+            "bbox": [
                 51.3438,
                 -44.7146,
                 86.6438,
@@ -1133,6 +1147,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH212014_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/2014/taostc_SH212014_BEST_SLOSH.geojson",
             "storm_name": "HELLEN"
+        },
+        {
+            "bbox": [
+                38.4271,
+                -34.6,
+                91.0,
+                -11.4
+            ],
+            "date": "2022-01-23",
+            "id": "SH082022",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH082022_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082022_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
+            "storm_name": "BATSIRAI"
         },
         {
             "bbox": [
@@ -2001,6 +2029,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH101992_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/1992/SH101992_shp.geojson",
             "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                31.3896,
+                -20.6437,
+                62.1521,
+                -11.0854
+            ],
+            "date": "2022-01-19",
+            "id": "SH072022",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH072022_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH072022_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH072022.geojson",
+            "storm_name": "ANA"
         },
         {
             "bbox": [

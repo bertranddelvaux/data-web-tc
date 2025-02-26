@@ -233,6 +233,7 @@
             ],
             "id": "SH122022",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH122022_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH122022_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH122022_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122022.geojson",
             "storm_name": "DUMAKO"
@@ -304,6 +305,7 @@
             ],
             "id": "SH072022",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH072022_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH072022_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH072022_JTWC_30_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH072022.geojson",
             "storm_name": "ANA"
@@ -364,6 +366,7 @@
             ],
             "id": "SH082022",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH082022_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH082022_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH082022_JTWC_30_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082022.geojson",
             "storm_name": "BATSIRAI"
@@ -412,8 +415,8 @@
                 -13.725
             ],
             "id": "SH222025",
-            "jtwc": "tc_realtime/taostc_SH222025_JTWC_SLOSH.geojson",
             "losses": "tc_realtime/SH222025_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH222025_JTWC_SLOSH.geojson",
             "storm_name": "TWENTY-TW"
         },
         {
@@ -424,8 +427,8 @@
                 -18.375
             ],
             "id": "SH232025",
-            "jtwc": "tc_realtime/taostc_SH232025_JTWC_SLOSH.geojson",
             "losses": "tc_realtime/SH232025_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH232025_JTWC_SLOSH.geojson",
             "storm_name": "TWENTYTHRE"
         }
     ]
