@@ -380,6 +380,20 @@
         },
         {
             "bbox": [
+                31.4,
+                -26.1729,
+                91.1062,
+                -13.2354
+            ],
+            "date": "2023-02-03",
+            "id": "SH112023",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH112023_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH112023_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
+            "storm_name": "FREDDY"
+        },
+        {
+            "bbox": [
                 41.4979,
                 -40.0479,
                 75.1438,
@@ -1892,6 +1906,20 @@
         },
         {
             "bbox": [
+                37.6188,
+                -34.7438,
+                82.3104,
+                -6.2146
+            ],
+            "date": "2023-01-13",
+            "id": "SH082023",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH082023_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH082023_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
+            "storm_name": "CHENESO"
+        },
+        {
+            "bbox": [
                 37.8271,
                 -36.4354,
                 113.2,
@@ -2827,6 +2855,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH062004_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/2004/SH062004_shp.geojson",
             "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                37.0062,
+                -32.9979,
+                61.0062,
+                -16.9979
+            ],
+            "date": "2023-12-30",
+            "id": "SH042024",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH042024_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH042024_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH042024.geojson",
+            "storm_name": "ALVARO"
         },
         {
             "bbox": [

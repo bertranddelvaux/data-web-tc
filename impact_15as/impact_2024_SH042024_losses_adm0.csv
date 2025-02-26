@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2024,SH042024,ALVARO,2024-01-01 00:00,2024-01-04 12:00,OFCL,Madagascar,MDG,7454419,5094167.33,"{0: 4812197, 1: 2443985, 2: 195488, 3: 2749}"

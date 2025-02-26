@@ -1,12 +1,12 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH232025",
-            "SH222025"
+            "SH222025",
+            "SH232025"
         ],
         "storms_shp": [
-            "SH232025",
-            "SH222025"
+            "SH222025",
+            "SH232025"
         ],
         "windwater_shp": [
             "SH232025",
@@ -91,6 +91,7 @@
             ],
             "id": "SH082023",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH082023_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH082023_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH082023_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH082023.geojson",
             "storm_name": "CHENESO"
@@ -262,6 +263,7 @@
             ],
             "id": "SH112023",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH112023_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH112023_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH112023_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH112023.geojson",
             "storm_name": "FREDDY"
@@ -335,6 +337,7 @@
             ],
             "id": "SH042024",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH042024_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH042024_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH042024_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH042024.geojson",
             "storm_name": "ALVARO"
