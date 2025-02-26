@@ -492,6 +492,20 @@
         },
         {
             "bbox": [
+                55.4479,
+                -29.0771,
+                66.2562,
+                -11.7854
+            ],
+            "date": "2005-03-21",
+            "id": "SH242005",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH242005_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH242005_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2005/SH242005_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 54.4062,
                 -37.1562,
                 93.6646,
