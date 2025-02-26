@@ -114,6 +114,20 @@
         },
         {
             "bbox": [
+                37.4604,
+                -15.3562,
+                52.7,
+                -8.4854
+            ],
+            "date": "2019-04-23",
+            "id": "SH242019",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH242019_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH242019_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2019/SH242019_shp.geojson",
+            "storm_name": "KENNETH"
+        },
+        {
+            "bbox": [
                 29.7896,
                 -34.9521,
                 53.3563,
