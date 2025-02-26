@@ -36,7 +36,7 @@ for dir in dirs:
                         found_file = None
                         for root, dirs, files in os.walk(jtwc_history_dir):
                             for f in files:
-                                if f'{storm_id}' in f and f.endswith('shp.geojson'):
+                                if f'{storm_id}' in f and (f.endswith('shp.geojson') or f.endswith('BEST_SLOSH.geojson')):
                                     found_file = os.path.join(root, f)
 
                         # Step 3: Update shp_file if a match is found
