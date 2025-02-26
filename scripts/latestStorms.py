@@ -77,10 +77,8 @@ for dir in dirs:
                         dict_storms[dir].append(rec)
                     i = [i for i, s in enumerate(dict_storms[dir]) if s['id'] == storm_id][0]
                     #dict_storms[dir].setdefault(storm_id, {})
-                    if 'JTWC' in file:
-                        dict_storms[dir][i]['jtwc'] = file
-                    elif 'FMEE' in file:
-                        dict_storms[dir][i]['fmee'] = file
+                    if 'JTWC' in file or 'FMEE' in file:
+                        dict_storms[dir][i]['nc'] = file
                     with open(file, 'r') as f:
                         data = json.load(f)
                     dict_storms[dir][i]['storm_name'] = data['storm']['name']
@@ -94,5 +92,4 @@ dict_storms['current_storms']['current_storms'] = [storm for storm in dict_storm
 
 with open('latestStorms.json', 'w') as f:
     json.dump(dict_storms, f, sort_keys=True, indent=4)
-
 
