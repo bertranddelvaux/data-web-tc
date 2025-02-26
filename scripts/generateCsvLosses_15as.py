@@ -36,7 +36,7 @@ dir_root = os.path.abspath(os.getcwd())
 impact_dir = os.path.join(root_root, 'impact_15as')
 
 # Number of files to handle at a time
-N = 1
+N = 3
 
 # extension
 ext = '.nc'
