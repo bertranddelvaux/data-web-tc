@@ -28,7 +28,7 @@
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH242022_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH242022_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH242022.geojson",
-            "storm_name": "JASMINE"
+            "storm_name": "STORM1"
         },
         {
             "bbox": [
