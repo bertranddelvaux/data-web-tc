@@ -2354,6 +2354,20 @@
         },
         {
             "bbox": [
+                36.4729,
+                -29.2188,
+                56.9771,
+                -10.7896
+            ],
+            "date": "2022-04-20",
+            "id": "SH242022",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH242022_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH242022_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH242022.geojson",
+            "storm_name": "JASMINE"
+        },
+        {
+            "bbox": [
                 53.2271,
                 -33.5271,
                 70.4187,
@@ -2774,6 +2788,20 @@
         },
         {
             "bbox": [
+                36.5312,
+                -18.2729,
+                56.2812,
+                -13.0771
+            ],
+            "date": "2022-03-04",
+            "id": "SH192022",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH192022_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH192022_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192022.geojson",
+            "storm_name": "GOMBE"
+        },
+        {
+            "bbox": [
                 39.3104,
                 -22.8854,
                 49.3979,
@@ -2869,6 +2897,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH041983_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/1983/taostc_SH041983_BEST_SLOSH.geojson",
             "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                37.4771,
+                -33.6312,
+                73.2271,
+                -12.8396
+            ],
+            "date": "2022-02-14",
+            "id": "SH132022",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH132022_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132022_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH132022.geojson",
+            "storm_name": "EMNATI"
         },
         {
             "bbox": [
