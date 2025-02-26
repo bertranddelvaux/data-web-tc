@@ -1,0 +1,9 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+1981,SH281981,NONAME,1981-04-06 00:00,1981-04-14 12:00,OFCL,Mauritius,MUS,Black River,MUS.2_1,,No Adm2,1846,14.139999999999999,{0: 1846}
+1981,SH281981,NONAME,1981-04-06 00:00,1981-04-14 12:00,OFCL,Mauritius,MUS,Pamplemousses,MUS.6_1,,No Adm2,2432,26.82,{0: 1846}
+1981,SH281981,NONAME,1981-04-06 00:00,1981-04-14 12:00,OFCL,Mauritius,MUS,Plaines Wilhems,MUS.7_1,,No Adm2,2065,0.22,{0: 1846}
+1981,SH281981,NONAME,1981-04-06 00:00,1981-04-14 12:00,OFCL,Mauritius,MUS,Rivière du Rempart,MUS.9_1,,No Adm2,21978,90.82,{0: 1846}
+1981,SH281981,NONAME,1981-04-06 00:00,1981-04-14 12:00,OFCL,Reunion,REU,Saint-Benoît,REU.1_1,Sainte-Rose,REU.1.5_1,20,0.11,{0: 20}
+1981,SH281981,NONAME,1981-04-06 00:00,1981-04-14 12:00,OFCL,Reunion,REU,Saint-Paul,REU.3_1,Saint-Paul,REU.3.5_1,208,35.61,{0: 208}
+1981,SH281981,NONAME,1981-04-06 00:00,1981-04-14 12:00,OFCL,Reunion,REU,Saint-Pierre,REU.4_1,Le Tampon,REU.4.3_1,60,2.2,{0: 60}
+1981,SH281981,NONAME,1981-04-06 00:00,1981-04-14 12:00,OFCL,Reunion,REU,Saint-Pierre,REU.4_1,Saint-Joseph,REU.4.5_1,15,8.02,{0: 15}
