@@ -1416,6 +1416,20 @@
         },
         {
             "bbox": [
+                48.6104,
+                -13.8271,
+                80.9,
+                -0.5729
+            ],
+            "date": "1990-05-09",
+            "id": "SH291990",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH291990_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH291990_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1990/SH291990_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 47.4938,
                 -16.5438,
                 73.5,
@@ -1581,6 +1595,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH202012_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/2012/SH202012_shp.geojson",
             "storm_name": "KUENA"
+        },
+        {
+            "bbox": [
+                45.8521,
+                -24.9688,
+                67.0687,
+                -10.3896
+            ],
+            "date": "2003-05-02",
+            "id": "SH282003",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH282003_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH282003_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2003/SH282003_shp.geojson",
+            "storm_name": "NONAME"
         },
         {
             "bbox": [

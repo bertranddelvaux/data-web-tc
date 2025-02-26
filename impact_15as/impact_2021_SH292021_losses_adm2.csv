@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2021,SH292021,JOBO,2021-04-17 18:00,2021-04-24 18:00,OFCL,Seychelles,SYC,Outer Islands,SYC.20_1,,No Adm2,147,14593.329999999998,"{1: 74, 2: 73}"
+2021,SH292021,JOBO,2021-04-17 18:00,2021-04-24 18:00,OFCL,Tanzania,TZA,Lindi,TZA.10_1,Kilwa,TZA.10.1_1,49409,2806.5299999999997,"{0: 46065, 1: 3344}"
+2021,SH292021,JOBO,2021-04-17 18:00,2021-04-24 18:00,OFCL,Tanzania,TZA,Pwani,TZA.20_1,Mafia,TZA.20.5_1,49170,4081.07,"{0: 38639, 1: 10531}"
+2021,SH292021,JOBO,2021-04-17 18:00,2021-04-24 18:00,OFCL,Tanzania,TZA,Pwani,TZA.20_1,Rufiji,TZA.20.7_1,28112,774.5,"{0: 26438, 1: 1674}"
