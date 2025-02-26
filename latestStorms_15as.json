@@ -1584,6 +1584,20 @@
         },
         {
             "bbox": [
+                32.8604,
+                -28.4854,
+                47.2687,
+                -16.1812
+            ],
+            "date": "2009-03-23",
+            "id": "SH242009",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH242009_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH242009_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2009/SH242009_shp.geojson",
+            "storm_name": "IZILDA"
+        },
+        {
+            "bbox": [
                 46.8187,
                 -30.4,
                 68.8187,

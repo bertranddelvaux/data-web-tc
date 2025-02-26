@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Madagascar,MDG,Toliary,MDG.6_1,1152960,422044.46,"{0: 732007, 1: 413144, 2: 7809}"
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,69,702.86,{0: 69}
