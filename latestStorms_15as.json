@@ -1276,6 +1276,20 @@
         },
         {
             "bbox": [
+                47.8646,
+                -26.8937,
+                92.9688,
+                -7.6479
+            ],
+            "date": "1999-03-01",
+            "id": "SH251999",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH251999_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH251999_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1999/SH251999_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 52.6396,
                 -26.2896,
                 61.0312,
