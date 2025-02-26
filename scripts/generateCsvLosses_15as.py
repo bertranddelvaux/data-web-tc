@@ -77,7 +77,7 @@ updated_files_list = [file for file in files_list if not any(exclude in file for
 
 # Print the values to capture in the GitHub Actions workflow
 print(f"files_to_process={len(files_list)}")
-print(f"files_processed={len(files_list)-len(updated_files_list)}")
+print(f"files_processed={len(files_list)-len(updated_files_list)+N}")
 
 for url_file in updated_files_list[:N]:
     filename = os.path.basename(urlparse(url_file).path)
