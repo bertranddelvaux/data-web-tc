@@ -2284,6 +2284,20 @@
         },
         {
             "bbox": [
+                37.0604,
+                -28.7896,
+                81.0104,
+                -9.9563
+            ],
+            "date": "1986-03-07",
+            "id": "SH251986",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH251986_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH251986_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1986/SH251986_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 42.7,
                 -38.1437,
                 59.3688,
