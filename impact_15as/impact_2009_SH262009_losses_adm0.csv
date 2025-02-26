@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2009,SH262009,JADE,2009-04-02 18:00,2009-04-11 18:00,OFCL,Madagascar,MDG,10240393,36414495.27,"{0: 5164870, 1: 3205829, 2: 1666223, 3: 203471}"

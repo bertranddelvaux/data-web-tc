@@ -324,6 +324,20 @@
         },
         {
             "bbox": [
+                45.9604,
+                -38.9271,
+                63.9104,
+                -9.7354
+            ],
+            "date": "2009-04-02",
+            "id": "SH262009",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH262009_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH262009_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2009/SH262009_shp.geojson",
+            "storm_name": "JADE"
+        },
+        {
+            "bbox": [
                 50.8063,
                 -29.7396,
                 61.6729,
@@ -363,6 +377,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH092008_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/2008/SH092008_shp.geojson",
             "storm_name": "ELNUS"
+        },
+        {
+            "bbox": [
+                49.3396,
+                -21.5729,
+                85.1,
+                -11.0437
+            ],
+            "date": "1996-04-06",
+            "id": "SH261996",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH261996_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH261996_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1996/SH261996_shp.geojson",
+            "storm_name": "NONAME"
         },
         {
             "bbox": [
@@ -2448,6 +2476,20 @@
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH031994_losses_adm.json",
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH031994_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/1994/SH031994_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                59.8063,
+                -31.6063,
+                102.8,
+                -10.1
+            ],
+            "date": "2005-04-01",
+            "id": "SH262005",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH262005_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH262005_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/2005/SH262005_shp.geojson",
             "storm_name": "NONAME"
         },
         {
