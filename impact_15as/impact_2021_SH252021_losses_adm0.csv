@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2021,SH252021,IMAN,2021-03-04 00:00,2021-03-09 00:00,OFCL,Madagascar,MDG,1747767,59785.32,"{0: 1718715, 1: 29052}"
+2021,SH252021,IMAN,2021-03-04 00:00,2021-03-09 00:00,OFCL,Mozambique,MOZ,227732,592.53,{0: 227732}
+2021,SH252021,IMAN,2021-03-04 00:00,2021-03-09 00:00,OFCL,Reunion,REU,69325,5003.7699999999995,"{0: 69268, 1: 57}"
