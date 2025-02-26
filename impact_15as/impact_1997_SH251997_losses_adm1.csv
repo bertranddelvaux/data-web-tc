@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+1997,SH251997,NONAME,1997-02-11 00:00,1997-02-26 06:00,OFCL,Mauritius,MUS,Grand Port,MUS.4_1,4380,65785.53,{0: 4380}
+1997,SH251997,NONAME,1997-02-11 00:00,1997-02-26 06:00,OFCL,Mauritius,MUS,Rivière du Rempart,MUS.9_1,9,47.03,{0: 9}
+1997,SH251997,NONAME,1997-02-11 00:00,1997-02-26 06:00,OFCL,Mauritius,MUS,Rodriguez,MUS.10_1,44652,3586383.34,{2: 44652}

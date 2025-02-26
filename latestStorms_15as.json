@@ -1318,6 +1318,20 @@
         },
         {
             "bbox": [
+                52.7771,
+                -43.5438,
+                96.3896,
+                -12.0104
+            ],
+            "date": "1997-02-11",
+            "id": "SH251997",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH251997_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH251997_OFCL_SLOSH.geojson",
+            "shp": "jtwc_history/1997/SH251997_shp.geojson",
+            "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
                 57.6312,
                 -36.1,
                 95.5,
