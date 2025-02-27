@@ -6,8 +6,8 @@ name: fetchPostevent
 on:
   # Triggers the workflow every 3rd hour after 20 minutes
   schedule:
-    - cron: '31 0 * * *'  # Runs once a day at 00:31 AM
-    # - cron: '30 2/3 * * *'
+    # - cron: '31 0 * * *'  # Runs once a day at 00:31 AM
+    - cron: '30 2/3 * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -57,6 +57,10 @@ jobs:
       # execute python script latestStorms.py
       - name: execute python script latestStorms.py
         run: python scripts/latestStorms.py
+
+      # execute python script latestStorms_15as.py
+      - name: execute python script latestStorms_15as.py
+        run: python scripts/latestStorms_15as.py
         
       # execute python script pastStorms.py
       - name: execute python script pastStorms.py
