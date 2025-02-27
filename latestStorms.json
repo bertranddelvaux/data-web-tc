@@ -1,16 +1,16 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH232025",
-            "SH222025"
+            "SH222025",
+            "SH232025"
         ],
         "storms_shp": [
-            "SH232025",
-            "SH222025"
+            "SH222025",
+            "SH232025"
         ],
         "windwater_shp": [
-            "SH232025",
-            "SH222025"
+            "SH222025",
+            "SH232025"
         ]
     },
     "mpres_data": [
@@ -418,27 +418,27 @@
     "tc_realtime": [
         {
             "bbox": [
-                47.9417,
-                -32.9917,
-                61.925,
-                -13.725
+                49.3917,
+                -34.8917,
+                69.7917,
+                -14.7083
             ],
             "id": "SH222025",
             "losses": "tc_realtime/SH222025_losses_adm.json",
             "nc": "tc_realtime/taostc_SH222025_JTWC_SLOSH.geojson",
-            "storm_name": "TWENTY-TW"
+            "storm_name": "GARANCE"
         },
         {
             "bbox": [
-                34.125,
-                -28.575,
-                48.7917,
-                -18.375
+                34.7417,
+                -30.975,
+                50.6417,
+                -18.725
             ],
             "id": "SH232025",
             "losses": "tc_realtime/SH232025_losses_adm.json",
             "nc": "tc_realtime/taostc_SH232025_JTWC_SLOSH.geojson",
-            "storm_name": "TWENTYTHRE"
+            "storm_name": "HONDE"
         }
     ]
 }
