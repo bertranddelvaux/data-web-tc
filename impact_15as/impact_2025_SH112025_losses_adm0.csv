@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2025,SH112025,FAIDA,2025-01-23 06:00,2025-02-05 12:00,JTWC,Madagascar,MDG,1913799,54431.29,"{0: 1884514, 1: 29285}"
+2025,SH112025,FAIDA,2025-01-23 06:00,2025-02-05 12:00,JTWC,Mauritius,MUS,176518,2185.96,{0: 176518}
+2025,SH112025,FAIDA,2025-01-23 06:00,2025-02-05 12:00,JTWC,Reunion,REU,586,161.99,{0: 586}
