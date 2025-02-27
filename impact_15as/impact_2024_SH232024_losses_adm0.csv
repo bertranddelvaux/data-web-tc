@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2024,SH232024,HIDAYA,2024-05-01 12:00,2024-05-04 12:00,OFCL,Tanzania,TZA,7917681,12351529.49,"{0: 1614291, 1: 5815296, 2: 465504, 3: 22590}"

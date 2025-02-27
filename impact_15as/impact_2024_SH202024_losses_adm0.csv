@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2024,SH202024,GAMANE,2024-03-26 00:00,2024-03-29 12:00,OFCL,Madagascar,MDG,2933991,19624444.48,"{0: 1326407, 1: 1071926, 2: 378484, 3: 147580, 4: 9594}"

@@ -1192,6 +1192,20 @@
         },
         {
             "bbox": [
+                36.5854,
+                -11.8021,
+                47.5271,
+                -5.7854
+            ],
+            "date": "2024-04-28",
+            "id": "SH232024",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH232024_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH232024_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH232024.geojson",
+            "storm_name": "HIDAYA"
+        },
+        {
+            "bbox": [
                 61.9188,
                 -30.4,
                 78.9812,
@@ -1721,6 +1735,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH212021_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/2021/taostc_SH212021_BEST_SLOSH.geojson",
             "storm_name": "GUAMBE"
+        },
+        {
+            "bbox": [
+                30.5229,
+                -36.7771,
+                45.7313,
+                -17.7188
+            ],
+            "date": "2024-03-04",
+            "id": "SH172024",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH172024_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH172024_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
+            "storm_name": "FILIPO"
         },
         {
             "bbox": [
@@ -2925,6 +2953,20 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH091995_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/1995/SH091995_shp.geojson",
             "storm_name": "NONAME"
+        },
+        {
+            "bbox": [
+                45.4479,
+                -17.2771,
+                53.3146,
+                -9.8604
+            ],
+            "date": "2024-03-24",
+            "id": "SH202024",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH202024_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH202024_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
+            "storm_name": "GAMANE"
         },
         {
             "bbox": [

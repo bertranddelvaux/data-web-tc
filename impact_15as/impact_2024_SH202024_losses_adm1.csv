@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2024,SH202024,GAMANE,2024-03-26 00:00,2024-03-29 12:00,OFCL,Madagascar,MDG,Antsiranana,MDG.2_1,1836658,19231920.63,"{0: 476032, 1: 840369, 2: 363083, 3: 147580, 4: 9594}"
+2024,SH202024,GAMANE,2024-03-26 00:00,2024-03-29 12:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,1079069,392004.25,"{0: 832572, 1: 231096, 2: 15401}"
+2024,SH202024,GAMANE,2024-03-26 00:00,2024-03-29 12:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,18264,519.5999999999999,"{0: 17803, 1: 461}"

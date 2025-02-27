@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2024,SH172024,FILIPO,2024-03-10 18:00,2024-03-14 12:00,OFCL,Mozambique,MOZ,4625360,7528170.22,"{0: 2240550, 1: 2064500, 2: 320310}"

@@ -160,6 +160,7 @@
             ],
             "id": "SH172024",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH172024_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH172024_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH172024_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH172024.geojson",
             "storm_name": "FILIPO"
@@ -201,6 +202,7 @@
             ],
             "id": "SH202024",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH202024_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH202024_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH202024_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH202024.geojson",
             "storm_name": "GAMANE"
@@ -389,6 +391,7 @@
             ],
             "id": "SH232024",
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH232024_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH232024_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH232024_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH232024.geojson",
             "storm_name": "HIDAYA"
