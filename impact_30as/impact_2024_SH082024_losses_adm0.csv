@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2024,SH082024,CANDICE,2024-01-22 00:00,2024-01-28 06:00,JTWC,Mauritius,MUS,285115,84221.19514779378,"{0: 263664, 1: 21451}"
+2024,SH082024,CANDICE,2024-01-22 00:00,2024-01-28 06:00,JTWC,Reunion,REU,15677,679.5180802263181,{0: 15677}
