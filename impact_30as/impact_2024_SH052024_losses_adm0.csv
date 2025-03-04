@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2024,SH052024,BELAL,2024-01-10 06:00,2024-01-19 00:00,JTWC,Mauritius,MUS,445513,10085251.389289603,"{0: 370, 1: 440911, 2: 4232}"
+2024,SH052024,BELAL,2024-01-10 06:00,2024-01-19 00:00,JTWC,Reunion,REU,289946,556933537.1020788,"{2: 127158, 3: 162788}"
