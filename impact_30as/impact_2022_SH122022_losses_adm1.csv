@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
+2022,SH122022,DUMAKO,2022-02-11 06:00,2022-02-16 00:00,OFCL,Madagascar,MDG,Antananarivo,MDG.1_1,1323,0.06817507663032525,{0: 1323}
+2022,SH122022,DUMAKO,2022-02-11 06:00,2022-02-16 00:00,OFCL,Madagascar,MDG,Mahajanga,MDG.4_1,23602,505.3808174284959,"{0: 22915, 1: 687}"
+2022,SH122022,DUMAKO,2022-02-11 06:00,2022-02-16 00:00,OFCL,Madagascar,MDG,Toamasina,MDG.5_1,463973,350243.15657756606,"{0: 207904, 1: 256069}"

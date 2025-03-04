@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2022,SH072022,ANA,2022-01-20 00:00,2022-01-25 06:00,OFCL,Madagascar,MDG,1736208,47432.137571625055,"{0: 1668530, 1: 67678}"
+2022,SH072022,ANA,2022-01-20 00:00,2022-01-25 06:00,OFCL,Mozambique,MOZ,1351018,749611.6278016019,"{0: 871078, 1: 479327, 2: 613}"
