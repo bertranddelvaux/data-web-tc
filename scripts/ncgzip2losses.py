@@ -108,7 +108,7 @@ def loss_calculation(expclass, vms, surge, numexp, stval, coval, dmin=0.01):
     return loss
 
 
-def calculateLosses(storm_file, exp_file, adm_file, mapping_file, split, geojson, prefix='swath', csv_file='losses.csv', gadm_file=None):
+def calculateLosses(storm_file, exp_file, adm_file, mapping_file, split, geojson, prefix='swath', csv_file='losses.csv', gadm_file=None, impact_dir=None):
 
     # reading files: storm (nc), exposure (dbf), adm (json), mapping (json)
     storm_df = xr.open_dataset(storm_file, engine='netcdf4', decode_times=False)
@@ -268,13 +268,18 @@ def calculateLosses(storm_file, exp_file, adm_file, mapping_file, split, geojson
             df_final = df_merge.drop(columns='geometry')
 
 
-
     jsonFileBase = f'{stormId}_losses_adm'
+
+    wind_cat_dict_by_adm = {}
+
+    no_adm1 = False
+    no_adm2 = False
 
     # saving to adm levels
     adm_group_list = []
     for i in range(3):
         jsonFile = f'{jsonFileBase}{i}.{"geo" if geojson else ""}json'
+        csvFile = f'impact_{stormId[-4:]}_{jsonFileBase}{i}.csv'
         adm_group_list = [f'adm{j}_{k}' for j in range(i + 1) for k in ['name', 'code']]
 
         df_final_adm = df_final.copy(deep=True)
@@ -288,6 +293,17 @@ def calculateLosses(storm_file, exp_file, adm_file, mapping_file, split, geojson
                 wind_cat_dict[adm_code].update(
                     {wind_cat: df_final_cat_adm[df_final_cat_adm['wind_cat'] == wind_cat]['population'].values[0]})
 
+        wind_cat_dict_by_adm[f'adm{i}_code'] = wind_cat_dict
+
+        list_adm_codes = df_final_cat[f'adm{i}_code'].unique()
+
+        if len(list_adm_codes) == 1 and list_adm_codes[0] == 'No Adm1':
+            wind_cat_dict = wind_cat_dict_by_adm['adm0_code']
+            no_adm1 = True
+        elif len(list_adm_codes) == 1 and list_adm_codes[0] == 'No Adm2':
+            wind_cat_dict = wind_cat_dict_by_adm['adm1_code']
+            no_adm2 = True
+
         df_final_adm.drop(columns=['wind_cat'], inplace=True)
 
         if geojson:
@@ -297,10 +313,23 @@ def calculateLosses(storm_file, exp_file, adm_file, mapping_file, split, geojson
             densify(jsonFile)
         else:
             df_final_groupby = df_final_adm.groupby(adm_group_list, as_index=False)['population','loss'].sum()
-            df_final_groupby['wind_cat'] = df_final_groupby[f'adm{i}_code'].apply(lambda row: wind_cat_dict[row])
+
+            if no_adm1 or no_adm2:
+                df_final_groupby['wind_cat'] = wind_cat_dict.values()
+            else:
+                df_final_groupby['wind_cat'] = df_final_groupby[f'adm{i}_code'].apply(lambda row: wind_cat_dict[row])
             jsonString = df_final_groupby.to_json(orient='records').replace('[','{"records":[').replace(']', ']}')
             with open(jsonFile, 'w') as f:
                 f.write(jsonString)
+            # csv losses
+            # Add 'atcf_id', 'storm_name', 'dtg', and 'tech' as new columns at the beginning of df_final_groupby
+            df_final_groupby.insert(0, 'tc_season', stormId[-4:]) # Insert 'tc_season' at position 0 (beginning)
+            df_final_groupby.insert(1, 'atcf_id', stormId)  # Insert 'atcf_id' at position 1
+            df_final_groupby.insert(2, 'storm_name', storm_df.storm_name)  # Insert 'dtg' at position 2
+            df_final_groupby.insert(3, 'jtwc_start_time', storm_df.julian_day.sqltext) # Insert 'jtwc_end_time' at position 3
+            df_final_groupby.insert(4, 'jtwc_end_time', storm_df.fcst_time)  # Insert 'jtwc_end_time' at position 4
+            df_final_groupby.insert(5, 'tech', storm_df.fcst_tech)  # Insert 'tech' at position 5
+            df_final_groupby.to_csv(f'{impact_dir}/{csvFile}', index=False)
 
     i = 0
     with open(f'{jsonFileBase}{i}.json', 'r') as f:
