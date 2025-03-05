@@ -28,7 +28,8 @@ list_subfolder = ['ofcl_15as_nc', 'taos_swio30s_ofcl_windwater_nc', 'taos_swio30
 root_root = os.path.abspath(os.getcwd())
 os.chdir('mpres_data/postevent')
 dir_root = os.path.abspath(os.getcwd())
-impact_dir = os.path.join(root_root, 'impact_15as')
+impact_dir_15as = os.path.join(root_root, 'impact_15as')
+impact_dir_30as = os.path.join(root_root, 'impact_30as')
 
 for subfolder, ext in zip(list_subfolder, ['.nc', '.nc', '.zip']):
 
@@ -72,7 +73,8 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.nc', '.zip']):
                         mapping_file=os.path.join(root_root, 'mapping_new.gzip'),
                         split=False,
                         geojson=False,
-                        gadm_file=os.path.join(root_root, 'gadm_adm2.json')
+                        gadm_file=os.path.join(root_root, 'gadm_adm2.json'),
+                        impact_dir=impact_dir_30as
                     )
 
                 if subfolder == 'ofcl_15as_nc':
@@ -88,7 +90,7 @@ for subfolder, ext in zip(list_subfolder, ['.nc', '.nc', '.zip']):
                             split=False,
                             geojson=False,
                             gadm_file=os.path.join(root_root, 'gadm_adm2.json'),
-                            impact_dir=impact_dir
+                            impact_dir=impact_dir_15as
                         )
                     except:
                         print('\033[91m' + 'There was an error in trying to handle a 15as case' + '\033[0m')
