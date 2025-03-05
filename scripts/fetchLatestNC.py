@@ -19,6 +19,7 @@ password = os.environ['KAC_PASSWORD']
 
 # get the absolute path of the current working directory
 root_root = os.path.abspath(os.getcwd())
+impact_dir = os.path.join(root_root, 'impact_30as')
 
 # print the current UTC timestamp
 utc_timestamp = get_current_utc_timestamp()
@@ -129,7 +130,8 @@ else:
                     split=False,
                     geojson=False,
                     gadm_file=os.path.join(root_root, 'gadm_adm2.json'),
-                    prefix='fcst'
+                    prefix='fcst',
+                    impact_dir=impact_dir
                 )
 
             print(f'\t\t\033[91mRemoving {filename} ...\033[0m')
