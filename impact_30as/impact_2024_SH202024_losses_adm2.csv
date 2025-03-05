@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2024,SH202024,GAMANE,2024-03-24 18:00,2024-03-28 18:00,JTWC,Madagascar,MDG,Antsiranana,MDG.2_1,Diana,MDG.2.1_1,174678,2058830.253641882,"{0: 84552, 1: 70773, 2: 17193, 3: 2160}"
+2024,SH202024,GAMANE,2024-03-24 18:00,2024-03-28 18:00,JTWC,Madagascar,MDG,Antsiranana,MDG.2_1,Sava,MDG.2.2_1,142410,17036695.836937435,"{0: 53802, 1: 44755, 2: 15598, 3: 28255}"
+2024,SH202024,GAMANE,2024-03-24 18:00,2024-03-28 18:00,JTWC,Madagascar,MDG,Mahajanga,MDG.4_1,Sofia,MDG.4.4_1,60936,22638.156292436957,"{0: 44006, 1: 16930}"
+2024,SH202024,GAMANE,2024-03-24 18:00,2024-03-28 18:00,JTWC,Madagascar,MDG,Toamasina,MDG.5_1,Analanjirofo,MDG.5.2_1,525,0.6264867308989417,{0: 525}
