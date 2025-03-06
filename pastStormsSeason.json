@@ -5923,6 +5923,22 @@
         "2025": [
             {
                 "bbox": [
+                    50.1,
+                    -34.8,
+                    62.7,
+                    -15.3292
+                ],
+                "date": "2025-02-23",
+                "id": "SH222025",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH222025_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH222025_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH222025.geojson",
+                "storm_name": "GARANCE",
+                "time": "12:00",
+                "year": "2025"
+            },
+            {
+                "bbox": [
                     51.3542,
                     -25.5458,
                     78.8875,

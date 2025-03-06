@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2025,SH222025,GARANCE,2025-02-23 12:00,2025-03-02 18:00,JTWC,Mauritius,MUS,68289,951.9999999999999,{0: 68289}
+2025,SH222025,GARANCE,2025-02-23 12:00,2025-03-02 18:00,JTWC,Reunion,REU,963140,1697404675.23,"{3: 961306, 4: 1834}"
