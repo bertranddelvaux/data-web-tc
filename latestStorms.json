@@ -143,6 +143,19 @@
         },
         {
             "bbox": [
+                31.9708,
+                -41.1208,
+                57.2042,
+                -16.5542
+            ],
+            "id": "SH232025",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH232025_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH232025_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH232025.geojson",
+            "storm_name": "HONDE"
+        },
+        {
+            "bbox": [
                 50.2375,
                 -28.9708,
                 70.4542,

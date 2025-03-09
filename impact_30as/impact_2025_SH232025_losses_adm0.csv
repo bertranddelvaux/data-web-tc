@@ -1,1 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2025,SH232025,HONDE,2025-02-22 18:00,2025-03-05 18:00,JTWC,Madagascar,MDG,1035850,4746434.349588016,"{0: 458138, 1: 521955, 2: 55757}"
