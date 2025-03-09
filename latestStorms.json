@@ -451,15 +451,15 @@
         },
         {
             "bbox": [
-                61.775,
-                -33.3417,
-                91.2083,
-                -4.7583
+                62.1917,
+                -33.0917,
+                91.925,
+                -5.5417
             ],
             "id": "SH242025",
             "losses": "tc_realtime/SH242025_losses_adm.json",
             "nc": "tc_realtime/taostc_SH242025_JTWC_SLOSH.geojson",
-            "storm_name": "TWENTY-FO"
+            "storm_name": "IVONE"
         }
     ]
 }
