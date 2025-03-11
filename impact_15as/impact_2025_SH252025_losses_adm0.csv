@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2025,SH252025,JUDE,2025-03-06 06:00,2025-03-10 18:00,JTWC,Madagascar,MDG,653845,8666.6,"{0: 652409, 1: 1436}"
+2025,SH252025,JUDE,2025-03-06 06:00,2025-03-10 18:00,JTWC,Mozambique,MOZ,18871856,262520884.48,"{0: 7893635, 1: 5233835, 2: 2108943, 3: 3635443}"

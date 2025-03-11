@@ -5987,6 +5987,22 @@
             },
             {
                 "bbox": [
+                    35.5,
+                    -18.8375,
+                    58.1,
+                    -11.4708
+                ],
+                "date": "2025-03-06",
+                "id": "SH252025",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH252025_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH252025_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH252025.geojson",
+                "storm_name": "JUDE",
+                "time": "06:00",
+                "year": "2025"
+            },
+            {
+                "bbox": [
                     37.8292,
                     -35.9875,
                     113.2,
