@@ -452,18 +452,6 @@
     "tc_realtime": [
         {
             "bbox": [
-                32.1417,
-                -19.825,
-                58.1,
-                -11.2083
-            ],
-            "id": "SH252025",
-            "losses": "tc_realtime/SH252025_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH252025_JTWC_SLOSH.geojson",
-            "storm_name": "JUDE"
-        },
-        {
-            "bbox": [
                 61.5417,
                 -36.875,
                 93.075,
