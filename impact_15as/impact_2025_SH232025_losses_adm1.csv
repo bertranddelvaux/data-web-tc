@@ -1,3 +1,0 @@
-tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
-2025,SH232025,HONDE,2025-02-22 18:00,2025-03-06 18:00,JTWC,Madagascar,MDG,Fianarantsoa,MDG.3_1,1755906,386209.72000000003,"{0: 1279533, 1: 476373}"
-2025,SH232025,HONDE,2025-02-22 18:00,2025-03-06 18:00,JTWC,Madagascar,MDG,Toliary,MDG.6_1,3691965,27418211.37,"{0: 127714, 1: 1705319, 2: 1792455, 3: 66477}"
