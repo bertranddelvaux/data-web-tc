@@ -2270,20 +2270,6 @@
         },
         {
             "bbox": [
-                34.8479,
-                -18.3771,
-                58.1,
-                -11.3396
-            ],
-            "date": "2025-03-06",
-            "id": "SH252025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH252025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH252025_JTWC_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH252025.geojson",
-            "storm_name": "JUDE"
-        },
-        {
-            "bbox": [
                 46.2812,
                 -31.7646,
                 74.0312,
@@ -2827,20 +2813,6 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH132009_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/2009/SH132009_shp.geojson",
             "storm_name": "GAEL"
-        },
-        {
-            "bbox": [
-                34.9854,
-                -44.4313,
-                59.9021,
-                -18.7396
-            ],
-            "date": "2025-02-22",
-            "id": "SH232025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH232025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH232025_JTWC_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH232025.geojson",
-            "storm_name": "HONDE"
         },
         {
             "bbox": [
