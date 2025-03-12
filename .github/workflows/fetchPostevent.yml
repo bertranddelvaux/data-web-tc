@@ -46,6 +46,20 @@ jobs:
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/fetchPostevent.py
 
+      # execute python script generateCsvLosses_15as.py 
+      - name: execute python script generateCsvLosses_15as.py
+        env:
+          KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
+          KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
+        run: python scripts/generateCsvLosses_15as.py
+
+      # execute python script generateCsvLosses_30as.py 
+      - name: execute python script generateCsvLosses_30as.py
+        env:
+          KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
+          KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
+        run: python scripts/generateCsvLosses_30as.py
+
       # list files in mpres_data directory
       - name: List files in mpres_data directory
         run: ls -l mpres_data
