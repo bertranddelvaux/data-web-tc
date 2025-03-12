@@ -69,10 +69,10 @@ def sem_dprob(wfrac, sfrac):
     return dprob
 
 
-def wind_damage(expclass, vms):
+def wind_damage(expclass, vms, vms2vkts=1.94384):
     wstdam = 0.0
 
-    vkts = vms * 1.94384
+    vkts = vms * vms2vkts
     vmin = sem[expclass]['vmin']
     vmax = sem[expclass]['vmax']
 
@@ -96,9 +96,9 @@ def hydrology_damage(expclass, surge):
     return sstdam
 
 
-def loss_calculation(expclass, vms, surge, numexp, value, res_sec):
+def loss_calculation(expclass, vms, surge, numexp, value, res_sec, vms2vkts=1.94384):
 
-    wlossfrac = wind_damage(expclass, vms)
+    wlossfrac = wind_damage(expclass, vms, vms2vkts=vms2vkts)
 
     flossfrac = hydrology_damage(expclass, surge)
 
@@ -127,7 +127,8 @@ def calculateLosses_15as(
         prefix='swath',
         csv_file='losses.csv',
         gadm_file=None,
-        impact_dir=None
+        impact_dir=None,
+        vms2vkts=1.94384
 ):
 
     filters = None
@@ -216,7 +217,7 @@ def calculateLosses_15as(
             vms = swath_peak_wind[y][x] / windqual
             surge = swath_peak_water[y][x]
 
-            loss = np.round(loss_calculation(expclass, vms, surge, numexp, value, res_sec), decimals=2)
+            loss = np.round(loss_calculation(expclass, vms, surge, numexp, value, res_sec, vms2vkts=vms2vkts), decimals=2)
 
             # data to be written
             expid = row['EXPOSURE_I']
