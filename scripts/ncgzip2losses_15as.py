@@ -217,7 +217,7 @@ def calculateLosses_15as(
             vms = swath_peak_wind[y][x] / windqual
             surge = swath_peak_water[y][x]
 
-            loss = np.round(loss_calculation(expclass, vms, surge, numexp, value, res_sec, vms2vkts=vms2vkts), decimals=2)
+            loss = loss_calculation(expclass, vms, surge, numexp, value, res_sec, vms2vkts=vms2vkts)
 
             # data to be written
             expid = row['EXPOSURE_I']
