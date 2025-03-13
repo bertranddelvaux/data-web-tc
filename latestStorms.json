@@ -146,6 +146,27 @@
         },
         {
             "bbox": [
+                31.9708,
+                -41.1208,
+                57.2042,
+                -16.5542
+            ],
+            "bbox_15as": [
+                34.9854,
+                -44.4313,
+                59.9021,
+                -18.7396
+            ],
+            "id": "SH232025",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH232025_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH232025_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH232025_JTWC_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH232025_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH232025.geojson",
+            "storm_name": "HONDE"
+        },
+        {
+            "bbox": [
                 50.2375,
                 -28.9708,
                 70.4542,
@@ -171,6 +192,27 @@
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH242022_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH242022.geojson",
             "storm_name": "JASMINE"
+        },
+        {
+            "bbox": [
+                35.5,
+                -18.8375,
+                58.1,
+                -11.4708
+            ],
+            "bbox_15as": [
+                34.8479,
+                -18.3771,
+                58.1,
+                -11.3396
+            ],
+            "id": "SH252025",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH252025_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH252025_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH252025_JTWC_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH252025_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH252025.geojson",
+            "storm_name": "JUDE"
         },
         {
             "bbox": [
