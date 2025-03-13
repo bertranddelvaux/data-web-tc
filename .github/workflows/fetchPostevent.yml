@@ -60,6 +60,10 @@ jobs:
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/generateCsvLosses_30as.py
 
+      # execute python script combineImpacts.py 
+      - name: execute python script combineImpacts.py
+        run: python scripts/generateCsvLosses_30as.py
+
       # list files in mpres_data directory
       - name: List files in mpres_data directory
         run: ls -l mpres_data
