@@ -864,11 +864,6 @@
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH022025_losses_adm.json"
     ],
     "tc_realtime": [
-        "tc_realtime/SH982025_losses_adm.json",
-        "tc_realtime/SH252025_losses_adm.json",
-        "tc_realtime/README.md",
-        "tc_realtime/taostc_SH252025_JTWC_SLOSH.geojson",
-        "tc_realtime/SH242025_losses_adm.json",
-        "tc_realtime/SH992025_losses_adm.json"
+        "tc_realtime/README.md"
     ]
 }
