@@ -1,0 +1,138 @@
+import os
+import json
+import re
+import geopandas as gpd
+import numpy as np
+import shapely.geometry as geom
+import nczip2geojson as nc
+from urllib.parse import urlparse
+from ncgzip2losses import calculateLosses
+from ncgzip2losses_15as import calculateLosses_15as
+from utils import listFilesUrl, fetchUrl
+
+import xarray as xr
+from zipfile import ZipFile
+
+url = 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/'
+username = os.environ['KAC_USERNAME']
+password = os.environ['KAC_PASSWORD']
+
+with open('index.json', 'r') as f:
+    index = json.load(f)
+
+list_subfolder = ['ofcl_15as_nc', 'taos_swio30s_ofcl_windwater_nc', 'taos_swio30s_ofcl_windwater_shp']
+
+url_list = [
+    'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH252025_JTWC_SLOSH.nc',
+    'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/SH252025_JTWC_SLOSH.nc'
+]
+
+root_root = os.path.abspath(os.getcwd())
+os.chdir('mpres_data/postevent')
+dir_root = os.path.abspath(os.getcwd())
+impact_dir_15as = os.path.join(root_root, 'impact_15as')
+impact_dir_30as = os.path.join(root_root, 'impact_30as')
+
+for subfolder, ext in zip(list_subfolder, ['.nc', '.nc', '.zip']):
+
+    os.chdir(dir_root)
+
+    # check if directory exists
+    exists = os.path.isdir(subfolder)
+    if not exists:
+        print(f'\033[35mA new folder will be created: {subfolder}\033[0m')
+        os.makedirs(subfolder)
+
+    os.chdir(subfolder)
+
+    url_subfolder = f'{url}{subfolder}'
+
+    file_list = [url for url in url_list if subfolder in url]
+
+    local_storm_files = []  # in the case of shp files
+
+    for url_file in file_list:
+        filename = os.path.basename(urlparse(url_file).path)
+
+        common_list = [storm_name for storm_name in local_storm_files if storm_name in filename]  # check if already processed
+
+        if len(common_list) == 0:
+            downloaded = fetchUrl(url_file, username, password)
+
+            if downloaded:
+
+                if subfolder == 'taos_swio30s_ofcl_windwater_nc':
+                    nc.nc2geojson(filename)
+                    # running loss generation
+                    calculateLosses(
+                        storm_file=filename,
+                        exp_file=os.path.join(root_root, 'arc_exposure.gzip'),
+                        adm_file=os.path.join(root_root, 'adm2_full_precision.json'),
+                        mapping_file=os.path.join(root_root, 'mapping_new.gzip'),
+                        split=False,
+                        geojson=False,
+                        gadm_file=os.path.join(root_root, 'gadm_adm2.json'),
+                        impact_dir=impact_dir_30as
+                    )
+
+                if subfolder == 'ofcl_15as_nc':
+                    print(f'\033[35mDealing with {subfolder}\033[0m')
+                    try:
+                        nc.nc2geojson(filename)
+                        # running loss generation
+                        calculateLosses_15as(
+                            storm_file=filename,
+                            exp_file=os.path.join(root_root, 'arc_consolidated_expo_15as_gdp.gzip'),
+                            adm_file=os.path.join(root_root, 'adm2_full_precision.json'),
+                            mapping_file=os.path.join(root_root, 'mapping_15as.gzip'),
+                            split=False,
+                            geojson=False,
+                            gadm_file=os.path.join(root_root, 'gadm_adm2.json'),
+                            impact_dir=impact_dir_15as
+                        )
+                    except:
+                        print('\033[91m' + 'There was an error in trying to handle a 15as case' + '\033[0m')
+
+                if subfolder == 'taos_swio30s_ofcl_windwater_shp':
+                    filename_shp = f'shp_{filename}'
+                    with ZipFile(filename, 'r') as zipObject:
+                        zippedFiles = zipObject.namelist()
+                        with ZipFile(filename_shp, 'w') as zipObject2write:
+                            for zippedFile in zippedFiles:
+                                if 'tk_pts' in zippedFile:
+                                    zipObject.extract(zippedFile)
+                                    zipObject2write.write(zippedFile)
+                                    os.remove(zippedFile)
+
+                    gdf = gpd.read_file(filename_shp)
+
+                    # looping through storms
+                    for storm_id in gdf.ATCFID.unique():
+                        last_lon = None
+                        last_lat = None
+                        if 'TECH' in gdf.columns:
+                            for tech in gdf['TECH'].unique():
+                                gdf_storm = gdf[(gdf.ATCFID == storm_id) & (gdf.TECH == tech)].sort_values(by=['DTG'])
+                                lons = gdf_storm['LON'].values
+                                lats = gdf_storm['LAT'].values
+                                if tech == 'FCST' and last_lon and last_lat:
+                                    lons = np.insert(lons, 0, last_lon)
+                                    lats = np.insert(lats, 0, last_lat)
+                                if len(lons) > 1 and len(lats) > 1:
+                                    lineString = geom.LineString([(lon, lat) for lon, lat in zip(lons, lats)])
+                                    row = gdf_storm.iloc[-1]
+                                    if tech == 'TRAK':
+                                        last_lon = row.LON
+                                        last_lat = row.LAT
+                                    row.geometry = lineString
+                                    gdf = gdf.append(row)
+
+
+                    geojsonFilePath = f'{os.path.splitext(filename)[0]}.geojson'
+                    gdf.to_file(geojsonFilePath, driver='GeoJSON')
+
+                    # removing intermediate shp file
+                    os.remove(filename_shp)
+
+                # removing zip and nc files
+                os.remove(filename)
