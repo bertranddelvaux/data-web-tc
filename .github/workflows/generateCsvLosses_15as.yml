@@ -55,6 +55,10 @@ jobs:
           echo "files_processed=$files_processed"
           echo "files_to_process=$files_to_process" >> $GITHUB_ENV
           echo "files_processed=$files_processed" >> $GITHUB_ENV
+
+      # execute python script combineImpacts.py 
+      - name: execute python script combineImpacts.py
+        run: python scripts/combineImpacts.py
         
  # list files in mpres_data directory
       - name: List files in mpres_data directory
