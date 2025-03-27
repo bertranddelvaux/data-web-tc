@@ -45,8 +45,16 @@ for i in range(3):
         final_column_order.append(f'{col_15as}_15as')
         final_column_order.append(f'{col_30as}_30as')
 
+    # Sort columns for each level as specified
+    if i == 0:
+        columns_order = ['tc_season', 'atcf_id', 'adm0_code']
+    elif i == 1:
+        columns_order = ['tc_season', 'atcf_id', 'adm0_code', 'adm1_code']
+    elif i == 2:
+        columns_order = ['tc_season', 'atcf_id', 'adm0_code', 'adm1_code', 'adm2_code']
+
     # Apply the new column order to the merged dataframe
-    merged_df = merged_df[final_column_order]
+    merged_df = merged_df[final_column_order].sort_values(by=columns_order)
 
     # Save the merged dataframe to a new CSV file
     merged_df.to_csv(f'{impact_comparison_dir}/impact_total_adm{i}_comparison.csv', index=False)
