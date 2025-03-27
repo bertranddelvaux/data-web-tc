@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2003,SH082003,NONAME,2002-12-30 12:00,2003-01-09 12:00,OFCL,Mozambique,MOZ,4838387,1285812.31,"{0: 2565193, 1: 2210709, 2: 62485}",2565193,2210709,62485,0,0,0

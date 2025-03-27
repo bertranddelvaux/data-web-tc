@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2004,SH092004,NONAME,2004-01-25 06:00,2004-02-05 00:00,OFCL,Comoros,COM,113906,7.66,{0: 113906},113906,0,0,0,0,0
+2004,SH092004,NONAME,2004-01-25 06:00,2004-02-05 00:00,OFCL,Madagascar,MDG,16368803,18142819.99,"{0: 9158416, 1: 5951909, 2: 1258478, 3: 0}",9158416,5951909,1258478,0,0,0
+2004,SH092004,NONAME,2004-01-25 06:00,2004-02-05 00:00,OFCL,Mayotte,MYT,202274,11364.24,{0: 202274},202274,0,0,0,0,0

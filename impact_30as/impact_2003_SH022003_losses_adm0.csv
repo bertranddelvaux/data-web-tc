@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2003,SH022003,NONAME,2002-11-03 06:00,2002-11-13 00:00,OFCL,Comoros,COM,525553,7888.11,"{0: 495413, 1: 30140}",495413,30140,0,0,0,0
+2003,SH022003,NONAME,2002-11-03 06:00,2002-11-13 00:00,OFCL,Madagascar,MDG,109,0.0,{0: 109},109,0,0,0,0,0
+2003,SH022003,NONAME,2002-11-03 06:00,2002-11-13 00:00,OFCL,Mozambique,MOZ,43547,6.77,{0: 43547},43547,0,0,0,0,0
+2003,SH022003,NONAME,2002-11-03 06:00,2002-11-13 00:00,OFCL,Tanzania,TZA,456359,53.24,{0: 456359},456359,0,0,0,0,0

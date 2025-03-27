@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2001,SH212001,NONAME,2001-06-20 12:00,2001-06-23 06:00,OFCL,Mozambique,MOZ,Gaza,MOZ.2_1,1197241,26307.02,"{0: 749046, 1: 448195}",749046,448195,0,0,0,0
+2001,SH212001,NONAME,2001-06-20 12:00,2001-06-23 06:00,OFCL,Mozambique,MOZ,Inhambane,MOZ.3_1,744724,17798.54,"{0: 600933, 1: 143791}",600933,143791,0,0,0,0
+2001,SH212001,NONAME,2001-06-20 12:00,2001-06-23 06:00,OFCL,Mozambique,MOZ,Maputo,MOZ.6_1,2061002,18687.07,"{0: 2049020, 1: 11982}",2049020,11982,0,0,0,0
+2001,SH212001,NONAME,2001-06-20 12:00,2001-06-23 06:00,OFCL,Mozambique,MOZ,Maputo (city),MOZ,1139718,5787.37,"{0: 1053158, 1: 86560}",1053158,86560,0,0,0,0

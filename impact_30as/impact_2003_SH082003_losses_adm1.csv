@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2003,SH082003,NONAME,2002-12-30 12:00,2003-01-09 12:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,3810784,1236082.74,"{0: 1722231, 1: 2026068, 2: 62485}",1722231,2026068,62485,0,0,0
+2003,SH082003,NONAME,2002-12-30 12:00,2003-01-09 12:00,OFCL,Mozambique,MOZ,Niassa,MOZ,61939,0.18,{0: 61939},61939,0,0,0,0,0
+2003,SH082003,NONAME,2002-12-30 12:00,2003-01-09 12:00,OFCL,Mozambique,MOZ,Tete,MOZ.10_1,230294,55.05,{0: 230294},230294,0,0,0,0,0
+2003,SH082003,NONAME,2002-12-30 12:00,2003-01-09 12:00,OFCL,Mozambique,MOZ,Zambezia,MOZ.11_1,735370,49674.34,"{0: 550729, 1: 184641}",550729,184641,0,0,0,0

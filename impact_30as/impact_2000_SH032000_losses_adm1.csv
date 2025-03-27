@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,13578,1.56,{0: 13578},13578,0,0,0,0,0
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Madagascar,MDG,Diana,MDG,862876,99897.24,"{0: 390708, 1: 471663, 2: 505}",390708,471663,505,0,0,0
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Madagascar,MDG,Sava,MDG,833535,173818.37,"{0: 416574, 1: 415049, 2: 1912}",416574,415049,1912,0,0,0
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Madagascar,MDG,Sofia,MDG,229191,5662.26,"{0: 197028, 1: 32163}",197028,32163,0,0,0,0

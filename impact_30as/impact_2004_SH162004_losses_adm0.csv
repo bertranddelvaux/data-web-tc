@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2004,SH162004,NONAME,2004-03-01 06:00,2004-03-11 12:00,OFCL,Madagascar,MDG,22285961,2523728180.66,"{0: 4229727, 1: 9858184, 2: 4060555, 3: 2780186, 4: 1193897, 5: 163412}",4229727,9858184,4060555,2780186,1193897,163412
+2004,SH162004,NONAME,2004-03-01 06:00,2004-03-11 12:00,OFCL,Tanzania,TZA,0,0.17,{0: 0},0,0,0,0,0,0

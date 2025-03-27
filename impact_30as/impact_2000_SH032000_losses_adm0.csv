@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2000,SH032000,NONAME,1999-12-23 12:00,2000-01-03 00:00,OFCL,Madagascar,MDG,1939180,279379.42,"{0: 1017888, 1: 918875, 2: 2417}",1017888,918875,2417,0,0,0
