@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1999,SH211999,NONAME,1999-02-12 12:00,1999-02-16 18:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,Angoche,MOZ.7.1_1,29,0.01,{0: 29},29,0,0,0,0,0

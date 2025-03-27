@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1996,SH261996,NONAME,1996-04-06 12:00,1996-04-18 12:00,OFCL,Mauritius,MUS,580870,6571.97,{0: 580870},580870,0,0,0,0,0

@@ -1,0 +1,6 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1998,SH231998,NONAME,1998-02-12 18:00,1998-02-18 18:00,OFCL,Madagascar,MDG,Androy,MDG,117571,24.46,{0: 117571},117571,0,0,0,0,0
+1998,SH231998,NONAME,1998-02-12 18:00,1998-02-18 18:00,OFCL,Madagascar,MDG,Anosy,MDG,530,0.0,{0: 530},530,0,0,0,0,0
+1998,SH231998,NONAME,1998-02-12 18:00,1998-02-18 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,1363830,48178.96,"{0: 1015275, 1: 348555}",1015275,348555,0,0,0,0
+1998,SH231998,NONAME,1998-02-12 18:00,1998-02-18 18:00,OFCL,Madagascar,MDG,Ihorombe,MDG,4450,0.24,{0: 4450},4450,0,0,0,0,0
+1998,SH231998,NONAME,1998-02-12 18:00,1998-02-18 18:00,OFCL,Madagascar,MDG,Menabe,MDG,480,0.0,{0: 480},480,0,0,0,0,0

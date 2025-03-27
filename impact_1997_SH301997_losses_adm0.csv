@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1997,SH301997,NONAME,1997-02-25 18:00,1997-03-02 18:00,OFCL,Mozambique,MOZ,5322266,33829414.9,"{0: 1963263, 1: 2121643, 2: 993942, 3: 243418}",1963263,2121643,993942,243418,0,0

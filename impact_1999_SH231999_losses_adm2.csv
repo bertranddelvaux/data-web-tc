@@ -1,0 +1,8 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Ampanihy,MDG,74517,7.63,{0: 74517},74517,0,0,0,0,0
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Betioky,MDG,45172,19.61,{0: 45172},45172,0,0,0,0,0
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Morombe,MDG,757,0.12,{0: 757},757,0,0,0,0,0
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Sakaraha,MDG,6282,0.02,{0: 6282},6282,0,0,0,0,0
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Toliary I,MDG,64323,11.87,{0: 64323},64323,0,0,0,0,0
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Toliary II,MDG,174716,29.5,{0: 174716},174716,0,0,0,0,0
+1999,SH231999,NONAME,1999-02-24 18:00,1999-03-01 12:00,OFCL,Mozambique,MOZ,Inhambane,MOZ.3_1,Govuro,MOZ.3.2_1,10,0.14,{0: 10},10,0,0,0,0,0
