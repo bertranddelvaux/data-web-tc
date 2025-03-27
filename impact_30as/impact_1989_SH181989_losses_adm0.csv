@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,275580,84.9,{0: 275580},275580,0,0,0,0,0

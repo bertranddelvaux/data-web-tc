@@ -1,0 +1,9 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,Androy,MDG,Ambovombe-Androy,MDG,0,0.01,{0: 0},0,0,0,0,0,0
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,Androy,MDG,Beloha,MDG,3480,0.02,{0: 3480},3480,0,0,0,0,0
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Ampanihy,MDG,81933,39.37,{0: 81933},81933,0,0,0,0,0
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Betioky,MDG,20305,23.13,{0: 20305},20305,0,0,0,0,0
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Morombe,MDG,5049,1.62,{0: 5049},5049,0,0,0,0,0
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Sakaraha,MDG,6770,0.03,{0: 6770},6770,0,0,0,0,0
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Toliary I,MDG,44205,2.07,{0: 44205},44205,0,0,0,0,0
+1989,SH181989,NONAME,1989-03-07 12:00,1989-03-11 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Toliary II,MDG,113838,18.66,{0: 113838},113838,0,0,0,0,0

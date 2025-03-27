@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1986,SH041986,NONAME,1986-01-06 12:00,1986-01-10 00:00,OFCL,Mozambique,MOZ,1662596,229091.72,"{0: 1455229, 1: 207367}",1455229,207367,0,0,0,0

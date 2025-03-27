@@ -1,0 +1,6 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1988,SH171988,NONAME,1988-03-17 00:00,1988-03-20 18:00,OFCL,Seychelles,SYC,Aldabra,SYC,0,151.17,{1: 0},0,0,0,0,0,0
+1988,SH171988,NONAME,1988-03-17 00:00,1988-03-20 18:00,OFCL,Seychelles,SYC,Cosmoledo,SYC,0,25.05,{1: 0},0,0,0,0,0,0
+1988,SH171988,NONAME,1988-03-17 00:00,1988-03-20 18:00,OFCL,Seychelles,SYC,Farquhar,SYC,10,165.47,"{0: 3, 1: 7}",3,7,0,0,0,0
+1988,SH171988,NONAME,1988-03-17 00:00,1988-03-20 18:00,OFCL,Seychelles,SYC,Grand Anse Mahe,SYC,0,5.76,{1: 0},0,0,0,0,0,0
+1988,SH171988,NONAME,1988-03-17 00:00,1988-03-20 18:00,OFCL,Seychelles,SYC,Providence,SYC,1,223.63,{1: 1},0,1,0,0,0,0

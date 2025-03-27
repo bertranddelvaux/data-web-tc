@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1989,SH081989,NONAME,1989-01-24 06:00,1989-02-01 06:00,OFCL,Mauritius,MUS,1255377,2752991271.85,"{0: 27477, 3: 1224101, 4: 3799}",27477,0,0,1224101,3799,0
+1989,SH081989,NONAME,1989-01-24 06:00,1989-02-01 06:00,OFCL,Reunion,REU,704518,2642413477.18,"{3: 645629, 4: 58889}",0,0,0,645629,58889,0

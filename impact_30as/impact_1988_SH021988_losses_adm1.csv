@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1988,SH021988,NONAME,1987-11-20 18:00,1987-11-26 06:00,OFCL,Comoros,COM,Ngazidja,COM,4158,0.0,{0: 4158},4158,0,0,0,0,0
+1988,SH021988,NONAME,1987-11-20 18:00,1987-11-26 06:00,OFCL,Mozambique,MOZ,Cabo Delgado,MOZ.1_1,737456,1587.49,"{0: 730794, 1: 6662}",730794,6662,0,0,0,0
+1988,SH021988,NONAME,1987-11-20 18:00,1987-11-26 06:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,14695,0.85,{0: 14695},14695,0,0,0,0,0

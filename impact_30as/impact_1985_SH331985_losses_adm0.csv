@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1985,SH331985,NONAME,1985-04-10 12:00,1985-04-19 00:00,OFCL,Mauritius,MUS,43525,104697243.94,{3: 43525},0,0,0,43525,0,0

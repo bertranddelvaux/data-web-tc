@@ -1,0 +1,7 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1985,SH101985,NONAME,1985-01-10 06:00,1985-01-21 18:00,OFCL,Mauritius,MUS,Black River,MUS.2_1,25356,80.91,{0: 25356},25356,0,0,0,0,0
+1985,SH101985,NONAME,1985-01-10 06:00,1985-01-21 18:00,OFCL,Mauritius,MUS,Grand Port,MUS.4_1,622,2097.94,{0: 622},622,0,0,0,0,0
+1985,SH101985,NONAME,1985-01-10 06:00,1985-01-21 18:00,OFCL,Mauritius,MUS,Plaines Wilhems,MUS.7_1,460,0.1,{0: 460},460,0,0,0,0,0
+1985,SH101985,NONAME,1985-01-10 06:00,1985-01-21 18:00,OFCL,Mauritius,MUS,Savanne,MUS.12_1,2478,4.34,{0: 2478},2478,0,0,0,0,0
+1985,SH101985,NONAME,1985-01-10 06:00,1985-01-21 18:00,OFCL,Reunion,REU,Arrondissement_du_vent,REU,256754,1112540.59,"{1: 253131, 2: 3623}",0,253131,3623,0,0,0
+1985,SH101985,NONAME,1985-01-10 06:00,1985-01-21 18:00,OFCL,Reunion,REU,Arrondissement_souse_le_vent,REU,447764,39296657.54,"{1: 180779, 2: 266985}",0,180779,266985,0,0,0

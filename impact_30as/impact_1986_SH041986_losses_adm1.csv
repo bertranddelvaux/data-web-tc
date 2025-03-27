@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1986,SH041986,NONAME,1986-01-06 12:00,1986-01-10 00:00,OFCL,Mozambique,MOZ,Inhambane,MOZ.3_1,86,21.72,{0: 86},86,0,0,0,0,0
+1986,SH041986,NONAME,1986-01-06 12:00,1986-01-10 00:00,OFCL,Mozambique,MOZ,Manica,MOZ.4_1,6805,0.01,{0: 6805},6805,0,0,0,0,0
+1986,SH041986,NONAME,1986-01-06 12:00,1986-01-10 00:00,OFCL,Mozambique,MOZ,Sofala,MOZ.9_1,1253345,224404.34,"{0: 1075778, 1: 177567}",1075778,177567,0,0,0,0
+1986,SH041986,NONAME,1986-01-06 12:00,1986-01-10 00:00,OFCL,Mozambique,MOZ,Zambezia,MOZ.11_1,402360,4665.65,"{0: 372560, 1: 29800}",372560,29800,0,0,0,0

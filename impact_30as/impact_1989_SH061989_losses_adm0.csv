@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1989,SH061989,NONAME,1989-01-06 06:00,1989-01-15 06:00,OFCL,Madagascar,MDG,10286712,33597782.34,"{0: 6295258, 1: 2961523, 2: 695263, 3: 334668}",6295258,2961523,695263,334668,0,0
+1989,SH061989,NONAME,1989-01-06 06:00,1989-01-15 06:00,OFCL,Mozambique,MOZ,3753699,24026.85,"{0: 3470804, 1: 282895}",3470804,282895,0,0,0,0
