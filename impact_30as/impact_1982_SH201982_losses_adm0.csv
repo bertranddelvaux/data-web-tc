@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1982,SH201982,NONAME,1982-02-22 12:00,1982-02-25 12:00,OFCL,Madagascar,MDG,1965,7.12,{0: 1965},1965,0,0,0,0,0

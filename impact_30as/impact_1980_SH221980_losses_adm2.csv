@@ -1,0 +1,11 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Mananara,MDG,95700,38.69,{0: 95700},95700,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Maroantsetra,MDG,157751,360.71,{0: 157751},157751,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Nosy Boraha,MDG,127,0.0,{0: 127},127,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Soanierana-Ivongo,MDG,55,0.0,{0: 55},55,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Sava,MDG,Andapa,MDG,4916,0.02,{0: 4916},4916,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Sava,MDG,Antalaha,MDG,101196,371.7,"{0: 101023, 1: 173}",101023,173,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Sava,MDG,Sambava,MDG,21,0.0,{0: 21},21,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Sofia,MDG,Bealanana,MDG,5400,0.1,{0: 5400},5400,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Sofia,MDG,Befandriana Avaratra,MDG,49955,43.64,{0: 49955},49955,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Sofia,MDG,Mandritsara,MDG,36675,6.43,{0: 36675},36675,0,0,0,0,0

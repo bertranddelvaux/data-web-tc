@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1982,SH161982,NONAME,1982-01-30 00:00,1982-02-06 12:00,OFCL,Madagascar,MDG,5320723,23850.54,"{0: 5261490, 1: 59233}",5261490,59233,0,0,0,0
+1982,SH161982,NONAME,1982-01-30 00:00,1982-02-06 12:00,OFCL,Mozambique,MOZ,231396,8.53,{0: 231396},231396,0,0,0,0,0

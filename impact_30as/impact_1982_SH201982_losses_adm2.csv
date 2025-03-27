@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1982,SH201982,NONAME,1982-02-22 12:00,1982-02-25 12:00,OFCL,Madagascar,MDG,Androy,MDG,Ambovombe-Androy,MDG,0,0.0,{0: 0},0,0,0,0,0,0
+1982,SH201982,NONAME,1982-02-22 12:00,1982-02-25 12:00,OFCL,Madagascar,MDG,Anosy,MDG,Taolanaro,MDG,90,7.08,{0: 90},90,0,0,0,0,0
+1982,SH201982,NONAME,1982-02-22 12:00,1982-02-25 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Ampanihy,MDG,1875,0.04,{0: 1875},1875,0,0,0,0,0

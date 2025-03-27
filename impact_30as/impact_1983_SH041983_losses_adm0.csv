@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1983,SH041983,NONAME,1982-11-29 12:00,1982-12-06 00:00,OFCL,Mauritius,MUS,262463,633.32,{0: 262463},262463,0,0,0,0,0
+1983,SH041983,NONAME,1982-11-29 12:00,1982-12-06 00:00,OFCL,Seychelles,SYC,0,11.51,{0: 0},0,0,0,0,0,0

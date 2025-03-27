@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,451796,821.29,"{0: 451623, 1: 173}",451623,173,0,0,0,0

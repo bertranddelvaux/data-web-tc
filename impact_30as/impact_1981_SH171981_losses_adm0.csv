@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1981,SH171981,NONAME,1981-02-16 12:00,1981-02-23 12:00,OFCL,Madagascar,MDG,6184055,834043.02,"{0: 4890433, 1: 1271484, 2: 22138}",4890433,1271484,22138,0,0,0
+1981,SH171981,NONAME,1981-02-16 12:00,1981-02-23 12:00,OFCL,Mayotte,MYT,201802,7459.24,{0: 201802},201802,0,0,0,0,0

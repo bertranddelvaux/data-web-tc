@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1980,SH191980,NONAME,1980-03-08 00:00,1980-03-17 00:00,OFCL,Mauritius,MUS,1229082,1703752998.07,"{0: 1182, 2: 10581, 3: 1216892, 4: 427}",1182,0,10581,1216892,427,0
+1980,SH191980,NONAME,1980-03-08 00:00,1980-03-17 00:00,OFCL,Reunion,REU,90596,213.5,{0: 90596},90596,0,0,0,0,0
+1980,SH191980,NONAME,1980-03-08 00:00,1980-03-17 00:00,OFCL,Seychelles,SYC,0,3.13,{0: 0},0,0,0,0,0,0

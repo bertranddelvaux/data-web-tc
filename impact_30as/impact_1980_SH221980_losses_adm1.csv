@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,253633,399.4,{0: 253633},253633,0,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Sava,MDG,106133,371.72,"{0: 105960, 1: 173}",105960,173,0,0,0,0
+1980,SH221980,NONAME,1980-03-14 12:00,1980-03-20 00:00,OFCL,Madagascar,MDG,Sofia,MDG,92030,50.16,{0: 92030},92030,0,0,0,0,0

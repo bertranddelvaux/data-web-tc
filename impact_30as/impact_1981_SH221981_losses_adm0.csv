@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1981,SH221981,NONAME,1981-03-01 12:00,1981-03-10 00:00,OFCL,Mauritius,MUS,1227900,871912.1,"{0: 343867, 1: 884033}",343867,884033,0,0,0,0
+1981,SH221981,NONAME,1981-03-01 12:00,1981-03-10 00:00,OFCL,Reunion,REU,607767,68339.34,"{0: 568307, 1: 39460}",568307,39460,0,0,0,0

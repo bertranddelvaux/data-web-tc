@@ -1,0 +1,11 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Alaotra Mangoro,MDG,Ambatondrazaka,MDG,2442,0.0,{0: 2442},2442,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Fenoarivo-Atsinanana,MDG,594,0.0,{0: 594},594,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Nosy Boraha,MDG,33851,39.68,{0: 33851},33851,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Soanierana-Ivongo,MDG,933,0.05,{0: 933},933,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Toamasina II,MDG,37905,22.38,{0: 37905},37905,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Atsinanana,MDG,Mahanoro,MDG,8471,0.33,{0: 8471},8471,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Atsinanana,MDG,Toamasina I,MDG,132658,31.15,{0: 132658},132658,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Atsinanana,MDG,Vatomandry,MDG,11020,0.58,{0: 11020},11020,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Atsinanana,MDG,Vohibinany,MDG,18056,18.23,{0: 18056},18056,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Vatovavy Fitovinany,MDG,Nosy-Varika,MDG,1639,0.01,{0: 1639},1639,0,0,0,0,0

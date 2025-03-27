@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Alaotra Mangoro,MDG,2442,0.0,{0: 2442},2442,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,73283,62.11,{0: 73283},73283,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Atsinanana,MDG,170205,50.29,{0: 170205},170205,0,0,0,0,0
+1981,SH261981,NONAME,1981-03-28 00:00,1981-04-06 00:00,OFCL,Madagascar,MDG,Vatovavy Fitovinany,MDG,1639,0.01,{0: 1639},1639,0,0,0,0,0
