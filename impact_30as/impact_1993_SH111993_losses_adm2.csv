@@ -1,0 +1,11 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Amoron'i Mania,MDG,Ambatofinandrahana,MDG,15560,1.0,{0: 15560},15560,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Beroroha,MDG,2867,0.48,{0: 2867},2867,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Haute Matsiatra,MDG,Ambalavao,MDG,35,0.0,{0: 35},35,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Haute Matsiatra,MDG,Fianarantsoa II,MDG,3130,0.02,{0: 3130},3130,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Haute Matsiatra,MDG,Ikalamavony,MDG,12331,0.55,{0: 12331},12331,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Menabe,MDG,Belon'i Tsiribihina,MDG,11249,248.57,{0: 11249},11249,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Menabe,MDG,Mahabo,MDG,95325,39.41,{0: 95325},95325,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Menabe,MDG,Manja,MDG,10247,1.23,{0: 10247},10247,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Menabe,MDG,Miandrivazo,MDG,0,104.37,{0: 0},0,0,0,0,0,0
+1993,SH111993,NONAME,1993-01-16 12:00,1993-01-21 00:00,OFCL,Madagascar,MDG,Menabe,MDG,Morondava,MDG,163022,474.07,{0: 163022},163022,0,0,0,0,0

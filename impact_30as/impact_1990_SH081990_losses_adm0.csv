@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1990,SH081990,NONAME,1989-12-14 18:00,1990-01-05 18:00,OFCL,Madagascar,MDG,16285065,81443774.3,"{0: 8086985, 1: 5159394, 2: 2933449, 3: 105237}",8086985,5159394,2933449,105237,0,0
+1990,SH081990,NONAME,1989-12-14 18:00,1990-01-05 18:00,OFCL,Seychelles,SYC,0,6.68,{0: 0},0,0,0,0,0,0
+1990,SH081990,NONAME,1989-12-14 18:00,1990-01-05 18:00,OFCL,Tanzania,TZA,0,850705.61,{3: 0},0,0,0,0,0,0

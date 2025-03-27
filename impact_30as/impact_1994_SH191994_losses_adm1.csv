@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1994,SH191994,NONAME,1994-03-05 18:00,1994-03-10 18:00,OFCL,Reunion,REU,Arrondissement_du_vent,REU,74609,10.67,{0: 74609},74609,0,0,0,0,0
+1994,SH191994,NONAME,1994-03-05 18:00,1994-03-10 18:00,OFCL,Reunion,REU,Arrondissement_souse_le_vent,REU,106502,67.95,{0: 106502},106502,0,0,0,0,0

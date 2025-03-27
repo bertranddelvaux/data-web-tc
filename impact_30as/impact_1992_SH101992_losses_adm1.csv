@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1992,SH101992,NONAME,1991-12-30 18:00,1992-01-02 18:00,OFCL,Madagascar,MDG,Alaotra Mangoro,MDG,10210,2.88,{0: 10210},10210,0,0,0,0,0
+1992,SH101992,NONAME,1991-12-30 18:00,1992-01-02 18:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,324234,456.5,{0: 324234},324234,0,0,0,0,0
+1992,SH101992,NONAME,1991-12-30 18:00,1992-01-02 18:00,OFCL,Madagascar,MDG,Sava,MDG,46958,209.79,"{0: 46934, 1: 24}",46934,24,0,0,0,0
+1992,SH101992,NONAME,1991-12-30 18:00,1992-01-02 18:00,OFCL,Madagascar,MDG,Sofia,MDG,249307,314.79,{0: 249307},249307,0,0,0,0,0

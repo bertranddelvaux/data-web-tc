@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1991,SH081991,NONAME,1991-01-13 00:00,1991-02-04 18:00,OFCL,Mauritius,MUS,,No Adm1,,No Adm2,43525,858305906.75,{4: 43525},0,0,0,0,43525,0

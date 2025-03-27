@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1991,SH101991,NONAME,1991-02-16 00:00,1991-02-18 06:00,OFCL,Madagascar,MDG,5316086,916504.27,"{0: 3840799, 1: 1473749, 2: 1538}",3840799,1473749,1538,0,0,0

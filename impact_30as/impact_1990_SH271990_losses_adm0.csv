@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+1990,SH271990,NONAME,1990-04-10 12:00,1990-04-14 18:00,OFCL,Comoros,COM,3900,0.38,{0: 3900},3900,0,0,0,0,0
+1990,SH271990,NONAME,1990-04-10 12:00,1990-04-14 18:00,OFCL,Madagascar,MDG,1864845,93215.99,"{0: 1437675, 1: 427170}",1437675,427170,0,0,0,0
+1990,SH271990,NONAME,1990-04-10 12:00,1990-04-14 18:00,OFCL,Mayotte,MYT,196778,2681.73,{0: 196778},196778,0,0,0,0,0
+1990,SH271990,NONAME,1990-04-10 12:00,1990-04-14 18:00,OFCL,Seychelles,SYC,33,6.67,{0: 33},33,0,0,0,0,0
