@@ -142,10 +142,14 @@ def parse_wind_cat(value):
         value = ast.literal_eval(value)
     return value
 
+
 # Function to unfold the wind_cat column into separate columns
 def unfold_wind_cat(wind_dict):
     # Create a list with wind categories from 0 to 5, defaulting to 0 if the category is missing
-    return [wind_dict.get(i, 0) for i in range(6)]
+    if isinstance(wind_dict, dict):
+        return [wind_dict.get(i, 0) for i in range(6)]
+    else:
+        return [0 for i in range(6)]
 
 # Loop through all the files in the directory
 for file_name in os.listdir(impact_dir):
@@ -155,7 +159,7 @@ for file_name in os.listdir(impact_dir):
             if f'adm{i}' in file_name:
                 file_path = os.path.join(impact_dir, file_name)
                 # Read the CSV file into a DataFrame and append to the corresponding list
-                df = pd.read_csv(file_path)
+                df = pd.read_csv(file_path).fillna(0)
                 df['loss'] = df['loss'].apply(lambda x: round(x, 2)) # rounding loss column to 2 decimals
 
                 # Apply parsing to handle both string and dictionary cases
@@ -166,10 +170,18 @@ for file_name in os.listdir(impact_dir):
                                        columns=[f'wind_cat_{i}' for i in range(6)])
 
                 # Turn 'wind_cat' into string, so that it is hashable for drop_duplicates()
-                df['wind_cat'] = df['wind_cat'].apply(lambda x: str(x) if isinstance(x, dict) else x)
+                df['wind_cat'] = df['wind_cat'].apply(lambda x: str(x))
 
-                # Concatenate the original DataFrame with the unfolded columns
-                df = pd.concat([df, df_wind], axis=1)
+                # Check if the columns wind_cat_i for i in range(6) are already present
+                # Subset the DataFrame to only include these columns
+                columns = [f'wind_cat_{i}' for i in range(6)]
+
+                # Check if all columns are present in the DataFrame
+                missing_columns = [col for col in columns if col not in df.columns]
+
+                if len(missing_columns) != 0:
+                    df = pd.concat([df, df_wind], axis=1)
+                    
                 dfs[i].append(df)
                 break
 
