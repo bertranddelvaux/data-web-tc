@@ -1,0 +1,7 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Amoron'i Mania,MDG,367772,2113.12,"{0: 363640, 1: 4132}",363640,4132,0,0,0,0
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,64355,4588.38,"{0: 59283, 1: 5072}",59283,5072,0,0,0,0
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Atsinanana,MDG,1000,0.08,{0: 1000},1000,0,0,0,0,0
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Haute Matsiatra,MDG,4579,12.08,{0: 4579},4579,0,0,0,0,0
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Menabe,MDG,355509,62689.92,"{0: 244820, 1: 110689}",244820,110689,0,0,0,0
+2010,SH132010,FAMI,2010-02-01 06:00,2010-02-03 06:00,OFCL,Madagascar,MDG,Vakinakaratra,MDG,89398,29.47,{0: 89398},89398,0,0,0,0,0

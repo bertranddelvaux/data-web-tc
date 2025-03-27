@@ -1,0 +1,10 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Ankazoabo,MDG,558,0.0,{0: 558},558,0,0,0,0,0
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Beroroha,MDG,7689,2.06,{0: 7689},7689,0,0,0,0,0
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Melaky,MDG,Antsalova,MDG,22262,8.34,{0: 22262},22262,0,0,0,0,0
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Melaky,MDG,Maintirano,MDG,5637,0.08,{0: 5637},5637,0,0,0,0,0
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Menabe,MDG,Belon'i Tsiribihina,MDG,82445,36.89,{0: 82445},82445,0,0,0,0,0
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Menabe,MDG,Mahabo,MDG,91501,63.4,{0: 91501},91501,0,0,0,0,0
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Menabe,MDG,Manja,MDG,7202,0.94,{0: 7202},7202,0,0,0,0,0
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Menabe,MDG,Miandrivazo,MDG,76,1.22,{0: 76},76,0,0,0,0,0
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,Menabe,MDG,Morondava,MDG,167718,307.86,"{0: 167599, 1: 119}",167599,119,0,0,0,0

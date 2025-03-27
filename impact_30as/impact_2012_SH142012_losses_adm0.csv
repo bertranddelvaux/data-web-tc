@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2012,SH142012,IRINA,2012-02-26 06:00,2012-03-10 12:00,OFCL,Madagascar,MDG,2371872,3305810.11,"{0: 1442040, 1: 685062, 2: 244770}",1442040,685062,244770,0,0,0
+2012,SH142012,IRINA,2012-02-26 06:00,2012-03-10 12:00,OFCL,Mozambique,MOZ,5103072,40549.48,"{0: 4639304, 1: 463768}",4639304,463768,0,0,0,0

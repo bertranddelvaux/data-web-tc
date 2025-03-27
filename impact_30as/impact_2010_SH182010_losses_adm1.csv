@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Amoron'i Mania,MDG,207588,583.61,{0: 207588},207588,0,0,0,0,0
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Atsinanana,MDG,50,0.0,{0: 50},50,0,0,0,0,0
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Haute Matsiatra,MDG,634972,3882.51,"{0: 634576, 1: 396}",634576,396,0,0,0,0
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,Vatovavy Fitovinany,MDG,935377,43720.87,"{0: 784179, 1: 151198}",784179,151198,0,0,0,0

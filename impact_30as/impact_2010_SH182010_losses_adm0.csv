@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2010,SH182010,HUBERT,2010-03-09 00:00,2010-03-11 18:00,OFCL,Madagascar,MDG,1777987,48186.99,"{0: 1626393, 1: 151594}",1626393,151594,0,0,0,0

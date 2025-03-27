@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2013,SH162013,HARUNA,2013-02-14 12:00,2013-02-28 00:00,OFCL,Madagascar,MDG,4652806,120383037.84,"{0: 1769790, 1: 1252730, 2: 1029177, 3: 599968, 4: 1141}",1769790,1252730,1029177,599968,1141,0
+2013,SH162013,HARUNA,2013-02-14 12:00,2013-02-28 00:00,OFCL,Mozambique,MOZ,29,0.26,{0: 29},29,0,0,0,0,0

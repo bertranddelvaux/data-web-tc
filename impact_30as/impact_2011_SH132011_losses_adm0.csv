@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2011,SH132011,BINGIZA,2011-02-08 12:00,2011-02-18 00:00,OFCL,Madagascar,MDG,15503304,139956355.33,"{0: 5159573, 1: 7379777, 2: 2190308, 3: 773248, 4: 398}",5159573,7379777,2190308,773248,398,0

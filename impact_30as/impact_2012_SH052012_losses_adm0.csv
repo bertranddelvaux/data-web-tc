@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2012,SH052012,CHANDA,2012-01-07 06:00,2012-01-09 12:00,OFCL,Madagascar,MDG,385088,420.79,"{0: 384969, 1: 119}",384969,119,0,0,0,0
