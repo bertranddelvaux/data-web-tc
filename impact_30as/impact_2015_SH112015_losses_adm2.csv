@@ -1,0 +1,10 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Androy,MDG,Ambovombe-Androy,MDG,0,0.04,{0: 0},0,0,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Androy,MDG,Beloha,MDG,2238,0.02,{0: 2238},2238,0,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Ampanihy,MDG,109979,857.73,"{0: 104928, 1: 5051}",104928,5051,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Ankazoabo,MDG,687,0.06,{0: 687},687,0,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Betioky,MDG,37253,922.92,"{0: 35137, 1: 2116}",35137,2116,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Morombe,MDG,49369,81.93,{0: 49369},49369,0,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Sakaraha,MDG,19962,1.93,{0: 19962},19962,0,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Toliary I,MDG,94710,467.32,"{0: 94660, 1: 50}",94660,50,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Toliary II,MDG,375210,1294.43,"{0: 366455, 1: 8755}",366455,8755,0,0,0,0

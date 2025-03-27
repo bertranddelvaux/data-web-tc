@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Androy,MDG,2238,0.06,{0: 2238},2238,0,0,0,0,0
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,687170,3626.33,"{0: 671198, 1: 15972}",671198,15972,0,0,0,0

@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2018,SH032018,AVA,2017-12-30 06:00,2018-01-09 12:00,OFCL,Madagascar,MDG,17557682,190482034.74,"{0: 4605546, 1: 4019498, 2: 8074661, 3: 857977}",4605546,4019498,8074661,857977,0,0

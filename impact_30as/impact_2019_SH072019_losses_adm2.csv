@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2019,SH072019,CILIDA,2018-12-17 00:00,2018-12-25 18:00,OFCL,Mauritius,MUS,,No Adm1,,No Adm2,43163,2944.74,{0: 43163},43163,0,0,0,0,0
+2019,SH072019,CILIDA,2018-12-17 00:00,2018-12-25 18:00,OFCL,Mauritius,MUS,Riviere Du Rempart,MUS,,No Adm2,0,0.76,{0: 0},0,0,0,0,0,0

@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2018,SH112018,DUMAZILE,2018-03-01 12:00,2018-03-08 18:00,OFCL,Madagascar,MDG,12077621,2649617.52,"{0: 6367944, 1: 5662876, 2: 46801}",6367944,5662876,46801,0,0,0
+2018,SH112018,DUMAZILE,2018-03-01 12:00,2018-03-08 18:00,OFCL,Mauritius,MUS,25402,1686.49,{0: 25402},25402,0,0,0,0,0
+2018,SH112018,DUMAZILE,2018-03-01 12:00,2018-03-08 18:00,OFCL,Reunion,REU,704362,1073739.04,"{0: 292620, 1: 411742}",292620,411742,0,0,0,0

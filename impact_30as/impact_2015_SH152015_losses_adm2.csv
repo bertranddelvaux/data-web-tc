@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2015,SH152015,FIFTEEN,2015-03-04 06:00,2015-03-09 00:00,OFCL,Madagascar,MDG,Bongolava,MDG,Tsiroanomandidy,MDG,56350,1.95,{0: 56350},56350,0,0,0,0,0
+2015,SH152015,FIFTEEN,2015-03-04 06:00,2015-03-09 00:00,OFCL,Madagascar,MDG,Melaky,MDG,Ambatomainty,MDG,75,0.0,{0: 75},75,0,0,0,0,0
+2015,SH152015,FIFTEEN,2015-03-04 06:00,2015-03-09 00:00,OFCL,Madagascar,MDG,Melaky,MDG,Morafenobe,MDG,112,0.01,{0: 112},112,0,0,0,0,0
+2015,SH152015,FIFTEEN,2015-03-04 06:00,2015-03-09 00:00,OFCL,Madagascar,MDG,Menabe,MDG,Miandrivazo,MDG,5171,0.35,{0: 5171},5171,0,0,0,0,0

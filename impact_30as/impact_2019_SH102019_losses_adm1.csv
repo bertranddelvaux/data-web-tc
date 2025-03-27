@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2019,SH102019,DESMOND,2019-01-19 06:00,2019-01-22 00:00,OFCL,Mozambique,MOZ,Inhambane,MOZ.3_1,560799,100.23,{0: 560799},560799,0,0,0,0,0
+2019,SH102019,DESMOND,2019-01-19 06:00,2019-01-22 00:00,OFCL,Mozambique,MOZ,Nampula,MOZ.7_1,101,18.98,{0: 101},101,0,0,0,0,0
+2019,SH102019,DESMOND,2019-01-19 06:00,2019-01-22 00:00,OFCL,Mozambique,MOZ,Sofala,MOZ.9_1,108590,228.63,{0: 108590},108590,0,0,0,0,0
+2019,SH102019,DESMOND,2019-01-19 06:00,2019-01-22 00:00,OFCL,Mozambique,MOZ,Zambezia,MOZ.11_1,47607,320.15,{0: 47607},47607,0,0,0,0,0

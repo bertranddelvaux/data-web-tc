@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2019,SH132019,GELENA,2019-02-05 00:00,2019-02-15 18:00,OFCL,Mauritius,MUS,,No Adm1,43525,255449142.53,"{3: 43310, 4: 215}",0,0,0,43310,215,0

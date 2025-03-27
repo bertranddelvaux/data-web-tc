@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2017,SH092017,ENAWO,2017-03-02 06:00,2017-03-10 12:00,OFCL,Madagascar,MDG,22599876,800909068.05,"{0: 4342147, 1: 10363922, 2: 6146506, 3: 1315446, 4: 427089, 5: 4766}",4342147,10363922,6146506,1315446,427089,4766
+2017,SH092017,ENAWO,2017-03-02 06:00,2017-03-10 12:00,OFCL,Tanzania,TZA,0,0.0,{0: 0},0,0,0,0,0,0

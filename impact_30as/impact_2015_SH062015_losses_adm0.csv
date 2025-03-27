@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2015,SH062015,CHEDZA,2015-01-15 12:00,2015-01-21 00:00,OFCL,Madagascar,MDG,4382693,458599.84,"{0: 3204170, 1: 1175952, 2: 2571}",3204170,1175952,2571,0,0,0

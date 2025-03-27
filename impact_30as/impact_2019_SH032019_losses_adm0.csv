@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2019,SH032019,ALCIDE,2018-11-07 00:00,2018-11-15 00:00,OFCL,Tanzania,TZA,0,585107.19,{3: 0},0,0,0,0,0,0

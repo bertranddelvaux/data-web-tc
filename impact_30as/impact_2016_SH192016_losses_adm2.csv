@@ -1,0 +1,9 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Seychelles,SYC,Aldabra,SYC,,No Adm2,0,349332.05,{4: 0},0,0,0,0,0,0
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Seychelles,SYC,Assumption,SYC,,No Adm2,0,2.54,{0: 0},0,0,0,0,0,0
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Seychelles,SYC,Astove,SYC,,No Adm2,2,15.12,{0: 2},2,0,0,0,0,0
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Seychelles,SYC,Cosmoledo,SYC,,No Adm2,1,116215.45,"{0: 1, 4: 0}",1,0,0,0,0,0
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Seychelles,SYC,Farquhar,SYC,,No Adm2,10,10110639.27,"{0: 0, 5: 10}",0,0,0,0,0,10
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Seychelles,SYC,Grand Anse Mahe,SYC,,No Adm2,0,150905.06,{5: 0},0,0,0,0,0,0
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Seychelles,SYC,Providence,SYC,,No Adm2,1,555552.78,{4: 1},0,0,0,0,1,0
+2016,SH192016,FANTALA,2016-04-11 00:00,2016-04-25 12:00,OFCL,Tanzania,TZA,Arusha,TZA,Ngorongoro,TZA,0,25.61,{0: 0},0,0,0,0,0,0

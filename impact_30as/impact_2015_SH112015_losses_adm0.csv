@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2015,SH112015,FUNDI,2015-02-05 18:00,2015-02-10 06:00,OFCL,Madagascar,MDG,689408,3626.39,"{0: 673436, 1: 15972}",673436,15972,0,0,0,0

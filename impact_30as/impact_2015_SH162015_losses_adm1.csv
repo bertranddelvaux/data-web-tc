@@ -1,0 +1,5 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2015,SH162015,HALIBA,2015-03-06 12:00,2015-03-11 12:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,513,0.0,{0: 513},513,0,0,0,0,0
+2015,SH162015,HALIBA,2015-03-06 12:00,2015-03-11 12:00,OFCL,Madagascar,MDG,Atsinanana,MDG,1633,0.03,{0: 1633},1633,0,0,0,0,0
+2015,SH162015,HALIBA,2015-03-06 12:00,2015-03-11 12:00,OFCL,Reunion,REU,Arrondissement_du_vent,REU,179926,1512.72,"{0: 178098, 1: 1828}",178098,1828,0,0,0,0
+2015,SH162015,HALIBA,2015-03-06 12:00,2015-03-11 12:00,OFCL,Reunion,REU,Arrondissement_souse_le_vent,REU,417215,107783.3,"{0: 340787, 1: 76428}",340787,76428,0,0,0,0

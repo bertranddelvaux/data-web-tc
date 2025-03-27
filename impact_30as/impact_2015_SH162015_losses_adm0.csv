@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2015,SH162015,HALIBA,2015-03-06 12:00,2015-03-11 12:00,OFCL,Madagascar,MDG,2146,0.03,{0: 2146},2146,0,0,0,0,0
+2015,SH162015,HALIBA,2015-03-06 12:00,2015-03-11 12:00,OFCL,Reunion,REU,597141,109296.03,"{0: 518885, 1: 78256}",518885,78256,0,0,0,0

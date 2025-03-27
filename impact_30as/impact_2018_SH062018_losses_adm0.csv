@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2018,SH062018,BERGUITTA,2018-01-11 06:00,2018-01-21 18:00,OFCL,Madagascar,MDG,3899,0.07,{0: 3899},3899,0,0,0,0,0
+2018,SH062018,BERGUITTA,2018-01-11 06:00,2018-01-21 18:00,OFCL,Mauritius,MUS,1271425,47050391.72,"{1: 903916, 2: 367509}",0,903916,367509,0,0,0
+2018,SH062018,BERGUITTA,2018-01-11 06:00,2018-01-21 18:00,OFCL,Reunion,REU,704518,19541006.48,"{1: 622660, 2: 81858}",0,622660,81858,0,0,0
