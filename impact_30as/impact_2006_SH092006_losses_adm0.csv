@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2006,SH092006,BOLOETSE,2006-01-22 12:00,2006-02-06 06:00,OFCL,Madagascar,MDG,2509666,5043920.43,"{0: 1560861, 1: 708734, 2: 220811, 3: 19260}",1560861,708734,220811,19260,0,0

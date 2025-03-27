@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2008,SH092008,ELNUS,2007-12-29 12:00,2008-01-04 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,540,0.01,{0: 540},540,0,0,0,0,0

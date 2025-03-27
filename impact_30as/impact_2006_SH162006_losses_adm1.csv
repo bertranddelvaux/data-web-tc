@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2006,SH162006,DIWA,2006-03-01 06:00,2006-03-09 06:00,OFCL,Reunion,REU,Arrondissement_du_vent,REU,58847,5.11,{0: 58847},58847,0,0,0,0,0
+2006,SH162006,DIWA,2006-03-01 06:00,2006-03-09 06:00,OFCL,Reunion,REU,Arrondissement_souse_le_vent,REU,27243,33.65,{0: 27243},27243,0,0,0,0,0

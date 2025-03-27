@@ -1,0 +1,11 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Alaotra Mangoro,MDG,Ambatondrazaka,MDG,75081,1.66,{0: 75081},75081,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Alaotra Mangoro,MDG,Amparafaravola,MDG,16811,0.23,{0: 16811},16811,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Alaotra Mangoro,MDG,Andilamena,MDG,2793,0.01,{0: 2793},2793,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Fenoarivo-Atsinanana,MDG,173997,21.93,{0: 173997},173997,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Nosy Boraha,MDG,35029,315.89,{0: 35029},35029,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Soanierana-Ivongo,MDG,10729,0.72,{0: 10729},10729,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Toamasina II,MDG,220160,414.11,"{0: 220009, 1: 151}",220009,151,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,Vavatenina,MDG,56570,2.18,{0: 56570},56570,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Atsinanana,MDG,Toamasina I,MDG,336556,239.54,{0: 336556},336556,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Atsinanana,MDG,Vohibinany,MDG,10935,11.57,{0: 10935},10935,0,0,0,0,0

@@ -1,0 +1,7 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Ampanihy,MDG,94943,315.88,"{0: 92971, 1: 1972}",92971,1972,0,0,0,0
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Betioky,MDG,83516,4614.98,"{0: 77453, 1: 6063}",77453,6063,0,0,0,0
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Morombe,MDG,323,0.01,{0: 323},323,0,0,0,0,0
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Sakaraha,MDG,12458,0.28,{0: 12458},12458,0,0,0,0,0
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Toliary I,MDG,105131,1514.31,"{0: 91966, 1: 13165}",91966,13165,0,0,0,0
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,Toliary II,MDG,291322,5179.12,"{0: 252955, 1: 38367}",252955,38367,0,0,0,0

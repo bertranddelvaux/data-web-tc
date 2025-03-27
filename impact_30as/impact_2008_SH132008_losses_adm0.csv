@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2008,SH132008,FAME,2008-01-23 12:00,2008-02-01 12:00,OFCL,Madagascar,MDG,9405001,15574485.91,"{0: 3497690, 1: 5527706, 2: 332915, 3: 46690}",3497690,5527706,332915,46690,0,0
+2008,SH132008,FAME,2008-01-23 12:00,2008-02-01 12:00,OFCL,Mayotte,MYT,238993,62049.31,"{0: 206641, 1: 32352}",206641,32352,0,0,0,0
+2008,SH132008,FAME,2008-01-23 12:00,2008-02-01 12:00,OFCL,Reunion,REU,277787,1407.18,"{0: 277397, 1: 390}",277397,390,0,0,0,0

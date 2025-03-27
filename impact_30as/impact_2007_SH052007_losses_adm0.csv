@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2007,SH052007,BONDO,2006-12-16 00:00,2006-12-26 18:00,OFCL,Madagascar,MDG,6449171,123562766.96,"{0: 3353891, 1: 1577814, 2: 979066, 3: 470445, 4: 67834, 5: 121}",3353891,1577814,979066,470445,67834,121
+2007,SH052007,BONDO,2006-12-16 00:00,2006-12-26 18:00,OFCL,Seychelles,SYC,11,5974545.73,"{3: 0, 4: 11}",0,0,0,0,11,0
+2007,SH052007,BONDO,2006-12-16 00:00,2006-12-26 18:00,OFCL,Tanzania,TZA,0,12179120.42,"{4: 0, 5: 0}",0,0,0,0,0,0

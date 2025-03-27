@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Alaotra Mangoro,MDG,94685,1.9,{0: 94685},94685,0,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Analanjirofo,MDG,496485,754.83,"{0: 496334, 1: 151}",496334,151,0,0,0,0
+2009,SH082009,ERIC,2009-01-16 12:00,2009-01-22 00:00,OFCL,Madagascar,MDG,Atsinanana,MDG,347491,251.11,{0: 347491},347491,0,0,0,0,0

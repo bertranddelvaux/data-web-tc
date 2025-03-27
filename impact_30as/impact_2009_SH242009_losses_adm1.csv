@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2009,SH242009,IZILDA,2009-03-23 06:00,2009-03-29 18:00,OFCL,Madagascar,MDG,Atsimo Andrefana,MDG,587693,11624.58,"{0: 528126, 1: 59567}",528126,59567,0,0,0,0

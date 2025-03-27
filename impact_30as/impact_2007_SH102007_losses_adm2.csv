@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2007,SH102007,DORA,2007-01-28 06:00,2007-02-10 00:00,OFCL,Mauritius,MUS,,No Adm1,,No Adm2,43077,4172.6,{0: 43077},43077,0,0,0,0,0
