@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2020,SH222020,HEROLD,2020-03-13 06:00,2020-03-19 18:00,OFCL,Madagascar,MDG,1038556,279519.92,"{0: 746014, 1: 282651, 2: 9891}",746014,282651,9891,0,0,0
+2020,SH222020,HEROLD,2020-03-13 06:00,2020-03-19 18:00,OFCL,Mauritius,MUS,43525,44403813.32,"{2: 22290, 3: 21235}",0,0,22290,21235,0,0

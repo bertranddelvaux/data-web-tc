@@ -1,0 +1,3 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2021,SH212021,GUAMBE,2021-02-14 00:00,2021-02-22 06:00,OFCL,Madagascar,MDG,435245,9794.79,{0: 435245},435245,0,0,0,0,0
+2021,SH212021,GUAMBE,2021-02-14 00:00,2021-02-22 06:00,OFCL,Mozambique,MOZ,1730753,276422.83,"{0: 815292, 1: 915461}",815292,915461,0,0,0,0

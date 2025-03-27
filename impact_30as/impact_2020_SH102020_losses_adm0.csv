@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat,wind_cat_0,wind_cat_1,wind_cat_2,wind_cat_3,wind_cat_4,wind_cat_5
+2020,SH102020,DIANE,2020-01-22 12:00,2020-01-29 18:00,OFCL,Mauritius,MUS,34085,234.85,{0: 34085},34085,0,0,0,0,0
