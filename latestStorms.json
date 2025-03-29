@@ -1,19 +1,16 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH282025",
-            "SH272025",
-            null
+            null,
+            "SH272025"
         ],
         "storms_shp": [
-            "SH282025",
-            "SH272025",
-            null
+            null,
+            "SH272025"
         ],
         "windwater_shp": [
-            "SH282025",
-            "SH272025",
-            null
+            null,
+            "SH272025"
         ]
     },
     "mpres_data": [
@@ -484,5 +481,18 @@
             "storm_name": "FAIDA"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                85.9583,
+                -26.7083,
+                115.4,
+                -12.9
+            ],
+            "id": "SH272025",
+            "losses": "tc_realtime/SH272025_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH272025_JTWC_SLOSH.geojson",
+            "storm_name": "COURTNEY"
+        }
+    ]
 }
