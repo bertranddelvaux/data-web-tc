@@ -39,11 +39,11 @@ jobs:
           pip install -r scripts/requirements.txt
         
       # execute python script fetchPostevent.py
-      - name: execute python script fetchPostevent.py
+      - name: execute python script fetchPostevent_new_portal.py
         env:
           KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
-        run: python scripts/fetchPostevent.py
+        run: python scripts/fetchPostevent_new_portal.py
 
       # execute python script generateCsvLosses_15as.py 
       - name: execute python script generateCsvLosses_15as.py
