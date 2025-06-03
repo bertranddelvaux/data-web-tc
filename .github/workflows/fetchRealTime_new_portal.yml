@@ -1,0 +1,115 @@
+# This is a basic workflow to help you get started with Actions
+
+name: fetchRealTime_new_portal
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow every 30 minutes
+  # schedule:
+   # - cron: '9 0 * * *'  # Runs once a day at 00:09 AM
+   # - cron: '0 */2 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Starting script fetchRealTime_new_portal
+
+      # Set up python
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      
+      # Set up python packages
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+        
+      # execute python script fetchLatestSHP.py
+      - name: execute python script fetchLatestSHP.py
+        env:
+          KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
+          KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
+        run: python scripts/fetchLatestSHP.py
+        
+      # execute python script fetchLatestNC.py
+      - name: execute python script fetchLatestNC.py
+        env:
+          KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
+          KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
+        run: python scripts/fetchLatestNC.py
+
+      # list files in mpres_data directory
+      - name: List files in mpres_data directory
+        run: ls -l mpres_data
+
+      # list files in tc_realtime directory
+      - name: List files in tc_realtime directory
+        run: ls -l tc_realtime
+        
+      # execute python script createIndex.py
+      - name: execute python script createIndex.py
+        run: python scripts/createIndex.py
+        
+      # execute python script latestStorms.py
+      - name: execute python script latestStorms.py
+        run: python scripts/latestStorms.py
+
+      # execute python script latestStorms_15as.py
+      - name: execute python script latestStorms_15as.py
+        run: python scripts/latestStorms_15as.py
+        
+      # execute python script pastStorms.py
+      - name: execute python script pastStorms.py
+        run: python scripts/pastStorms.py
+        
+      # execute python script getHistory.py
+      - name: execute python script getHistory.py
+        run: python scripts/getHistory.py
+      
+      # Show git log
+      - name: show git log
+        run: git log --oneline
+
+      # Show git diff
+      - name: show git diff
+        run: git diff
+
+      # commit files
+      - name: commit files
+        run: |
+          git config --global http.version HTTP/1.1
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+      
+          # Add all files (new, modified, deleted)
+          git add -A
+      
+          # Check if there are staged changes (committed vs. staged differences)
+          if ! git diff --cached --quiet; then
+            git commit -m "Update data"
+          else
+            echo "No changes to commit"
+          fi
+          
+      # push changes
+      - name: push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main  
