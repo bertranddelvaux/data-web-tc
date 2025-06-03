@@ -40,12 +40,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
         
-      # execute python script fetchLatestSHP.py
-      - name: execute python script fetchLatestSHP.py
+      # execute python script fetchLatestSHP_new_portal.py.py
+      - name: execute python script fetchLatestSHP_new_portal.py.py
         env:
           KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
-        run: python scripts/fetchLatestSHP.py
+        run: python scripts/fetchLatestSHP_new_portal.py.py
         
       # execute python script fetchLatestNC.py
       - name: execute python script fetchLatestNC.py
