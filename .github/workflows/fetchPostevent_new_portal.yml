@@ -45,12 +45,12 @@ jobs:
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/fetchPostevent_new_portal.py
 
-      # execute python script generateCsvLosses_15as.py 
-      - name: execute python script generateCsvLosses_15as.py
+      # execute python script generateCsvLosses_15as_new_portal.py
+      - name: execute python script generateCsvLosses_15as_new_portal.py
         env:
           KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
-        run: python scripts/generateCsvLosses_15as.py
+        run: python scripts/generateCsvLosses_15as_new_portal.py
 
       # execute python script generateCsvLosses_30as.py 
       - name: execute python script generateCsvLosses_30as.py
