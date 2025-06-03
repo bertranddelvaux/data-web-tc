@@ -47,12 +47,12 @@ jobs:
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/fetchLatestSHP_new_portal.py.py
         
-      # execute python script fetchLatestNC.py
-      - name: execute python script fetchLatestNC.py
+      # execute python script fetchLatestNC_new_portal.py.py
+      - name: execute python script fetchLatestNC_new_portal.py.py
         env:
           KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
-        run: python scripts/fetchLatestNC.py
+        run: python scripts/fetchLatestNC_new_portal.py.py
 
       # list files in mpres_data directory
       - name: List files in mpres_data directory
