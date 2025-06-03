@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 from ncgzip2losses import calculateLosses
 from ncgzip2losses_15as import calculateLosses_15as
 from utils import listFilesUrl, fetchUrl
-from scripts.kac_utils import mappingKAC #TODO: added this import
+from kac_utils import mappingKAC #TODO: added this import
 
 import xarray as xr
 from zipfile import ZipFile
