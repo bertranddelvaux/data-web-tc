@@ -52,12 +52,12 @@ jobs:
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/generateCsvLosses_15as_new_portal.py
 
-      # execute python script generateCsvLosses_30as.py 
-      - name: execute python script generateCsvLosses_30as.py
+      # execute python script generateCsvLosses_30as_new_portal.py
+      - name: execute python script generateCsvLosses_30as_new_portal.py
         env:
           KAC_USERNAME: ${{ secrets.KAC_USERNAME }}
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
-        run: python scripts/generateCsvLosses_30as.py
+        run: python scripts/generateCsvLosses_30as_new_portal.py
 
       # execute python script combineImpacts.py 
       - name: execute python script combineImpacts.py
