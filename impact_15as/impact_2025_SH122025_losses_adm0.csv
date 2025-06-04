@@ -1,2 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2025,SH122025,ELVIS,2025-01-27 00:00,2025-02-01 00:00,OFCL,Madagascar,MDG,1822857,405183.39,"{0: 1443139, 1: 379077, 2: 641}"
+2025,SH122025,ELVIS,2025-01-27 00:00,2025-02-01 00:00,OFCL,Madagascar,MDG,1939537,405185.7595742935,"{0: 1559819, 1: 379077, 2: 641}"

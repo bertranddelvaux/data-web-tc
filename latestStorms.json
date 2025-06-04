@@ -164,7 +164,7 @@
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH122025_losses_adm.json",
             "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH122025_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH122025_JTWC_SLOSH.geojson",
-            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH122025_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122025.geojson",
             "storm_name": "ELVIS"
         },
@@ -386,7 +386,7 @@
             "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH072025_losses_adm.json",
             "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH072025_losses_adm.json",
             "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH072025_JTWC_SLOSH.geojson",
-            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH072025_OFCL_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH072025_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH072025.geojson",
             "storm_name": "DIKELEDI"
         },

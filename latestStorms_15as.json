@@ -198,6 +198,20 @@
         },
         {
             "bbox": [
+                37.8271,
+                -36.4354,
+                113.2,
+                -10.0771
+            ],
+            "date": "2024-12-29",
+            "id": "SH072025",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH072025_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/SH072025_OFCL_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH072025.geojson",
+            "storm_name": "DIKELEDI"
+        },
+        {
+            "bbox": [
                 46.7062,
                 -25.4021,
                 98.4979,
@@ -293,20 +307,6 @@
             "nc": "mpres_data/postevent/ofcl_15as_nc/taostc_SH072013_OFCL_SLOSH.geojson",
             "shp": "jtwc_history/2013/taostc_SH072013_BEST_SLOSH.geojson",
             "storm_name": "DUMILE"
-        },
-        {
-            "bbox": [
-                37.8271,
-                -36.4354,
-                113.2,
-                -10.0771
-            ],
-            "date": "2024-12-29",
-            "id": "SH072025",
-            "losses": "mpres_data/postevent/ofcl_15as_nc/SH072025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH072025_OFCL_SLOSH.geojson",
-            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH072025.geojson",
-            "storm_name": "DIKELEDI"
         },
         {
             "bbox": [
@@ -2390,7 +2390,7 @@
             "date": "2025-01-27",
             "id": "SH122025",
             "losses": "mpres_data/postevent/ofcl_15as_nc/SH122025_losses_adm.json",
-            "nc": "mpres_data/postevent/ofcl_15as_nc/SH122025_OFCL_SLOSH.geojson",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/SH122025_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH122025.geojson",
             "storm_name": "ELVIS"
         },
