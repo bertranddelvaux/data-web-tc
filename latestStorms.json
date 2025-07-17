@@ -1,23 +1,23 @@
 {
     "current_storms": {
         "current_storms": [
-            null,
             "SH012025",
-            "WP072025",
-            "WP082025"
+            null,
+            "WP082025",
+            "WP072025"
         ],
         "storms_shp": [
-            "WP962025",
-            null,
-            "WP062025",
             "SH012025",
-            "WP072025",
-            "WP082025"
+            null,
+            "WP082025",
+            "WP962025",
+            "WP062025",
+            "WP072025"
         ],
         "windwater_shp": [
-            null,
             "SH012025",
             "WP082025",
+            null,
             "WP072025"
         ]
     },
@@ -500,6 +500,17 @@
             "id": "SH012025",
             "losses": "tc_realtime/SH012025_losses_adm.json",
             "nc": "tc_realtime/taostc_SH012025_JTWC_SLOSH.geojson",
+            "storm_name": "ONE"
+        },
+        {
+            "bbox": [
+                75.0583,
+                -18.5917,
+                94.325,
+                -1.3417
+            ],
+            "id": "SH012026",
+            "nc": "tc_realtime/taostc_SH012026_JTWC_SLOSH.geojson",
             "storm_name": "ONE"
         }
     ]
