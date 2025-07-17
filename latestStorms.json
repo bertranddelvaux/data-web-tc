@@ -9,16 +9,16 @@
         "storms_shp": [
             null,
             "SH012025",
-            "WP062025",
+            "WP962025",
             "WP072025",
             "WP082025",
-            "WP962025"
+            "WP062025"
         ],
         "windwater_shp": [
-            "WP082025",
-            null,
+            "WP072025",
             "SH012025",
-            "WP072025"
+            null,
+            "WP082025"
         ]
     },
     "mpres_data": [
