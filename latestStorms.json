@@ -1,26 +1,26 @@
 {
     "current_storms": {
         "current_storms": [
+            "SH012025",
             null,
             "WP072025",
-            "WP092025",
-            "SH012025",
-            "WP082025"
+            "WP082025",
+            "WP092025"
         ],
         "storms_shp": [
+            "SH012025",
             null,
             "WP072025",
-            "WP092025",
-            "SH012025",
+            "WP062025",
             "WP082025",
-            "WP062025"
+            "WP092025"
         ],
         "windwater_shp": [
-            null,
-            "WP072025",
-            "WP092025",
             "SH012025",
-            "WP082025"
+            "WP072025",
+            null,
+            "WP082025",
+            "WP092025"
         ]
     },
     "mpres_data": [
@@ -491,17 +491,5 @@
             "storm_name": "ASHLEY"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                77.1417,
-                -17.3583,
-                94.875,
-                0.475
-            ],
-            "id": "SH012026",
-            "nc": "tc_realtime/taostc_SH012026_JTWC_SLOSH.geojson",
-            "storm_name": "ONE"
-        }
-    ]
+    "tc_realtime": []
 }
