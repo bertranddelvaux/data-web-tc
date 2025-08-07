@@ -1,3 +1,1 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2025,SH022025,BHEKI,2024-11-13 00:00,2024-11-22 18:00,JTWC,Mauritius,MUS,13386,759294.1766581465,"{0: 204, 1: 13182}"
-2025,SH022025,BHEKI,2024-11-13 00:00,2024-11-22 18:00,JTWC,Reunion,REU,120313,33954.577697405504,"{0: 119295, 1: 1018}"
