@@ -7,12 +7,12 @@
             "SH022025"
         ],
         "windwater_shp": [
-            "WP162025",
             null,
-            "EP082025",
             "AL042025",
             "SH022025",
-            "EP092025"
+            "WP162025",
+            "EP092025",
+            "EP082025"
         ]
     },
     "mpres_data": [
@@ -486,14 +486,14 @@
     "tc_realtime": [
         {
             "bbox": [
-                55.2417,
+                54.175,
                 -10.4583,
                 67.8083,
-                -3.8917
+                -2.7417
             ],
             "id": "SH022026",
             "nc": "tc_realtime/taostc_SH022026_JTWC_SLOSH.geojson",
-            "storm_name": "TWO"
+            "storm_name": "AWO"
         }
     ]
 }
