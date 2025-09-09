@@ -1,16 +1,15 @@
 {
     "current_storms": {
         "current_storms": [
-            "EP112025",
-            null
+            "SH922026"
         ],
         "storms_shp": [
             "EP112025",
+            "SH922026",
             null
         ],
         "windwater_shp": [
-            "EP112025",
-            null
+            "SH922026"
         ]
     },
     "mpres_data": [
@@ -481,5 +480,18 @@
             "storm_name": "ALVARO"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                68.5083,
+                -11.5417,
+                85.7917,
+                -3.0583
+            ],
+            "id": "SH922026",
+            "losses": "tc_realtime/SH922026_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH922026_JTWC_SLOSH.geojson",
+            "storm_name": "INVEST"
+        }
+    ]
 }
