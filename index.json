@@ -924,8 +924,6 @@
         "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH042024_JTWC_SLOSH.geojson"
     ],
     "tc_realtime": [
-        "tc_realtime/README.md",
-        "tc_realtime/taostc_SH922026_JTWC_SLOSH.geojson",
-        "tc_realtime/SH922026_losses_adm.json"
+        "tc_realtime/README.md"
     ]
 }

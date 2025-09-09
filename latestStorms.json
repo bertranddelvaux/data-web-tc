@@ -4,9 +4,9 @@
             "SH922026"
         ],
         "storms_shp": [
-            "EP112025",
             "SH922026",
-            null
+            null,
+            "EP112025"
         ],
         "windwater_shp": [
             "SH922026"
@@ -480,18 +480,5 @@
             "storm_name": "ALVARO"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                68.5083,
-                -11.5417,
-                85.7917,
-                -3.0583
-            ],
-            "id": "SH922026",
-            "losses": "tc_realtime/SH922026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH922026_JTWC_SLOSH.geojson",
-            "storm_name": "INVEST"
-        }
-    ]
+    "tc_realtime": []
 }
