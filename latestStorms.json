@@ -481,7 +481,7 @@
     "tc_realtime": [
         {
             "bbox": [
-                57.275,
+                57.0417,
                 -13.975,
                 85.2083,
                 -3.825
@@ -489,7 +489,7 @@
             "id": "SH032026",
             "losses": "tc_realtime/SH032026_losses_adm.json",
             "nc": "tc_realtime/taostc_SH032026_JTWC_SLOSH.geojson",
-            "storm_name": "THREE"
+            "storm_name": "BLOSSOM"
         }
     ]
 }
