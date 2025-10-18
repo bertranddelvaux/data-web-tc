@@ -1,1 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2026,SH042026,FOUR,2025-10-16 06:00,2025-10-18 18:00,JTWC,Mauritius,MUS,122,951.0380099340694,{1: 122}
