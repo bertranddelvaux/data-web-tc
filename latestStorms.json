@@ -481,15 +481,15 @@
     "tc_realtime": [
         {
             "bbox": [
-                52.325,
-                -15.5417,
+                51.5417,
+                -14.975,
                 84.1917,
                 -1.175
             ],
             "id": "SH042026",
             "losses": "tc_realtime/SH042026_losses_adm.json",
             "nc": "tc_realtime/taostc_SH042026_JTWC_SLOSH.geojson",
-            "storm_name": "FOUR"
+            "storm_name": "CHENGE"
         }
     ]
 }
