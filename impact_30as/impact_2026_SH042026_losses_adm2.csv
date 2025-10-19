@@ -1,2 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
-2026,SH042026,CHENGE,2025-10-16 06:00,2025-10-19 00:00,JTWC,Mauritius,MUS,Agalega Islands,MUS.1_1,,No Adm2,122,3510.3717809070995,{1: 122}
+2026,SH042026,FOUR,2025-10-16 06:00,2025-10-19 06:00,JTWC,Mauritius,MUS,Agalega Islands,MUS.1_1,,No Adm2,122,1811.0536933774551,{1: 122}
