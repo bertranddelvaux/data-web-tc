@@ -481,10 +481,10 @@
     "tc_realtime": [
         {
             "bbox": [
-                41.9917,
+                37.1083,
                 -17.125,
                 81.6,
-                -2.8917
+                -2.1917
             ],
             "id": "SH042026",
             "losses": "tc_realtime/SH042026_losses_adm.json",
