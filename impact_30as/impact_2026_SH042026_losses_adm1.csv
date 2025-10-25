@@ -1,3 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
-2026,SH042026,CHENGE,2025-10-16 06:00,2025-10-24 06:00,JTWC,Mauritius,MUS,Agalega Islands,MUS.1_1,122,9214.433520372644,{1: 122}
-2026,SH042026,CHENGE,2025-10-16 06:00,2025-10-24 06:00,JTWC,Seychelles,SYC,Outer Islands,SYC.20_1,374,975.1398465740548,"{0: 289, 1: 85}"
+2026,SH042026,CHENGE,2025-10-16 06:00,2025-10-24 18:00,JTWC,Seychelles,SYC,Outer Islands,SYC.20_1,283,1623.6849484616878,"{0: 198, 1: 85}"
