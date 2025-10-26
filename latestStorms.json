@@ -1,13 +1,25 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH042026"
+            null,
+            "EP182025",
+            "WP942025",
+            "IO032025",
+            "AL132025"
         ],
         "storms_shp": [
-            "SH042026"
+            null,
+            "EP182025",
+            "WP942025",
+            "IO032025",
+            "AL132025"
         ],
         "windwater_shp": [
-            "SH042026"
+            null,
+            "EP182025",
+            "WP942025",
+            "IO032025",
+            "AL132025"
         ]
     },
     "mpres_data": [
@@ -478,18 +490,5 @@
             "storm_name": "FREDDY"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                43.4083,
-                -17.1417,
-                82.425,
-                -2.325
-            ],
-            "id": "SH042026",
-            "losses": "tc_realtime/SH042026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH042026_JTWC_SLOSH.geojson",
-            "storm_name": "CHENGE"
-        }
-    ]
+    "tc_realtime": []
 }
