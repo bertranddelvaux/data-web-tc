@@ -5,13 +5,13 @@
             "AL132025"
         ],
         "storms_shp": [
-            null,
-            "AL132025",
-            "WP982025"
-        ],
-        "windwater_shp": [
+            "WP982025",
             null,
             "AL132025"
+        ],
+        "windwater_shp": [
+            "AL132025",
+            null
         ]
     },
     "mpres_data": [
