@@ -1,183 +1,272 @@
-import os
+# import argparse
+# import glob
+# import json
+#
+# import pandas as pd
+#
+# def getHistory(csv_impact, json_adm):
+#
+#     df = pd.read_csv(csv_impact)
+#
+#     # Creation of the dictionary:
+#     dict_adm = {
+#         'counter_total': len(df['atcf_id'].unique()),
+#         'records': []
+#     }
+#     for adm0_i, adm0_code in enumerate(df['adm0_code'].unique()):
+#         df_adm0 = df[df['adm0_code'] == adm0_code]
+#         assert len(df_adm0['adm0_name'].unique()) == 1
+#         dict_adm['records'].append(
+#             {
+#                 'adm0_code': adm0_code,
+#                 'adm0_name': df_adm0['adm0_name'].fillna('').unique()[0], #df_adm0['adm0_name'].unique()[0],
+#                 'counter_adm0': {},
+#                 'counter_year': {},
+#                 'loss': {},
+#                 'storms': [],
+#                 'adm1': []
+#             }
+#         )
+#         for adm1_i, adm1_code in enumerate(df_adm0['adm1_code'].unique()):
+#             df_adm1 = df[df['adm1_code'] == adm1_code]
+#             assert len(df_adm1['adm1_name'].unique()) == 1
+#             dict_adm['records'][adm0_i]['adm1'].append(
+#                 {
+#                     'adm1_code': adm1_code,
+#                     'adm1_name': df_adm1['adm1_name'].fillna('').unique()[0], #df_adm1['adm1_name'].unique()[0],
+#                     'counter_adm1': {},
+#                     'counter_year': {},
+#                     'loss': {},
+#                     'storms': [],
+#                     'adm2': []
+#                 }
+#             )
+#             for adm2_i, adm2_code in enumerate(df_adm1['adm2_code'].unique()):
+#                 df_adm2 = df[df['adm2_code'] == adm2_code]
+#                 assert len(df_adm2['adm2_name'].unique()) == 1
+#                 dict_adm['records'][adm0_i]['adm1'][adm1_i]['adm2'].append(
+#                     {
+#                         'adm2_code': adm2_code,
+#                         'adm2_name': df_adm2['adm2_name'].fillna('').unique()[0], #df_adm2['adm2_name'].unique()[0],
+#                         'counter_adm2': {},
+#                         'counter_year': {},
+#                         'loss': {},
+#                         'storms': [],
+#                     }
+#                 )
+#
+#     # Constituting shape files' list
+#     shp_files_list_jtwc_history = glob.glob('jtwc_history/**/*_shp.geojson', recursive=True)
+#     shp_files_list_mpres_data = glob.glob('mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/**/*.geojson', recursive=True)
+#     shp_files_list = shp_files_list_jtwc_history + shp_files_list_mpres_data
+#
+#     for year in df['tc_season'].unique():
+#
+#         print(f'\nProcessing year {year}')
+#
+#         df_year = df[df['tc_season'] == year]
+#
+#         for adm0_i, adm0 in enumerate(dict_adm['records']):
+#             df_adm0 = df_year[df_year['adm0_code'] == adm0['adm0_code']]
+#
+#             print(f'\tAdm0: {adm0["adm0_code"]}')
+#
+#             if not(df_adm0.empty):
+#                 dict_adm['records'][adm0_i]['counter_adm0'][str(year)] = len(df_adm0['atcf_id'].unique())
+#                 dict_adm['records'][adm0_i]['counter_year'][str(year)] = len(df_year['atcf_id'].unique())
+#                 dict_adm['records'][adm0_i]['loss'][str(year)] = df_adm0['loss'].sum()
+#                 if len(dict_adm['records'][adm0_i]['storms']) == 0:
+#                     dict_adm['records'][adm0_i]['storms'] = [f for f in shp_files_list if any(uid in f for uid in set(df[df['adm0_code']==adm0['adm0_code']]['atcf_id'].unique().astype(str)))]
+#
+#             for adm1_i, adm1 in enumerate(dict_adm['records'][adm0_i]['adm1']):
+#                 df_adm1 = df_year[(df_year['adm0_code'] == adm0['adm0_code']) & (df_year['adm1_code'] == adm1['adm1_code'])]
+#
+#                 print(f'\t\tAdm1: {adm1["adm1_code"]}')
+#
+#                 if not(df_adm1.empty):
+#                     dict_adm['records'][adm0_i]['adm1'][adm1_i]['counter_adm1'][str(year)] = len(df_adm1['atcf_id'].unique())
+#                     dict_adm['records'][adm0_i]['adm1'][adm1_i]['counter_year'][str(year)] = len(df_year['atcf_id'].unique())
+#                     dict_adm['records'][adm0_i]['adm1'][adm1_i]['loss'][str(year)] = df_adm1['loss'].sum()
+#                     if len(dict_adm['records'][adm0_i]['adm1'][adm1_i]['storms']) == 0:
+#                         dict_adm['records'][adm0_i]['adm1'][adm1_i]['storms'] = [f for f in shp_files_list if any(uid in f for uid in set(df[(df['adm0_code']==adm0['adm0_code']) & (df['adm1_code']==adm1['adm1_code'])]['atcf_id'].unique().astype(str)))]
+#
+#                 for adm2_i, adm2 in enumerate(dict_adm['records'][adm0_i]['adm1'][adm1_i]['adm2']):
+#                     df_adm2 = df_year[(df_year['adm0_code'] == adm0['adm0_code']) & (df_year['adm1_code'] == adm1['adm1_code']) & (df_year['adm2_code'] == adm2['adm2_code'])]
+#
+#                     print(f'\t\t\tAdm2: {adm2["adm2_code"]}')
+#
+#                     if not (df_adm2.empty):
+#                         dict_adm['records'][adm0_i]['adm1'][adm1_i]['adm2'][adm2_i]['counter_adm2'][str(year)] = len(
+#                             df_adm2['atcf_id'].unique())
+#                         dict_adm['records'][adm0_i]['adm1'][adm1_i]['adm2'][adm2_i]['counter_year'][str(year)] = len(
+#                             df_year['atcf_id'].unique())
+#                         dict_adm['records'][adm0_i]['adm1'][adm1_i]['adm2'][adm2_i]['loss'][str(year)] = df_adm2['loss'].sum()
+#                         if len(dict_adm['records'][adm0_i]['adm1'][adm1_i]['adm2'][adm2_i]['storms']) == 0:
+#                             dict_adm['records'][adm0_i]['adm1'][adm1_i]['adm2'][adm2_i]['storms'] = [f for f in shp_files_list if any(uid in f for uid in set(df[(df['adm0_code']==adm0['adm0_code']) & (df['adm1_code']==adm1['adm1_code']) & (df['adm2_code']==adm2['adm2_code'])]['atcf_id'].unique().astype(str)))]
+#
+#     with open(json_adm, 'w') as f:
+#         json.dump(dict_adm, f, sort_keys=True, indent=4)
+#
+#
+#
+#
+# if __name__ == '__main__':
+#
+#     parser = argparse.ArgumentParser(description='Arguments to be passed to the script')
+#     # parser.add_argument('-s', '--storms', type=str, help='Path to json file', default='storms.json', dest='json_storms')
+#     # parser.add_argument('-y', '--years', type=str, help='Path to json file', default='historyYears.json', dest='json_years')
+#     parser.add_argument('-a', '--adm', type=str, help='Path to json file', default='historyAdmFromImpact.json', dest='json_adm') #TODO: switch back to historyAdm.json
+#     parser.add_argument('-i', '--impact', type=str, help='Path to impact file', default='impact_15as/impact_total_adm2_15as.csv', dest='csv_impact')
+#     args = parser.parse_args()
+#
+#     # getAllStorms(json_storms=args.json_storms)
+#     getHistory(csv_impact=args.csv_impact, json_adm=args.json_adm)
+
 import argparse
-import json
 import glob
+import json
 import pandas as pd
 
-def checkIfKeyAddValue(d, year, value, field='loss'):
-    value = round(value)
 
-    keys_to_remove = ['population', 'wind_cat']
-    for key in keys_to_remove:
-        if key in d:
-            del d[key]
+def getHistory(csv_impact, json_adm):
+    print("Loading data...")
+    df = pd.read_csv(csv_impact)
 
-    d.setdefault(field, {})
+    # --- OPTIMIZATION 1: Pre-calculate Shapefile Mappings ---
+    # Doing string matching inside the deep loops is extremely slow.
+    # We map Storm ID -> List of Files once.
+    print("Indexing shapefiles...")
+    shp_files_list_jtwc_history = glob.glob('jtwc_history/**/*_shp.geojson', recursive=True)
+    shp_files_list_mpres_data = glob.glob('mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/**/*.geojson',
+                                          recursive=True)
+    shp_files_list = shp_files_list_jtwc_history + shp_files_list_mpres_data
 
-    # check whether 'loss' has already been turned into a list
-    if not(isinstance(d[field], dict)):
-        d[field] = {year: value}
-        return
+    # Create a lookup dict: { 'atcf_id': [file_path1, file_path2] }
+    # This assumes the atcf_id is part of the filename string as per original logic
+    unique_storm_ids = df['atcf_id'].unique().astype(str)
+    storm_file_map = {uid: [] for uid in unique_storm_ids}
 
-    if year not in d[field]:
-        d[field].setdefault(year, value)
-    else:
-        d[field][year] += value
+    # This is still heavy, but runs only once globally, not per admin unit
+    for f in shp_files_list:
+        for uid in unique_storm_ids:
+            if uid in f:
+                storm_file_map[uid].append(f)
 
-    return
+    # --- OPTIMIZATION 2: Pre-calculate Global Year Counts ---
+    # The 'counter_year' field is the same for every admin unit (it's the global total).
+    # We calculate it once here.
+    global_year_counts = df.groupby('tc_season')['atcf_id'].nunique().to_dict()
+    # Ensure keys are strings to match original output format
+    global_year_counts = {str(k): v for k, v in global_year_counts.items()}
 
-def getAllStorms(json_storms):
-    list_past = glob.glob('jtwc_history/**/**_shp.geojson')
-    list_latest = glob.glob('mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/**.geojson')
-    dict_storms = {'records': [{'storms': list_past + list_latest}]}
-    dict_storms['counter_total'] = len(set(list_past + list_latest))
+    print("Processing administrative hierarchy...")
 
-    with open(json_storms, 'w') as f:
-        json.dump(dict_storms, f, sort_keys=True, indent=4)
+    dict_adm = {
+        'counter_total': len(df['atcf_id'].unique()),
+        'records': []
+    }
 
-def getHistory(json_years, json_adm, json_past='pastStorms.json', json_latest='latestStorms.json'):
+    # --- LEVEL 0 Loop ---
+    # We group by Adm0 first to avoid repeated filtering of the master DF
+    for adm0_code, df_adm0 in df.groupby('adm0_code'):
 
-    dir = 'jtwc_history'
-    list_losses = glob.glob(f'{dir}/**/**_losses_adm.json', recursive=True)
-    dict_years = {}
-    dict_adm = {'records': []}
+        # 1. Calculate Adm0 Year Stats (The "Year Loop" is now here, inside the Adm loop)
+        # groupby().agg() is much faster than iterating rows
+        adm0_stats = df_adm0.groupby('tc_season').agg(
+            count=('atcf_id', 'nunique'),
+            loss=('loss', 'sum')
+        )
 
-    # reading past storms information
-    with open(json_past, 'r') as f:
-        past_storms = json.load(f)
-    past_storm_dict = {s['id']: s['shp'] for s in past_storms['jtwc_history'] if 'shp' in s}
+        # 2. Get Storm Files for this Adm0
+        # Get all unique IDs in this region
+        adm0_storm_ids = df_adm0['atcf_id'].unique().astype(str)
+        # Retrieve files from our pre-calculated map
+        adm0_storm_files = []
+        for uid in adm0_storm_ids:
+            adm0_storm_files.extend(storm_file_map.get(uid, []))
+        # Remove duplicates if a file matches multiple storms (rare but possible) or if logic requires set
+        adm0_storm_files = list(set(adm0_storm_files))
 
-    # reading latest storms information
-    with open(json_latest, 'r') as f:
-        latest_storms = json.load(f)
-    latest_storm_dict = {s['id']: s['shp'] for s in latest_storms['mpres_data'] if 'shp' in s}
+        # 3. Build Adm0 Record
+        adm0_record = {
+            'adm0_code': adm0_code,
+            'adm0_name': df_adm0['adm0_name'].fillna('').iloc[0],  # more efficient than unique()[0]
+            'counter_adm0': {str(y): c for y, c in adm0_stats['count'].items()},
+            'counter_year': global_year_counts,  # Use pre-calculated global stats
+            'loss': {str(y): l for y, l in adm0_stats['loss'].items()},
+            'storms': adm0_storm_files,
+            'adm1': []
+        }
 
-    # updating past storms with latest storms
-    past_storm_dict.update(latest_storm_dict)
-    list_years = [str(item) for item in set([int(e[4:]) for e in past_storm_dict.keys()])][::-1]
-    list_losses = glob.glob(f'mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/**_losses_adm.json',
-              recursive=True) + list_losses
+        # --- LEVEL 1 Loop ---
+        for adm1_code, df_adm1 in df_adm0.groupby('adm1_code'):
 
-    counter_total = 0
-    for year in list_years:
+            # Calculate Adm1 Year Stats
+            adm1_stats = df_adm1.groupby('tc_season').agg(
+                count=('atcf_id', 'nunique'),
+                loss=('loss', 'sum')
+            )
 
-        counter_year = 0
-        if year == list_years[0]:
-            list_losses_year = glob.glob(f'mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/**_losses_adm.json',
-                                         recursive=True)
-        else:
-            list_losses_year = glob.glob(f'{dir}/{year}/**_losses_adm.json', recursive=True)
+            # Get Storm Files for this Adm1
+            adm1_storm_ids = df_adm1['atcf_id'].unique().astype(str)
+            adm1_storm_files = []
+            for uid in adm1_storm_ids:
+                adm1_storm_files.extend(storm_file_map.get(uid, []))
+            adm1_storm_files = list(set(adm1_storm_files))
 
-        for losses in list_losses_year:
-            counter_year += 1
-            counter_total += 1
-            with open(losses, 'r') as f:
-                data = json.load(f)
-            if year == list_years[0]:
-                storm_id = losses.split('/')[-1].split('_')[0]
-            else:
-                storm_id = losses.split('/')[2].split('_')[0]
+            adm1_record = {
+                'adm1_code': adm1_code,
+                'adm1_name': df_adm1['adm1_name'].fillna('').iloc[0],
+                'counter_adm1': {str(y): c for y, c in adm1_stats['count'].items()},
+                'counter_year': global_year_counts,
+                'loss': {str(y): l for y, l in adm1_stats['loss'].items()},
+                'storms': adm1_storm_files,
+                'adm2': []
+            }
 
-            print(f'Dealing with {storm_id} ...')
+            # --- LEVEL 2 Loop ---
+            for adm2_code, df_adm2 in df_adm1.groupby('adm2_code'):
 
-            for adm0 in data['records']:
-                if adm0['adm0_name'] not in [s['adm0_name'] for s in dict_adm['records']]:
-                    adm0['storms'] = []
-                    dict_adm['records'].append(adm0)
-                i0 = [i for i, s in enumerate(dict_adm['records']) if s['adm0_name'] == adm0['adm0_name']][0]
+                # Calculate Adm2 Year Stats
+                adm2_stats = df_adm2.groupby('tc_season').agg(
+                    count=('atcf_id', 'nunique'),
+                    loss=('loss', 'sum')
+                )
 
-                dict_adm['records'][i0].setdefault('counter_year', {year: counter_year})
-                dict_adm['records'][i0]['counter_year'][year] = counter_year
+                # Get Storm Files for this Adm2
+                adm2_storm_ids = df_adm2['atcf_id'].unique().astype(str)
+                adm2_storm_files = []
+                for uid in adm2_storm_ids:
+                    adm2_storm_files.extend(storm_file_map.get(uid, []))
+                adm2_storm_files = list(set(adm2_storm_files))
 
-                checkIfKeyAddValue(dict_adm['records'][i0], year, 1, field='counter_adm0')
-                checkIfKeyAddValue(dict_adm['records'][i0], year, adm0['loss'], field='loss')
+                adm2_record = {
+                    'adm2_code': adm2_code,
+                    'adm2_name': df_adm2['adm2_name'].fillna('').iloc[0],
+                    'counter_adm2': {str(y): c for y, c in adm2_stats['count'].items()},
+                    'counter_year': global_year_counts,
+                    'loss': {str(y): l for y, l in adm2_stats['loss'].items()},
+                    'storms': adm2_storm_files,
+                }
 
-                if storm_id in past_storm_dict:
-                    if 'storms' not in dict_adm['records'][i0]:
-                        dict_adm['records'][i0]['storms'] = []
-                    if past_storm_dict[storm_id] not in dict_adm['records'][i0]['storms']:
-                        dict_adm['records'][i0]['storms'].append(past_storm_dict[storm_id])
+                adm1_record['adm2'].append(adm2_record)
 
+            adm0_record['adm1'].append(adm1_record)
 
-                for adm1 in adm0['adm1']:
-                    if adm1['adm1_name'] not in [s['adm1_name'] for s in dict_adm['records'][i0]['adm1']]:
-                        dict_adm['records'][i0]['adm1'].append(adm1)
+        dict_adm['records'].append(adm0_record)
 
-                    i1 = [i for i, s in enumerate(dict_adm['records'][i0]['adm1']) if s['adm1_name'] == adm1['adm1_name']][0]
-
-                    dict_adm['records'][i0]['adm1'][i1].setdefault('counter_year', {year: counter_year})
-                    dict_adm['records'][i0]['adm1'][i1]['counter_year'][year] = counter_year
-
-                    checkIfKeyAddValue(dict_adm['records'][i0]['adm1'][i1], year, 1, field='counter_adm1')
-                    checkIfKeyAddValue(dict_adm['records'][i0]['adm1'][i1], year, adm1['loss'], field='loss')
-
-                    if storm_id in past_storm_dict:
-                        if not ('storms' in dict_adm['records'][i0]['adm1'][i1]):
-                            dict_adm['records'][i0]['adm1'][i1]['storms'] = []
-                        if past_storm_dict[storm_id] not in dict_adm['records'][i0]['adm1'][i1]['storms']:
-                            dict_adm['records'][i0]['adm1'][i1]['storms'].append(past_storm_dict[storm_id])
-
-                    for adm2 in adm1['adm2']:
-                        if adm2['adm2_name'] not in [s['adm2_name'] for s in dict_adm['records'][i0]['adm1'][i1]['adm2']]:
-                            dict_adm['records'][i0]['adm1'][i1]['adm2'].append(adm2)
-                        i2 = [i for i, s in enumerate(dict_adm['records'][i0]['adm1'][i1]['adm2']) if s['adm2_name'] == adm2['adm2_name']][0]
-
-                        dict_adm['records'][i0]['adm1'][i1]['adm2'][i2].setdefault('counter_year', {year: counter_year})
-                        dict_adm['records'][i0]['adm1'][i1]['adm2'][i2]['counter_year'][year] = counter_year
-
-                        checkIfKeyAddValue(dict_adm['records'][i0]['adm1'][i1]['adm2'][i2], year, 1, field='counter_adm2')
-                        checkIfKeyAddValue(dict_adm['records'][i0]['adm1'][i1]['adm2'][i2], year, adm2['loss'], field='loss')
-
-                        if storm_id in past_storm_dict:
-                            if not ('storms' in dict_adm['records'][i0]['adm1'][i1]['adm2'][i2]):
-                                dict_adm['records'][i0]['adm1'][i1]['adm2'][i2]['storms'] = []
-                            if past_storm_dict[storm_id] not in dict_adm['records'][i0]['adm1'][i1]['adm2'][i2]['storms']:
-                                dict_adm['records'][i0]['adm1'][i1]['adm2'][i2]['storms'].append(past_storm_dict[storm_id])
-
-
-    dict_adm['counter_total'] = counter_total
-
+    print("Saving JSON...")
     with open(json_adm, 'w') as f:
         json.dump(dict_adm, f, sort_keys=True, indent=4)
-
-
-    for year in list_years:
-        dict_years.setdefault(year, [])
-        list_losses_year = glob.glob(f'{dir}/{year}/**_losses_adm.json', recursive=True)
-        for losses in list_losses_year:
-            with open(losses, 'r') as f:
-                data = json.load(f)
-            for adm0 in data['records']:
-                if adm0['adm0_name'] not in [s['adm0_name'] for s in dict_years[year]]:
-                    dict_years[year].append(adm0)
-                else:
-                    i0 = [i for i, s in enumerate(dict_years[year]) if s['adm0_name'] == adm0['adm0_name']][0]
-                    dict_years[year][i0]['loss'] += adm0['loss']
-                    for adm1 in adm0['adm1']:
-                        if adm1['adm1_name'] not in [s['adm1_name'] for s in dict_years[year][i0]['adm1']]:
-                            dict_years[year][i0]['adm1'].append(adm1)
-                        else:
-                            i1 = [i for i, s in enumerate(dict_years[year][i0]['adm1']) if s['adm1_name'] == adm1['adm1_name']][0]
-                            dict_years[year][i0]['adm1'][i1]['loss'] += adm1['loss']
-                            for adm2 in adm1['adm2']:
-                                if adm2['adm2_name'] not in [s['adm2_name'] for s in dict_years[year][i0]['adm1'][i1]['adm2']]:
-                                    dict_years[year][i0]['adm1'][i1]['adm2'].append(adm2)
-                                else:
-                                    i2 = [i for i, s in enumerate(dict_years[year][i0]['adm1'][i1]['adm2']) if s['adm2_name'] == adm2['adm2_name']][0]
-                                    dict_years[year][i0]['adm1'][i1]['adm2'][i2]['loss'] += adm2['loss']
-
-
-    with open(json_years, 'w') as f:
-        json.dump(dict_years, f, sort_keys=True, indent=4)
+    print("Done.")
 
 
 if __name__ == '__main__':
-
     parser = argparse.ArgumentParser(description='Arguments to be passed to the script')
-    parser.add_argument('-s', '--storms', type=str, help='Path to json file', default='storms.json', dest='json_storms')
-    parser.add_argument('-y', '--years', type=str, help='Path to json file', default='historyYears.json', dest='json_years')
-    parser.add_argument('-a', '--adm', type=str, help='Path to json file', default='historyAdm.json', dest='json_adm')
+    parser.add_argument('-a', '--adm', type=str, help='Path to json file', default='historyAdm.json',
+                        dest='json_adm')
+    parser.add_argument('-i', '--impact', type=str, help='Path to impact file',
+                        default='impact_15as/impact_total_adm2_15as.csv', dest='csv_impact')
     args = parser.parse_args()
 
-    getAllStorms(json_storms=args.json_storms)
-    getHistory(json_years=args.json_years, json_adm=args.json_adm)
+    getHistory(csv_impact=args.csv_impact, json_adm=args.json_adm)
