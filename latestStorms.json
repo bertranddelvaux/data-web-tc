@@ -2,18 +2,18 @@
     "current_storms": {
         "current_storms": [
             "SH912026",
-            "SH072026",
-            null
+            null,
+            "SH072026"
         ],
         "storms_shp": [
             "SH912026",
-            "SH072026",
-            null
+            null,
+            "SH072026"
         ],
         "windwater_shp": [
             "SH912026",
-            "SH072026",
-            null
+            null,
+            "SH072026"
         ]
     },
     "mpres_data": [
