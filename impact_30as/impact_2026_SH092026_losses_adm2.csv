@@ -1,1 +1,4 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2026,SH092026,GRANT,2025-12-12 00:00,2026-01-02 00:00,JTWC,Madagascar,MDG,Toamasina,MDG.5_1,Alaotra-Mangoro,MDG.5.1_1,22,1.9231480874265636e-07,{0: 22}
+2026,SH092026,GRANT,2025-12-12 00:00,2026-01-02 00:00,JTWC,Madagascar,MDG,Toamasina,MDG.5_1,Analanjirofo,MDG.5.2_1,4072,1.9890402979372621,{0: 4072}
+2026,SH092026,GRANT,2025-12-12 00:00,2026-01-02 00:00,JTWC,Madagascar,MDG,Toamasina,MDG.5_1,Atsinanana,MDG.5.3_1,63351,73.44069672399078,{0: 63351}
