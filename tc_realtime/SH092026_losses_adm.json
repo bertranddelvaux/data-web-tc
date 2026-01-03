@@ -1,1 +1,1 @@
-{"records": []}
+{"records": [{"adm0_name": "Madagascar", "adm0_code": "MDG", "population": 5184, "loss": 0.4989652048, "wind_cat": {"0": 5184}, "adm1": [{"adm1_name": "Toamasina", "adm1_code": "MDG.5_1", "population": 5184, "loss": 0.4989652048, "wind_cat": {"0": 5184}, "adm2": [{"adm2_name": "Atsinanana", "adm2_code": "MDG.5.3_1", "population": 5184, "loss": 0.4989652048, "wind_cat": {"0": 5184}}]}]}]}
