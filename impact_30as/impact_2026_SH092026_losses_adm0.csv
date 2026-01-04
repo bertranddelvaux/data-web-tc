@@ -1,2 +1,1 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2026,SH092026,GRANT,2025-12-12 00:00,2026-01-03 12:00,JTWC,Madagascar,MDG,5184,0.4989652048421681,{0: 5184}
