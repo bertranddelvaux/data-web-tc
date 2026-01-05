@@ -478,18 +478,5 @@
             "storm_name": "FREDDY"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                47.775,
-                -21.5583,
-                114.975,
-                -9.1917
-            ],
-            "id": "SH092026",
-            "losses": "tc_realtime/SH092026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH092026_JTWC_SLOSH.geojson",
-            "storm_name": "GRANT"
-        }
-    ]
+    "tc_realtime": []
 }
