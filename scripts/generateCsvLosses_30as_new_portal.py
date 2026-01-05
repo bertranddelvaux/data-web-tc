@@ -27,14 +27,14 @@ url_subfolder_list_15as = [
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2022_JTWC/15as/',  # 2022, 6 storms
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2023_JTWC/15as/',  # 2023, 2 storms
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2024_provisional/15as/',  # 2024, 7 storms
-    mappingKAC.get_forward('https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/'), #TODO: changed 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/' # 2025
+    'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/', #TODO: changed 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/' # 2025
 ]
 
 # Online dir for 30as
 url_subfolder_list_30as = [
     # TODO: missing 30as data <= 2021, historical
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2022_JTWC/30as/',  # 2022
-    mappingKAC.get_forward('https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/'), # TODO: changed 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/',
+    'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/', # TODO: changed 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/',
     # 2023, 2024, 2025
 ]
 
@@ -91,10 +91,10 @@ files_list_30as = []
 files_list_15as = []
 
 for url_subfolder in url_subfolder_list_30as:
-    files_list_30as += listFilesUrl(url_subfolder, username, password, ext=ext)
+    files_list_30as += listFilesUrl(mappingKAC.get_forward(url_subfolder), username, password, ext=ext)
 
 for url_subfolder in url_subfolder_list_15as:
-    files_list_15as += listFilesUrl(url_subfolder, username, password, ext=ext)
+    files_list_15as += listFilesUrl(mappingKAC.get_forward(url_subfolder), username, password, ext=ext)
 
 files_pattern = get_files_pattern(files_list_15as, ext='.nc')
 
