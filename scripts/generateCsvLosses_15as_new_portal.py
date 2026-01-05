@@ -27,7 +27,7 @@ url_subfolder_list = [
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2022_JTWC/15as/', # 2022
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2023_JTWC/15as/', # 2023
     'https://www.kacportal.com/portal/kacs3/arc/arc_proj22/2024_provisional/15as/', # 2024
-    mappingKAC.get_forward('https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/'), #TODO: changed 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/' # 2025
+    'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/', #TODO: changed 'https://www.kacportal.com/portal/kacs3/arc/mpres_data/postevent/ofcl_15as_nc/' # 2025
     ]
 
 # Local storage
@@ -71,7 +71,7 @@ for url_subfolder in url_subfolder_list:
 
     os.chdir(dir_root)
 
-    files_list += listFilesUrl(url_subfolder, username, password, ext=ext)
+    files_list += listFilesUrl(mappingKAC.get_forward(url_subfolder), username, password, ext=ext)
 
 # Filter out URLs that contain any of the files in files_to_exclude
 updated_files_list = [file for file in files_list if not any(exclude in file for exclude in set(files_to_exclude))]
