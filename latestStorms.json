@@ -1,19 +1,22 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH122026",
+            "SH922026",
+            "WP902026",
             null,
-            "SH922026"
+            "SH122026"
         ],
         "storms_shp": [
-            "SH122026",
+            "SH922026",
+            "WP902026",
             null,
-            "SH922026"
+            "SH122026"
         ],
         "windwater_shp": [
+            "SH922026",
             "SH122026",
             null,
-            "SH922026"
+            "WP902026"
         ]
     },
     "mpres_data": [
@@ -484,18 +487,5 @@
             "storm_name": "FREDDY"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                82.475,
-                -23.2917,
-                101.5917,
-                -5.575
-            ],
-            "id": "SH122026",
-            "losses": "tc_realtime/SH122026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH122026_JTWC_SLOSH.geojson",
-            "storm_name": "JENNA"
-        }
-    ]
+    "tc_realtime": []
 }
