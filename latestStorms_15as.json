@@ -1696,6 +1696,20 @@
         },
         {
             "bbox": [
+                48.3271,
+                -21.2646,
+                114.9187,
+                -9.5771
+            ],
+            "date": "2025-12-12",
+            "id": "SH092026",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH092026_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/SH092026_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH092026.geojson",
+            "storm_name": "GRANT"
+        },
+        {
+            "bbox": [
                 43.7271,
                 -25.8771,
                 74.6771,

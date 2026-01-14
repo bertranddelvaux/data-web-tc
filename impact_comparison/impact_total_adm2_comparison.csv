@@ -9635,3 +9635,4 @@ tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_c
 2025,SH252025,JUDE,2025-03-06 06:00,2025-03-16 18:00,JTWC,Mozambique,MOZ,Sofala,MOZ.9_1,Maringue,MOZ.9.9_1,74609.0,,55.57,,{0: 74609},,74609.0,,0.0,,0.0,,0.0,,0.0,,0.0,
 2025,SH252025,JUDE,2025-03-06 06:00,2025-03-16 06:00,JTWC,Reunion,REU,Saint-Paul,REU.3_1,Saint-Paul,REU.3.5_1,,2.0,,0.0,,{0: 2},,2.0,,0.0,,0.0,,0.0,,0.0,,0.0
 2026,SH042026,CHENGE,2025-10-16 06:00,2025-10-25 18:00,JTWC,Seychelles,SYC,Outer Islands,SYC.20_1,0.0,No Adm2,,7.0,,0.0,,{0: 7},,7.0,,0.0,,0.0,,0.0,,0.0,,0.0
+2026,SH142026,DUDZAI,2026-01-06 18:00,2026-01-14 06:00,JTWC,Mauritius,MUS,Rodriguez,MUS.10_1,0.0,No Adm2,,11221.0,,4446.48,,{0: 11221},,11221.0,,0.0,,0.0,,0.0,,0.0,,0.0
