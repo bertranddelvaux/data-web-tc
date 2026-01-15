@@ -1,1 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2026,SH142026,DUDZAI,2026-01-06 18:00,2026-01-15 18:00,JTWC,Mauritius,MUS,Rodriguez,MUS.10_1,,No Adm2,13182,138391.31181819088,{1: 13182}
