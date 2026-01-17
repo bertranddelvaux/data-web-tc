@@ -1,2 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2026,SH142026,DUDZAI,2026-01-06 18:00,2026-01-17 00:00,JTWC,Mauritius,MUS,13182,9467814.099767122,{2: 13182}
+2026,SH142026,DUDZAI,2026-01-06 18:00,2026-01-17 12:00,JTWC,Mauritius,MUS,13182,44781.26092316459,"{0: 4576, 1: 8606}"
