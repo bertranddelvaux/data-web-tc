@@ -1,15 +1,15 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH982026",
+            "SH152026",
             "SH142026"
         ],
         "storms_shp": [
-            "SH982026",
+            "SH152026",
             "SH142026"
         ],
         "windwater_shp": [
-            "SH982026",
+            "SH152026",
             "SH142026"
         ]
     },
@@ -484,18 +484,6 @@
     "tc_realtime": [
         {
             "bbox": [
-                32.225,
-                -29.5917,
-                42.1083,
-                -20.8083
-            ],
-            "id": "SH982026",
-            "losses": "tc_realtime/SH982026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH982026_JTWC_SLOSH.geojson",
-            "storm_name": "INVEST"
-        },
-        {
-            "bbox": [
                 53.9583,
                 -36.225,
                 81.9083,
@@ -505,6 +493,18 @@
             "losses": "tc_realtime/SH142026_losses_adm.json",
             "nc": "tc_realtime/taostc_SH142026_JTWC_SLOSH.geojson",
             "storm_name": "DUDZAI"
+        },
+        {
+            "bbox": [
+                32.825,
+                -29.8083,
+                49.925,
+                -17.5917
+            ],
+            "id": "SH152026",
+            "losses": "tc_realtime/SH152026_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH152026_JTWC_SLOSH.geojson",
+            "storm_name": "FIFTEEN"
         }
     ]
 }
