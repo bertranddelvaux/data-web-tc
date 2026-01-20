@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2026,SH982026,INVEST,2026-01-19 12:00,2026-01-20 06:00,JTWC,Mozambique,MOZ,2652,0.013560911537815325,{0: 2652}

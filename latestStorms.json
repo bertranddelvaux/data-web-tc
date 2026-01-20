@@ -1,12 +1,15 @@
 {
     "current_storms": {
         "current_storms": [
+            "SH982026",
             "SH142026"
         ],
         "storms_shp": [
+            "SH982026",
             "SH142026"
         ],
         "windwater_shp": [
+            "SH982026",
             "SH142026"
         ]
     },
@@ -479,6 +482,18 @@
         }
     ],
     "tc_realtime": [
+        {
+            "bbox": [
+                32.225,
+                -29.5917,
+                42.1083,
+                -20.8083
+            ],
+            "id": "SH982026",
+            "losses": "tc_realtime/SH982026_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH982026_JTWC_SLOSH.geojson",
+            "storm_name": "INVEST"
+        },
         {
             "bbox": [
                 53.6417,

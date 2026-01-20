@@ -1,0 +1,4 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code,population,loss,wind_cat
+2026,SH982026,INVEST,2026-01-19 12:00,2026-01-20 06:00,JTWC,Mozambique,MOZ,Inhambane,MOZ.3_1,Inharrime,MOZ.3.4_1,384,0.0020095906417971912,{0: 384}
+2026,SH982026,INVEST,2026-01-19 12:00,2026-01-20 06:00,JTWC,Mozambique,MOZ,Inhambane,MOZ.3_1,Jangamo,MOZ.3.6_1,2182,0.009974434216259436,{0: 2182}
+2026,SH982026,INVEST,2026-01-19 12:00,2026-01-20 06:00,JTWC,Mozambique,MOZ,Inhambane,MOZ.3_1,Zavala,MOZ.3.12_1,86,0.001576886679758697,{0: 86}
