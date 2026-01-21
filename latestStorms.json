@@ -496,15 +496,15 @@
         },
         {
             "bbox": [
-                32.825,
-                -29.8083,
-                49.925,
-                -17.5917
+                33.5583,
+                -28.7583,
+                48.1917,
+                -18.775
             ],
             "id": "SH152026",
             "losses": "tc_realtime/SH152026_losses_adm.json",
             "nc": "tc_realtime/taostc_SH152026_JTWC_SLOSH.geojson",
-            "storm_name": "FIFTEEN"
+            "storm_name": "EWETSE"
         }
     ]
 }
