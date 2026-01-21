@@ -1,2 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2026,SH152026,EWETSE,2026-01-19 12:00,2026-01-21 06:00,JTWC,Madagascar,MDG,552314,1918426.3745785858,"{0: 205921, 1: 289721, 2: 56672}"
+2026,SH152026,EWETSE,2026-01-19 12:00,2026-01-21 12:00,JTWC,Madagascar,MDG,196915,30358.154840067833,"{0: 141176, 1: 55739}"
