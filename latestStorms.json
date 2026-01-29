@@ -1,13 +1,13 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH972026"
+            "SH192026"
         ],
         "storms_shp": [
-            "SH972026"
+            "SH192026"
         ],
         "windwater_shp": [
-            "SH972026"
+            "SH192026"
         ]
     },
     "mpres_data": [
@@ -482,14 +482,14 @@
         {
             "bbox": [
                 37.725,
-                -18.275,
-                44.8417,
-                -12.425
+                -28.1583,
+                61.6583,
+                -11.425
             ],
-            "id": "SH972026",
-            "losses": "tc_realtime/SH972026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH972026_JTWC_SLOSH.geojson",
-            "storm_name": "NONAME"
+            "id": "SH192026",
+            "losses": "tc_realtime/SH192026_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH192026_JTWC_SLOSH.geojson",
+            "storm_name": "NINETEEN"
         }
     ]
 }
