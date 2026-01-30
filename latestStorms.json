@@ -481,15 +481,15 @@
     "tc_realtime": [
         {
             "bbox": [
-                37.725,
-                -28.1583,
-                61.6583,
-                -11.425
+                38.2083,
+                -28.1917,
+                60.7917,
+                -10.8917
             ],
             "id": "SH192026",
             "losses": "tc_realtime/SH192026_losses_adm.json",
             "nc": "tc_realtime/taostc_SH192026_JTWC_SLOSH.geojson",
-            "storm_name": "NINETEEN"
+            "storm_name": "FYTIA"
         }
     ]
 }
