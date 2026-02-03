@@ -1,2 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2026,SH192026,FYTIA,2026-01-28 12:00,2026-02-03 00:00,JTWC,Reunion,REU,113106,33719.80737718236,"{0: 112623, 1: 483}"
+2026,SH192026,FYTIA,2026-01-28 12:00,2026-02-03 12:00,JTWC,Reunion,REU,22081,619.1701060624483,{0: 22081}
