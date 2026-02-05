@@ -1,13 +1,16 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH192026"
+            null,
+            "WP022026"
         ],
         "storms_shp": [
-            "SH192026"
+            null,
+            "WP022026"
         ],
         "windwater_shp": [
-            "SH192026"
+            null,
+            "WP022026"
         ]
     },
     "mpres_data": [
@@ -478,18 +481,5 @@
             "storm_name": "FREDDY"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                38.675,
-                -27.775,
-                60.9417,
-                -10.975
-            ],
-            "id": "SH192026",
-            "losses": "tc_realtime/SH192026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH192026_JTWC_SLOSH.geojson",
-            "storm_name": "FYTIA"
-        }
-    ]
+    "tc_realtime": []
 }
