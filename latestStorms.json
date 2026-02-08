@@ -481,15 +481,15 @@
     "tc_realtime": [
         {
             "bbox": [
-                35.5917,
-                -24.325,
-                69.575,
+                33.8583,
+                -25.5583,
+                69.5583,
                 -9.125
             ],
             "id": "SH212026",
             "losses": "tc_realtime/SH212026_losses_adm.json",
             "nc": "tc_realtime/taostc_SH212026_JTWC_SLOSH.geojson",
-            "storm_name": "TWENTY-ON"
+            "storm_name": "GEZANI"
         }
     ]
 }
