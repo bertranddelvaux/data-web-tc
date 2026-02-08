@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2026,SH212026,TWENTY-ON,2026-01-31 18:00,2026-02-08 00:00,JTWC,Madagascar,MDG,2648435,9937914.202108385,"{0: 662863, 1: 1783507, 2: 202065}"

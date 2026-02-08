@@ -1,13 +1,13 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH902026"
+            "SH212026"
         ],
         "storms_shp": [
-            "SH902026"
+            "SH212026"
         ],
         "windwater_shp": [
-            "SH902026"
+            "SH212026"
         ]
     },
     "mpres_data": [
@@ -481,15 +481,15 @@
     "tc_realtime": [
         {
             "bbox": [
-                55.175,
-                -21.1917,
-                69.825,
-                -9.0917
+                35.5917,
+                -24.325,
+                69.575,
+                -9.125
             ],
-            "id": "SH902026",
-            "losses": "tc_realtime/SH902026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH902026_JTWC_SLOSH.geojson",
-            "storm_name": "INVEST"
+            "id": "SH212026",
+            "losses": "tc_realtime/SH212026_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH212026_JTWC_SLOSH.geojson",
+            "storm_name": "TWENTY-ON"
         }
     ]
 }
