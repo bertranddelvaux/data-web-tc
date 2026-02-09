@@ -6049,6 +6049,104 @@
                 "time": "18:00",
                 "year": "2025"
             }
+        ],
+        "2026": [
+            {
+                "bbox": [
+                    74.9958,
+                    -20.3375,
+                    94.9708,
+                    -0.9458
+                ],
+                "date": "2025-07-19",
+                "id": "SH012026",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH012026_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH012026_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH012026.geojson",
+                "storm_name": "ONE",
+                "time": "06:01:45",
+                "year": "2026"
+            },
+            {
+                "bbox": [
+                    39.0208,
+                    -26.3042,
+                    57.8125,
+                    -11.3625
+                ],
+                "date": "2026-01-28",
+                "id": "SH192026",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH192026_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH192026_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH192026.geojson",
+                "storm_name": "FYTIA",
+                "time": "12:00",
+                "year": "2026"
+            },
+            {
+                "bbox": [
+                    57.6458,
+                    -13.8125,
+                    85.4042,
+                    -3.7458
+                ],
+                "date": "2025-09-05",
+                "id": "SH032026",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH032026_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH032026_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH032026.geojson",
+                "storm_name": "BLOSSOM",
+                "time": "18:00",
+                "year": "2026"
+            },
+            {
+                "bbox": [
+                    48.5375,
+                    -22.6208,
+                    114.8958,
+                    -9.6042
+                ],
+                "date": "2025-12-12",
+                "id": "SH092026",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH092026_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH092026_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH092026.geojson",
+                "storm_name": "GRANT",
+                "time": "00:00",
+                "year": "2026"
+            },
+            {
+                "bbox": [
+                    54.5625,
+                    -10.4375,
+                    68.5292,
+                    -1.5708
+                ],
+                "date": "2025-08-08",
+                "id": "SH022026",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH022026_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH022026_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH022026.geojson",
+                "storm_name": "AWO",
+                "time": "06:02:14",
+                "year": "2026"
+            },
+            {
+                "bbox": [
+                    44.4792,
+                    -17.0625,
+                    82.5042,
+                    -2.8292
+                ],
+                "date": "2025-10-16",
+                "id": "SH042026",
+                "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH042026_losses_adm.json",
+                "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH042026_JTWC_SLOSH.geojson",
+                "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH042026.geojson",
+                "storm_name": "CHENGE",
+                "time": "06:00",
+                "year": "2026"
+            }
         ]
     }
 }
