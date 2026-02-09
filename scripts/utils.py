@@ -1,13 +1,15 @@
 import os
 import requests
 import datetime
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
+
 
 def listFilesUrl(url, username, password, ext=''):
     page = requests.get(url, auth=(username, password)).text
     soup = BeautifulSoup(page, 'html.parser')
-    return [url + '/' + node.get('href') for node in soup.find_all('a') if node.get('href').endswith(ext)]
+    # urljoin automatically handles the slashes between the base and the path
+    return [urljoin(url + '/', node.get('href')) for node in soup.find_all('a') if node.get('href').endswith(ext)]
 
 
 def fetchUrl(url_file, username, password, filename=None):
