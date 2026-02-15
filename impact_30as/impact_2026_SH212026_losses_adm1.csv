@@ -1,2 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,adm1_name,adm1_code,population,loss,wind_cat
-2026,SH212026,GEZANI,2026-01-31 18:00,2026-02-14 12:00,JTWC,Madagascar,MDG,Toliary,MDG.6_1,4300,1.2640043147688427,{0: 4300}
+2026,SH212026,GEZANI,2026-01-31 18:00,2026-02-15 00:00,JTWC,Madagascar,MDG,Toliary,MDG.6_1,44465,806.0232535506475,"{0: 43947, 1: 518}"
