@@ -131,7 +131,7 @@ else:
                     split=False,
                     geojson=False,
                     gadm_file=os.path.join(root_root, 'gadm_adm2.json'),
-                    prefix='fcst',
+                    prefix='swath',
                     impact_dir=impact_dir
                 )
 
