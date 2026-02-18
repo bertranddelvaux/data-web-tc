@@ -603,18 +603,5 @@
             "storm_name": "JASMINE"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                34.2417,
-                -41.525,
-                67.5,
-                -10.9
-            ],
-            "id": "SH212026",
-            "losses": "tc_realtime/SH212026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH212026_JTWC_SLOSH.geojson",
-            "storm_name": "GEZANI"
-        }
-    ]
+    "tc_realtime": []
 }

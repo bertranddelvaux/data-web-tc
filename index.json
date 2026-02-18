@@ -1001,9 +1001,6 @@
         "mpres_data/postevent/ofcl_30as_nc/taostc_SH072025_JTWC_SLOSH.geojson"
     ],
     "tc_realtime": [
-        "tc_realtime/README.md",
-        "tc_realtime/SH902026_losses_adm.json",
-        "tc_realtime/taostc_SH212026_JTWC_SLOSH.geojson",
-        "tc_realtime/SH212026_losses_adm.json"
+        "tc_realtime/README.md"
     ]
 }
