@@ -89,6 +89,27 @@
         },
         {
             "bbox": [
+                34.2125,
+                -36.9458,
+                67.5,
+                -10.9
+            ],
+            "bbox_15as": [
+                34.1646,
+                -37.0396,
+                67.5,
+                -10.8938
+            ],
+            "id": "SH212026",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH212026_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH212026_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH212026_JTWC_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH212026_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH212026.geojson",
+            "storm_name": "GEZANI"
+        },
+        {
+            "bbox": [
                 76.0125,
                 -15.2375,
                 98.1792,
