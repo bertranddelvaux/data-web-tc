@@ -2844,6 +2844,20 @@
         },
         {
             "bbox": [
+                34.1646,
+                -37.0396,
+                67.5,
+                -10.8938
+            ],
+            "date": "2026-01-31",
+            "id": "SH212026",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH212026_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/SH212026_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH212026.geojson",
+            "storm_name": "GEZANI"
+        },
+        {
+            "bbox": [
                 48.2229,
                 -32.5187,
                 57.2687,
