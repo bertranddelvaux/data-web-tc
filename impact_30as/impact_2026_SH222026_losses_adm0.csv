@@ -1,2 +1,1 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2026,SH222026,TWENTY-TW,2026-02-15 06:00,2026-02-20 12:00,JTWC,Mauritius,MUS,13182,18285.037290702865,"{0: 12781, 1: 401}"

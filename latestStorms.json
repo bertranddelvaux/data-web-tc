@@ -627,15 +627,15 @@
     "tc_realtime": [
         {
             "bbox": [
-                61.925,
-                -30.3917,
-                80.175,
-                -6.8417
+                62.8083,
+                -30.2417,
+                80.2417,
+                -7.3583
             ],
             "id": "SH222026",
             "losses": "tc_realtime/SH222026_losses_adm.json",
             "nc": "tc_realtime/taostc_SH222026_JTWC_SLOSH.geojson",
-            "storm_name": "TWENTY-TW"
+            "storm_name": "HORACIO"
         }
     ]
 }
