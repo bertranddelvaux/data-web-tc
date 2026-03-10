@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2026,SH222026,HORACIO,2026-02-15 06:00,2026-02-27 00:00,JTWC,Mauritius,MUS,25760,144.0417553922497,{0: 25760}

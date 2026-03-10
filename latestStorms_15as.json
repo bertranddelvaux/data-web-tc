@@ -310,6 +310,20 @@
         },
         {
             "bbox": [
+                60.2708,
+                -38.2292,
+                78.5708,
+                -10.1
+            ],
+            "date": "2026-02-15",
+            "id": "SH222026",
+            "losses": "mpres_data/postevent/ofcl_15as_nc/SH222026_losses_adm.json",
+            "nc": "mpres_data/postevent/ofcl_15as_nc/SH222026_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH222026.geojson",
+            "storm_name": "HORACIO"
+        },
+        {
+            "bbox": [
                 41.9021,
                 -17.3813,
                 51.8937,
