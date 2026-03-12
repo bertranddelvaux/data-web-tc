@@ -1,16 +1,16 @@
 {
     "current_storms": {
         "current_storms": [
-            "WP032026",
-            null
+            null,
+            "WP032026"
         ],
         "storms_shp": [
-            "WP032026",
-            null
+            null,
+            "WP032026"
         ],
         "windwater_shp": [
-            "WP032026",
-            null
+            null,
+            "WP032026"
         ]
     },
     "mpres_data": [
@@ -475,6 +475,27 @@
             "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH212026_JTWC_SLOSH.geojson",
             "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH212026.geojson",
             "storm_name": "GEZANI"
+        },
+        {
+            "bbox": [
+                60.4292,
+                -38.2958,
+                78.5458,
+                -10.1
+            ],
+            "bbox_15as": [
+                60.2708,
+                -38.2292,
+                78.5708,
+                -10.1
+            ],
+            "id": "SH222026",
+            "losses": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/SH222026_losses_adm.json",
+            "losses_15as": "mpres_data/postevent/ofcl_15as_nc/SH222026_losses_adm.json",
+            "nc": "mpres_data/postevent/taos_swio30s_ofcl_windwater_nc/taostc_SH222026_JTWC_SLOSH.geojson",
+            "nc_15as": "mpres_data/postevent/ofcl_15as_nc/SH222026_JTWC_SLOSH.geojson",
+            "shp": "mpres_data/postevent/taos_swio30s_ofcl_windwater_shp/taos_swio30s_ofcl_windwater_shp_SH222026.geojson",
+            "storm_name": "HORACIO"
         },
         {
             "bbox": [
