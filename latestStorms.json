@@ -1,14 +1,13 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH992026"
+            "SH292026"
         ],
         "storms_shp": [
-            "SH992026"
+            "SH292026"
         ],
         "windwater_shp": [
-            "SH992026",
-            null
+            "SH292026"
         ]
     },
     "mpres_data": [
@@ -646,5 +645,18 @@
             "storm_name": "GRANT"
         }
     ],
-    "tc_realtime": []
+    "tc_realtime": [
+        {
+            "bbox": [
+                67.625,
+                -38.625,
+                83.4417,
+                -6.025
+            ],
+            "id": "SH292026",
+            "losses": "tc_realtime/SH292026_losses_adm.json",
+            "nc": "tc_realtime/taostc_SH292026_JTWC_SLOSH.geojson",
+            "storm_name": "TWENTY-NI"
+        }
+    ]
 }
