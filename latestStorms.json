@@ -1,13 +1,19 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH292026"
+            "SH312026",
+            "SH302026",
+            null
         ],
         "storms_shp": [
-            "SH292026"
+            "SH312026",
+            "SH302026",
+            null
         ],
         "windwater_shp": [
-            "SH292026"
+            "SH312026",
+            "SH302026",
+            null
         ]
     },
     "mpres_data": [
@@ -645,18 +651,5 @@
             "storm_name": "GRANT"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                65.975,
-                -38.6917,
-                81.5583,
-                -7.325
-            ],
-            "id": "SH292026",
-            "losses": "tc_realtime/SH292026_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH292026_JTWC_SLOSH.geojson",
-            "storm_name": "INDUSA"
-        }
-    ]
+    "tc_realtime": []
 }
