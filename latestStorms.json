@@ -6,11 +6,12 @@
         ],
         "storms_shp": [
             "CP012026",
-            null
+            null,
+            "WP922026"
         ],
         "windwater_shp": [
-            "CP012026",
-            null
+            null,
+            "CP012026"
         ]
     },
     "mpres_data": [
