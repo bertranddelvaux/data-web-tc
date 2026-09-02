@@ -503,7 +503,12 @@
             <button class="button-x" id="close_tools">X</button>
             <br>
             <br>
-            <span>Interested in viewing animations of recent precipitation data on a sphere? Try RAIN-Global, a web interface that serves 7-day animations of precipitation rates and accumulations from GPM IMERG data:</span>
+
+            <span>Interested in viewing animations of recent precipitation data on a sphere? Try RAIN-Global 2, a web interface that serves 3-, 7-, 10-, and 14-day animations of precipitation rates and accumulations from GPM IMERG data:</span>
+            <br>
+            <span><a target="_blank" style="font-size: 1.0em" href="https://storm.pps.eosdis.nasa.gov/storm/outreach/RAIN-Global2.html"><img style="vertical-align: middle;" width="400" src="img/RAIN-Global2_snapshot.png"></a></span>
+            <br>
+            <span>...or try the first-generation version of RAIN-Global:</span>
             <br>
             <span><a target="_blank" style="font-size: 1.0em" href="https://storm.pps.eosdis.nasa.gov/storm/outreach/RAIN-Global.html"><img style="vertical-align: middle;" width="400" src="img/RAIN-Global_snapshot.png"></a></span>
 
