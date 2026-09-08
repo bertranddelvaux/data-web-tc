@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" type="text/css" href="css/precip-apps-viewer.css"/>
+   <link rel="stylesheet" type="text/css" href="css/toggle.css"/>
+   <link rel="stylesheet" type="text/css" href="css/nouislider.css"/>
+   <title>GPM Precipitation and Applications Viewer - Global</title>
+   <meta charset="utf-8" />
+   <script src="js/jquery-rain.min.js" ></script>
+   <script src="js/three.140.js"       ></script>
+
+   <script src="js/tween.umd.js"         ></script>
+   <script src="js/OrbitControls.js"     ></script>
+   <script src="js/atmosphereMaterial.js"></script>
+   <script src="js/skybox.js"            ></script>
+   <script src="js/Stats.js"             ></script>
+   <script src="js/nouislider.min.js"    ></script>
+</head>
+
+<body>
+
+   <div id="details" style="text-align: center; width: 250px">
+
+      <div id="menu_mode" class="menu">
+         Mode:
+         <br>
+         <span style="color: rgba(200,200,200,1);">Global</span>
+         <label class="switch" style="float:none">
+            <input type="checkbox"
+                   id="show_menu_events"
+                   value="unchecked">
+            <div class="slider"></div>
+         </label>
+         <span style="color: rgba(200,200,200,1);">Events</span>
+         <br>
+         <span style="color: rgba(200,200,200,1); left: 63%; position: absolute;">(BETA)</span>
+         <br>
+      </div>
+
+
+      <div id="advanced" class="menu_advanced">
+
+         Advanced
+         <button class="button-x" id="close_advanced">X</button>
+         <br>
+
+         <div class="menu_advanced_left">
+
+            <span style="color: rgba(200,200,200,1); left: 10px">Countries:</span>
+
+            <br>
+            <span style="color: rgba(200,200,200,1); left: 10px">Country borders:</span>
+
+            <br style="line-height: 16px;"/>
+            <span style="color: rgba(200,200,200,1); left: 10px">Capital cities:</span>
+
+            <br style="line-height: 16px;"/>
+            <span style="color: rgba(200,200,200,1); left: 10px">Legend [L]:</span>
+
+         </div>
+
+         <div id="advanced_right" class="menu_advanced_right">
+
+            <span style="color: rgba(200,200,200,1);">Off</span>
+            <label class="switch" style="float:none">
+               <input type="checkbox"
+                      id="countries"
+                      checked="true"
+                      value="checked">
+               <div class="slider"></div>
+            </label>
+            <span style="color: rgba(200,200,200,1);">On</span>
+
+            <br>
+            <span style="color: rgba(200,200,200,1);">Off</span>
+            <label class="switch" style="float:none">
+               <input type="checkbox"
+                      id="borders"
+                      checked="true"
+                      value="unchecked">
+               <div class="slider"></div>
+            </label>
+            <span style="color: rgba(200,200,200,1);">On</span>
+
+            <br>
+            <span style="color: rgba(200,200,200,1);">Off</span>
+            <label class="switch" style="float:none">
+               <input type="checkbox"
+                      id="cities"
+                      checked="true"
+                      value="checked">
+               <div class="slider"></div>
+            </label>
+            <span style="color: rgba(200,200,200,1);">On</span>
+
+
+            <br>
+            <span style="color: rgba(200,200,200,1);">Off</span>
+            <label class="switch" style="float:none">
+               <input type="checkbox"
+                      id="show_colorbar"
+                      checked="true"
+                      value="checked">
+               <div class="slider"></div>
+            </label>
+            <span style="color: rgba(200,200,200,1);">On</span>
+
+         </div>
+      </div>
+
+      <div id="menu" class="menu">
+         <button class="button" id="show_advanced">Advanced</button>
+         <button class="button-x" id="close_menu">X</button>
+         <br>
+
+         <span style="color: rgba(200,200,200,1);">_______________________________</span>
+         <br>
+         Global landslide nowcast
+            <span style="color: rgba(200,200,200,1);"></span>
+            <label class="switch" style="float:none">
+               <input type="checkbox"
+                      id="show_lhasa"
+                      checked="true"
+                      value="checked">
+               <div class="slider"></div>
+            </label>
+            <span style="color: rgba(200,200,200,1);">On</span>
+         <br>
+
+         <button class="button-big" id="download_lhasa">Download data</button>
+         <br>
+
+         <span style="color: rgba(200,200,200,1);">Time of day</span>
+         <br>
+            <button class="button-micro"             id="lhasa_time_0000">0000</button>
+            <button class="button-micro"             id="lhasa_time_0300">0300</button>
+            <button class="button-micro-highlighted" id="lhasa_time_0600">0600</button>
+            <button class="button-micro"             id="lhasa_time_0900">0900</button>
+            <button class="button-micro"             id="lhasa_time_1200">1200</button>
+            <button class="button-micro"             id="lhasa_time_1500">1500</button>
+            <button class="button-micro"             id="lhasa_time_1800">1800</button>
+            <button class="button-micro"             id="lhasa_time_2100">2100</button>
+            <br>
+            <span id="lhasa_warning" style="opacity: 0;">Data not available on this date.</span>
+            <br>
+
+         <span style="color: rgba(200,200,200,1);">Colors</span>
+         <br>
+            <button class="button-small" id="color_yellow_red_lhasa">
+                   <div class="box_mini" style="background-color: #ffffcc;" 
+            ></div><div class="box_mini" style="background-color: #ffeda0;"
+            ></div><div class="box_mini" style="background-color: #fed976;"
+            ></div><div class="box_mini" style="background-color: #feb24c;"
+            ></div><div class="box_mini" style="background-color: #fd8d3c;"
+            ></div><div class="box_mini" style="background-color: #fc4e2a;"
+            ></div><div class="box_mini" style="background-color: #e31a1c;"
+            ></div><div class="box_mini" style="background-color: #b10026;"
+            ></div>
+            </button>
+            <button class="button-small" id="color_magenta_lhasa">
+                   <div class="box_mini" style="background-color: #fff7f3;" 
+            ></div><div class="box_mini" style="background-color: #fde0dd;"
+            ></div><div class="box_mini" style="background-color: #fcc5c0;"
+            ></div><div class="box_mini" style="background-color: #fa9fb5;"
+            ></div><div class="box_mini" style="background-color: #f768a1;"
+            ></div><div class="box_mini" style="background-color: #dd3497;"
+            ></div><div class="box_mini" style="background-color: #ae017e;"
+            ></div><div class="box_mini" style="background-color: #7a0177;"
+            ></div>
+            </button>
+
+
+            <button class="button-small-highlighted" id="color_bluegreen_lhasa">
+                   <div class="box_mini" style="background-color: #08589e;" 
+            ></div><div class="box_mini" style="background-color: #2b8cbe;"
+            ></div><div class="box_mini" style="background-color: #4eb3d3;"
+            ></div><div class="box_mini" style="background-color: #7bccc4;"
+            ></div><div class="box_mini" style="background-color: #a8ddb5;"
+            ></div><div class="box_mini" style="background-color: #ccebc5;"
+            ></div><div class="box_mini" style="background-color: #e0f3db;"
+            ></div><div class="box_mini" style="background-color: #f7fcf0;"
+            ></div>
+            </button>
+            <button class="button-small" id="color_rainbow_lhasa">
+                   <div class="box_mini" style="background-color: #3288bd;" 
+            ></div><div class="box_mini" style="background-color: #66c2a5;"
+            ></div><div class="box_mini" style="background-color: #abdda4;"
+            ></div><div class="box_mini" style="background-color: #e6f598;"
+            ></div><div class="box_mini" style="background-color: #fee08b;"
+            ></div><div class="box_mini" style="background-color: #fdae61;"
+            ></div><div class="box_mini" style="background-color: #f46d43;"
+            ></div><div class="box_mini" style="background-color: #d53e4f;"
+            ></div>
+            </button>
+            <button class="button-small" id="color_warmcool_lhasa">
+                   <div class="box_mini" style="background-color: #2166ac;" 
+            ></div><div class="box_mini" style="background-color: #3293c3;"
+            ></div><div class="box_mini" style="background-color: #92c4de;"
+            ></div><div class="box_mini" style="background-color: #d1e5f0;"
+            ></div><div class="box_mini" style="background-color: #fddbc7;"
+            ></div><div class="box_mini" style="background-color: #f4a582;"
+            ></div><div class="box_mini" style="background-color: #d6604d;"
+            ></div><div class="box_mini" style="background-color: #b2182b;"
+            ></div>
+            </button>
+            <button class="button-small" id="color_greenpurple_lhasa">
+                   <div class="box_mini" style="background-color: #1b7837;" 
+            ></div><div class="box_mini" style="background-color: #5aae61;"
+            ></div><div class="box_mini" style="background-color: #a6dba0;"
+            ></div><div class="box_mini" style="background-color: #d9f0d3;"
+            ></div><div class="box_mini" style="background-color: #e7d4e8;"
+            ></div><div class="box_mini" style="background-color: #c2a5cf;"
+            ></div><div class="box_mini" style="background-color: #9970ab;"
+            ></div><div class="box_mini" style="background-color: #762a83;"
+            ></div>
+            </button>
+            <button class="button-small" id="color_blueyellow_lhasa">
+                   <div class="box_mini" style="background-color: #0c2c84;" 
+            ></div><div class="box_mini" style="background-color: #225ea8;"
+            ></div><div class="box_mini" style="background-color: #1d91c0;"
+            ></div><div class="box_mini" style="background-color: #41b6c4;"
+            ></div><div class="box_mini" style="background-color: #7fcdbb;"
+            ></div><div class="box_mini" style="background-color: #c7e9b4;"
+            ></div><div class="box_mini" style="background-color: #edf8b1;"
+            ></div><div class="box_mini" style="background-color: #ffffd9;"
+            ></div>
+            </button>
+
+            <!--<button class="button-small" id="reverse_colors">-->
+            <!--   Reverse-->
+            <!--</button>-->
+         <br>
+
+
+         <span style="font-size: 0.75em; line-height: 50%; color: rgba(150,150,150,1);">Hazard Range (%):&nbsp </span>
+         <br>
+         <br>
+         <div class="slidecontainer">
+            <div id="minMaxSliderLhasa"></div>
+         </div>
+
+
+         <span style="color: rgba(200,200,200,1);">_______________________________</span>
+         <br>
+         Precip. accumulations&nbsp
+            <span style="color: rgba(200,200,200,1);"></span>
+            <label class="switch" style="float:none">
+               <input type="checkbox"
+                      id="show_imerg"
+                      checked="true"
+                      value="checked">
+               <div class="slider"></div>
+            </label>
+            <span style="color: rgba(200,200,200,1);">On</span>
+         <br>
+
+         <button class="button-big" id="download_imerg">Download data</button>
+         <br>
+         <span style="color: rgba(200,200,200,1);">Time of day</span>
+         <br>
+            <button class="button-micro"             id="imerg_time_0300">0259</button>
+            <button class="button-micro-highlighted" id="imerg_time_0600">0559</button>
+            <button class="button-micro"             id="imerg_time_0900">0859</button>
+            <button class="button-micro"             id="imerg_time_1200">1159</button>
+            <button class="button-micro"             id="imerg_time_1500">1459</button>
+            <button class="button-micro"             id="imerg_time_1800">1759</button>
+            <button class="button-micro"             id="imerg_time_2100">2059</button>
+            <button class="button-micro"             id="imerg_time_2400">2359</button>
+            <br>
+            <span id="imerg_warning" style="opacity: 0;">Data not available on this date.</span>
+            <br>
+
+
+         <span style="color: rgba(200,200,200,1);">Time period</span>
+         <br>
+            <button class="button-micro"             id="accum_1day">1 day</button>
+            <button class="button-micro"             id="accum_3day">3 days</button>
+            <button class="button-micro-highlighted" id="accum_7day">7 days</button>
+         <br>
+
+         <span style="color: rgba(200,200,200,1);">Colors</span>
+         <br>
+            <button class="button-small" id="color_bluegreen">
+                   <div id="rainbow1" class="box_mini" style="background-color: #08589e;" 
+            ></div><div id="rainbow2" class="box_mini" style="background-color: #2b8cbe;"
+            ></div><div id="rainbow3" class="box_mini" style="background-color: #4eb3d3;"
+            ></div><div id="rainbow4" class="box_mini" style="background-color: #7bccc4;"
+            ></div><div id="rainbow5" class="box_mini" style="background-color: #a8ddb5;"
+            ></div><div id="rainbow6" class="box_mini" style="background-color: #ccebc5;"
+            ></div><div id="rainbow7" class="box_mini" style="background-color: #e0f3db;"
+            ></div><div id="rainbow8" class="box_mini" style="background-color: #f7fcf0;"
+            ></div>
+            </button>
+            <button class="button-small" id="color_rainbow">
+                   <div id="rainbow1" class="box_mini" style="background-color: #3288bd;" 
+            ></div><div id="rainbow2" class="box_mini" style="background-color: #66c2a5;"
+            ></div><div id="rainbow3" class="box_mini" style="background-color: #abdda4;"
+            ></div><div id="rainbow4" class="box_mini" style="background-color: #e6f598;"
+            ></div><div id="rainbow5" class="box_mini" style="background-color: #fee08b;"
+            ></div><div id="rainbow6" class="box_mini" style="background-color: #fdae61;"
+            ></div><div id="rainbow7" class="box_mini" style="background-color: #f46d43;"
+            ></div><div id="rainbow8" class="box_mini" style="background-color: #d53e4f;"
+            ></div>
+            </button>
+            <button class="button-small" id="color_warmcool">
+                   <div id="rainbow1" class="box_mini" style="background-color: #2166ac;" 
+            ></div><div id="rainbow2" class="box_mini" style="background-color: #3293c3;"
+            ></div><div id="rainbow3" class="box_mini" style="background-color: #92c4de;"
+            ></div><div id="rainbow4" class="box_mini" style="background-color: #d1e5f0;"
+            ></div><div id="rainbow5" class="box_mini" style="background-color: #fddbc7;"
+            ></div><div id="rainbow6" class="box_mini" style="background-color: #f4a582;"
+            ></div><div id="rainbow7" class="box_mini" style="background-color: #d6604d;"
+            ></div><div id="rainbow8" class="box_mini" style="background-color: #b2182b;"
+            ></div>
+            </button>
+
+            <br>
+
+            <button class="button-small-highlighted" id="color_greenpurple">
+                   <div id="rainbow1" class="box_mini" style="background-color: #1b7837;" 
+            ></div><div id="rainbow2" class="box_mini" style="background-color: #5aae61;"
+            ></div><div id="rainbow3" class="box_mini" style="background-color: #a6dba0;"
+            ></div><div id="rainbow4" class="box_mini" style="background-color: #d9f0d3;"
+            ></div><div id="rainbow5" class="box_mini" style="background-color: #e7d4e8;"
+            ></div><div id="rainbow6" class="box_mini" style="background-color: #c2a5cf;"
+            ></div><div id="rainbow7" class="box_mini" style="background-color: #9970ab;"
+            ></div><div id="rainbow8" class="box_mini" style="background-color: #762a83;"
+            ></div>
+            </button>
+            <button class="button-small" id="color_blueyellow">
+                   <div id="rainbow1" class="box_mini" style="background-color: #0c2c84;" 
+            ></div><div id="rainbow2" class="box_mini" style="background-color: #225ea8;"
+            ></div><div id="rainbow3" class="box_mini" style="background-color: #1d91c0;"
+            ></div><div id="rainbow4" class="box_mini" style="background-color: #41b6c4;"
+            ></div><div id="rainbow5" class="box_mini" style="background-color: #7fcdbb;"
+            ></div><div id="rainbow6" class="box_mini" style="background-color: #c7e9b4;"
+            ></div><div id="rainbow7" class="box_mini" style="background-color: #edf8b1;"
+            ></div><div id="rainbow8" class="box_mini" style="background-color: #ffffd9;"
+            ></div>
+            </button>
+            <!--<button class="button-small" id="reverse_colors">-->
+            <!--   Reverse-->
+            <!--</button>-->
+         <br>
+
+         <span style="font-size: 0.75em; line-height: 50%; color: rgba(150,150,150,1);">Accumulation Range (mm):&nbsp </span>
+         <br>
+         <br>
+         <div class="slidecontainer">
+            <div id="minMaxSlider"></div>
+         </div>
+ 
+         <span style="color: rgba(200,200,200,1);">__________________</span>
+         <br>
+         Basemap
+
+         <br>
+         <span style="font-size: 0.75em; line-height: 50%; color: rgba(150,150,150,1);">Night level (%):&nbsp </span>
+         <span style="font: 0.7em Helvetica-Bold; text-align: right" id="nightSliderOutput" class="text-button.highlighted">0</span>
+         <br style="line-height: 16px;"/>
+         <div class="slidecontainer">
+            <input type="range" min="0" max="10" value="0" class="slider2" id="nightSlider">
+         </div>
+         <br>
+
+
+         <span style="color: rgba(200,200,200,1);">__________________</span>
+         <br>
+         Fly to: 
+         <br>
+         <span style="color: rgba(200,200,200,1); left: 10px">Region:&nbsp</span>
+         <input list="zoom_regions" class="select" id="zoom_regions_input">
+         <datalist id="zoom_regions">
+         </datalist>
+         <br>
+
+         <span style="color: rgba(200,200,200,1); left: 10px">Country:</span>
+         <input list="zoom_countries" class="select" id="zoom_countries_input">
+         <datalist id="zoom_countries">
+         </datalist>
+         <br>
+
+         <span style="color: rgba(200,200,200,1); left: 10px">Capital:&nbsp</span>
+         <input list="zoom_cities" class="select" id="zoom_cities_input">
+         <datalist id="zoom_cities">
+         </datalist>
+
+
+
+         <br>
+         <span style="color: rgba(150,150,150,1);">__________________</span>
+
+
+         <br>
+         End date:
+         <br><select class="select" id="dates" name="dates"></select>
+      </div>
+
+
+      <p id="earth">
+
+         <!--<img id="nasa_logo" style="vertical-align: middle;" width="50" src="/data/images/NASA_logo_transparent.png">-->
+         <img id="nasa_logo" style="vertical-align: middle;" width="37" src="https://gpmweb2https.pps.eosdis.nasa.gov/pub/gpmvis/applications_viewer/NASA_logo_transparent.png">
+
+         <img id="precip_logo1" style="vertical-align: middle;" height="18" src="https://gpmweb2https.pps.eosdis.nasa.gov/pub/bjwest1/RAIN_exp/precip_apps_viewer_logo_top.png">
+         <br>
+         <img id="precip_logo2" style="vertical-align: middle;" height="18" src="https://gpmweb2https.pps.eosdis.nasa.gov/pub/bjwest1/RAIN_exp/precip_apps_viewer_logo_bottom.png">
+         <br>
+         <!--<button class="button-micro2" id="hide_title">Hide [h]</button>-->
+         <button class="button-big" id="show_menu">Controls [c]</button>
+         &nbsp
+         <button class="button-big" id="show_menu_about">About [a]</button>
+         <br>
+         <button class="button-big" id="show_menu_tools">Other tools</button>
+      </p>
+
+   </div>
+
+   <div id="menu_about" class="menu_about" >
+            Precipitation and Applications Global Viewer:
+            <button class="button-x" id="close_about">X</button>
+            <br>
+            <span>The GPM Precipitation and Applications Viewer a web tool designed to help visualize 1-day, 3-day, and 7-day accumulations from IMERG data, as well as landslide data from the LHASA model. Images are updated hourly as data are produced. Use your mouse or trackpad to navigate around the globe or use the controls on the left to "fly to" a region, country, or city of interest. Select from a list of recent dates to view precipitation and landslide estimates for the week ending on that date.</span>
+            <br>
+            <!--<br>-->
+            <!--   <p style="text-align: center;">-->
+            <!--      <img style="vertical-align: middle;" width="75" src="img/NASA_logo_transparent.png">-->
+            <!--      <img style="vertical-align: middle;" width="100" src="img/GPM_logo_transparent.png">-->
+            <!--   </p>-->
+            <!--<br>-->
+            <br>
+            About the global landslide nowcast data:
+            <br>
+            <span>The global Landslide Hazard Assessment for Situational Awareness system (<a target="_blank" style="font-size: 1.0em" href="https://gpm.nasa.gov/landslides/projects.html">LHASA</a>) version 2.1 maps areas of potential landslide hazard in real time. It improves upon LHASA 1.1 by incorporating landslide inventories from around the world within a machine-learning framework that estimate the relative probability of landslide occurrence. LHASA relies on the following variables: snow mass, soil moisture, slope, distance to faults, lithologic strength, antecedent rainfall, and current daily rainfall. Current and antecedent rainfall are derived from the Global Precipitation Measurement (GPM) Integrated Multi-SatellitE Retrievals for GPM (IMERG). In addition, LHASA estimates the potential exposure of human population and roads to landslide hazard and maps the basins likely to experience post-fire debris flows. The model was validated with reference to the Global Landslide Catalog and several other inventories of rainfall-triggered landslide events. LHASA is twice as likely to predict the occurrence of historical landslides as LHASA 1.1, while having the same false positive rate. LHASA is open-source and is produced at a 1-km resolution.</span>
+            <br>
+            <br>
+
+            About the precipitation accumulation data:
+            <br>
+            <span>NASA's Integrated Multi-satellitE Retrievals for GPM (<a target="_blank" style="font-size: 1.0em" href="https://gpm.nasa.gov/data/imerg">IMERG</a>) product combines information from the GPM satellite constellation to estimate precipitation over the majority of the Earth's surface. IMERG is particularly valuable over areas of Earth's surface that lack ground-based precipitation-measuring instruments, including oceans and remote areas.</span>
+            <br>
+            <br>
+
+            About GPM:
+            <br>
+            <span>The Global Precipitation Measurement (<a target="_blank" style="font-size: 1.0em" href="https://gpm.nasa.gov/">GPM</a>) mission is an international network of satellites that provide next-generation global observations of rain and snow. Building upon the success of the Tropical Rainfall Measuring Mission (TRMM), the GPM concept centers on the deployment of a "Core Observatory" satellite carrying an advanced radar / radiometer system to measure precipitation from space and serve as a reference standard to unify precipitation measurements from a constellation of research and operational satellites. Through improved measurements of precipitation globally, the GPM mission is helping to advance our understanding of Earth's water and energy cycles, improve forecasting of extreme events that cause natural hazards and disasters, and extend current capabilities in using accurate and timely information of precipitation to directly benefit society.</span>
+            <br>
+            <br>
+
+            Acknowledgments:
+            <br>
+            <span>- Daytime basemap: NASA <a target="_blank" style="font-size: 1.0em" href="https://visibleearth.nasa.gov/collection/1484/blue-marble">Blue Marble</a></span>
+            <br>
+            <span>- Nighttime basemap: NASA <a target="_blank" style="font-size: 1.0em" href="https://www.visibleearth.nasa.gov/images/144898/earth-at-night-black-marble-2016-color-maps">Black Marble</a></span>
+
+            <br>
+            <span>- 3D sphere rendering: <a target="_blank" style="font-size: 1.0em" href="https://threejs.org">Three.js</a></span>
+            <br>
+            <br>
+            Administrative:
+            <br>
+            <span>Curator/developer: <a target="_blank" style="font-size: 1.0em"  href=mailto:helpdesk@mail.pps.eosdis.nasa.gov>Jason West (KBR, Inc.)</a></span>
+            <br>
+            <span>NASA Official: <a target="_blank" style="font-size: 1.0em"  href=mailto:Erich.F.Stocker@nasa.gov>Erich Stocker (NASA PPS)</a></span>
+            <br>
+            <span>Last Updated: 2025-06-13</span>
+            <br>
+            <span style="font-size: 0.7em"><a target='_blank' style="font-size: 1.0em"  href="https://www.nasa.gov/about/highlights/HP_Privacy.html" class="footerLnk">Privacy Policy</a>&nbsp&amp&nbsp<a target='_blank' style="font-size: 1.0em"  href="https://www.nasa.gov/accessibility/" class="footerLnk">Accessibility</a></span>
+   </div>
+
+   <div id="menu_download_lhasa" class="menu_download_imerg" >
+            Download global landslide nowcast data:
+            <button class="button-x" id="close_download_lhasa">X</button>
+            <br>
+            <br>
+            <span style="font: 1.0em Helvetica-Bold;" id="download_lhasa_title"></span>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_lhasa_nccs_tif_element">tif</a>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_lhasa_nccs_nc4_element">nc4</a>
+   </div>
+
+   <div id="menu_download_imerg" class="menu_download_imerg" >
+            Download IMERG data:
+            (Requires a NASA PPS account. <a target="_blank" style="font-size: 1.0em" href="https://registration.pps.eosdis.nasa.gov/registration/">Register here.</a>)
+            <button class="button-x" id="close_download_imerg">X</button>
+            <br>
+            <br>
+            <span style="font: 1.0em Helvetica-Bold;" id="download_imerg_title"></span>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_imerg_7day_tif_element">tif</a>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_imerg_7day_tfw_element">tfw</a>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_imerg_7day_zip_element">zip</a> (contains total precip. as well as liquid vs. solid estimates)
+            <br>
+            <br>
+            Read the <a style="font: 1.0em Helvetica;" target="_blank" href="https://pps.gsfc.nasa.gov/Documents/README.GIS.pdf">User Guide</a> to learn about IMERG GeoTIFF-formatted files from PPS.
+             
+   </div>
+
+   <div id="menu_tools" class="menu_tools" >
+            Try these similar tools for visualizing IMERG data:
+            <button class="button-x" id="close_tools">X</button>
+            <br>
+            <br>
+
+            <span>Interested in viewing animations of recent precipitation data on a sphere? Try RAIN-Global 2, a web interface that serves 3-, 7-, 10-, and 14-day animations of precipitation rates and accumulations from GPM IMERG data:</span>
+            <br>
+            <span><a target="_blank" style="font-size: 1.0em" href="https://storm.pps.eosdis.nasa.gov/storm/outreach/RAIN-Global2.html"><img style="vertical-align: middle;" width="400" src="img/RAIN-Global2_snapshot.png"></a></span>
+            <br>
+            <span>...or try the first-generation version of RAIN-Global:</span>
+            <br>
+            <span><a target="_blank" style="font-size: 1.0em" href="https://storm.pps.eosdis.nasa.gov/storm/outreach/RAIN-Global.html"><img style="vertical-align: middle;" width="400" src="img/RAIN-Global_snapshot.png"></a></span>
+
+            <br>
+            
+   </div>
+
+   <div id="menu_download_lhasa" class="menu_download_imerg" >
+            Download global landslide nowcast data:
+            <button class="button-x" id="close_download_lhasa">X</button>
+            <br>
+            <br>
+            <span style="font: 1.0em Helvetica-Bold;" id="download_lhasa_title"></span>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_lhasa_nccs_tif_element">tif</a>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_lhasa_nccs_nc4_element">nc4</a>
+   </div>
+
+   <div id="menu_download_imerg" class="menu_download_imerg" >
+            Download IMERG data:
+            (Requires a NASA PPS account. <a target="_blank" style="font-size: 1.0em" href="https://registration.pps.eosdis.nasa.gov/registration/">Register here.</a>)
+            <button class="button-x" id="close_download_imerg">X</button>
+            <br>
+            <br>
+            <span style="font: 1.0em Helvetica-Bold;" id="download_imerg_title"></span>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_imerg_7day_tif_element">tif</a>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_imerg_7day_tfw_element">tfw</a>
+            <br>
+            <a style="font: 1.0em Helvetica;" target="_blank" href="#" id="download_url_imerg_7day_zip_element">zip</a> (contains total precip. as well as liquid vs. solid estimates)
+            <br>
+            <br>
+            Read the <a style="font: 1.0em Helvetica;" target="_blank" href="https://pps.gsfc.nasa.gov/Documents/README.GIS.pdf">User Guide</a> to learn about IMERG GeoTIFF-formatted files from PPS.
+             
+   </div>
+
+
+   <div id="menu_welcome" class="menu_welcome" >
+            Welcome to the Precipitation and Applications Global Viewer!
+            <button class="button-x" id="close_welcome">X</button>
+            <br>
+            <span> </span>
+            <br>
+            <span style="font: 1.0em Helvetica-Bold;">Now viewing:</span>
+            <br>
+            <span style="font: 1.0em Helvetica;">Global landslide nowcast and IMERG precipitation accumulation estimates for the week ending on:&nbsp&nbsp</span>
+            <span style="font: 1.0em Helvetica-Bold; text-shadow: 2px 2px #000; text-align: center" id="lastFrame" class="text-button.highlighted">yyyy-mm-dd, hhmm UTC</span>
+   </div>
+
+
+   <div id="menu_loading" class="menu_loading">
+   </div>
+
+   <div class="zoom_controls" style="text-align: center; white-space-collapse: collapse;">
+      <span style="color: rgba(200,200,200,1); left: 10px">Zoom:</span>
+         <br>
+         <button class="button-micro" id="zoom_in">[+]</button>
+         <br>
+         <button class="button-micro" id="zoom_out">[-]</button>
+      <br>
+   </div>
+
+   <div id="details_bottom" style="text-align: center; white-space-collapse: collapse;">
+         <!--<span style="font: 0.9em Helvetica-Bold; text-shadow: 2px 2px #000; text-align: center" class="text-button.highlighted">High landslide hazard</span>-->
+         <!--<div id="lhasa_legend1" class="box"></div>-->
+
+         <span style="font: 0.9em Helvetica-Bold; text-shadow: 2px 2px #000; text-align: center" class="text-button.highlighted">Landslide hazard (%)</span>
+         <br>
+         <div id="legend1_lhasa" class="box box_left" 
+  ></div><div id="legend2_lhasa" class="box" 
+  ></div><div id="legend3_lhasa" class="box" 
+  ></div><div id="legend4_lhasa" class="box" 
+  ></div><div id="legend5_lhasa" class="box" 
+  ></div><div id="legend6_lhasa" class="box" 
+  ></div><div id="legend7_lhasa" class="box" 
+  ></div><div id="legend8_lhasa" class="box box_right"></div>
+         <br>
+
+         
+         <div           class="box"
+   ><span style="font: 1.2em Helvetica-Bold; text-align: right" id="minLhasaLegendOutput" class="text-button.highlighted">5</span></div><div class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"><span style="font: 1.2em Helvetica-Bold; text-align: right" id="maxLhasaLegendOutput" class= "text-button.highlighted">100</span></div>
+
+
+
+         <br>
+         <span style="color: rgba(150,150,150,1);">_____________________________</span>
+         <br>
+
+         <span style="font: 0.9em Helvetica-Bold; text-shadow: 2px 2px #000; text-align: center" class="text-button.highlighted">Accumulation (mm)</span>
+         <br>
+         <div id="legend1" class="box box_left" 
+  ></div><div id="legend2" class="box" 
+  ></div><div id="legend3" class="box" 
+  ></div><div id="legend4" class="box" 
+  ></div><div id="legend5" class="box" 
+  ></div><div id="legend6" class="box" 
+  ></div><div id="legend7" class="box" 
+  ></div><div id="legend8" class="box box_right"></div>
+         <br>
+
+         
+         <div           class="box"
+   ><span style="font: 1.2em Helvetica-Bold; text-align: right" id="minAccumLegendOutput" class="text-button.highlighted">50</span></div><div class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"
+  ></div><div           class="box"><span style="font: 1.2em Helvetica-Bold; text-align: right" id="maxAccumLegendOutput" class= "text-button.highlighted">500</span></div>
+
+   </div>
+
+   <video id="video" loop crossOrigin="anonymous" webkit-playsinline style="display:none">
+      <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+   </video>
+
+   <script src="js/precip_apps_viewer2.min.js"></script>
+</body>
+</html>
