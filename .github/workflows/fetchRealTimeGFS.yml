@@ -22,7 +22,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -30,7 +30,7 @@ jobs:
 
       # Set up python
       - name: setup python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
       
@@ -53,18 +53,20 @@ jobs:
           KAC_PASSWORD: ${{ secrets.KAC_PASSWORD }}
         run: python scripts/fetchRealTimeGFS.py
       
-      # commit files
-      - name: commit files
+      # Commit and push files directly
+      - name: Commit and push changes
         run: |
           git config --global http.version HTTP/1.1
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+      
+          # Add all files (new, modified, deleted)
           git add -A
-          git commit -m "update data" -a
-          
-      # push changes
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main  
+      
+          # Commit and push if staged changes exist
+          if ! git diff --cached --quiet; then
+            git commit -m "Update data"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
