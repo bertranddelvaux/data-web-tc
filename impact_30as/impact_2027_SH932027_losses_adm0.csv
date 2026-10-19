@@ -1,0 +1,2 @@
+tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
+2027,SH932027,INVEST,2026-10-18 12:00,2026-10-19 18:00,JTWC,Seychelles,SYC,28510,25501.003018633237,"{0: 11526, 1: 16984}"
