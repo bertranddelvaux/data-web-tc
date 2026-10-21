@@ -1,2 +1,2 @@
 tc_season,atcf_id,storm_name,jtwc_start_time,jtwc_end_time,tech,adm0_name,adm0_code,population,loss,wind_cat
-2027,SH022027,AGUEDA,2026-10-18 12:00,2026-10-20 18:00,JTWC,Seychelles,SYC,31485,44101.23798157497,"{0: 13304, 1: 18181}"
+2027,SH022027,AGUEDA,2026-10-18 12:00,2026-10-21 06:00,JTWC,Seychelles,SYC,31469,44101.23782289478,"{0: 13288, 1: 18181}"
