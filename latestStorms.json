@@ -1,13 +1,25 @@
 {
     "current_storms": {
         "current_storms": [
-            "SH022027"
+            null,
+            "WP302026",
+            "EP222026",
+            "WP982026",
+            "WP292026"
         ],
         "storms_shp": [
-            "SH022027"
+            null,
+            "WP302026",
+            "EP222026",
+            "WP982026",
+            "WP292026"
         ],
         "windwater_shp": [
-            "SH022027"
+            null,
+            "WP302026",
+            "EP222026",
+            "WP982026",
+            "WP292026"
         ]
     },
     "mpres_data": [
@@ -645,18 +657,5 @@
             "storm_name": "HORACIO"
         }
     ],
-    "tc_realtime": [
-        {
-            "bbox": [
-                44.925,
-                -9.6917,
-                60.325,
-                -1.4083
-            ],
-            "id": "SH022027",
-            "losses": "tc_realtime/SH022027_losses_adm.json",
-            "nc": "tc_realtime/taostc_SH022027_JTWC_SLOSH.geojson",
-            "storm_name": "AGUEDA"
-        }
-    ]
+    "tc_realtime": []
 }
